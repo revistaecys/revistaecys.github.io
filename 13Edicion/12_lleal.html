@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>NALU(unidad aritmetica lógica neuronal) – Su razón de ser | Decimotercera Edición - ECYS</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="NALU(unidad aritmetica lógica neuronal) – Su razón de ser | Decimotercera Edición - ECYS" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="media/cover.jpg" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="NALU(unidad aritmetica lógica neuronal) – Su razón de ser | Decimotercera Edición - ECYS" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="media/cover.jpg" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas. ECYS" />
+
+
+<meta name="date" content="2019-06-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="11_agutierrez.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<script>
+	$(document).ready(function() {
+		var $variable;
+		$variable = document.getElementsByClassName("section level1 unnumbered")[0]; 
+		if (typeof $variable != "undefined") {
+			$variable = document.getElementById("editorial");   
+			if($variable != null)	{
+				$img_header = "<img src='media/editorial.jpeg' />";    
+				$variable.innerHTML = $img_header + $variable.innerHTML;
+				return;
+			}
+			
+			return;
+		}
+		
+		$variable = document.getElementsByClassName("section level1")[0]; 
+		if (typeof $variable != "undefined") {
+			$img_header = "<img src='media/header.png' />";		
+			$variable.innerHTML = $img_header + $variable.innerHTML;    
+			return;
+		}
+   });
+</script>
+
+
+
+<link rel="stylesheet" href="css\style-drake-manual.css" type="text/css" />
+<link rel="stylesheet" href="css\style-images.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Authoring Books with R Markdown</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="00_preface.html"><a href="00_preface.html"><i class="fa fa-check"></i>Editorial</a></li>
+<li class="chapter" data-level="" data-path="01_mgabriel.html"><a href="01_mgabriel.html"><i class="fa fa-check"></i>Beneficios del software libre en el sistema educativo guatemalteco</a></li>
+<li class="chapter" data-level="" data-path="02_kjuventino.html"><a href="02_kjuventino.html"><i class="fa fa-check"></i>Bitcoin y la minería</a></li>
+<li class="chapter" data-level="" data-path="03_ggiron.html"><a href="03_ggiron.html"><i class="fa fa-check"></i>Deep Learning y su increíble impacto en la realidad conocida</a></li>
+<li class="chapter" data-level="" data-path="04_jruiz.html"><a href="04_jruiz.html"><i class="fa fa-check"></i>Hablemos de licencias de software</a></li>
+<li class="chapter" data-level="" data-path="05_alopez.html"><a href="05_alopez.html"><i class="fa fa-check"></i>Cómo elegir el procesador adecuado en base a sus características y nuestras necesidades</a></li>
+<li class="chapter" data-level="" data-path="06_ymarroquin.html"><a href="06_ymarroquin.html"><i class="fa fa-check"></i>Simulación como tecnología moderna para la salud en Centroamérica</a></li>
+<li class="chapter" data-level="" data-path="07_dlopez.html"><a href="07_dlopez.html"><i class="fa fa-check"></i>La nanotecnología en la medicina</a></li>
+<li class="chapter" data-level="" data-path="08_esahuay.html"><a href="08_esahuay.html"><i class="fa fa-check"></i>El valor de los datos en las PYMES</a></li>
+<li class="chapter" data-level="" data-path="09_jbaldelomar.html"><a href="09_jbaldelomar.html"><i class="fa fa-check"></i>Seguridad Informática: Encriptación de la Información</a></li>
+<li class="chapter" data-level="" data-path="10_echopen.html"><a href="10_echopen.html"><i class="fa fa-check"></i>SAP una visión de Negocio</a></li>
+<li class="chapter" data-level="" data-path="11_agutierrez.html"><a href="11_agutierrez.html"><i class="fa fa-check"></i>5 convenciones de código para una aplicación Android</a></li>
+<li class="chapter" data-level="" data-path="12_lleal.html"><a href="12_lleal.html"><i class="fa fa-check"></i>NALU(unidad aritmetica lógica neuronal) – Su razón de ser</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimotercera Edición - ECYS</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Lleal" class="section level1 unnumbered">
+<h1>NALU(unidad aritmetica lógica neuronal) – Su razón de ser</h1>
+
+
+<p><img src="media/e13_lleal_00.png" width="1.51cm" /></p>
+
+<p><em>Ing. Luis Fernando Leal</em><br />
+<em>wichofer89@gmail.com</em><br />
+<em>Invitado especial</em></p>
+<p><em>Palabras clave: NALU, inteligencía artificial, Memorización en IA</em></p>
+
+
+<hr />
+
+<p>Este post planeo dividirlo en 2 partes ,1(el actual) explicando las motivaciones de NALU y el problema que busca resolver y en el próximo un poco mas de detalles técnicos , explicación del modelo , código de mi propia implementación del modelo(los autores solo publicaron las especificaciones, pero no su código) y resultados de algunos de mis experimentos.</p>
+<p>NALU es un nuevo modelo propuesto por Google DeepMind, siendo su autor principal Andrew Trask(autor del libro “Grokking Deep Learning”) y publicado apenas hace 2 semanas(agosto 2018) como artículo de investigación científica en arxiv <a href="https://arxiv.org/pdf/1808.00508v1.pdf"><span class="underline">https://arxiv.org/pdf/1808.00508v1.pdf</span></a></p>
+<p>NALU busca mejorar el rendimiento de los modelos de redes neuronales y abrir la puerta a nuevos modelos y nuevas aplicaciones no antes posibles ya que busca solucionar un importante problema presente en las redes neuronales : <strong>falta de razonamiento cuantitativo y la habilidad de extrapolar y generalizar</strong></p>
+<p>La habilidad de representar y manipular cantidades numéricas esta presente en muchas especies, no solo en los humanos, por ejemplo hay fuerte evidencia que indica que las abejas tienen la habilidad de contar objetos y razonar sobre cantidades numéricas, esto sugiere que la habilidad de representar y manipular cantidades numéricas es un componente inherente de la inteligencia biológica,entonces la pregunta es : ¿posee la inteligencia artificial actual esta habilidad? La respuesta lamentablemente es NO, las redes neuronales actualmente no poseen la habilidad de “razonar” cuantitativamente y manipular cantidades numericas de manera sistematica y generalizada.</p>
+<p>Alguien con conocimiento del tema puede leer la ultima frase y decir : “esto no es cierto, todo lo contrario de hecho las redes neuronales solo trabajan con números y todo tipo de información que se les alimente debe primero ser convertida a números”,y aun que esto es cierto con algunos ejemplos y analogías quedará mas claro cual es el problema que NALU busca resolver, empecemos entonces con una analogía con el aprendizaje humano:</p>
+<p><strong>Aprendizaje vs memorización</strong></p>
+<p>Durante mi tiempo de estudiante en ingeniería adopte por gusto y desición propia como método de estudio de matemáticas el realizar todos los ejercicios contenidos en el libro utilizado como material del curso,esto me consumía bastante tiempo por lo que algunos de mis amigos y compañeros sugerían “no, para ganar el curso solo es necesario aprender los ejemplos vistos en clase y la tarea preparatoria” lo cual obviamente consumía bastante menos tiempo ,muchas veces en los examenes solo venian estos ejemplos o pequeñas variaciones de los mismos, por lo que memorizarlos garantizaba ganar el curso, pero ¿es esto aprendizaje? En otros casos los problemas si eran diferentes y se necesitaba aplicar <strong>razonamiento</strong> y uso de los conceptos para poderse resolver y esto provocaba que algunos compañeros que preferían el método rápido(memorización) fallaran al no poder <strong>generalizar </strong>o <strong>extrapolar</strong> .</p>
+<p>Este ejemplo sugiere que los humanos podemos tanto <strong>aprender </strong>como <strong>memorizar </strong>(y algo mas interesante aún es que tenemos el poder de decicir cual de las 2 cosas hacer,pero ese es otro tema) lamentablemente la IA a través de redes neuronales actualmente esta mas cerca del caso 2(memorizar) que del 1(aprender de manera general).</p>
+<p><strong>Memorización en IA</strong></p>
+<p>La IA a través de redes neuronales ha logrado resultados impresionantes en complejas tareas como:</p>
+<ul>
+<li><p>Reconocimiento de voz y lenguaje natural</p></li>
+<li><p>Diagnostico y detección de enfermedades</p></li>
+<li><p>Vencer a campeones del mundo en juegos de mesa</p></li>
+<li><p>Reconocimiento facial</p></li>
+<li><p>etc</p></li>
+</ul>
+<p>Pero tiene dificultades en tareas mucho mas sencillas como:</p>
+<ul>
+<li><p>Contar números</p></li>
+<li><p>Aplicar aritmética simple(suma,resta, multiplicación ,división)</p></li>
+</ul>
+<p>Es decir tareas que implican razonamiento numérico ,algo básico de nuestra inteligencia(y de otras especies),por ejemplo cuando nosotros aprendemos a sumar, nuestro cerebro maneja de manera abstracta y conceptual los números y la operación de suma en estos, no memorizamos cual es la suma para cada posible par de números en la recta númerica(sería imposible) .</p>
+<p>Algunos estudiosos de neurociencias y el cerebro proponen que esto es posible gracias a un tipo especial de neurona llamada “numeron”(por “numerical neuron”) las cuales se encargan de crear las representaciones numéricas que nuestro cerebro usa y proponen que todo razonamiento numérico y operaciones con numeros se basa en operaciones de acumulación(suma y resta) de cantidades(para mayor detalle ver : The Number Sense: How the Mind Creates Mathematics de Stanislas Dehaene), en el siguiente post veremos como este modelo se refleja directamente en NALU</p>
+<p>Otros ejemplos donde es posible ver este problema en la IA son los siguientes casos:</p>
+<ul>
+<li><p>Las redes neuronales son muy buenas aprendiendo funciones f(x) pero tienen dificultad en arender la sencilla función “identidad escalar”, es decir f(x) = x para valores de “x” que no ven durante su entrenamiento.</p></li>
+<li><p>Las redes neuronales en algunos casos pareciera que han aprendido aritmetica basica, por ejemplo aprenden a sumar correctamente pero solo lo hacen bien en el rango de valores vistos durante su entrenamiento(por ejemplo si durante su entrenamiento ven valores en el rango de 0 a 100, podrán sumar bien nuevos valores en ese rango,pero no lo harán bien con valores como 101 + 200) por lo cual decimos que no pueden extrapolar a rangos de valores no vistos durante su entrenamiento.</p></li>
+<li><p>Tuve la oportunidad de “chatear” con el autor del modelo quien en sus propias palabras explica otro ejemplo donde se entrena a una red neuronal para contar hasta cierto numero, pero una vez entrenada tiene dificultades para contar hasta un numero mayor a los observados, esto sería el equivalente a un humano contando muchas veces de uno a 10, pero luego tener dificultades contando hasta 11.</p></li>
+</ul>
+<p><img src="media/e13_lleal_01.png" alt="https://3.bp.blogspot.com/-47RYSiWeRAc/W3iTjmzzDnI/AAAAAAAAF18/8wnK573UlB4RIK98jffK7YG3XJUEpI3wACEwYBhgL/s640/Selection\_253.png" />
+Imagen 1 del artículo original: credito a DeepMind (descripción abajo)</p>
+<p>Imagen 1 del artículo original: en esta imagen se prueban diversas funciones de activación en un autoencoder aproximando la función identidad escalar f(x) = x , cada curva pertenece a una función de activación, el eje "x" corresponde a los valores de entrada "x" y el eje "y" corresponde al error obtenido, es posible ver que para algunos casos pasa en menor medida que otros,pero en todos los casos el error incrementa cuando se sale del rango de valores "x" vistos durante el entrenamiento (aproximadamente -5 a 5)</p>
+<p>El autor explica que la hipótesis bajo la cual se desarrolló este proyecto de investigación fue que las redes neuronales aprenden a representar números(y las operaciones con estos) de la misma manera (o similar) a como aprenden a manipular palabras, es decir: creando un diccionario finito lo cual es una limitación en operaciones numéricas si tomamos en cuenta que en la recta numérica existen infinitos valores y simplemente no podemos representar un diccionario de infinitos elementos en una red neuronal(y aun que pudieramos, ¿sería esto realmente inteligencia?) lo cual limita a la IA actual en extrapolar funciones a rangos de valores no vistos previamente (similar al ejemplo de memorización vs aprendizaje)</p>
+<p>El objetivo del proyecto era proponer una nueva arquitectura que solventara estas limitantes y permitiera enriquecer a los modelos convencionales (redes feed-forward , convolucionales, recurrentes, etc) extendiendo su habilidad de extrapolar y generalizar en rangos de valores númericos nunca antes vistos…y lo lograron .</p>
+<p>Aun que NALU tiene un potencial muy grande y creo que será una herramienta importante para todo AI developer, lo que mas me ha gustado es que ha abierto las puertas para nuevos modelos y arquitecturas demostrando que es posible aplicar una estrategia de diseño en la que se agregan a redes neuronales sub-elementos que buscan resolver ciertas dificultades y aplicar de manera efectiva sub-funciones matemáticas (en este caso aritmetica)</p>
+<p>En el próximo post escribiré un poco mas de los detalles técnicos de NALU y mi experiencia en su implementación , y el experimento en el cual apliqué NALU.</p>
+<p>De manera anticipada , en el experimento en el cual he aplicado NALU</p>
+<p>hasta el momento se busca responder la pregunta “¿puede una red neuronal aprender a restar numeros seleccionados aleatoriamente en un vector de entrada x?”, mis experimentos parecen indicar que sí y tal como los autores de NALU buscaban, intente lograrlo en rangos de valores nunca vistos durante el entrenamiento. En el próximo post pondré detalles de este experimento(así como codigo del mismo)</p>
+<p>Espero con este post explicar un poco mas claro la necesidad y problema que NALU busca resolver ya que muchas veces una publicacion científica es un poco difícil de digerir y con mucha notación matemática y mas aún en latinoamérica donde nuestro idioma nativo no es el ingles,por lo que espero que este artículo sea útil para personas buscando información un poco mas digerible del tema y en su lenguaje nativo.</p>
+<p><strong>Articulo publicado en:</strong></p>
+<ul>
+<li><span class="underline"><a href="https://devongt.blogspot.com/" class="uri">https://devongt.blogspot.com/</a></span></li>
+</ul>
+
+
+<p><img src="media/e13_usac10.jpg" /></p>
+
+<p><img src="media/e13_usac12.jpg" /></p>
+
+
+</div>
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="11_agutierrez.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["Decimotercera Edicion Ecys.pdf", "Decimotercera Edicion Ecys.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.book .book-summary ul.summary li span {
+
+    cursor: not-allowed;
+    opacity: 1;
+
+}
+
+.book .book-summary ul.summary li.active > a {
+  color: #0c2647;
+  font-weight: bold;
+}
+
+.book .book-summary ul.summary li > a:hover {
+  color: #0c2647;
+  font-weight: bold;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: #0c2647;
+  font-weight: bold;
+}
+
+.summaryblock{
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  color: #333E50;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #F07901;
+}
+
+.summaryblock > a {
+  color: #d8dfee;
+}
+
+.part > span {
+  color: #5c677e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5c677e;
+}
+
+body {
+  color: #333E50;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal code {
+  background: #dfe3eb;
+}
+
+div.book-header.fixed[style] {
+  background-color: #F07901 !important;
+}
+
+.book .book-header .btn {
+  color: white;
+  background-color: black;
+}
+
+.book .book-header .btn:hover {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: 0 0;
+    transform:scale(1.3,1.3);
+}
+
+.book .book-header h1 a, .book .book-header h1 a:hover {
+  color: #fff;
+}
+
+
+.photobiography3 {
+  background:rgba(242, 226, 215, 0.3);
+  /* Por defecto en modo fila, uno al lado del otro */
+  display: flex;
+  flex-flow: row;
+}
+
+.photobiography4 {
+  background:rgba(242, 226, 215, 0.3);
+}
+
+.photobiography_information{
+  flex: 0.1 1 auto;  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0.1px;
+  margin-left: 0.1px;
+}
+
+.photobiography_photo {
+  flex: 0.1 1 auto;  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0.1px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .photobiography3 {
+    /* si es muy angosta, uno debajo del otro */
+    flex-flow: column;
+  }
+}
+
+@media (max-width: 750px) {
+  .photobiography_information {
+    flex: 0 0 auto;  
+    margin-top: 0.1px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+.photobiography_photo {
+    flex: 0 0 auto;    
+    margin-top: 20px;
+    margin-bottom: 0.1px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.imagestyle {
+	display:block;	
+}
+
+.contenido {
+  /* Por defecto en modo fila, uno al lado del otro */
+  display: flex;
+  flex-flow: row;
+}
+
+
+.contenido_information{
+  flex: 0.1 1 auto;  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0.1px;
+  margin-left: 0.1px;
+}
+
+.contenido_photo {
+  flex: 0.1 1 auto;  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .contenido {
+    /* si es muy angosta, uno debajo del otro */
+    flex-flow: column;
+  }
+}
+
+@media (max-width: 750px) {
+  .contenido_information {
+    flex: 0 0 auto;  
+    margin-top: 0.1px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+.contenido_photo {
+    flex: 0 0 auto;    
+    margin-top: 20px;
+    margin-bottom: 0.1px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
