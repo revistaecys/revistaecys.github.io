@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Moderación de contenido, aplicación práctica de funciones Hash | Decimocuarta Edición - ECYS</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Moderación de contenido, aplicación práctica de funciones Hash | Decimocuarta Edición - ECYS" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="01-componentsPDF/cover.png" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Moderación de contenido, aplicación práctica de funciones Hash | Decimocuarta Edición - ECYS" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="01-componentsPDF/cover.png" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas." />
+
+
+<meta name="date" content="2019-08-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="09-lazurdia.html">
+<link rel="next" href="11-lavila.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-2');
+</script>
+
+
+
+<link rel="stylesheet" href="01-componentsGitbookEPub\style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Authoring Books with R Markdown</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Revista Digital</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#links-disponibles"><i class="fa fa-check"></i>Links Disponibles</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html"><i class="fa fa-check"></i>Editorial</a></li>
+<li class="chapter" data-level="" data-path="01-contenido.html"><a href="01-contenido.html"><i class="fa fa-check"></i>Contenido</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html"><i class="fa fa-check"></i>Introduciendo Firebase</a><ul>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#conociendo-firebase"><i class="fa fa-check"></i>Conociendo Firebase</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#más-que-una-herramienta-un-ambiente"><i class="fa fa-check"></i>Más que una herramienta, un ambiente</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#como-testimonio-personal"><i class="fa fa-check"></i>Como testimonio personal</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#conclusiones"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#referencias-bibliograficas"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="03-ealvarez.html"><a href="03-ealvarez.html"><i class="fa fa-check"></i>Edge Computing</a><ul>
+<li class="chapter" data-level="" data-path="03-ealvarez.html"><a href="03-ealvarez.html#conclusiones-1"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="03-ealvarez.html"><a href="03-ealvarez.html#referencias-bibliograficas-1"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="04-fdepaz.html"><a href="04-fdepaz.html"><i class="fa fa-check"></i>Flutter: el presente de las aplicaciones móviles</a><ul>
+<li class="chapter" data-level="" data-path="04-fdepaz.html"><a href="04-fdepaz.html#conclusiones-2"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="04-fdepaz.html"><a href="04-fdepaz.html#referencias-bibliograficas-2"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html"><i class="fa fa-check"></i>Computación paralela a través de CUDA</a><ul>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#computación-paralela"><i class="fa fa-check"></i>Computación paralela</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#qué-es-cuda"><i class="fa fa-check"></i>¿Qué es CUDA?</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#por-qué-cuda"><i class="fa fa-check"></i>¿Por qué CUDA?</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#paralelizando-una-aplicación-a-través-de-cuda"><i class="fa fa-check"></i>Paralelizar una aplicación a través de CUDA</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#resultados"><i class="fa fa-check"></i>Resultados</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#conclusiones-3"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#referencias-bibliograficas-3"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06-agramajo.html"><a href="06-agramajo.html"><i class="fa fa-check"></i>Optimización de sitios web con Google Analytics</a><ul>
+<li class="chapter" data-level="" data-path="06-agramajo.html"><a href="06-agramajo.html#conclusiones-4"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="06-agramajo.html"><a href="06-agramajo.html#referencias-bibliograficas-4"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07-dmomotic.html"><a href="07-dmomotic.html"><i class="fa fa-check"></i>El poder de la inteligencia artificial</a><ul>
+<li class="chapter" data-level="" data-path="07-dmomotic.html"><a href="07-dmomotic.html#conclusiones-5"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="07-dmomotic.html"><a href="07-dmomotic.html#referencias-bibliograficas-5"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html"><i class="fa fa-check"></i>Voto Electrónico</a><ul>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#registro-electronico-directo-dre-"><i class="fa fa-check"></i>Registro Electrónico directo –DRE-</a></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#reconocimiento-optico-de-marcasomr-"><i class="fa fa-check"></i>Reconocimiento Óptico de Marcas–OMR-</a></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#impresora-de-papeletas-electronicas-ebp-"><i class="fa fa-check"></i>Impresora de papeletas electrónicas – EBP-</a></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#conclusiones-6"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#referencias-bibliograficas-6"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="09-lazurdia.html"><a href="09-lazurdia.html"><i class="fa fa-check"></i>El conocimiento no se destruye se transforma</a><ul>
+<li class="chapter" data-level="" data-path="09-lazurdia.html"><a href="09-lazurdia.html#conclusiones-7"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="09-lazurdia.html"><a href="09-lazurdia.html#referencias-bibliograficas-7"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="10-cmejia.html"><a href="10-cmejia.html"><i class="fa fa-check"></i>Moderación de contenido, aplicación práctica de funciones Hash</a><ul>
+<li class="chapter" data-level="" data-path="10-cmejia.html"><a href="10-cmejia.html#conclusiones-8"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="10-cmejia.html"><a href="10-cmejia.html#referencias-bibliograficas-8"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html"><i class="fa fa-check"></i>UI/UX - El diseño dentro del software</a><ul>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#pensamientos-erróneos"><i class="fa fa-check"></i>Pensamientos erróneos</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#entendiendo-el-diseño"><i class="fa fa-check"></i>Entendiendo el diseño</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#la-relación-entre-ulux"><i class="fa fa-check"></i>La relación entre Ul/UX</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#aspectos-importantes-en-el-diseño"><i class="fa fa-check"></i>Aspectos importantes en el diseño</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#conclusiones-9"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#referencias-bibliograficas-9"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="12-egarcia.html"><a href="12-egarcia.html"><i class="fa fa-check"></i>Blockchains, un futuro cercano</a><ul>
+<li class="chapter" data-level="" data-path="12-egarcia.html"><a href="12-egarcia.html#conclusiones-10"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="12-egarcia.html"><a href="12-egarcia.html#referencias-bibliograficas-10"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="13-rlopez.html"><a href="13-rlopez.html"><i class="fa fa-check"></i>Big Data en el mundo del deporte</a><ul>
+<li class="chapter" data-level="" data-path="13-rlopez.html"><a href="13-rlopez.html#quién-fue-su-pionero-dentro-de-este-ámbito"><i class="fa fa-check"></i>¿Quién fue su pionero dentro de este ámbito?</a></li>
+<li class="chapter" data-level="" data-path="13-rlopez.html"><a href="13-rlopez.html#conclusiones-11"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="13-rlopez.html"><a href="13-rlopez.html#referencias-bibliograficas-11"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html"><i class="fa fa-check"></i>Desafíos y oportunidades del Cloud Computing en Guatemala</a><ul>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#por-qué-deberíamos-de-utilizar-cloud-computing"><i class="fa fa-check"></i>¿Por qué deberíamos de utilizar Cloud Computing?</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#de-qué-manera-utilizamos-cloud-computing"><i class="fa fa-check"></i>¿De qué manera utilizamos Cloud Computing?</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#qué-oportunidades-genera-el-cloud-computing"><i class="fa fa-check"></i>¿Qué oportunidades genera el Cloud Computing?</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#qué-desafíos-nos-genera-utilizar-cloud-computing"><i class="fa fa-check"></i>¿Qué desafíos nos genera utilizar Cloud Computing?</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#conclusiones-12"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#referencias-bibliograficas-12"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="15-rosorio.html"><a href="15-rosorio.html"><i class="fa fa-check"></i>Es hora de regular el contenido de internet</a><ul>
+<li class="chapter" data-level="" data-path="15-rosorio.html"><a href="15-rosorio.html#conclusiones-13"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="15-rosorio.html"><a href="15-rosorio.html#referencias-bibliograficas-13"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimocuarta Edición - ECYS</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article09" class="section level1">
+<h1>Moderación de contenido, aplicación práctica de funciones Hash</h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/e1409/Imagen.png" style="width:1.39in;height:1.97in" />
+</div>
+<div class="photobiography_information">
+<p><strong>Carlos Haroldo Mejía Díaz</strong><br />
+<a href="mailto:Knives50215@gmail.com" class="email">Knives50215@gmail.com</a></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC<br />
+</p>
+Palabras Clave: Seguridad, Informática, Aplicación práctica, innovación
+</div>
+
+</div>
+<p>Las plataformas sociales reciben demasiado contenido a diario, y no es de extrañarse que dentro de tanto contenido se encuentren algunos que no cumplan con los términos y condiciones de estas plataformas. Este contenido aparece de manera pública para que otros la puedan ver. Al tener volúmenes tan masivos, surge la pregunta ¿cómo se controla que el contenido sea legal?</p>
+<p>Facebook tiene aproximadamente 147,000 imágenes publicadas cada 60 segundos<sup>1</sup>. Para la moderación de las imágenes la solución tradicional ha sido la subcontratación.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="http://www.pbs.org/independentlens/wp/wp-content/uploads/2018/08/the-cleaners-cubicles-dark-sig-1920x830.jpg"><img src="media/e1409/image2.jpeg" style="width:45.0%" /></a>
+<div class="caption">
+<p>Imagen 1 - <strong>Fuente:</strong> <em><a href="http://www.pbs.org/independentlens/wp/wp-content/uploads/2018/08/the-cleaners-cubicles-dark-sig-1920x830.jpg">PBS independant lens</a></em></p>
+</div>
+</div>
+<p>Existen servicios de monitoreo de imágenes, los cuales mantienen equipos de trabajo que se dedican a filtrar el contenido que ha sido subido a la plataforma en caso de que sea marcado como inapropiado por algún usuario. La mayoría de estos servicios están situados en diferentes partes del mundo, capacitando personal respecto a las políticas de las plataformas que monitorean para que sepan exactamente como clasificar el contenido como inapropiado o legítimo. “The Cleaners”<sup>2</sup> es un documental realizado en 2018, el cual muestra el proceso que siguen estas instituciones de moderación de contenido. El documental nos muestra las consecuencias que conlleva la censura de contenido, tanto como para los usuarios como para los moderadores.</p>
+<p>El factor humano juega un papel importante en este proceso, la clasificación de imágenes con fines artísticos puede a veces confundirse con contenido explicito, sobrepasando los límites de los términos y condiciones de contenido publicable. El documental hace referencia a este tipo de casos y como es que se resuelven a través del entrenamiento y el criterio de los moderadores.</p>
+<p>Una de las desventajas que tiene esta solución es la carga psicológica que tienen esta tarea hacia las personas involucradas. Por Seguridad el personal encargado de la moderación accede a firmar un contrato de confidencialidad. No tienen permitido compartir o discutir con nadie el contenido de lo que han clasificado, incluyendo familiares, amigos o el utilizar servicios psicológicos.</p>
+<p>Estas personas revisan contenido que varía desde imágenes ofensivas hasta transmisiones en directo de suicidios o auto mutilación. Cada moderador tiene un sistema de creencias y este contenido impacta en su moralidad. Aunque el contenido sea para ellos moralmente inapropiado, si cumple con las regulaciones, este debe de ser marcado como seguro.</p>
+<p>En el documental se comparten diferentes perspectivas sobre el contenido que los moderadores manejan día a día. Algunos ven la posición como un deber en el cual ellos se sacrifican para que los demás no tengan que ver este contenido. Otros han aceptado que es un trabajo como todos los demás. Se comenta también de como la carga es tal que uno de los empleados decidió tomar su propia vida, ya que no pudo soportar el estrés y el impacto del trabajo.</p>
+<p>Afortunadamente podemos utilizar nuevas herramientas para reducir el factor humano en estas tareas, pudiendo evitar que más personas estén involucradas en la filtración de contenido. Los desarrollos en inteligencia artificial permiten hacer más fácil la identificación de objetos por medio de entrenamiento de redes neuronales, pudiendo aplicar estas técnicas para la clasificación de contenido ilegal o inapropiado. Dentro de estas herramientas existe PhotoDNA. Esta es una herramienta creada por Microsoft que ha donado a el centro nacional de niños desaparecidos y abuso de menores (National Center for Missing &amp; Exploited Children). Actualmente esta tecnología es usada por el buscador de Microsoft Bing, su sistema de almacenamiento OneDrive, Gmail, Twitter, Facebook y Adobe Systems.</p>
+<p>Microsoft dono esta tecnología hacia el proyecto VIC, el cual es soportado y administrado por el el Centro Nacional para Niños Perdidos y Explotados (NCMEC, por sus siglas en inglés). Esta tecnología usa las funciones hash para identificar de manera única imágenes de la base de datos que el FBI proporciona sobre pornografía infantil, y sobre estos hashes se hace la comparación con el contenido subido a las plataformas. De haber encontrado una coincidencia, se alerta a las autoridades correspondientes para que se tomen las medidas de seguridad establecidas.</p>
+<p>Pero, ¿cómo funciona esta tecnología? Primero debemos entender que es una función Hash. Esta son funciones las cuales toman un valor de entrada y lo operan mediante diferentes operaciones matemáticas para obtener un valor específico para la entrada. Estas funciones deben de seguir diferentes propiedades, por ejemplo:</p>
+<ul>
+<li><p>Estas deben de tomar una entrada y producir un valor el cual siempre será el mismo para el valor de entrada</p></li>
+<li><p>Debe de ser lo suficientemente compleja como para evitar llegar al valor de entrada por medio del valor obtenido</p></li>
+<li><p>También se debe de evitar colisiones, es decir, si un valor de entrada obtiene un valor con esta función, no debe de existir otra entrada que también obtenga el mismo valor</p></li>
+</ul>
+<div class="imagestyle" style="text-align: center">
+<a href="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2GQ0H?ver=b6da&amp;q=90&amp;m=6&amp;h=540&amp;w=1900&amp;b=%23FFFFFFFF&amp;l=f&amp;o=t&amp;x=184&amp;y=184&amp;aim=true"><img src="media/e1409/image3.jpeg" style="width:45.0%" /></a>
+<div class="caption">
+<p>Imagen 2 - <strong>Fuente:</strong> <em><a href="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2GQ0H?ver=b6da&amp;q=90&amp;m=6&amp;h=540&amp;w=1900&amp;b=%23FFFFFFFF&amp;l=f&amp;o=t&amp;x=184&amp;y=184&amp;aim=true">Microsoft, PhotoDNA</a></em></p>
+</div>
+</div>
+<p>Bajo estas características, se realiza un hash para todas las imágenes de la base de datos. Primero se convierte la imagen a escala de blanco y negro, para evitar que el uso de filtros afecte la detección de estas imágenes. Luego se cambia el tamaño de la imagen y se traza una rejilla para identificar sectores de diferente intensidad de gradientes y también de bordes característicos.</p>
+<p>PhotoDNA va un paso más adelante haciendo que los patrones que se identifiquen estén basados en biométrica, permitiendo la generación de códigos únicos para cada imagen respecto a la persona involucrada.</p>
+<p>Se aplica a esta imagen una función hash. Esta asegura el evitar las colisiones de 1 en diez billones. En el caso de que el material sean videos, el proceso se ejecuta para cada cuadro del video y se almacena un valor por cada uno.</p>
+<p>El tener estas imágenes para generar estos códigos hash es ilegal, por lo que PhotoDNA resolvió esta situación pidiéndole a las agencias de justicia que generen los códigos hash ellos mismos. Estos códigos son distribuidos para los que necesiten utilizarlos por motivos de filtrado de contenido.</p>
+<p>Debido al uso de biométrica para la generación de estos códigos, es posible el encontrar coincidencias no solo en las imágenes registradas, sino también en imágenes no registradas. Si se encuentra una coincidencia con alguna de las victimas ya identificadas se pude alertar a las autoridades sobre los posibles autores o distribuidores de este material.</p>
+<p>Este método ha sido exitoso para las empresas que lo utilizan. En 2013 esta tecnología ayudo a identificar a un usuario del servicio de almacenamiento de Verizon<sup>3</sup>, el cual cargo a su cuenta imágenes de pornografía infantil sin tener en cuenta que parte de los términos y condiciones de este servicio establecen que la plataforma escanea el contenido cargado para encontrar coincidencias de este tipo y alertar a las autoridades.</p>
+<p>Verizon no es la única plataforma con este tipo de tecnologías. Dropbox posee también una herramienta para identificar este tipo de anomalías, sin embargo, no ha sido posible identificar que herramienta estén utilizando. En el artículo “Dropbox Refuses to Explain Its Mysterious Child Porn Detection Software”<sup>4</sup>, Kate Knibbs trato de hablar con un representante de la compañía para saber más al respecto, sin conseguir una respuesta clara. Ella concluye que la razón es que estén tratando de evitar que los perpetradores utilicen algún tipo de fallo en este sistema para poder seguir cargando contenido ilegal.</p>
+<p>Anteriormente se ha establecido que Dropbox utiliza las funciones hash para revisar infracciones de contenido con copyright, utilizando el mismo procedimiento de generación de códigos de identificación únicos para el material registrado<sup>5</sup>. Este proceso no revisa los materiales personales lo cual lo hace perfecto para respetar la privacidad de los usuarios.</p>
+<p>El documental “The moderators”<sup>6</sup> trata el mismo tema de monitoreo de contenido, mostrando el proceso de capacitación en el cual los moderadores se someten antes de clasificar contenido. El documental estima que existen aproximadamente más de 150,000 moderadores de contenido, lo cual es el doble del personal en google y casi 9 veces el personal en Facebook. “No puedes ser dependiente de la automatización” dice uno de los moderadores encargados de la capacitación de nuevo personal. “El sistema comete errores. Los humanos son necesarios, de eso estoy seguro.”</p>
+<p>“Podemos construir inteligencias artificiales, pero aun necesitas un operador” Explica otro moderador, “Definitivamente necesitas a una persona detrás de la maquina”. Con el desarrollo de tecnologías de detección de contenido ilegal, se espera reducir la carga de este tipo de equipos, restringiendo la exposición hacia ciudadanos ajenos a los departamentos de justicia.</p>
+<div id="conclusiones-8" class="section level2">
+<h2>Conclusiones:</h2>
+<ul>
+<li><p>La moderación de contenido es necesaria para las plataformas que almacenan contenido proporcionado por los usuarios.</p></li>
+<li><p>El desarrollo de nuevas tecnologías en inteligencia artificial puede utilizarse para la detección de contenido ilícito.</p></li>
+<li><p>Las funciones hash pueden utilizarse más allá de su propósito original de almacenamiento de datos hacia aplicaciones de identificación.</p></li>
+</ul>
+</div>
+<div id="referencias-bibliograficas-8" class="section level2">
+<h2>Referencias bibliográficas:</h2>
+<ul>
+<li><p><a href="https://www.omnicoreagency.com/facebook-statistics/">Facebook by the numbers. Disponible 10/4/2019 (1)</a></p></li>
+<li><p><a href="http://www.pbs.org/independentlens/films/the-cleaners/">The cleaners Disponible 10/4/2019 (2)</a></p></li>
+<li><p><a href="https://arstechnica.com/information-technology/2013/03/how-verizon-found-a-%20child-pornographer-in-its-cloud/">How Verizon found child pornography in its cloud. Disponible 10/4/2019 (3)</a></p></li>
+<li><p><a href="https://gizmodo.com/dropbox-refuses-to-explain-its-mysterious-child-porn-de-1722573363">Dropbox Refuses to Explain Its Mysterious Child Porn Detection Software Disponible 10/4/2019 (4)</a></p></li>
+<li><p><a href="https://gizmodo.com/how-dropbox-knows-when-youre-sharing-copyrighted-files-1555180683">How Dropbox Knows When You're Sharing Copyrighted Files. Disponible 10/4/2019 (5)</a></p></li>
+<li><p><a href="https://fieldofvision.org/the-moderators">The moderators. Disponible 10/4/2019 (6)</a></p></li>
+</ul>
+<div class="imagestyle" style="text-align: center">
+<a href="https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/moderator_ss.jpg?itok=ND2DBjRA"><img src="media/e1409/image4.jpeg" style="width:50.0%" /></a>
+<div class="caption">
+<p>Imagen 3 - <strong>Fuente:</strong> <em><a href="https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/moderator_ss.jpg?itok=ND2DBjRA">Screengrab The moderators, Field of vision</a></em></p>
+</div>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="09-lazurdia.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="11-lavila.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["DecimocuartaEdicion-Revista-Ecys.pdf", "DecimocuartaEdicion-Revista-Ecys.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

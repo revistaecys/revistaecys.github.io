@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Computación paralela a través de CUDA | Decimocuarta Edición - ECYS</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Computación paralela a través de CUDA | Decimocuarta Edición - ECYS" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="01-componentsPDF/cover.png" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Computación paralela a través de CUDA | Decimocuarta Edición - ECYS" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="01-componentsPDF/cover.png" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas." />
+
+
+<meta name="date" content="2019-08-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="04-fdepaz.html">
+<link rel="next" href="06-agramajo.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-2');
+</script>
+
+
+
+<link rel="stylesheet" href="01-componentsGitbookEPub\style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Authoring Books with R Markdown</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Revista Digital</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#links-disponibles"><i class="fa fa-check"></i>Links Disponibles</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html"><i class="fa fa-check"></i>Editorial</a></li>
+<li class="chapter" data-level="" data-path="01-contenido.html"><a href="01-contenido.html"><i class="fa fa-check"></i>Contenido</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html"><i class="fa fa-check"></i>Introduciendo Firebase</a><ul>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#conociendo-firebase"><i class="fa fa-check"></i>Conociendo Firebase</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#más-que-una-herramienta-un-ambiente"><i class="fa fa-check"></i>Más que una herramienta, un ambiente</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#como-testimonio-personal"><i class="fa fa-check"></i>Como testimonio personal</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#conclusiones"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="02-lmartinez.html"><a href="02-lmartinez.html#referencias-bibliograficas"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="03-ealvarez.html"><a href="03-ealvarez.html"><i class="fa fa-check"></i>Edge Computing</a><ul>
+<li class="chapter" data-level="" data-path="03-ealvarez.html"><a href="03-ealvarez.html#conclusiones-1"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="03-ealvarez.html"><a href="03-ealvarez.html#referencias-bibliograficas-1"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="04-fdepaz.html"><a href="04-fdepaz.html"><i class="fa fa-check"></i>Flutter: el presente de las aplicaciones móviles</a><ul>
+<li class="chapter" data-level="" data-path="04-fdepaz.html"><a href="04-fdepaz.html#conclusiones-2"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="04-fdepaz.html"><a href="04-fdepaz.html#referencias-bibliograficas-2"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html"><i class="fa fa-check"></i>Computación paralela a través de CUDA</a><ul>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#computación-paralela"><i class="fa fa-check"></i>Computación paralela</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#qué-es-cuda"><i class="fa fa-check"></i>¿Qué es CUDA?</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#por-qué-cuda"><i class="fa fa-check"></i>¿Por qué CUDA?</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#paralelizando-una-aplicación-a-través-de-cuda"><i class="fa fa-check"></i>Paralelizar una aplicación a través de CUDA</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#resultados"><i class="fa fa-check"></i>Resultados</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#conclusiones-3"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="05-etejaxun.html"><a href="05-etejaxun.html#referencias-bibliograficas-3"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06-agramajo.html"><a href="06-agramajo.html"><i class="fa fa-check"></i>Optimización de sitios web con Google Analytics</a><ul>
+<li class="chapter" data-level="" data-path="06-agramajo.html"><a href="06-agramajo.html#conclusiones-4"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="06-agramajo.html"><a href="06-agramajo.html#referencias-bibliograficas-4"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07-dmomotic.html"><a href="07-dmomotic.html"><i class="fa fa-check"></i>El poder de la inteligencia artificial</a><ul>
+<li class="chapter" data-level="" data-path="07-dmomotic.html"><a href="07-dmomotic.html#conclusiones-5"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="07-dmomotic.html"><a href="07-dmomotic.html#referencias-bibliograficas-5"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html"><i class="fa fa-check"></i>Voto Electrónico</a><ul>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#registro-electronico-directo-dre-"><i class="fa fa-check"></i>Registro Electrónico directo –DRE-</a></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#reconocimiento-optico-de-marcasomr-"><i class="fa fa-check"></i>Reconocimiento Óptico de Marcas–OMR-</a></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#impresora-de-papeletas-electronicas-ebp-"><i class="fa fa-check"></i>Impresora de papeletas electrónicas – EBP-</a></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#conclusiones-6"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="08-dajuchan.html"><a href="08-dajuchan.html#referencias-bibliograficas-6"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="09-lazurdia.html"><a href="09-lazurdia.html"><i class="fa fa-check"></i>El conocimiento no se destruye se transforma</a><ul>
+<li class="chapter" data-level="" data-path="09-lazurdia.html"><a href="09-lazurdia.html#conclusiones-7"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="09-lazurdia.html"><a href="09-lazurdia.html#referencias-bibliograficas-7"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="10-cmejia.html"><a href="10-cmejia.html"><i class="fa fa-check"></i>Moderación de contenido, aplicación práctica de funciones Hash</a><ul>
+<li class="chapter" data-level="" data-path="10-cmejia.html"><a href="10-cmejia.html#conclusiones-8"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="10-cmejia.html"><a href="10-cmejia.html#referencias-bibliograficas-8"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html"><i class="fa fa-check"></i>UI/UX - El diseño dentro del software</a><ul>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#pensamientos-erróneos"><i class="fa fa-check"></i>Pensamientos erróneos</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#entendiendo-el-diseño"><i class="fa fa-check"></i>Entendiendo el diseño</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#la-relación-entre-ulux"><i class="fa fa-check"></i>La relación entre Ul/UX</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#aspectos-importantes-en-el-diseño"><i class="fa fa-check"></i>Aspectos importantes en el diseño</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#conclusiones-9"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="11-lavila.html"><a href="11-lavila.html#referencias-bibliograficas-9"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="12-egarcia.html"><a href="12-egarcia.html"><i class="fa fa-check"></i>Blockchains, un futuro cercano</a><ul>
+<li class="chapter" data-level="" data-path="12-egarcia.html"><a href="12-egarcia.html#conclusiones-10"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="12-egarcia.html"><a href="12-egarcia.html#referencias-bibliograficas-10"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="13-rlopez.html"><a href="13-rlopez.html"><i class="fa fa-check"></i>Big Data en el mundo del deporte</a><ul>
+<li class="chapter" data-level="" data-path="13-rlopez.html"><a href="13-rlopez.html#quién-fue-su-pionero-dentro-de-este-ámbito"><i class="fa fa-check"></i>¿Quién fue su pionero dentro de este ámbito?</a></li>
+<li class="chapter" data-level="" data-path="13-rlopez.html"><a href="13-rlopez.html#conclusiones-11"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="13-rlopez.html"><a href="13-rlopez.html#referencias-bibliograficas-11"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html"><i class="fa fa-check"></i>Desafíos y oportunidades del Cloud Computing en Guatemala</a><ul>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#por-qué-deberíamos-de-utilizar-cloud-computing"><i class="fa fa-check"></i>¿Por qué deberíamos de utilizar Cloud Computing?</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#de-qué-manera-utilizamos-cloud-computing"><i class="fa fa-check"></i>¿De qué manera utilizamos Cloud Computing?</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#qué-oportunidades-genera-el-cloud-computing"><i class="fa fa-check"></i>¿Qué oportunidades genera el Cloud Computing?</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#qué-desafíos-nos-genera-utilizar-cloud-computing"><i class="fa fa-check"></i>¿Qué desafíos nos genera utilizar Cloud Computing?</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#conclusiones-12"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="14-jsierra.html"><a href="14-jsierra.html#referencias-bibliograficas-12"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="15-rosorio.html"><a href="15-rosorio.html"><i class="fa fa-check"></i>Es hora de regular el contenido de internet</a><ul>
+<li class="chapter" data-level="" data-path="15-rosorio.html"><a href="15-rosorio.html#conclusiones-13"><i class="fa fa-check"></i>Conclusiones:</a></li>
+<li class="chapter" data-level="" data-path="15-rosorio.html"><a href="15-rosorio.html#referencias-bibliograficas-13"><i class="fa fa-check"></i>Referencias bibliográficas:</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimocuarta Edición - ECYS</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article04" class="section level1">
+<h1>Computación paralela a través de CUDA</h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/e1404/image1.jpeg" style="width:1.39in;height:1.97in" />
+</div>
+<div class="photobiography_information">
+<p><strong>Erick Roberto Tejaxún Xicón</strong><br />
+<a href="mailto:erickteja@gmail.com" class="email">erickteja@gmail.com</a></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC<br />
+</p>
+Palabras Clave: CUDA, Ley de Moore, Kernel, Paralelismo, Multicore, core, Aceleración, Paralela, Instrucción, GPU, throughput.
+</div>
+
+</div>
+<div id="computación-paralela" class="section level2">
+<h2>Computación paralela</h2>
+<p>La computación paralela hace referencia a la capacidad de poder realizar varias tareas al mismo tiempo. Esto aplicado a las ciencias de la computación se ha estado trabajando desde hace muchos años, casi al mismo tiempo que el inicio de la computación moderna.</p>
+<p>Pero, ¿para qué aplicar computación paralela? La computación paralela tiene como objetivo acelerar una aplicación, es decir, reducir el tiempo de procesamiento. Por lo cual el motivo que ha traído consigo la búsqueda de un estándar para el uso de computación paralela ha sido ese, de tener problemas que requieren gran cantidad de capacidad y tiempo de cómputo. Por ejemplo, un problema de simulación de colisiones de partículas, utilizando un algoritmo secuencial y usando un solo procesador podría llevar años en su finalización.</p>
+<p>En un principio, cuando se contaba con una computadora con un único procesador, el paralelismo se aplicó creando una red de computadoras dentro de las cuales se pudiera trabajar en un mismo problema. Es decir, cada computadora conectada a esta red, tendría la tarea de trabajar sobre una porción del problema. Minimizando así el tiempo de computación para la solución del problema. Esto se sigue aplicando hoy en día y podemos encontrar sitios especializados en este tema, que llevan el recuento y el listado de las supercomputadoras más potentes del mundo como top500.org.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://www.top500.org/lists/2018/11/"><img src="media/e1404/image3.jpeg" style="width:45.0%" /></a>
+<div class="caption">
+<p>Imagen 1 - <strong>Fuente:</strong> <em><a href="https://www.top500.org/lists/2018/11/">Top500.org</a></em></p>
+</div>
+</div>
+<p>Como vemos en la ilustración anterior tomada de la página Top500.org, las supercomputadoras en la actualidad cuentan con millones de núcleos que pueden trabajar en conjunto y generar un throughput en el orden de miles de Teraflops por segundo. Cabe mencionar que estas supercomputadoras están en centros de investigación en países del primer mundo.</p>
+<p>A través del tiempo, la computación paralela ha sido un tema estudiado de sobremanera ya que tiene muchas aplicaciones en cualquier ámbito. Quizá en algún futuro se pueda contar en nuestra escuela con un curso sobre el tema como el que se cuenta ya en la Escuela de Ciencias físicas y Matemáticas el cual tiene un enfoque científico donde se tratan de resolver problemas de sistemas dinámicos, corridas de método Montecarlo entre otros.</p>
+<p>Se han diseñado diferentes arquitecturas de memoria para la computación paralela. Esto debido a que el principio de esta es que se debe de trabajar sobre un mismo conjunto de datos que conforman todo el problema en sí. Entre estas arquitecturas tenemos la arquitectura de acceso uniforme a memoria (UMA por sus siglas en inglés), arquitectura de acceso no uniforme a memoria (NUMA por sus siglas en inglés).</p>
+<p>Dentro del paralelismo a nivel de datos existen cuatro técnicas básicas las cuales son: única instrucción, múltiple datos (SIMD siglas en inglés). Múltiple instrucciones, múltiple datos (MIMD), única instrucción, un dato (SISD) y múltiple instrucción, un dato (MISD). La más utilizada es la de única instrucción, múltiples datos.</p>
+</div>
+<div id="qué-es-cuda" class="section level2">
+<h2>¿Qué es CUDA?</h2>
+<p>CUDA (Arquitectura unificada de dispositivos de cómputo) es una arquitectura de procesamiento en paralelo creada por la empresa especializada en tarjetas gráficas Nvidia, en la que se trata de aprovechar la capacidad y potencia de sus GPU (Unidad de procesamiento gráfico) como una alternativa al procesamiento en CPU’s tradicionales.</p>
+<p>CUDA es una tecnología basada tanto en hardware como en software. En hardware al hacer que la arquitectura de sus tarjetas gráficas estén preparadas para poder explotar el paralelismo al contar con varios conjuntos de procesadores que reciben una misma instrucción para un vasto conjunto de datos. Entre ellas encontramos las arquitecturas Maxwell, Pascal entre otras.</p>
+<p>En cuanto a software, CUDA provee una plataforma en forma de librerías y compiladores para que se puedan escribir programas que aprovechen el hardware de las GPUs dándole total control al desarrollador.</p>
+</div>
+<div id="por-qué-cuda" class="section level2">
+<h2>¿Por qué CUDA?</h2>
+<p>Existen diferentes arquitecturas de computación paralela. Estás tienen su máximos exponentes en especificaciones y estándares tan potentes y utilizados como OpenMP<sup>2</sup> o bien MPI los cuales en la actualidad son los que suelen ser utilizados en la mayoría de centros de investigación.</p>
+<p>Lo que trata de hacer CUDA es desviarse de lo que buscan los procesadores tradicionales como los de la serie Xenon de Intel, en donde sus núcleos son muchísimo más rápidos que un núcleo de una GPU estándar (hasta 4.5 Ghz vs 1096 – 1020 Mhz) en vez de enfocarse en la rapidez de los núcleos, se enfoca en la cantidad de estos núcleos. Así, en vez de tener 24 o 36 núcleos a una velocidad de 4.5Ghz, una GPU cuenta con 640, 1020 y hasta 1280 núcleo (en las tarjetas de video serie titán) con una frecuencia de reloj de 1078Mhz.</p>
+<p>Esto permite aprovechar la técnica SIMD de simple instrucción para múltiple data. Por esa razón, CUDA se acopla demasiado bien para aplicar computación paralela y así maximizar el rendimiento de las aplicaciones.</p>
+<p>Cabe mencionar que CUDA es transparente al sistema operativo, es decir que CUDA ofrece soporte para sistemas operativos Windows, GNU/Linux y para sistemas operativos MacOs. Su rendimiento no depende del sistema operativo en sí, si no en las condiciones de trabajo que se encuentre la máquina o clúster sobre el cual se hará funcionar la aplicación.</p>
+</div>
+<div id="paralelizando-una-aplicación-a-través-de-cuda" class="section level2">
+<h2>Paralelizar una aplicación a través de CUDA</h2>
+<p>Para comprobar, analizar y determinar el mejoramiento real de usar computación paralela en un problema real (hay que tener en cuenta que no todos los problemas se pueden paralelizar ya que por lo general son inherentemente secuenciales) se utilizarán una aplicación llamada ScanSky, desarrollada y escrita por la Dra. Ana Moretón Fernández, el Dr. Javier Fresno y el Dr. Arturo González-Escribano del grupo de investigación Trasgo<sup>3</sup>, de la escuela superior de ingeniería informática de la Universidad de Valladolid, España, como parte de la práctica número tres del curso de computación paralela.</p>
+<p>Esta aplicación recibe como entrada un archivo que consiste en números separados por un salto de línea tal y como se muestra en la siguiente imagen. Estos números representan el color de cada uno de los píxeles de una imagen. El objetivo de esta aplicación es determinar con precisión el número de cuerpos celestes presentes en dicha imagen.</p>
+<div class="imagestyle" style="text-align: center">
+<img src="media/e1404/image7.jpg" style="width:27.0%" />
+<div class="caption">
+<p>Imagen 2 - <strong>Fuente:</strong> <em>Elaboración propia.</em></p>
+</div>
+</div>
+<div class="imagestyle" style="text-align: center">
+<a href="https://spaceplace.nasa.gov/galaxy"><img src="media/e1404/image4.jpeg" style="width:45.0%" /></a>
+<div class="caption">
+<p>Imagen 3 - <strong>Fuente:</strong> <em><a href="https://spaceplace.nasa.gov/galaxy">Nasa</a></em></p>
+</div>
+</div>
+<div class="imagestyle" style="text-align: center">
+<img src="media/e1404/image5.jpeg" style="width:25.0%" />
+<div class="caption">
+<p>Imagen 4 - <strong>Fuente:</strong> <em>Elaboración propia.</em></p>
+</div>
+</div>
+<p>El programa determina el número de cuerpos celestes compara un pixel con los pixeles de sus alrededores para determinar si se trata o no del mismo cuerpo celeste, comenzando de izquierda a derecha y de arriba hacia abajo, es decir empezando con la coordenada (0,0) hasta llegar a la coordenada (n,n) .</p>
+<p>El código del programa secuencial, escrito en lenguaje de programación C, se puede encontrar en github <sup>3</sup>, subido con los permisos pertinentes de los autores. Y este cuenta con el programa secuencial que cuenta los planetas en el archivo de entrada, apoyado con unas librerías desarrolladas por el mismo grupo de investigación que permite obtener el tiempo exacto de ejecución y otra librería que permite conectarse hacia el sistema Tablón <sup>5</sup> que permitía correr el sistema dentro del clúster de la escuela superior de ingeniería informática.</p>
+<p>Para esta prueba, vamos a comparar los tiempos de ejecución en diferentes condiciones obedeciendo las siguientes especificaciones:</p>
+<div class="imagestyle" style="text-align: center">
+<img src="media/e1404/resultado1.PNG" style="width:45.0%" />
+<div class="caption">
+<p>Imagen 5 - <strong>Fuente:</strong> <em>Especificaciones corrida secuencial de ScanSky - Elaboración propia.</em></p>
+</div>
+</div>
+<div class="imagestyle" style="text-align: center">
+<img src="media/e1404/resultado2.PNG" style="width:45.0%" />
+<div class="caption">
+<p>Imagen 6 - <strong>Fuente:</strong> <em>Especificaciones corrida paralela de ScanSky a través de CUDA - Elaboración propia.</em></p>
+</div>
+</div>
+<div class="imagestyle" style="text-align: center">
+<img src="media/e1404/resultado3.PNG" style="width:45.0%" />
+<div class="caption">
+<p>Imagen 7 - <strong>Fuente:</strong> <em>Especificaciones corrida paralela ScanSky a través de CUDA. Sistema Tablón, UVa - Elaboración propia.</em></p>
+</div>
+</div>
+<p>Para estas corridas de prueba se utilizaron 3 tipos de cargas de datos como se indica a continuación:</p>
+<div class="imagestyle" style="text-align: center">
+<img src="media/e1404/resultado4.PNG" style="width:45.0%" />
+<div class="caption">
+<p>Imagen 8 - <strong>Fuente:</strong> <em>Set de datos para pruebas con el programa ScanSky - Elaboración propia.</em></p>
+</div>
+</div>
+</div>
+<div id="resultados" class="section level2">
+<h2>Resultados</h2>
+<div class="imagestyle" style="text-align: center">
+<img src="media/e1404/resultado5.PNG" style="width:45.0%" />
+<div class="caption">
+<p>Imagen 9 - <strong>Fuente:</strong> <em>Elaboración propia.</em></p>
+</div>
+</div>
+<div class="imagestyle" style="text-align: center">
+<img src="media/e1404/resultado6.PNG" style="width:45.0%" />
+<div class="caption">
+<p>Imagen 10 - <strong>Fuente:</strong> <em>Elaboración propia.</em></p>
+</div>
+</div>
+<div class="imagestyle" style="text-align: center">
+<img src="media/e1404/resultado7.PNG" style="width:45.0%" />
+<div class="caption">
+<p>Imagen 11 - <strong>Fuente:</strong> <em>Elaboración propia.</em></p>
+</div>
+</div>
+<p>Como podemos observar en la gráfica anterior, las tres configuraciones tienen una forma similar, pero con una pendiente mucho más pequeña en el caso de la configuración número 3. Y vemos que utilizando la GPU de la computadora de la configuración número 1, obtenemos un resultado que minimiza sobre 3 veces el tiempo utilizado en la aplicación en forma secuencial. Obviamente el código en paralelo utilizando CUDA es mejorable, pero en principio vemos como la computación paralela puede ayudarnos a reducir el tiempo de procesamiento en set de datos pequeños, pero cuando se utilicen set de datos muchos mayores, la diferencia será demasiado grande.</p>
+</div>
+<div id="conclusiones-3" class="section level2">
+<h2>Conclusiones</h2>
+<ul>
+<li><p>La computación paralela es un tema muy importante en el área de las ciencias de computación y además en muchas industrias como la de la medicina, ingeniería, química, física, aviación, videojuegos entre muchas otras.</p></li>
+<li><p>Vemos como en un programa no tan complejo, la programación paralela nos ha ayudado a realizar una aceleración de hasta tres veces menor con un set de datos mediano, pero con set de datos mayores, la aceleración será mucho mayor a comparación de su versión secuencial.</p></li>
+<li><p>Es necesario que como escuela de ciencias y sistemas estemos anuentes a estas tendencias tecnológicas que no son recientes pero que tienen mucho auge y demanda en muchas industrias y que podría ser otra ventana de salida para los futuros egresados de nuestra escuela de ciencias y sistemas.</p></li>
+</ul>
+</div>
+<div id="referencias-bibliograficas-3" class="section level2">
+<h2>Referencias bibliográficas:</h2>
+<ul>
+<li><p><a href="https://ecfm.usac.edu.gt/sites/default/files/2017-07/F811-S2017v1_0.pdf">Programa del curso de física computacional, ECFM, USAC. Disponible en (1)</a></p></li>
+<li><p><a href="http://www.openmp.org/">Especificación para computación paralela por medio de paso de mensajes (API). OpenMP (2)</a>)</p></li>
+<li><p><a href="https://trasgo.infor.uva.es">Grupo de investigación, Trasgo. Universidad de Valladolid, España. (3)</a></p></li>
+<li><p><a href="https://github.com/ErickTejaxun/SkyScan">Programa ScanSky paralelo y su conversión a su equivalente en versión paralela a través de CUDA. (4)</a></p></li>
+<li><p><a href="http://www.infor.uva.es/%7Ejfresno/tablon.php">Dr. Javier Fresno, Sistema tablón (5)</a>)</p></li>
+<li><p><a href="https://computing.llnl.gov/tutorials/parallel_comp/#MemoryArch">Blaise Barney, Lawrence . National Laboratory, “Introduction to parallel computing” En línea consultado el 05/04/2019.</a></p></li>
+<li><p>WOMPAT 2001, International Worskshop on OpenMP Aplication, “OpenMp Shared Memory Parallel Programing”, Purdue University, School of Electrical and Computer Engineering.</p></li>
+<li><p><a href="https://docs.nvidia.com/cuda/">Nvidia, Cuda Toolkit documentation. En línea Consultado el 01/04/2019.</a></p></li>
+<li><p><a href="http://web.mit.edu/vex/www/Parallel.pdf">Michael Skuhersky, MIT. “Introduction to parallel computing”,En línea consultado el 03/04/2019.</a></p></li>
+</ul>
+<div class="imagestyle" style="text-align: center">
+<p><img src="media/e14publi/09.jpg" style="width:90.0%" /></p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="04-fdepaz.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="06-agramajo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["DecimocuartaEdicion-Revista-Ecys.pdf", "DecimocuartaEdicion-Revista-Ecys.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>
