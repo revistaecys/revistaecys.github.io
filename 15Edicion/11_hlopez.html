@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>¿Qué define a un arquitecto de software? | Decimo Quinta Edicion - Tecnología en el mundo del arte</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="¿Qué define a un arquitecto de software? | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="mediaHTML/cover.jpg" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="¿Qué define a un arquitecto de software? | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="mediaHTML/cover.jpg" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas - ECYS" />
+
+
+<meta name="date" content="2019-12-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="10_achinchilla.html">
+<link rel="next" href="12_lvaliente.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-3');
+</script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="01-componentsCSS\style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Revista Digital</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Enlaces disponibles</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html"><i class="fa fa-check"></i>Editorial</a><ul>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#director-general"><i class="fa fa-check"></i>Director General</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#coordinacion-editorial"><i class="fa fa-check"></i>Coordinación Editorial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#colaboracion-especial"><i class="fa fa-check"></i>Colaboración Especial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#portada-redaccion-diseno-y-diagramacion"><i class="fa fa-check"></i>Portada, redacción, diseño y diagramación</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#contactenos"><i class="fa fa-check"></i>Contactenos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="01-contenido.html"><a href="01-contenido.html"><i class="fa fa-check"></i>Contenido</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html"><i class="fa fa-check"></i>5G como servicio, ¿Qué tan disruptiva será esta tecnología?</a><ul>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#conclusiones"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#referencias"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html"><i class="fa fa-check"></i>Big Data, la solución de las grandes empresas</a><ul>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#conclusiones-1"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#referencias-1"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html"><i class="fa fa-check"></i>Blockchain y el voto electrónico</a><ul>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#la-esencia-del-voto"><i class="fa fa-check"></i>La esencia del voto</a></li>
+<li><a href="04_cgonzales.html#blockchain-posible-solucion"><em>Blockchain</em>, ¿posible solución?</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#el-futuro-del-voto-electronico"><i class="fa fa-check"></i>El futuro del voto electrónico</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#conclusiones-2"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#referencias-2"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html"><i class="fa fa-check"></i>Ciberataques y la Ingeniería Social</a><ul>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#ingenieria-social"><i class="fa fa-check"></i>Ingeniería Social</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#conclusiones-3"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#referencias-3"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html"><i class="fa fa-check"></i>Cómo las redes sociales afectan la salud mental</a><ul>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#conclusiones-4"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#referencias-4"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html"><i class="fa fa-check"></i>Domótica accesible</a><ul>
+<li><a href="07_dguarchaj.html#servidor-domotico-openhab-a-nivel-de-software">Servidor domótico OpenHAB a nivel de <em>software</em></a></li>
+<li><a href="07_dguarchaj.html#microcontroladores-y-dispositivos-a-nivel-de-hardware">Microcontroladores y dispositivos a nivel de <em>hardware</em></a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#asistentes-inteligentes"><i class="fa fa-check"></i>Asistentes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#dispositivos-rele-wi-fi"><i class="fa fa-check"></i>Dispositivos Relé Wi-Fi</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#bombillas-inteligentes"><i class="fa fa-check"></i>Bombillas Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#enchufes-inteligentes"><i class="fa fa-check"></i>Enchufes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#camaras-de-seguridad-inteligentes"><i class="fa fa-check"></i>Cámaras de Seguridad Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#termostatos-inteligentes"><i class="fa fa-check"></i>Termostatos Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#cerraduras-inteligentes"><i class="fa fa-check"></i>Cerraduras Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#conclusiones-5"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#referencias-5"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html"><i class="fa fa-check"></i>El arte de venderse</a><ul>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-internos"><i class="fa fa-check"></i>Factores Internos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-externos"><i class="fa fa-check"></i>Factores Externos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#conclusiones-6"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#referencias-6"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html"><i class="fa fa-check"></i>La presencia de la tecnología en el mundo del arte</a><ul>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#dispositivos-que-unen-ambos-mundos"><i class="fa fa-check"></i>Dispositivos que unen ambos mundos</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#otros-usos-de-la-tecnologia"><i class="fa fa-check"></i>Otros usos de la tecnología</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#conclusiones-7"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#referencias-7"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html"><i class="fa fa-check"></i>Procrastinación Responsable</a><ul>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#conclusiones-8"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#referencias-8"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="11_hlopez.html#article10">¿Qué define a un arquitecto de <em>software</em>?</a><ul>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html"><i class="fa fa-check"></i>Amplia experiencia</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#gestionar-la-complejidad"><i class="fa fa-check"></i>Gestionar la complejidad</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#importancia-de-los-requerimientos"><i class="fa fa-check"></i>Importancia de los requerimientos</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#habilidad-de-comunicar"><i class="fa fa-check"></i>Habilidad de comunicar</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#liderazgo"><i class="fa fa-check"></i>Liderazgo</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#conclusiones-9"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#referencias-9"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html"><i class="fa fa-check"></i>Realidad aumentada como herramienta educativa</a><ul>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-puede-la-realidad-aumentada-ser-una-herramienta-educativa"><i class="fa fa-check"></i>¿Cómo puede la realidad aumentada ser una herramienta educativa?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#que-material-academico-de-realidad-aumentada-proporcionar"><i class="fa fa-check"></i>¿Qué material académico de realidad aumentada proporcionar?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-realizar-material-interactivo-con-realidad-aumentada"><i class="fa fa-check"></i>¿Cómo realizar material interactivo con realidad aumentada?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#desconocimiento-de-la-realidad-aumentada"><i class="fa fa-check"></i>Desconocimiento de la Realidad Aumentada</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#conclusiones-10"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#referencias-10"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html"><i class="fa fa-check"></i>Servicio de vehículos autónomos como medio de transporte</a><ul>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#conclusiones-11"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#referencias-11"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html"><i class="fa fa-check"></i>¿Realmente conviene invertir en Bitcoin?</a><ul>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-deposito-de-valor"><i class="fa fa-check"></i>Bitcoin como depósito de valor</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-moneda-mundial-es-retroceder-en-el-tiempo"><i class="fa fa-check"></i>Bitcoin como moneda mundial es retroceder en el tiempo</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#conclusiones-12"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#referencias-12"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="15_jalvarez.html#article14">Recorriendo la última milla: implementación de <em>software</em> en múltiples clientes</a><ul>
+<li><a href="15_jalvarez.html#necesidad-de-personalizacion-del-software">Necesidad de personalización del <em>software</em></a></li>
+<li><a href="15_jalvarez.html#patrones-de-software-devops-y-metodologias-agiles-como-herramientas-basicas">Patrones de <em>software</em>, DevOps y metodologías ágiles como herramientas básicas</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html#referencias-13"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://dtt-ecys.org/magazine/public_edicionRevista" target="_blank">Ciencias, Sistemas y Tecnología</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimo Quinta Edicion - Tecnología en el mundo del arte</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article10" class="section level1">
+<h1>¿Qué define a un arquitecto de <em>software</em>?</h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/hlopez_image1.png" width="111" height="129" />
+</div>
+<div class="photobiography_information">
+<p>Henry Edmar López Cardona</p>
+<p><strong><a href="mailto:henrylopezkre@gmail.com" class="email">henrylopezkre@gmail.com</a></strong></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC</p>
+<p><strong>Palabras Clave:</strong><br />
+<em>Software</em>, Arquitecto, Gestión, Habilidad, Experiencia, Proceso.</p>
+</div>
+
+</div>
+<p>Un arquitecto de
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a> es a menudo, considerado como un experto técnico en un determinado conjunto de tecnologías de desarrollo. Y quizás esta percepción no sorprenda, debido al tipo de decisiones que debe tomar.</p>
+<p>No obstante, un rasgo identificativo consiste en su capacidad de entender y guiar un proyecto de manera intuitiva, poseer un marco de conocimientos y experiencias que respalden sus decisiones. Pensar un problema en diferentes maneras, analizar el diseño e interacción de los sistemas involucrados y las partes interesadas.</p>
+<p>Todo lo anterior representa parte de la esencia de un arquitecto de
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a>. La amplitud y profundidad de sus responsabilidades conlleva expresar su liderazgo a través de la interacción dinámica con los miembros del equipo, debe mostrar confianza al establecer la dirección del proyecto, motivar y fomentar la creatividad e innovación de aquellos que desarrollan el producto y/o servicio.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://manuelzapata.co/wp-content/uploads/2018/06/C%C3%B3mo-me-convierto-en-arquitectode-software.png"><img src="media/hlopez_image2.png" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 1:</strong> ¿Cómo me convierto en un arquitecto de <em>software</em>? <strong>Fuente:</strong> <a href="https://manuelzapata.co/webinar-arquitectura-software/">Webinar, Manuel Zapata</a></p>
+</div>
+</div>
+<p>El tipo de actividades que le corresponden al arquitecto determinan las destrezas y competencias que necesita desarrollar para tener éxito. Los principios fundamentales detrás de las decisiones arquitectónicas pueden resumirse en el siguiente apartado.</p>
+<div id="amplia-experiencia" class="section level2">
+<h2>Amplia experiencia</h2>
+<p><a id="hlopez_cross01"></a>
+Convertirse en arquitecto de aplicaciones es un proceso evolutivo, en el que progresivamente se gana la experiencia y confianza necesarias para asumir las obligaciones que ello supone. Afrontar proyectos ambiciosos y conocer el problema son factores que deben equilibrarse. <a href="11_hlopez.html#hlopez_ref01" title="Ver Referencia">[1]</a></p>
+<p>Tomar decisiones en relación con el diseño del sistema utilizando información incompleta, en una etapa temprana del desarrollo, es un escenario que frecuentemente se presenta. Ello requiere una gran cantidad de experiencia y comprensión tanto del dominio del problema como de las tecnologías involucradas en la solución.</p>
+<p>Como experto en soluciones, el arquitecto debe ir más allá de las limitaciones e imaginar lo que es posible, teniendo en cuenta las restricciones de tiempo y presupuesto impuestas.</p>
+</div>
+<div id="gestionar-la-complejidad" class="section level2">
+<h2>Gestionar la complejidad</h2>
+<p><a id="hlopez_cross02"></a>
+Lidiar con la complejidad inherente, tanto del problema como de la solución, es un elemento esencial de la arquitectura que el arquitecto debe administrar para entregar el sistema esperado. Definir un enfoque de alto nivel es una técnica estratégica que estos emplean para dominar la complejidad de forma técnica y no técnica por igual. <a href="11_hlopez.html#hlopez_ref02" title="Ver Referencia">[2]</a></p>
+<p>La recopilación de requerimientos, separar el sistema en capas lógicas y definir una interfaz adecuada son algunas de las tácticas de las que se dispone. El entorno de la solución a nivel del sistema no es fácil de dominar, y si no existe la gestión del arquitecto de
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a>, cualquier intento de solución fracasará en la mayoría de los casos.</p>
+</div>
+<div id="importancia-de-los-requerimientos" class="section level2">
+<h2>Importancia de los requerimientos</h2>
+<p>El inicio de un proyecto comienza con la obtención de los requerimientos funcionales: las necesidades del problema para declarar el diseño de la solución. Si bien el arquitecto no debe ser necesariamente un experto en la toma de requerimientos.</p>
+<p><a id="hlopez_cross03"></a>
+Este debe poder comprender dicha información de manera efectiva para dominar el problema desde el inicio. Los requerimientos no funcionales son aquellas expectativas sobre lo que los interesados esperan como solución, y también deben identificarse y registrarse. <a href="11_hlopez.html#hlopez_ref03" title="Ver Referencia">[3]</a></p>
+<p>Además, es recomendable que se consideren nuevos enfoques, basados en proyectos antiguos, y que esto signifique agregar o eliminar requerimientos para ofrecer una solución óptima.</p>
+</div>
+<div id="habilidad-de-comunicar" class="section level2">
+<h2>Habilidad de comunicar</h2>
+<p>Los distintos involucrados en la organización, sea dentro o fuera del ámbito del proceso de desarrollo, poseen distintos tipos de conocimiento y experiencia en
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a>. El arquitecto pasa una importante cantidad de tiempo interactuando con ellos.</p>
+<p>Por ello, tener habilidades de comunicación verbal y escrita, escuchar los inconvenientes, capacidad de convencimiento y poder explicar la arquitectura de la manera adecuada, es parte del repertorio de destrezas que debe incluir un arquitecto.</p>
+
+<div class="imagestyle" style="text-align: center">
+<a href="https://docuten.com/wp-content/uploads/2018/12/puestos-marketing_Mesa-de-trabajo-1-copia-5.png"><img src="media/hlopez_image3.png" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 2:</strong> Arquitecto de <em>Software</em> <strong>Fuente:</strong> <a href="http://blog.docuten.com/rrhh-perfiles-tecnol%C3%B3gicos-del-departamento-t%C3%A9cnico">Blog de Docuten</a></p>
+</div>
+</div>
+</div>
+<div id="liderazgo" class="section level2">
+<h2>Liderazgo</h2>
+<p>El liderazgo empleado por los arquitectos debe basarse en conocimiento y logros, no simplemente en decisiones administrativas. Liderazgo no es lo mismo que gestión. Este implica una variedad de habilidades incluida la preocupación por los integrantes del equipo, su capacidad de motivar, persuadir e inspirar.</p>
+<p>Los arquitectos experimentados siempre buscan el consejo de las partes involucradas: administradores de proyecto, desarrolladores, diseñadores y los clientes clave. No quiere decir que el arquitecto huya de tomar decisiones; al contrario, disponer de una solución conlleva recopilar información constante y relevante de distintas fuentes, esto amplía el marco de elección de ideas y le permite sintetizar aquellas al equipo hacia una solución exitosa.</p>
+</div>
+<div id="conclusiones-9" class="section level2 unnumbered">
+<h2>Conclusiones</h2>
+<ul>
+<li><p>Los arquitectos deben ser capaces de abordar la complejidad del proceso de creación de
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a>, aplicar su experiencia y conocimientos comprobados, y lidiar con los problemas en distintos aspectos relacionados con los involucrados.</p></li>
+<li><p>Las distintas responsabilidades del arquitecto incluyen poseer nociones técnicas y no técnicas, capacidad de liderazgo y compromiso con el rol que desempeñan en distintas áreas.</p></li>
+</ul>
+</div>
+<div id="referencias-9" class="section level2 unnumbered">
+<h2>Referencias</h2>
+<ul>
+<li><p><a id="hlopez_ref01"></a> <a href="11_hlopez.html#hlopez_cross01" title="Regresar al primer parrafo referenciado">[1]</a> Philippe Kruchten, <a href="https://link.springer.com/">«Springer Link»</a>, <a href="https://link.springer.com/content/pdf/10.1007%2F978-0-387-35563-4_33.pdf"><em>The Software Architect and the Software Architecture Team</em></a>, 1999. [En línea]. Disponible en: <a href="http://bit.ly/2n6KRm1" class="uri">http://bit.ly/2n6KRm1</a>. [Último acceso: 30 septiembre 2019].</p></li>
+<li><p><a id="hlopez_ref02"></a> <a href="11_hlopez.html#hlopez_cross02" title="Regresar al primer parrafo referenciado">[2]</a> <a href="https://medium.com/@nvashanin">Nikolay Ashanin</a>, <a href="https://medium.com/">«Medium»</a>, <a href="https://medium.com/@nvashanin/the-path-to-becoming-a-software-architect-de53f1cb310a"><em>The Path to Becoming a Software Architect</em></a>, 1 octubre 2017. [En línea]. Disponible en: <a href="http://bit.ly/2oxIokV" class="uri">http://bit.ly/2oxIokV</a>. [Último acceso: 30 septiembre 2019].</p></li>
+<li><p><a id="hlopez_ref03"></a> <a href="11_hlopez.html#hlopez_cross03" title="Regresar al primer parrafo referenciado">[3]</a> <a href="https://www.infoq.com/profile/Simon-Brown/#allActivity">Simon Brown</a>, <a href="https://www.infoq.com/">«InfoQ»</a>, <a href="https://www.infoq.com/articles/brown-are-you-a-software-architect/"><em>Are you a Software Architect?</em></a>, 09 febrero 2015. [En línea]. Disponible en: <a href="http://bit.ly/2oBzumG" class="uri">http://bit.ly/2oBzumG</a>. [Último acceso: 30 septiembre 2019].</p></li>
+</ul>
+<!--  -->
+<div class="imagestyle" style="text-align: center">
+<p><a href="http://calusacusac.usac.edu.gt/" title="Centro de Aprendizaje de Lenguas - USAC"><img src="media/hlopez_image4.jpeg" style="width:100.0%" /></a></p>
+</div>
+
+<!-- \setcounter{page}{30} -->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="10_achinchilla.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="12_lvaliente.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["DecimoQuintaEdicion-TecnologiaEnElMundoArte.pdf", "DecimoQuintaEdicion-TecnologiaEnElMundoArte.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+
+
+<script type='text/javascript'>
+	(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+
+</body>
+
+</html>

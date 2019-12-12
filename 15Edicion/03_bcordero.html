@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Big Data, la solución de las grandes empresas | Decimo Quinta Edicion - Tecnología en el mundo del arte</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Big Data, la solución de las grandes empresas | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="mediaHTML/cover.jpg" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Big Data, la solución de las grandes empresas | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="mediaHTML/cover.jpg" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas - ECYS" />
+
+
+<meta name="date" content="2019-12-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="02_blopez.html">
+<link rel="next" href="04_cgonzales.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-3');
+</script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="01-componentsCSS\style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Revista Digital</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Enlaces disponibles</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html"><i class="fa fa-check"></i>Editorial</a><ul>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#director-general"><i class="fa fa-check"></i>Director General</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#coordinacion-editorial"><i class="fa fa-check"></i>Coordinación Editorial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#colaboracion-especial"><i class="fa fa-check"></i>Colaboración Especial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#portada-redaccion-diseno-y-diagramacion"><i class="fa fa-check"></i>Portada, redacción, diseño y diagramación</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#contactenos"><i class="fa fa-check"></i>Contactenos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="01-contenido.html"><a href="01-contenido.html"><i class="fa fa-check"></i>Contenido</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html"><i class="fa fa-check"></i>5G como servicio, ¿Qué tan disruptiva será esta tecnología?</a><ul>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#conclusiones"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#referencias"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html"><i class="fa fa-check"></i>Big Data, la solución de las grandes empresas</a><ul>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#conclusiones-1"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#referencias-1"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html"><i class="fa fa-check"></i>Blockchain y el voto electrónico</a><ul>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#la-esencia-del-voto"><i class="fa fa-check"></i>La esencia del voto</a></li>
+<li><a href="04_cgonzales.html#blockchain-posible-solucion"><em>Blockchain</em>, ¿posible solución?</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#el-futuro-del-voto-electronico"><i class="fa fa-check"></i>El futuro del voto electrónico</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#conclusiones-2"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#referencias-2"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html"><i class="fa fa-check"></i>Ciberataques y la Ingeniería Social</a><ul>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#ingenieria-social"><i class="fa fa-check"></i>Ingeniería Social</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#conclusiones-3"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#referencias-3"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html"><i class="fa fa-check"></i>Cómo las redes sociales afectan la salud mental</a><ul>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#conclusiones-4"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#referencias-4"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html"><i class="fa fa-check"></i>Domótica accesible</a><ul>
+<li><a href="07_dguarchaj.html#servidor-domotico-openhab-a-nivel-de-software">Servidor domótico OpenHAB a nivel de <em>software</em></a></li>
+<li><a href="07_dguarchaj.html#microcontroladores-y-dispositivos-a-nivel-de-hardware">Microcontroladores y dispositivos a nivel de <em>hardware</em></a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#asistentes-inteligentes"><i class="fa fa-check"></i>Asistentes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#dispositivos-rele-wi-fi"><i class="fa fa-check"></i>Dispositivos Relé Wi-Fi</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#bombillas-inteligentes"><i class="fa fa-check"></i>Bombillas Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#enchufes-inteligentes"><i class="fa fa-check"></i>Enchufes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#camaras-de-seguridad-inteligentes"><i class="fa fa-check"></i>Cámaras de Seguridad Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#termostatos-inteligentes"><i class="fa fa-check"></i>Termostatos Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#cerraduras-inteligentes"><i class="fa fa-check"></i>Cerraduras Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#conclusiones-5"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#referencias-5"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html"><i class="fa fa-check"></i>El arte de venderse</a><ul>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-internos"><i class="fa fa-check"></i>Factores Internos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-externos"><i class="fa fa-check"></i>Factores Externos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#conclusiones-6"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#referencias-6"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html"><i class="fa fa-check"></i>La presencia de la tecnología en el mundo del arte</a><ul>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#dispositivos-que-unen-ambos-mundos"><i class="fa fa-check"></i>Dispositivos que unen ambos mundos</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#otros-usos-de-la-tecnologia"><i class="fa fa-check"></i>Otros usos de la tecnología</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#conclusiones-7"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#referencias-7"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html"><i class="fa fa-check"></i>Procrastinación Responsable</a><ul>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#conclusiones-8"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#referencias-8"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="11_hlopez.html#article10">¿Qué define a un arquitecto de <em>software</em>?</a><ul>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html"><i class="fa fa-check"></i>Amplia experiencia</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#gestionar-la-complejidad"><i class="fa fa-check"></i>Gestionar la complejidad</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#importancia-de-los-requerimientos"><i class="fa fa-check"></i>Importancia de los requerimientos</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#habilidad-de-comunicar"><i class="fa fa-check"></i>Habilidad de comunicar</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#liderazgo"><i class="fa fa-check"></i>Liderazgo</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#conclusiones-9"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#referencias-9"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html"><i class="fa fa-check"></i>Realidad aumentada como herramienta educativa</a><ul>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-puede-la-realidad-aumentada-ser-una-herramienta-educativa"><i class="fa fa-check"></i>¿Cómo puede la realidad aumentada ser una herramienta educativa?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#que-material-academico-de-realidad-aumentada-proporcionar"><i class="fa fa-check"></i>¿Qué material académico de realidad aumentada proporcionar?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-realizar-material-interactivo-con-realidad-aumentada"><i class="fa fa-check"></i>¿Cómo realizar material interactivo con realidad aumentada?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#desconocimiento-de-la-realidad-aumentada"><i class="fa fa-check"></i>Desconocimiento de la Realidad Aumentada</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#conclusiones-10"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#referencias-10"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html"><i class="fa fa-check"></i>Servicio de vehículos autónomos como medio de transporte</a><ul>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#conclusiones-11"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#referencias-11"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html"><i class="fa fa-check"></i>¿Realmente conviene invertir en Bitcoin?</a><ul>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-deposito-de-valor"><i class="fa fa-check"></i>Bitcoin como depósito de valor</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-moneda-mundial-es-retroceder-en-el-tiempo"><i class="fa fa-check"></i>Bitcoin como moneda mundial es retroceder en el tiempo</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#conclusiones-12"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#referencias-12"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="15_jalvarez.html#article14">Recorriendo la última milla: implementación de <em>software</em> en múltiples clientes</a><ul>
+<li><a href="15_jalvarez.html#necesidad-de-personalizacion-del-software">Necesidad de personalización del <em>software</em></a></li>
+<li><a href="15_jalvarez.html#patrones-de-software-devops-y-metodologias-agiles-como-herramientas-basicas">Patrones de <em>software</em>, DevOps y metodologías ágiles como herramientas básicas</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html#referencias-13"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://dtt-ecys.org/magazine/public_edicionRevista" target="_blank">Ciencias, Sistemas y Tecnología</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimo Quinta Edicion - Tecnología en el mundo del arte</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article02" class="section level1">
+<h1>Big Data, la solución de las grandes empresas</h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/bcordero_image1.png" width="111" height="129" />
+</div>
+<div class="photobiography_information">
+<p>Bryan Leinder Cordero Caballeros</p>
+<p><strong><a href="mailto:Leinder77cc@gmail.com" class="email">Leinder77cc@gmail.com</a></strong></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC</p>
+<p><strong>Palabras Clave:</strong><br />
+<em>Business</em>, <em>intelligence</em>, datos, análisis, diseño, contextual, estrategia, informe, resultados, modelos.</p>
+</div>
+
+</div>
+<p>El éxito de los negocios empresariales muchas veces tiene que ver con aprender de los errores cometidos en el pasado, reforzar áreas débiles en la organización, optimizar procesos, etcetera. Luego de una mala etapa surgen preguntas como ¿Qué se hizo mal? ¿Qué falló en la planeación? ¿Se llevó el control adecuado de los procesos?, y sobre todo ¿Quién o Quienes tienen la culpa?, como ya sabemos siempre se busca culpar a alguien de las cosas desafortunadas que pasan.</p>
+<p>Puede que algunas veces sea ocasionado por un error humano, pero una mejor idea sería que antes de decidir culpables, sea verificar el proceso que están ejecutando y la persona a cargo, posteriormente determinar sí en verdad el proceso es el ideal para cumplir con los objetivos de la empresa.</p>
+<p>Entonces, supongamos que la empresa decide que se va a verificar el proceso, se realizará un análisis de los datos durante un rango de tiempo, sí la empresa tiene la capacidad de generar reportes a través de su gestor de base de datos, la información es insuficiente y plana, es decir de un solo punto de vista para tomar una decisión. Por lo cual las organizaciones, sobre todo las que manejan un alto volumen de datos, optan por utilizar Big Data, que permite realizar un análisis más profundo de los datos recolectados.</p>
+<p><a id="bcordero_cross01"></a>
+¿Cuál es la importancia de Big Data?, principalmente generar soluciones necesarias para optimizar procesos que retrasan la producción. En algunas ocasiones, los negocios no son conscientes que tienen un problema, sobre todo las empresas que tienen una gran cantidad de procesos para lograr el producto final. <em>“La recopilación de grandes cantidades de datos y la búsqueda de tendencias dentro de los datos permiten que las empresas se muevan mucho más rápidamente, sin problemas y de manera eficiente. También les permite eliminar las áreas problemáticas antes de que los problemas acaben con sus beneficios o su reputación”</em>. <a href="03_bcordero.html#bcordero_ref01" title="Ver Referencia">[1]</a></p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://www.campusbigdata.com/media/k2/items/cache/d48ed900e79fa9547169c26138b4cd8d_XL.jpg"><img src="media/bcordero_image2.jpeg" style="width:75.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 1:</strong> Big Data Blog <strong>Fuente:</strong> <a href="https://www.campusbigdata.com/big-data-blog/item/77-bigdata-macrodatos-5v-datascience"><em>Big Data International Campus</em></a></p>
+</div>
+</div>
+<p>Podemos decir que el Big Data proporciona las siguientes ventajas:</p>
+<ul>
+<li><strong>Reducción de Costos:</strong> Tecnologías como Hadoop y el análisis basado en la nube, generan una gran ventaja para ahorrar costos y almacenar grandes cantidades de datos.</li>
+<li><strong>Más rápido, mejor toma de decisiones:</strong> Hadoop proporciona una velocidad combinada con la capacidad de analizar nuevas fuentes de datos.</li>
+<li><strong>Nuevos productos y servicios:</strong> Con la capacidad de medir las necesidades de los clientes a través de análisis, viene dar a los clientes lo que quieren.</li>
+</ul>
+<p>Big Data ayuda a las empresas, pero también conlleva algunos desafíos, por ejemplo:</p>
+<ul>
+<li>Los datos provienen de múltiples fuentes y puede ser de diferentes tipos, esto ocasiona que la información sea compleja y no estructurada.</li>
+<li>La cantidad de datos es muy grande, por lo que debe considerarse una estrategia conveniente, que logre proporcionar las conclusiones que se desean.</li>
+<li>No existe una estandarización de los datos que se almacenan, la organización Internacional de Normalización publicó algunos estándares de datos en 2011 (ISO 8000), pero para Big Data la investigación para estandarizar sus datos es muy pobre y no ha dado resultados.</li>
+</ul>
+<p>Debido a todos estos inconvenientes se necesitan usar herramientas que permitan que los análisis sean lo más exactos posibles. Entre las herramientas recomendadas están:</p>
+
+<p><a id="bcordero_cross02"></a>
+- <strong>Hadoop:</strong> desarrollada por Google <em>“utiliza modelos de programación simples para el almacenamiento y procesamiento distribuido de grandes conjuntos de datos”</em> <a href="03_bcordero.html#bcordero_ref02" title="Ver Referencia">[2]</a>. Es bastante práctica, Open Source y se puede utilizar en diferentes sistemas operativos, lo que da una amplia comodidad.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://images.xenonstack.com/insights/xenonstack-what-is-apache-hadoop-3.png"><img src="media/bcordero_image3.png" style="width:75.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 2:</strong> Guía de las mejores prácticas y beneficios de Apache Hadoop 3.0 <strong>Fuente:</strong> <a href="https://www.xenonstack.com/insights/what-is-apache-hadoop-3/">XenonStack</a></p>
+</div>
+</div>
+<ul>
+<li><strong>MongoDB:</strong> <em>“Es una base de datos orientada a documentos (guarda los datos en documentos, no en registros)”</em> <a href="03_bcordero.html#bcordero_ref02" title="Ver Referencia">[2]</a>. Esta herramienta tiene la característica que los documentos son almacenados en un formato BSON, es una base de datos NoSQL.</li>
+</ul>
+
+<ul>
+<li><strong>Python:</strong> <em>“Es un lenguaje avanzado de programación con la ventaja de ser relativamente fácil de usar para usuarios que no estén familiarizados con la informática de manera profesional”</em> <a href="03_bcordero.html#bcordero_ref02" title="Ver Referencia">[2]</a>. La razón por la que Python aparece como una herramienta para el análisis de los datos de Big Data, es por la facilidad para trabajar con datos, además de poseer una gran comunidad que proveen de mucha documentación acerca de varias funcionalidades de Python.</li>
+</ul>
+
+<ul>
+<li><strong>MapReduce:</strong> Es un framework el cual permite que cierta cantidad de datos sean procesados de forma ordenada, posee la función Map que recibe como parámetro una clave y un valor, y devuelve una lista de pares ordenados aplicando esta función a cada elemento de la entrada; Reduce recibe como parámetro una clave y lista, y devuelve una lista con los valores que puedan realizar alguna fusión.</li>
+</ul>
+
+<p>Ya tenemos la idea de lo que es Big Data, sabemos de herramientas, de ventajas y desventajas, pero ahora aún queda la pregunta ¿De dónde vienen los datos?, la respuesta a esta pregunta es simple, los datos vienen de todo aquello con lo que la organización interactúa, estos datos pueden venir de personas que a menudo son los clientes que sostienen el negocio, esta información se puede obtener a través de encuestas y/o sugerencias que vienen directamente del cliente.</p>
+
+<p>Un ejemplo muy actual son los restaurantes de comida rápida las cuales por dar una opinión regalan productos, esto con el fin de almacenar sugerencias en su afán de mejorar; los datos pueden venir también entre máquinas por ejemplo de los GPS, de teléfonos móviles, parquímetros, etc. Todos estos son casos muy comunes en los que una organización interactúa con varias fuentes de datos, por lo que de toda esta información es tomada en cuenta en la toma de decisiones.</p>
+<div id="conclusiones-1" class="section level2 unnumbered">
+<h2>Conclusiones</h2>
+
+<ul>
+<li>Los datos de Big Data no están estructurados por lo que el análisis debe realizarse de una manera cuidadosa, para que no existan resultados erróneos.</li>
+<li>Existen varias herramientas para trabajar con Big Data, estas herramientas estructuran los datos de tal manera que el análisis se pueda realizar de una forma ordenada.</li>
+<li>El Big Data proporciona una manera más completa de análisis de datos para generar una estrategia de acción en una organización.</li>
+</ul>
+</div>
+<div id="referencias-1" class="section level2 unnumbered">
+<h2>Referencias</h2>
+
+<ul>
+<li><a id="bcordero_ref01"></a> <a href="03_bcordero.html#bcordero_cross01" title="Regresar al primer parrafo referenciado">[1]</a> <a href="https://www.powerdata.es/">«Power Data»</a>, <a href="https://www.powerdata.es/big-data">Big Data: ¿En qué consiste? Su importancia, desafíos y gobernabilidad</a>, 06 abril 2017. [En línea]. Disponible en: <a href="http://bit.ly/2mXdh1Z" class="uri">http://bit.ly/2mXdh1Z</a>. [Último acceso: 02 octubre 2019].</li>
+<li><a id="bcordero_ref02"></a> <a href="03_bcordero.html#bcordero_cross02" title="Regresar al primer parrafo referenciado">[2]</a> <a href="http://www.iic.uam.es/">«Instituto de Ingeniería del Conocimiento»</a>, <a href="http://www.iic.uam.es/innovacion/herramientas-big-data-para-empresa/">7 Herramientas Big Data para tu empresa</a>, 13 octubre 2016. [En línea]. Disponible en: <a href="http://bit.ly/2mVDldP" class="uri">http://bit.ly/2mVDldP</a>. [Último acceso: 02 octubre 2019].</li>
+<li><a id="bcordero_ref03"></a> [3] <a href="https://www.masterbigdataucm.com/">«Facultad de Estudios Estadísticos, Universidad Complatence de Madrid»</a>, <a href="https://www.masterbigdataucm.com/que-es-big-data/">¿ Qué es Big? Data</a>, 23 febrero 2018. [En línea]. Disponible en: <a href="http://bit.ly/2nSeAiW" class="uri">http://bit.ly/2nSeAiW</a>. [Último acceso: 02 octubre 2019].</li>
+</ul>
+<!--  -->
+<div class="imagestyle" style="text-align: center">
+<p><a href="http://www.musacenlinea.org/" title="MUSAC - Museo de la Universidad de San Carlos"><img src="media/bcordero_image5.jpeg" style="width:100.0%" /></a></p>
+</div>
+
+<!-- \setcounter{page}{6} -->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="02_blopez.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="04_cgonzales.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["DecimoQuintaEdicion-TecnologiaEnElMundoArte.pdf", "DecimoQuintaEdicion-TecnologiaEnElMundoArte.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+
+
+<script type='text/javascript'>
+	(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+
+</body>
+
+</html>

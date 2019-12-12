@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Domótica accesible | Decimo Quinta Edicion - Tecnología en el mundo del arte</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Domótica accesible | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="mediaHTML/cover.jpg" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Domótica accesible | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="mediaHTML/cover.jpg" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas - ECYS" />
+
+
+<meta name="date" content="2019-12-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="06_mruano.html">
+<link rel="next" href="08_cduarte.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-3');
+</script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="01-componentsCSS\style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Revista Digital</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Enlaces disponibles</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html"><i class="fa fa-check"></i>Editorial</a><ul>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#director-general"><i class="fa fa-check"></i>Director General</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#coordinacion-editorial"><i class="fa fa-check"></i>Coordinación Editorial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#colaboracion-especial"><i class="fa fa-check"></i>Colaboración Especial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#portada-redaccion-diseno-y-diagramacion"><i class="fa fa-check"></i>Portada, redacción, diseño y diagramación</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#contactenos"><i class="fa fa-check"></i>Contactenos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="01-contenido.html"><a href="01-contenido.html"><i class="fa fa-check"></i>Contenido</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html"><i class="fa fa-check"></i>5G como servicio, ¿Qué tan disruptiva será esta tecnología?</a><ul>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#conclusiones"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#referencias"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html"><i class="fa fa-check"></i>Big Data, la solución de las grandes empresas</a><ul>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#conclusiones-1"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#referencias-1"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html"><i class="fa fa-check"></i>Blockchain y el voto electrónico</a><ul>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#la-esencia-del-voto"><i class="fa fa-check"></i>La esencia del voto</a></li>
+<li><a href="04_cgonzales.html#blockchain-posible-solucion"><em>Blockchain</em>, ¿posible solución?</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#el-futuro-del-voto-electronico"><i class="fa fa-check"></i>El futuro del voto electrónico</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#conclusiones-2"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#referencias-2"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html"><i class="fa fa-check"></i>Ciberataques y la Ingeniería Social</a><ul>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#ingenieria-social"><i class="fa fa-check"></i>Ingeniería Social</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#conclusiones-3"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#referencias-3"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html"><i class="fa fa-check"></i>Cómo las redes sociales afectan la salud mental</a><ul>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#conclusiones-4"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#referencias-4"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html"><i class="fa fa-check"></i>Domótica accesible</a><ul>
+<li><a href="07_dguarchaj.html#servidor-domotico-openhab-a-nivel-de-software">Servidor domótico OpenHAB a nivel de <em>software</em></a></li>
+<li><a href="07_dguarchaj.html#microcontroladores-y-dispositivos-a-nivel-de-hardware">Microcontroladores y dispositivos a nivel de <em>hardware</em></a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#asistentes-inteligentes"><i class="fa fa-check"></i>Asistentes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#dispositivos-rele-wi-fi"><i class="fa fa-check"></i>Dispositivos Relé Wi-Fi</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#bombillas-inteligentes"><i class="fa fa-check"></i>Bombillas Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#enchufes-inteligentes"><i class="fa fa-check"></i>Enchufes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#camaras-de-seguridad-inteligentes"><i class="fa fa-check"></i>Cámaras de Seguridad Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#termostatos-inteligentes"><i class="fa fa-check"></i>Termostatos Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#cerraduras-inteligentes"><i class="fa fa-check"></i>Cerraduras Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#conclusiones-5"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#referencias-5"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html"><i class="fa fa-check"></i>El arte de venderse</a><ul>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-internos"><i class="fa fa-check"></i>Factores Internos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-externos"><i class="fa fa-check"></i>Factores Externos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#conclusiones-6"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#referencias-6"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html"><i class="fa fa-check"></i>La presencia de la tecnología en el mundo del arte</a><ul>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#dispositivos-que-unen-ambos-mundos"><i class="fa fa-check"></i>Dispositivos que unen ambos mundos</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#otros-usos-de-la-tecnologia"><i class="fa fa-check"></i>Otros usos de la tecnología</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#conclusiones-7"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#referencias-7"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html"><i class="fa fa-check"></i>Procrastinación Responsable</a><ul>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#conclusiones-8"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#referencias-8"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="11_hlopez.html#article10">¿Qué define a un arquitecto de <em>software</em>?</a><ul>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html"><i class="fa fa-check"></i>Amplia experiencia</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#gestionar-la-complejidad"><i class="fa fa-check"></i>Gestionar la complejidad</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#importancia-de-los-requerimientos"><i class="fa fa-check"></i>Importancia de los requerimientos</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#habilidad-de-comunicar"><i class="fa fa-check"></i>Habilidad de comunicar</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#liderazgo"><i class="fa fa-check"></i>Liderazgo</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#conclusiones-9"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#referencias-9"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html"><i class="fa fa-check"></i>Realidad aumentada como herramienta educativa</a><ul>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-puede-la-realidad-aumentada-ser-una-herramienta-educativa"><i class="fa fa-check"></i>¿Cómo puede la realidad aumentada ser una herramienta educativa?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#que-material-academico-de-realidad-aumentada-proporcionar"><i class="fa fa-check"></i>¿Qué material académico de realidad aumentada proporcionar?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-realizar-material-interactivo-con-realidad-aumentada"><i class="fa fa-check"></i>¿Cómo realizar material interactivo con realidad aumentada?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#desconocimiento-de-la-realidad-aumentada"><i class="fa fa-check"></i>Desconocimiento de la Realidad Aumentada</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#conclusiones-10"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#referencias-10"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html"><i class="fa fa-check"></i>Servicio de vehículos autónomos como medio de transporte</a><ul>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#conclusiones-11"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#referencias-11"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html"><i class="fa fa-check"></i>¿Realmente conviene invertir en Bitcoin?</a><ul>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-deposito-de-valor"><i class="fa fa-check"></i>Bitcoin como depósito de valor</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-moneda-mundial-es-retroceder-en-el-tiempo"><i class="fa fa-check"></i>Bitcoin como moneda mundial es retroceder en el tiempo</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#conclusiones-12"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#referencias-12"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="15_jalvarez.html#article14">Recorriendo la última milla: implementación de <em>software</em> en múltiples clientes</a><ul>
+<li><a href="15_jalvarez.html#necesidad-de-personalizacion-del-software">Necesidad de personalización del <em>software</em></a></li>
+<li><a href="15_jalvarez.html#patrones-de-software-devops-y-metodologias-agiles-como-herramientas-basicas">Patrones de <em>software</em>, DevOps y metodologías ágiles como herramientas básicas</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html#referencias-13"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://dtt-ecys.org/magazine/public_edicionRevista" target="_blank">Ciencias, Sistemas y Tecnología</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimo Quinta Edicion - Tecnología en el mundo del arte</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article06" class="section level1">
+<h1>Domótica accesible</h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/dguarchaj_image1.png" width="111" height="129" />
+</div>
+<div class="photobiography_information">
+<p>Domingo Ottoniel Guarchaj Catinac</p>
+<p><strong><a href="mailto:otttoguitar@gmail.com" class="email">otttoguitar@gmail.com</a></strong></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC</p>
+<p><strong>Palabras Clave:</strong><br />
+Tecnologías, sistemas, domótica, automatización, control remoto, dispositivos, sensores, comodidad, hogar.</p>
+</div>
+
+</div>
+<p><a id="dguarchaj_cross01"></a>
+El término “domótica” (del latín <em>domus</em>, casa, e informática) tiene varias definiciones o aceptaciones entre las cuales podemos referirnos a la de la Real Academia, la cual define este término como “el conjunto de sistemas que automatizan las diferentes instalaciones de una vivienda” <a href="07_dguarchaj.html#dguarchaj_ref01" title="Ver Referencia">[1]</a>.</p>
+<p>La domótica entonces nace para facilitar la vida a los ciudadanos, haciéndola más cómoda, más segura, con mayores posibilidades de comunicación y ahorro energético. Algunos aspectos de la domótica no deberían ser exclusivas del hogar, sino que también es de considerarlas también sus aplicaciones en otros lugares, como por ejemplo oficinas.</p>
+<p>En esta guía se abordan distintos temas, de una manera muy sencilla, pero a la vez suficiente para poder empezar a dar nuestros primeros pasos, convirtiendo nuestro hogar tradicional en un hogar inteligente. Comenzaremos a tratar sobre algunos conceptos que hay que conocer, para no perdernos en este nuevo campo de la tecnología, algunas de sus aplicaciones más usuales, así como beneficios que aportan.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://www.panel.es/wp-content/uploads/2018/10/Esquema_openHAB.png"><img src="media/dguarchaj_image2.jpeg" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 1:</strong> Dispositivos inteligentes, <strong>Fuente:</strong> <a href="https://invdes.com.mx/los-investigadores/domotica-mexico-la-inteligencia-casa/">Investigación y Desarrollo (ID)</a></p>
+</div>
+</div>
+<p><a id="dguarchaj_cross02"></a>
+Los dispositivos inteligentes tienen el poder de cambiar nuestras actividades de la vida diaria, para hacer nuestras vidas más prácticas, convenientes y agradables. Los analistas predicen que para el año 2020 el mercado global de tecnología de hogares inteligentes alcanzará los cien mil millones y el hogar promedio tendrá más de 35 dispositivos inteligentes conectados <a href="07_dguarchaj.html#dguarchaj_ref02" title="Ver Referencia">[2]</a>. El hogar inteligente por lo tanto cada día es más real, y solo es cuestión de tiempo para que estos hogares estén en todas partes, brindándoles de dispositivos inteligentes.</p>
+<div id="servidor-domotico-openhab-a-nivel-de-software" class="section level2">
+<h2>Servidor domótico OpenHAB a nivel de <em>software</em></h2>
+<p><a id="dguarchaj_cross03"></a>
+Es una tecnología cuyo
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a> es de código abierto, diseñado para integrar diferentes sistemas de automatización de viviendas, protocolos de comunicación, dispositivos y tecnologías dentro de una misma solución <a href="07_dguarchaj.html#dguarchaj_ref03" title="Ver Referencia">[3]</a> Ver Imagen 2.</p>
+<p>Proporciona interfaces de usuario centralizadas, como la posibilidad de acceso remoto a los dispositivos integrados, a través de su nube de manera gratuita, a diferencia de Home Assistant de Google con acceso remoto de paga. Permite su instalación en dispositivos pequeños como los miniordenadores Raspberry Pi, por lo que no es necesario realizar una gran inversión de dinero para utilizar estos sistemas y empezar con las primeras pruebas.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://blog.desdelinux.net/wp-content/uploads/2019/03/MaruOS.jpg"><img src="media/dguarchaj_image3.png" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 2:</strong> Funcionalidad de <em>Software</em> OpenHAB con diferentes tecnologías, <strong>Fuente:</strong> <a href="https://www.panel.es/blog/plataforma-openhab-domotica-a-nuestro-alcance/">Panel Sistemas</a></p>
+</div>
+</div>
+<p>Debemos entender los conceptos <em>Thing, Channel, Binding e Item</em> en esta plataforma. El concepto <em>Thing</em> se refiere a las entidades que se pueden agregar físicamente a nuestro sistema domótico, no solo se centra en los dispositivos físicos, también un servicio
+<a href="https://dle.rae.es/?w=web" title="Red informática"><em>web</em></a>, que nos proporcione información meteorológica, o cualquier tipo de información y/o funcionalidad que se integre al sistema. El concepto <em>Channel</em> representa las diferentes funciones que proporcionan los <em>Things</em>.</p>
+<p>El conseguir la conectividad de diferentes tecnologías, openHAB se encarga de conectar los diferentes sistemas, dispositivos y protocolos de comunicación a través de <em>Bindings</em>, como un adaptador de
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a>, haciendo que los <em>Things</em> estén disponibles para el sistema domótico. De esta forma podemos trabajar con un mismo controlador domótico sobre tecnologías diferentes.</p>
+<p>Los <em>Items</em> representan capacidades que las aplicaciones pueden usar, tienen un estado y pueden recibir comandos. El vínculo entre <em>Things</em> e <em>Items</em> son <em>Links</em>. Si un <em>Channel</em> está vinculado a un <em>Item</em>, está “habilitado”. Los <em>Channels</em> pueden estar vinculados a varios <em>Items</em> y los <em>Items</em> pueden estar vinculados a varios <em>Channels</em>.</p>
+<p>Otro aspecto por considerar es la privacidad de los datos. Todos los datos que han sido recopilados de sensores o de los actuadores pertenecen al usuario, que es quien decide como gestionarlos. OpenHAB permite trabajar dentro de la
+<a href="https://dle.rae.es/?w=intranet" title="Red electrónica de información interna de una empresa o institución."><em>intranet</em></a> sin conexión a
+<a href="https://dle.rae.es/?w=internet" title="Red informática mundial, descentralizada, formada por la conexión directa entre computadoras mediante un protocolo especial de comunicación."><em>Internet</em></a>, comportándose como un sistema de la intranet de las cosas Ver imagen 3.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://www.mysensors.org/uploads/57be179e6b0aea1b6174626a/394/openhab_android.png"><img src="media/dguarchaj_image4.jpeg" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 3:</strong> Operación de OpenHAB desde un dispositivo Android <strong>Fuente:</strong> <a href="https://www.mysensors.org/controller/openhab"><em>MySensors</em></a></p>
+</div>
+</div>
+</div>
+<div id="microcontroladores-y-dispositivos-a-nivel-de-hardware" class="section level2">
+<h2>Microcontroladores y dispositivos a nivel de <em>hardware</em></h2>
+<p>Los microcontroladores más utilizados, como Arduino y los chips NodeMCU, son dispositivos que llevan incorporado un chip
+<a href="https://dle.rae.es/?w=wifi" title="Sistema de conexión inalámbrica, dentro de un área determinada, entre dispositivos electrónicos, y frecuentemente para acceso a internet.">Wi-Fi</a>, permitiendonos montar una solución y la posibilidad de combinar elementos comprados, diseñados para una gran variedad de sistemas, como el control de luces hasta motores que nos permitan abrir puertas o mover cortinas. Estos chips nos permiten la creación de circuitos eléctricos para la administración de dispositivos,así como la recolección de datos a través de sensores, convirtiéndolos a información que puede ser procesada para ser enviado a algún servidor domótico, a través de comandos, mediante protocolos de comunicación, por ejemplo, el más utilizado entre sensores es el MQTT, que funciona sobre el protocolo TCP/IP y está diseñado para comunicaciones donde se requiere de poca transmisión de datos o donde el ancho de banda de la red es limitado.</p>
+<p>Cabe mencionar que todos estos proyectos que podemos realizar con estos microcontroladores, algunas empresas ya los han hecho por nosotros, ya que se dedican a fabricar dispositivos inteligentes y distribuirlas a nivel global. Varios de estos dispositivos los iremos mencionando en el resto del artículo.</p>
+</div>
+<div id="asistentes-inteligentes" class="section level2">
+<h2>Asistentes Inteligentes</h2>
+<p>Están siendo creados por las empresas de Amazon y Google. Son igual de inteligentes tanto Alexa de Amazon, como el Asistente Inteligente de Google, funcionan y traen incorporado
+<a href="https://dle.rae.es/?w=inteligencia%20artificial" title="Disciplina científica que se ocupa de crear programas informáticos que ejecutan operaciones comparables a las que realiza la mente humana, como el aprendizaje o el razonamiento lógico.">inteligencia artificial</a>. Podemos conectar un asistente inteligente a nuestra red mediante una dirección IP, y posteriormente sincronizar la aplicación, con todos los dispositivos inteligentes integrados en nuestro servidor domótico, y así tener control sobre ellos mediante comandos de voz. Así, podríamos pedirle a nuestro asistente que encienda la luz de la cocina, que active el sistema de riego del jardín, incluso pedirle a nuestro asistente que nos ponga música, etcetera.</p>
+</div>
+<div id="dispositivos-rele-wi-fi" class="section level2">
+<h2>Dispositivos Relé Wi-Fi</h2>
+<p>Tiene la capacidad de conectarse a
+<a href="https://dle.rae.es/?w=internet" title="Red informática mundial, descentralizada, formada por la conexión directa entre computadoras mediante un protocolo especial de comunicación."><em>Internet</em></a>, a través de una dirección IP, y el cual nos permite controlarlo a través de ella. Simplemente alimentamos el dispositivo por el lado primario de entrada de corriente alterna de 120V, y en el lado secundario de salida recibirá la corriente siempre y cuando el relé este activado, de lo contrario, la salida de corriente sería nula o apagada.</p>
+<p><a id="dguarchaj_cross04"></a>
+Estos dispositivos incorporan un botón para conmutar el relé de forma manual <a href="07_dguarchaj.html#dguarchaj_ref04" title="Ver Referencia">[4]</a>, esto para protegernos de posibles fallos en nuestro
+<a href="https://dle.rae.es/?w=wifi" title="Sistema de conexión inalámbrica, dentro de un área determinada, entre dispositivos electrónicos, y frecuentemente para acceso a internet.">Wi-Fi</a>, el dispositivo relé seguiría funcionando de manera física, aunque el acceso remoto no esté disponible.</p>
+<p>Existe una gran variedad de estos dispositivos, algunos incorporan sensores de temperatura y humedad, así como ver el consumo energético en tiempo real. Con todas estas habilidades de estos dispositivos, podemos activar, por ejemplo: un ventilador, un humidificador, o activar una alarma, etc.</p>
+<p>Por defecto, estos dispositivos traen en su placa un firmware, que permite la utilización y configuración individual o en conjunto de estos dispositivos, a través de aplicaciones móviles gratuitas, que vienen integradas con características de acceso remoto, que nos permiten controlar estos dispositivos desde cualquier parte del mundo, con solo tener acceso a
+<a href="https://dle.rae.es/?w=internet" title="Red informática mundial, descentralizada, formada por la conexión directa entre computadoras mediante un protocolo especial de comunicación."><em>Internet</em></a>.</p>
+</div>
+<div id="bombillas-inteligentes" class="section level2">
+<h2>Bombillas Inteligentes</h2>
+<p><a id="dguarchaj_cross05"></a>
+Sin duda, una de las primeras compras a realizar para empezar a hacer nuestras pruebas con la domótica. Estos son dispositivos lumínicos que nos permiten su control, bien sea a través de aplicaciones móviles o del sistema domótico centralizado. La elección de una bombilla inteligente lo determina nuestras intenciones, presupuesto y el ecosistema. <a href="07_dguarchaj.html#dguarchaj_ref05" title="Ver Referencia">[5]</a></p>
+<p>Además del acceso remoto que nos proporcionan las aplicaciones con las cuales controlamos estos dispositivos, muchas bombillas inteligentes son dimables, esto significa que permiten también el ajuste de su intensidad lumínica, o la habilidad de cambio de colores, esto para bombillas inteligentes que ofrezcan iluminación RGB.</p>
+<p>Uno de los sentidos que merece la pena dedicarle tiempo para tener claro, es si el modelo que vamos a comprar permite la integración con productos de terceros, como servicios IFTTT para poder diseñar rutinas de automatización, así como su control mediante asistentes de voz como Siri, Alexa o Google.</p>
+</div>
+<div id="enchufes-inteligentes" class="section level2">
+<h2>Enchufes Inteligentes</h2>
+<p>Si eres de las personas que tienden a olvidarse de las cosas encendidas, uno de los grandes aliados para estos casos son los enchufes inteligentes. Estos los podrás administrar y programar para que se enciendan y se apaguen a una hora determinada, sin olvidar que algunos de ellos se pueden manejar a distancia a través del acceso remoto, característica que traen de fábrica, como los dispositivos de relé
+<a href="https://dle.rae.es/?w=wifi" title="Sistema de conexión inalámbrica, dentro de un área determinada, entre dispositivos electrónicos, y frecuentemente para acceso a internet.">Wi-Fi</a> o las bombillas inteligentes.</p>
+<p>Algunos modelos también incluyen un indicador que te informará del consumo diario y mensual. Si quieres tener un consumo detallado, con este tipo de enchufes lo podrás conseguir. Eso sí, a la hora de comprar un modelo u otro, asegúrate de que incluye ese extra. El diseño puede ser otro factor que valorar. Por lo que no todos los enchufes son iguales.</p>
+</div>
+<div id="camaras-de-seguridad-inteligentes" class="section level2">
+<h2>Cámaras de Seguridad Inteligentes</h2>
+<p>Existen diversidad de cámaras IP inteligentes de seguridad de gran calidad de imagen y con sensores de visión nocturna, así como sensores de detección de movimientos. Algunos nos proveen de tecnologías que nos permiten la integración con nuestro servidor domótico, y así poder configurarlos para que podamos llamar a una compañía de seguridad, o alertar a las autoridades en caso se detecte alguna actividad no deseada.</p>
+<p>La diversidad de cámaras inteligentes, ya sea inalámbricas o alámbricas que nos permitan monitorear en tiempo real, que incorporan micrófonos de audio bidireccional con el cual podemos incluso comunicarnos con las personas aunque no estemos físicamente en el hogar, compatibilidad con teléfonos inteligentes, así como características como ONVIF (protocolo de video universal) el cual nos permite la integración de manera fácil en nuestro servidor domótico a través de <em>bindings</em>.</p>
+</div>
+<div id="termostatos-inteligentes" class="section level2">
+<h2>Termostatos Inteligentes</h2>
+<p>Aquellos que buscan regular la calidad del ambiente en sus hogares, pudiendo dirigirse al aire acondicionado, controlar la temperatura que hay en la estancia; cuentan con muchas ventajas para disfrutar en el hogar, mejorarán la calidad de vida, y permitirán el ahorrar mucho dinero y energía con su utilización. Por ejemplo, cuando se está durmiendo o cuando se llega a casa y encontrarla a la temperatura deseada. Entre estos dispositivos podemos mencionar el ECOBEE4, que cuenta con una pantalla táctil y sensores de temperatura y proximidad.</p>
+</div>
+<div id="cerraduras-inteligentes" class="section level2">
+<h2>Cerraduras Inteligentes</h2>
+<p>Estos productos se activan o desactivan mediante entradas realizadas por un dispositivo autorizado, lo que significa que podemos abrir o cerrar la puerta de nuestros hogares con dispositivos inteligentes como el celular.</p>
+<p><a id="dguarchaj_cross06"></a>
+Estas entradas, se realizan por medio de protocolos de transmisión inalámbrica y una clave criptográfica <a href="07_dguarchaj.html#dguarchaj_ref06" title="Ver Referencia">[6]</a>. A diferencia de las cerraduras inalámbricas comunes, los SmartLock también controlan todos los accesos, y pueden establecer acciones automáticas, como por ejemplo: enviarnos notificaciones sobre ingresos o problemas a nuestros dispositivos. Es por eso por lo que los SmartLock se consideran un aspecto de los temas de domótica e
+<a href="https://dle.rae.es/?w=internet" title="Red informática mundial, descentralizada, formada por la conexión directa entre computadoras mediante un protocolo especial de comunicación."><em>Internet</em></a> de las cosas.</p>
+</div>
+<div id="conclusiones-5" class="section level2 unnumbered">
+<h2>Conclusiones</h2>
+<ul>
+<li><p>Los dispositivos inteligentes han evolucionado desde una era en donde únicamente tenían aplicaciones en entornos industriales, hasta llegar a una era en donde su utilización es ahora de manera particular en nuestros hogares.</p></li>
+<li><p>La domótica es una de las formas como la automatización que busca mejorar el estado actual de la sociedad, aumentando la calidad de vida de la humanidad, como una posible solución que facilitara las condiciones de vida del mayor, de la persona dependiente o con alguna discapacidad.</p></li>
+<li><p>Gracias a esta nueva disciplina de la domótica, se permite la integración de diversas áreas de conocimiento, como lo son las telecomunicaciones, la electrónica, la electricidad y la informática, para lograr una gestión del hogar inteligente.</p></li>
+<li><p>El acceso a
+<a href="https://dle.rae.es/?w=internet" title="Red informática mundial, descentralizada, formada por la conexión directa entre computadoras mediante un protocolo especial de comunicación."><em>Internet</em></a> permite la conexión permanente de las viviendas inteligentes a través de las redes locales y redes globales.</p></li>
+<li><p>Los sensores, microcontroladores y microprocesadores son los que conceden inteligencia a todos los dispositivos del domicilio.</p></li>
+</ul>
+</div>
+<div id="referencias-5" class="section level2 unnumbered">
+<h2>Referencias</h2>
+<ul>
+<li><p><a id="dguarchaj_ref01"></a> <a href="07_dguarchaj.html#dguarchaj_cross01" title="Regresar al primer parrafo referenciado">[1]</a> Comunidad de Madrid, Madrid Vive Ahorrando Energía, <a href="https://www.fenercom.com/">«Fernecom»</a>, <a href="https://www.fenercom.com/wp-content/uploads/2007/03/La-Domotica-como-Solucion-de-Futuro-fenercom-2007.pdf">La domótica como solución de futuro</a>, (Madrid, 2007). [En línea]. Disponible en: <a href="http://bit.ly/2nGk0gS" class="uri">http://bit.ly/2nGk0gS</a>. [Último acceso: 01 octubre 2019].</p></li>
+<li><p><a id="dguarchaj_ref02"></a> <a href="07_dguarchaj.html#dguarchaj_cross02" title="Regresar al primer parrafo referenciado">[2]</a> Regatos Soriano, Rosa María, <a href="https://sid.usal.es/">«Servicio de Información sobre Discapacidad (SID) »</a>, <a href="https://sid.usal.es/idocs/F8/8.2.1.2-139/158/158dossier.pdf">Revista Minusval</a>, 09 agosto 2006, ISSN: 0210-0622. [En línea]. Disponible en: <a href="http://bit.ly/2nrWB2N" class="uri">http://bit.ly/2nrWB2N</a>. [Último acceso: 01 octubre 2019].</p></li>
+<li><p><a id="dguarchaj_ref03"></a> <a href="07_dguarchaj.html#dguarchaj_cross03" title="Regresar al primer parrafo referenciado">[3]</a> <a href="https://www.panel.es/author/jantonioamores/">Jose Antonio Amores Durán</a>, <a href="https://www.panel.es/">«Panel Creación Inteligente de <em>Software</em>, sistemas y servicio TI»</a>, <a href="https://www.panel.es/blog/plataforma-openhab-domotica-a-nuestro-alcance/">Analizaremos openHAB, la plataforma domótica a nuestro alcance</a>, 18 octubre 2018. [En línea]. Disponible en: <a href="http://bit.ly/2pas4XN" class="uri">http://bit.ly/2pas4XN</a>. [Último acceso: 01 octubre 2019].</p></li>
+<li><p><a id="dguarchaj_ref04"></a> <a href="07_dguarchaj.html#dguarchaj_cross04" title="Regresar al primer parrafo referenciado">[4]</a> <a href="https://www.luisllamas.es/">Luis Llamas</a>, <a href="https://www.luisllamas.es/tu-casa-domotica-con-los-dispositivos-sonoff-de-itead/">Tu Casa Domótica Con Los Dispositivos Sonoff de ITEAD</a>, 01 noviembre 2018. [En línea]. Disponible en: <a href="http://bit.ly/2nrhqeR" class="uri">http://bit.ly/2nrhqeR</a>. [Último acceso: 01 octubre 2019].</p></li>
+<li><p><a id="dguarchaj_ref05"></a> <a href="07_dguarchaj.html#dguarchaj_cross05" title="Regresar al primer parrafo referenciado">[5]</a> <a href="https://www.xataka.com/autor/eva-rodriguez">Eva Rodríguez de Luis</a>, <a href="https://www.xataka.com/">«Xataka»</a>, <a href="https://www.xataka.com/domotica-1/que-bombilla-inteligente-comprar-modelos-populares-compatibilidades">Qué bombilla inteligente comprar: modelos más populares y compatibilidades</a>, 30 octubre 2018. [En línea]. Disponible en: <a href="http://bit.ly/2nD6xGL" class="uri">http://bit.ly/2nD6xGL</a>. [Último acceso: 01 octubre 2019].</p></li>
+<li><p><a id="dguarchaj_ref06"></a> <a href="07_dguarchaj.html#dguarchaj_cross06" title="Regresar al primer parrafo referenciado">[6]</a> <a href="https://es.wikipedia.org">«Wikipedia»</a>, <a href="https://es.wikipedia.org/wiki/Smart_Lock"><em>Smart Lock</em></a>, 13 septiembre 2019. [En línea]. Disponible en: <a href="http://bit.ly/2paD0Vl" class="uri">http://bit.ly/2paD0Vl</a>. [Último acceso: 01 octubre 2019].</p></li>
+</ul>
+<!--  -->
+<div class="imagestyle" style="text-align: center">
+<p><a href="https://www.facebook.com/areasprotegidasuniversitarias.cecon/" title="Areas Protegidas Universitarias CECON"><img src="media/dguarchaj_image5.jpeg" style="width:100.0%" /></a></p>
+</div>
+
+<!-- \setcounter{page}{20} -->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="06_mruano.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="08_cduarte.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["DecimoQuintaEdicion-TecnologiaEnElMundoArte.pdf", "DecimoQuintaEdicion-TecnologiaEnElMundoArte.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+
+
+<script type='text/javascript'>
+	(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+
+</body>
+
+</html>

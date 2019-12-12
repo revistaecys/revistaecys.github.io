@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Blockchain y el voto electrónico | Decimo Quinta Edicion - Tecnología en el mundo del arte</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Blockchain y el voto electrónico | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="mediaHTML/cover.jpg" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Blockchain y el voto electrónico | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="mediaHTML/cover.jpg" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas - ECYS" />
+
+
+<meta name="date" content="2019-12-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="03_bcordero.html">
+<link rel="next" href="05_lsolares.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-3');
+</script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="01-componentsCSS\style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Revista Digital</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Enlaces disponibles</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html"><i class="fa fa-check"></i>Editorial</a><ul>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#director-general"><i class="fa fa-check"></i>Director General</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#coordinacion-editorial"><i class="fa fa-check"></i>Coordinación Editorial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#colaboracion-especial"><i class="fa fa-check"></i>Colaboración Especial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#portada-redaccion-diseno-y-diagramacion"><i class="fa fa-check"></i>Portada, redacción, diseño y diagramación</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#contactenos"><i class="fa fa-check"></i>Contactenos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="01-contenido.html"><a href="01-contenido.html"><i class="fa fa-check"></i>Contenido</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html"><i class="fa fa-check"></i>5G como servicio, ¿Qué tan disruptiva será esta tecnología?</a><ul>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#conclusiones"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#referencias"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html"><i class="fa fa-check"></i>Big Data, la solución de las grandes empresas</a><ul>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#conclusiones-1"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#referencias-1"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html"><i class="fa fa-check"></i>Blockchain y el voto electrónico</a><ul>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#la-esencia-del-voto"><i class="fa fa-check"></i>La esencia del voto</a></li>
+<li><a href="04_cgonzales.html#blockchain-posible-solucion"><em>Blockchain</em>, ¿posible solución?</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#el-futuro-del-voto-electronico"><i class="fa fa-check"></i>El futuro del voto electrónico</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#conclusiones-2"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#referencias-2"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html"><i class="fa fa-check"></i>Ciberataques y la Ingeniería Social</a><ul>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#ingenieria-social"><i class="fa fa-check"></i>Ingeniería Social</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#conclusiones-3"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#referencias-3"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html"><i class="fa fa-check"></i>Cómo las redes sociales afectan la salud mental</a><ul>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#conclusiones-4"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#referencias-4"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html"><i class="fa fa-check"></i>Domótica accesible</a><ul>
+<li><a href="07_dguarchaj.html#servidor-domotico-openhab-a-nivel-de-software">Servidor domótico OpenHAB a nivel de <em>software</em></a></li>
+<li><a href="07_dguarchaj.html#microcontroladores-y-dispositivos-a-nivel-de-hardware">Microcontroladores y dispositivos a nivel de <em>hardware</em></a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#asistentes-inteligentes"><i class="fa fa-check"></i>Asistentes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#dispositivos-rele-wi-fi"><i class="fa fa-check"></i>Dispositivos Relé Wi-Fi</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#bombillas-inteligentes"><i class="fa fa-check"></i>Bombillas Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#enchufes-inteligentes"><i class="fa fa-check"></i>Enchufes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#camaras-de-seguridad-inteligentes"><i class="fa fa-check"></i>Cámaras de Seguridad Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#termostatos-inteligentes"><i class="fa fa-check"></i>Termostatos Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#cerraduras-inteligentes"><i class="fa fa-check"></i>Cerraduras Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#conclusiones-5"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#referencias-5"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html"><i class="fa fa-check"></i>El arte de venderse</a><ul>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-internos"><i class="fa fa-check"></i>Factores Internos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-externos"><i class="fa fa-check"></i>Factores Externos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#conclusiones-6"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#referencias-6"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html"><i class="fa fa-check"></i>La presencia de la tecnología en el mundo del arte</a><ul>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#dispositivos-que-unen-ambos-mundos"><i class="fa fa-check"></i>Dispositivos que unen ambos mundos</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#otros-usos-de-la-tecnologia"><i class="fa fa-check"></i>Otros usos de la tecnología</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#conclusiones-7"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#referencias-7"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html"><i class="fa fa-check"></i>Procrastinación Responsable</a><ul>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#conclusiones-8"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#referencias-8"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="11_hlopez.html#article10">¿Qué define a un arquitecto de <em>software</em>?</a><ul>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html"><i class="fa fa-check"></i>Amplia experiencia</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#gestionar-la-complejidad"><i class="fa fa-check"></i>Gestionar la complejidad</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#importancia-de-los-requerimientos"><i class="fa fa-check"></i>Importancia de los requerimientos</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#habilidad-de-comunicar"><i class="fa fa-check"></i>Habilidad de comunicar</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#liderazgo"><i class="fa fa-check"></i>Liderazgo</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#conclusiones-9"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#referencias-9"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html"><i class="fa fa-check"></i>Realidad aumentada como herramienta educativa</a><ul>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-puede-la-realidad-aumentada-ser-una-herramienta-educativa"><i class="fa fa-check"></i>¿Cómo puede la realidad aumentada ser una herramienta educativa?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#que-material-academico-de-realidad-aumentada-proporcionar"><i class="fa fa-check"></i>¿Qué material académico de realidad aumentada proporcionar?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-realizar-material-interactivo-con-realidad-aumentada"><i class="fa fa-check"></i>¿Cómo realizar material interactivo con realidad aumentada?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#desconocimiento-de-la-realidad-aumentada"><i class="fa fa-check"></i>Desconocimiento de la Realidad Aumentada</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#conclusiones-10"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#referencias-10"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html"><i class="fa fa-check"></i>Servicio de vehículos autónomos como medio de transporte</a><ul>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#conclusiones-11"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#referencias-11"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html"><i class="fa fa-check"></i>¿Realmente conviene invertir en Bitcoin?</a><ul>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-deposito-de-valor"><i class="fa fa-check"></i>Bitcoin como depósito de valor</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-moneda-mundial-es-retroceder-en-el-tiempo"><i class="fa fa-check"></i>Bitcoin como moneda mundial es retroceder en el tiempo</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#conclusiones-12"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#referencias-12"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="15_jalvarez.html#article14">Recorriendo la última milla: implementación de <em>software</em> en múltiples clientes</a><ul>
+<li><a href="15_jalvarez.html#necesidad-de-personalizacion-del-software">Necesidad de personalización del <em>software</em></a></li>
+<li><a href="15_jalvarez.html#patrones-de-software-devops-y-metodologias-agiles-como-herramientas-basicas">Patrones de <em>software</em>, DevOps y metodologías ágiles como herramientas básicas</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html#referencias-13"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://dtt-ecys.org/magazine/public_edicionRevista" target="_blank">Ciencias, Sistemas y Tecnología</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimo Quinta Edicion - Tecnología en el mundo del arte</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article03" class="section level1">
+<h1>Blockchain y el voto electrónico</h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/cgonzales_image1.png" width="111" height="129" />
+</div>
+<div class="photobiography_information">
+<p>Christian Levi Gonzalez Rodriguez</p>
+<p><strong><a href="mailto:clevi.gonzalez@gmail.com" class="email">clevi.gonzalez@gmail.com</a></strong></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC</p>
+<p><strong>Palabras Clave:</strong><br />
+Voto electrónico, <em>blockchain</em>, votación, seguridad, política, elecciones, democracia.</p>
+</div>
+
+</div>
+<p><a id="cgonzales_cross01"></a>
+El voto electrónico no es una idea nueva, ni tampoco algo que esté implementado en todo el mundo. Como dice un artículo de la vanguardia: <em>“Desde que en los 60 se empezaran a usar sistemas de votación electrónica, a través del uso de tarjetas perforadas, hasta los recientes sistemas de escaneo óptico para recoger los votos emitidos en papeletas, muchos son los métodos aplicados en este campo”</em>. <a href="04_cgonzales.html#cgonzales_ref01" title="Ver Referencia">[1]</a></p>
+<p>La realidad es que, aunque han sido muchos los intentos por tener éxito implementando un sistema de votación a prueba de fallos, cada intento ha sido manchado con polémicas, manipulaciones y anomalías en los resultados. Y el hecho es que existen demasiadas variables a considerar a la hora de sistematizar algo donde la validación humana tiene tan alta importancia.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://www.lavanguardia.com/r/GODO/LV/p3/WebSite/2015/12/18/Recortada/img_cvillalonga_20151218-183404_imagenes_lv_getty_gettyimages-155654660-483-kXE-U30898019330vGI-992x558@LaVanguardia-Web.jpg"><img src="media/cgonzales_image2.jpeg" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 1:</strong> Máquina de voto electrónico <strong>Fuente:</strong> <a href="https://www.lavanguardia.com/politica/elecciones/20151218/30898019330/voto-electronico-20d-elecciones.html">La Vanguardia</a></p>
+</div>
+</div>
+<p>Pero si nos ponemos a analizar los diferentes casos, tanto los fallidos como los que casi no han tenido fallos, el verdadero problema reside en la seguridad. Desde la seguridad de la información, hasta la seguridad del
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a>, la calidad y buen funcionamiento del
+<a href="https://dle.rae.es/?w=hardware" title="Conjunto de aparatos de una computadora."><em>hardware</em></a>, la seguridad de las “boletas electrónicas”, entre otras cosas.</p>
+<div id="la-esencia-del-voto" class="section level2">
+<h2>La esencia del voto</h2>
+<p>El artículo 12 de la <strong><em>Ley electoral y de partidos políticos</em></strong>, libro uno, ciudadanía y voto, titulo único, capitulo único, en la sección de principios generales dice textualmente lo siguiente:</p>
+<p><em>“<strong>Artículo 12.- (Reformado por el artículo 4, del decreto 74-87)</strong>. <strong>Voto.</strong> El voto es un derecho y un deber cívico inherente a la ciudadanía. Es <strong>universal, secreto, único, personal y no delegable.</strong>”</em></p>
+<p>Estas 5 características del voto, han impedido que el voto electrónico en sus diferentes propuestas, se desarrolle y funcione a su totalidad. La idea de crear un sistema a prueba de fallos que cubra todas estas características siempre se verá afectado de una u otra manera por el factor humano.</p>
+<p>El solo hecho de ser universal, implica que cualquier persona debería de poder utilizar el sistema. Y allí es donde nos preguntamos ¿Cómo lograr que un país con 25 etnias entienda cómo usar un sistema de votación electrónico, cuando muchos no han tenido la misma oportunidad de educación?.</p>
+<p>Esto tampoco quiere decir que el sistema actual funcione sin ningún problema. El simple hecho de que existan diferentes iniciativas para mejorar un sistema de votación indica la necesidad del apoyo de la tecnología. Y es que los problemas en el proceso tradicional de votación se han vivido en todos los países que practican la democracia.</p>
+<p>En un escenario ideal, el voto electrónico podría evitar cuestiones como la pérdida de papeletas, la alteración de resultados, ayudaría a disminuir o a eliminar la cantidad de votos nulos, disminuiría el tiempo de conteo de votos, eliminaría el recuento de votos, no permitiría más de un voto por persona (único), la participación en el proceso se podría verificar, entre muchas otras cosas que podríamos mencionar de un proceso de votación tradicional.</p>
+</div>
+<div id="blockchain-posible-solucion" class="section level2">
+<h2><em>Blockchain</em>, ¿posible solución?</h2>
+<p>Entre todas las nuevas tecnologías, parece que
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a> es la que más se acerca a tener una solución a este problema, en el futuro. A pesar de que esta nueva tecnología podría brindar una mayor seguridad en el proceso de votación, aún no se ha desarrollado una solución viable que sea 100% efectiva y a prueba de vulnerabilidades.</p>
+<p><a id="cgonzales_cross02"></a>
+MIT Technology Review publicó un artículo en agosto del año pasado donde mencionan que proteger los dispositivos conectados contra la piratería es bastante difícil. Y es que desarrollar un sistema en línea que conserve todos los atributos que esperamos de las elecciones democráticas, manteniendo el voto universal, secreto, único, personal y no delegable, sería increíblemente difícil de lograr. <a href="04_cgonzales.html#cgonzales_ref02" title="Ver Referencia">[2]</a></p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://cdn.technologyreview.com/v/images/blockchainillo_0.gif.mp4?sw=1180"><embed src="media/cgonzales_image3.mp4" style="width:100.0%" height="420" /></a>
+<div class="caption">
+<p><strong>Imagen 2:</strong> App voto electrónico <strong>Fuente:</strong> <a href="https://www.technologyreview.com/s/611850/why-security-experts-hate-that-blockchain-voting-will-be-used-in-the-midterm-elections/">MS. TECH; PEOPLE ILLUSTRATIONS BY THOMAS HELBIG, DE | NOUN PROJECT</a></p>
+</div>
+</div>
+<p>Según el artículo, existe un sistema llamado “The Voatz system” que es una
+<a href="https://www.google.com/search?q=define:+App" title="Una Aplicación, especialmente cuando la descarga un usuario a un dispositivo móvil.">App</a> para marcar boletas electrónicas y almacenarlas en
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a> privadas <a href="04_cgonzales.html#cgonzales_ref02" title="Ver Referencia">[2]</a>. Básicamente es una aplicación con algo de tecnología
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a> en ella. La tecnología
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a> no es mala, simplemente añade algunos detalles más en cuanto a seguridad, pero mientras el
+<a href="https://dle.rae.es/?w=internet" title="Red informática mundial, descentralizada, formada por la conexión directa entre computadoras mediante un protocolo especial de comunicación."><em>Internet</em></a> este como intermediario, la vulnerabilidad de las aplicaciones está al alcance de los
+<a href="https://dle.rae.es/?w=hackers" title="pirata informático; Persona experta en el manejo de computadoras, que se ocupa de la seguridad de los sistemas y de desarrollar técnicas de mejora."><em>hackers</em></a>.
+</p>
+<p><a id="cgonzales_cross03"></a>
+Cnet también escribió un artículo en noviembre de 2018 sobre “The Voatz system” e incluye otras soluciones de voto electrónico como Votem, Follow My Vote, Boulé, Democracy Earth y Agora. <a href="04_cgonzales.html#cgonzales_ref03" title="Ver Referencia">[3]</a></p>
+<p>En él se mencionan algunas opiniones como la de Matt Blaze, un profesor de criptografía y ciencias de la computación de la Universidad de Pensilvania y experto en seguridad de la votación electrónica, que en uno de sus tweets escribió que <em>“No importa lo perfecto que parezca al inicio, la votación civil no es una buena aplicación para el blockchain.”</em></p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://cnet3.cbsistatic.com/img/1HeMpGKnkYyaKRD8huFRSCBtFQM=/1092x0/2018/11/02/262feb53-50d1-48b7-bc1a-804d0c5109b7/voatz-mobile-voting.jpg"><img src="media/cgonzales_image4.jpeg" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 3:</strong> <em>The Voatz System</em> <strong>Fuente:</strong> <a href="https://www.cnet.com/news/blockchain-isnt-answer-to-voting-system-woes/"><em>West Virginia Secretary of State; Screenshot by Stephen Shankland/CNET</em></a></p>
+</div>
+</div>
+<p>Y es que existen desventajas que aún se plantean con respecto a este tipo de sistemas como que, si es posible verificar que el voto se emitió, de alguna manera existirá un registro asociado a la persona, anulando la característica que el voto debe ser secreto. O que algún tipo de <em>malware</em> (programa maligno) en el dispositivo del votante altere la decisión antes de que llegue al
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a> y la persona nunca se entere de la alteración por la complejidad misma del sistema.</p>
+<p><a id="cgonzales_cross04"></a>
+Una publicación de Ars Technica nos habla sobre cómo la votación por
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a> sería mucho peor <a href="04_cgonzales.html#cgonzales_ref04" title="Ver Referencia">[4]</a>. Aun teniendo un
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a> que cumpla con los requisitos de un proceso de votación, pocas personas entenderían cómo funciona
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a>. Incluso los expertos no tienen una buena manera de observar el proceso de votación en línea para detectar irregularidades, como lo hace un observador de las elecciones en una elección tradicional con boletas de papel.</p>
+<p>El voto electrónico debería buscar la manera de realizar la verificación de votos como se hace en papel, que es realizada en algunos casos por más de un individuo en cada mesa, donde todos juntos validan el conteo de votos, en el que se observa y verifica la validez o anulación de cada voto.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://cdn.arstechnica.net/wp-content/uploads/2014/08/smartphone-users-640x424.jpg"><img src="media/cgonzales_image5.jpeg" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 4:</strong> Voto electrónico <strong>Fuente:</strong> <a href="https://arstechnica.com/tech-policy/2018/11/blockchain-based-elections-would-be-a-disaster-for-democracy/">Esther Vargas / Flickr</a></p>
+</div>
+</div>
+<p>A pesar de que el panorama se ve algo pesimista por el momento, no todo está perdido. Entre las cosas positivas que algunos sistemas de votación electrónica han logrado podemos resaltar lo siguiente:</p>
+<ul>
+<li><p>Bases de datos de
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a> descentralizadas. Los datos de votación se distribuyen a través de muchos servidores y es más difícil destruir o alterar los resultados al corromper un solo sistema central.</p></li>
+<li><p>Posibilidad de verificar que el voto se emitió según lo previsto y detectar la manipulación indebida.</p></li>
+<li><p>Los gobiernos y los partidos externos independientes pueden confirmar los resultados de los votos almacenados en la base de datos de
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a> para una mejor transparencia.</p></li>
+</ul>
+</div>
+<div id="el-futuro-del-voto-electronico" class="section level2">
+<h2>El futuro del voto electrónico</h2>
+<p>Forbes en noviembre de 2018 menciona sobre la implementación del voto electrónico, habla acerca de que no es un problema de tecnología. Esto se ha convertido más en un problema político que en un problema de tecnología. Indica que según el Economic Times, más de 30 países han usado o estudiado máquinas de votación electrónica, y algunos todavía están piloteando la tecnología.</p>
+<p>Puede que no tengamos mucho problema en cuanto a nuestra capacidad tecnológica, sino más bien en la curva de aprendizaje que significa la implementación del voto electrónico para la población en general. Así mismo la resistencia al cambio sería un factor que debería tomarse en cuenta ya que seguramente un cambio muy inmediato podría provocar que disminuya el porcentaje de participación en las votaciones, y se obtenga un resultado sesgado.</p>
+<p><a id="cgonzales_cross05"></a>
+En el artículo de Forbes se habla también sobre las plataformas de votación de código abierto, y como abren las puertas para que en el futuro se aprovechen estas herramientas <a href="04_cgonzales.html#cgonzales_ref05" title="Ver Referencia">[5]</a>. Al ser código abierto permitiría a cada país adaptar esta tecnología a su sistema electoral. Pero esto también deja la puerta abierta a inconsistencias en el código, vulnerabilidades y como resultado, un nuevo sistema que podría estar corrupto.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://specials-images.forbesimg.com/dam/imageserve/1001757174/960x0.jpg"><img src="media/cgonzales_image6.jpeg" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 5:</strong> Plataformas <em>open source</em> <strong>Fuente:</strong> <a href="https://www.forbes.com/sites/forbestechcouncil/2018/11/02/is-blockchain-the-answer-to-election-tampering/#3586375619c4">Forbes</a></p>
+</div>
+</div>
+<p>Hasta el momento, pareciera ser que el uso de
+<a href="https://es.wikipedia.org/wiki/Cadena_de_bloques" title="Es una estructura de datos en la que la información contenida se agrupa en conjuntos (bloques) a los que se les aÃ±ade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal, de manera que gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores."><em>blockchain</em></a> para el voto electrónico es una opción que debe ser revaluada, considerando todos los posibles escenarios que un proceso electoral pudiera tener.</p>
+<p>Aunque muchas personas se han dedicado a desarrollar soluciones, es un hecho que las características más importantes del voto siguen siendo el mayor obstáculo que superar para un sistema de votación electrónico. Tal vez en el futuro podremos tener un sistema totalmente confiable, seguro y transparente, que mantenga la esencia del voto y no tengamos que preocuparnos por los problemas que actualmente tenemos en nuestro proceso electoral tradicional.</p>
+</div>
+<div id="conclusiones-2" class="section level2 unnumbered">
+<h2>Conclusiones</h2>
+<ul>
+<li><p>En nuestro contexto guatemalteco, creo que existe un salto muy grande que debemos dar para alcanzar a los países que están probando estos sistemas.</p></li>
+<li><p>Es posible que en Guatemala no exista una barrera tan alta en cuanto a la capacidad tecnológica, sino más bien en la curva de aprendizaje que significa la implementación del voto electrónico para la población en general, por la gran diversidad de cultura que tenemos.</p></li>
+<li><p>Mientras no se tenga una solución que cumpla con todas las demandas del proceso electoral tradicional, los sistemas de voto electrónico solo deberían utilizarse como una herramienta de apoyo al proceso electoral tradicional.</p></li>
+<li><p>El impacto social que puede tener la implementación del voto electrónico en un país donde no se ha instruido a la población podría generar resultados totalmente sesgados, resistencia o abstención del voto como tal.</p></li>
+<li><p><em>Blockchain</em> es la tecnología que ha logrado cubrir en su mayor parte el proceso electoral tradicional. Pero llevará tiempo completar los obstáculos que faltan para que sea una realidad en los países que puedan y quieran hacer el proceso de cambio, con el fin de tener un proceso democrático transparente.</p></li>
+</ul>
+</div>
+<div id="referencias-2" class="section level2 unnumbered">
+<h2>Referencias</h2>
+<ul>
+<li><p><a id="cgonzales_ref01"></a> <a href="04_cgonzales.html#cgonzales_cross01" title="Regresar al primer parrafo referenciado">[1]</a> <a href="https://www.lavanguardia.com/autores/carles-villalonga.html">Carles Villalonga</a>, <a href="https://www.lavanguardia.com/">«La Vanguardia»</a>, <a href="https://www.lavanguardia.com/politica/elecciones/20151218/30898019330/voto-electronico-20d-elecciones.html">Por qué sólo siete países en todo el mundo han implantado el voto electrónico</a>, 19 diciembre 2015. [En línea]. Disponible en: <a href="http://bit.ly/2mzwHcW" class="uri">http://bit.ly/2mzwHcW</a>. [Último acceso: 01 octubre 2019].</p></li>
+<li><p><a id="cgonzales_ref02"></a> <a href="04_cgonzales.html#cgonzales_cross02" title="Regresar al primer parrafo referenciado">[2]</a> <a href="https://www.technologyreview.com/profile/mike-orcutt/">Mike Orcutt</a>, <a href="https://www.technologyreview.com/">«MIT Technology Review»</a>, <a href="https://www.technologyreview.com/s/611850/why-security-experts-hate-that-blockchain-voting-will-be-used-in-the-midterm-elections/"><em>Why security experts hate that “blockchain voting” will be used in the midterm elections</em></a>, 09 agosto 2018. [En línea]. Disponible en: <a href="http://bit.ly/2o84XMY" class="uri">http://bit.ly/2o84XMY</a>. [Último acceso: 01 octubre 2019].</p></li>
+<li><p><a id="cgonzales_ref03"></a> <a href="04_cgonzales.html#cgonzales_cross03" title="Regresar al primer parrafo referenciado">[3]</a> <a href="https://www.cnet.com/profiles/shankland/">Stephen Shankland</a>, <a href="https://www.cnet.com/">«CNET»</a>, <a href="https://www.cnet.com/news/blockchain-isnt-answer-to-voting-system-woes/"><em>No, blockchain isn’t the answer to our voting system woes</em></a>, 5 noviembre 2018. [En línea]. Disponible en: <a href="https://cnet.co/2oXFZ3n" class="uri">https://cnet.co/2oXFZ3n</a>. [Último acceso: 01 octubre 2019].</p></li>
+<li><p><a id="cgonzales_ref04"></a> <a href="04_cgonzales.html#cgonzales_cross04" title="Regresar al primer parrafo referenciado">[4]</a> <a href="https://arstechnica.com/author/timlee/">Timothy B. Lee</a>, <a href="https://arstechnica.com/">«Ars Technica»</a>, <a href="https://arstechnica.com/tech-policy/2018/11/blockchain-based-elections-would-be-a-disaster-for-democracy/"><em>Blockchain-based elections would be a disaster for democracy</em></a>, 11 junio 2018. [En línea]. Disponible en: <a href="http://bit.ly/2ng3hkF" class="uri">http://bit.ly/2ng3hkF</a>. [Último acceso: 01 octubre 2019].</p></li>
+<li><p><a id="cgonzales_ref05"></a> <a href="04_cgonzales.html#cgonzales_cross05" title="Regresar al primer parrafo referenciado">[5]</a> <a href="https://www.forbes.com/sites/forbestechcouncil/people/frankpalermo1/#7c7b70675e85">Frank Palermo</a>, <a href="https://www.forbes.com/#7bbbcb9d2254">«Forbers»</a>, <a href="https://www.forbes.com/sites/forbestechcouncil/2018/11/02/is-blockchain-the-answer-to-election-tampering/#549325ab19c4"><em>Is Blockchain The Answer To Election Tampering?</em></a>, 2 noviembre 2018. [En línea]. Disponible en: <a href="http://bit.ly/2npM73V" class="uri">http://bit.ly/2npM73V</a>. [Último acceso: 01 octubre 2019].</p></li>
+</ul>
+
+<div class="imagestyle" style="text-align: center">
+<p><a href="https://www.facebook.com/areasprotegidasuniversitarias.cecon/" title="Areas Protegidas Universitarias CECON"><img src="media/cgonzales_image7.jpeg" style="width:100.0%" /></a></p>
+</div>
+
+<!-- \setcounter{page}{10} -->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="03_bcordero.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="05_lsolares.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["DecimoQuintaEdicion-TecnologiaEnElMundoArte.pdf", "DecimoQuintaEdicion-TecnologiaEnElMundoArte.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+
+
+<script type='text/javascript'>
+	(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Ciberataques y la Ingeniería Social | Decimo Quinta Edicion - Tecnología en el mundo del arte</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Ciberataques y la Ingeniería Social | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="mediaHTML/cover.jpg" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ciberataques y la Ingeniería Social | Decimo Quinta Edicion - Tecnología en el mundo del arte" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="mediaHTML/cover.jpg" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas - ECYS" />
+
+
+<meta name="date" content="2019-12-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="04_cgonzales.html">
+<link rel="next" href="06_mruano.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-3');
+</script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="01-componentsCSS\style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Revista Digital</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Enlaces disponibles</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html"><i class="fa fa-check"></i>Editorial</a><ul>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#director-general"><i class="fa fa-check"></i>Director General</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#coordinacion-editorial"><i class="fa fa-check"></i>Coordinación Editorial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#colaboracion-especial"><i class="fa fa-check"></i>Colaboración Especial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#portada-redaccion-diseno-y-diagramacion"><i class="fa fa-check"></i>Portada, redacción, diseño y diagramación</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#contactenos"><i class="fa fa-check"></i>Contactenos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="01-contenido.html"><a href="01-contenido.html"><i class="fa fa-check"></i>Contenido</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html"><i class="fa fa-check"></i>5G como servicio, ¿Qué tan disruptiva será esta tecnología?</a><ul>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#conclusiones"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="02_blopez.html"><a href="02_blopez.html#referencias"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html"><i class="fa fa-check"></i>Big Data, la solución de las grandes empresas</a><ul>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#conclusiones-1"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="03_bcordero.html"><a href="03_bcordero.html#referencias-1"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html"><i class="fa fa-check"></i>Blockchain y el voto electrónico</a><ul>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#la-esencia-del-voto"><i class="fa fa-check"></i>La esencia del voto</a></li>
+<li><a href="04_cgonzales.html#blockchain-posible-solucion"><em>Blockchain</em>, ¿posible solución?</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#el-futuro-del-voto-electronico"><i class="fa fa-check"></i>El futuro del voto electrónico</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#conclusiones-2"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="04_cgonzales.html"><a href="04_cgonzales.html#referencias-2"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html"><i class="fa fa-check"></i>Ciberataques y la Ingeniería Social</a><ul>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#ingenieria-social"><i class="fa fa-check"></i>Ingeniería Social</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#conclusiones-3"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="05_lsolares.html"><a href="05_lsolares.html#referencias-3"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html"><i class="fa fa-check"></i>Cómo las redes sociales afectan la salud mental</a><ul>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#conclusiones-4"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="06_mruano.html"><a href="06_mruano.html#referencias-4"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html"><i class="fa fa-check"></i>Domótica accesible</a><ul>
+<li><a href="07_dguarchaj.html#servidor-domotico-openhab-a-nivel-de-software">Servidor domótico OpenHAB a nivel de <em>software</em></a></li>
+<li><a href="07_dguarchaj.html#microcontroladores-y-dispositivos-a-nivel-de-hardware">Microcontroladores y dispositivos a nivel de <em>hardware</em></a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#asistentes-inteligentes"><i class="fa fa-check"></i>Asistentes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#dispositivos-rele-wi-fi"><i class="fa fa-check"></i>Dispositivos Relé Wi-Fi</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#bombillas-inteligentes"><i class="fa fa-check"></i>Bombillas Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#enchufes-inteligentes"><i class="fa fa-check"></i>Enchufes Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#camaras-de-seguridad-inteligentes"><i class="fa fa-check"></i>Cámaras de Seguridad Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#termostatos-inteligentes"><i class="fa fa-check"></i>Termostatos Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#cerraduras-inteligentes"><i class="fa fa-check"></i>Cerraduras Inteligentes</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#conclusiones-5"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="07_dguarchaj.html"><a href="07_dguarchaj.html#referencias-5"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html"><i class="fa fa-check"></i>El arte de venderse</a><ul>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-internos"><i class="fa fa-check"></i>Factores Internos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#factores-externos"><i class="fa fa-check"></i>Factores Externos</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#conclusiones-6"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="08_cduarte.html"><a href="08_cduarte.html#referencias-6"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html"><i class="fa fa-check"></i>La presencia de la tecnología en el mundo del arte</a><ul>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#dispositivos-que-unen-ambos-mundos"><i class="fa fa-check"></i>Dispositivos que unen ambos mundos</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#otros-usos-de-la-tecnologia"><i class="fa fa-check"></i>Otros usos de la tecnología</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#conclusiones-7"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="09_ylemus.html"><a href="09_ylemus.html#referencias-7"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html"><i class="fa fa-check"></i>Procrastinación Responsable</a><ul>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#conclusiones-8"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="10_achinchilla.html"><a href="10_achinchilla.html#referencias-8"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="11_hlopez.html#article10">¿Qué define a un arquitecto de <em>software</em>?</a><ul>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html"><i class="fa fa-check"></i>Amplia experiencia</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#gestionar-la-complejidad"><i class="fa fa-check"></i>Gestionar la complejidad</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#importancia-de-los-requerimientos"><i class="fa fa-check"></i>Importancia de los requerimientos</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#habilidad-de-comunicar"><i class="fa fa-check"></i>Habilidad de comunicar</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#liderazgo"><i class="fa fa-check"></i>Liderazgo</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#conclusiones-9"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="11_hlopez.html"><a href="11_hlopez.html#referencias-9"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html"><i class="fa fa-check"></i>Realidad aumentada como herramienta educativa</a><ul>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-puede-la-realidad-aumentada-ser-una-herramienta-educativa"><i class="fa fa-check"></i>¿Cómo puede la realidad aumentada ser una herramienta educativa?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#que-material-academico-de-realidad-aumentada-proporcionar"><i class="fa fa-check"></i>¿Qué material académico de realidad aumentada proporcionar?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#como-realizar-material-interactivo-con-realidad-aumentada"><i class="fa fa-check"></i>¿Cómo realizar material interactivo con realidad aumentada?</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#desconocimiento-de-la-realidad-aumentada"><i class="fa fa-check"></i>Desconocimiento de la Realidad Aumentada</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#conclusiones-10"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="12_lvaliente.html"><a href="12_lvaliente.html#referencias-10"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html"><i class="fa fa-check"></i>Servicio de vehículos autónomos como medio de transporte</a><ul>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#conclusiones-11"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="13_jrodriguez.html"><a href="13_jrodriguez.html#referencias-11"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html"><i class="fa fa-check"></i>¿Realmente conviene invertir en Bitcoin?</a><ul>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-deposito-de-valor"><i class="fa fa-check"></i>Bitcoin como depósito de valor</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#bitcoin-como-moneda-mundial-es-retroceder-en-el-tiempo"><i class="fa fa-check"></i>Bitcoin como moneda mundial es retroceder en el tiempo</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#conclusiones-12"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="14_ooliva.html"><a href="14_ooliva.html#referencias-12"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li><a href="15_jalvarez.html#article14">Recorriendo la última milla: implementación de <em>software</em> en múltiples clientes</a><ul>
+<li><a href="15_jalvarez.html#necesidad-de-personalizacion-del-software">Necesidad de personalización del <em>software</em></a></li>
+<li><a href="15_jalvarez.html#patrones-de-software-devops-y-metodologias-agiles-como-herramientas-basicas">Patrones de <em>software</em>, DevOps y metodologías ágiles como herramientas básicas</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="15_jalvarez.html"><a href="15_jalvarez.html#referencias-13"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://dtt-ecys.org/magazine/public_edicionRevista" target="_blank">Ciencias, Sistemas y Tecnología</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimo Quinta Edicion - Tecnología en el mundo del arte</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article04" class="section level1">
+<h1>Ciberataques y la Ingeniería Social</h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/lsolares_image1.png" width="111" height="129" />
+</div>
+<div class="photobiography_information">
+<p>Luis Omar Solares Morales</p>
+<p><strong><a href="mailto:wicho.omar@gmail.com" class="email">wicho.omar@gmail.com</a></strong></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC</p>
+<p><strong>Palabras Clave:</strong><br />
+Datos, Robo, Manipulación, Engaño, seguridad, informática, ataque, información, usuario, vulnerabilidad.</p>
+</div>
+
+</div>
+<div id="ingenieria-social" class="section level2">
+<h2>Ingeniería Social</h2>
+<p>La Ingeniería Social, es el conjunto de técnicas y procedimientos que se llevan a cabo para manipular a las personas, con el objetivo de obtener información valiosa que pueda servir en la ejecución de un Ciberataque. Dicha información es generalmente credencial de acceso a un sistema informático, del cual se tenga interés por la información que determinado sistema pueda poseer. En resumen, se trata de hacer que las personas (usuarios) hagan lo que otra persona (atacante) quiera.</p>
+<p>Hoy en día la Ingeniería Social forma parte fundamental de la mayoría de los ataques cibernéticos, ya que es de bajo costo y sencilla de aplicar, como dice el informático y consultor de seguridad, Kevin Mitnick <em>“es mucho más fácil engañar a alguien para que nos dé sus contraseñas que tratar de forzar una entrada a un sistema por medio de un hackeo”</em>.</p>
+<p>Existen diferentes técnicas en las que se puede aplicar la ingeniería social, por ejemplo:</p>
+<div id="redes-sociales" class="section level3">
+<h3>Redes Sociales</h3>
+<p>En la actualidad la tendencia, más común en los jóvenes, es publicar información personal de manera constante. Lugares que frecuentan, donde trabajan, fotos con familiares y gustos personales, son datos que brindan un sólido punto de partida para que un delincuente pueda realizar un ciberataque a cierta persona.</p>
+<p>Redes sociales como Facebook o LinkedIn, son perfectas para que delincuentes busquen perfiles de empleados de determinadas empresas, con puestos importantes, para realizar un estudio basado en la información encontrada en sus redes sociales y realizar un plan con el cual se buscara obtener datos de acceso de las cuentas de trabajo donde labora determinada persona.</p>
+</div>
+<div id="farming" class="section level3">
+<h3>Farming</h3>
+<p>Es una forma de engaño hacia una persona por un largo periodo de tiempo. Consiste en ganarse la confianza del usuario y mantenerla por el mayor tiempo posible, se trata de construir una relación basada en la información obtenida de las redes sociales, de esta forma poder sacar la mayor cantidad de datos posibles a la víctima.</p>
+</div>
+<div id="phishing" class="section level3">
+<h3>Phishing</h3>
+<p>Es la técnica más simple, consiste en hacerse pasar por el administrador del sistema que se desee atacar, dicho falso administrador solicita a los usuarios sus contraseñas o inclusive números de tarjetas de crédito, argumentando que son requeridas para reconfigurar su cuenta, mejorar el servicio o cualquier otra operación que haga creer al usuario que se trata de una situación real y confiable.</p>
+<p>Generalmente con el fin de tener un mayor porcentaje de éxito, el ataque se realiza por medio del envío masivo de correos electrónicos, en el correo se detalla la razón del porque se solicita la información, como se ve en la imagen 1, y los “beneficios” que se obtendrán si es proporcionada, o simplemente en el correo se adjunta un enlace que nos redirigirá a una
+<a href="https://dle.rae.es/?id=RRvUbbP" title="Conjunto de informaciones de un sitio web que se muestran en una pantalla y que puede incluir textos, contenidos audiovisuales y enlaces con otras páginas.">página <em>web</em></a> falsa muy parecida a la del sistema que estamos acostumbrados a utilizar (Banco, empresa de trabajo, redes sociales, etc.).</p>
+<p>Al momento de ver dicha página el usuario pensará que es la auténtica y procederá a ingresar la información, por ejemplo: usuario y contraseña, al momento dar clic en “login” o “enviar”, lo redirigirá a la misma página solo que ahora será la auténtica del sistema, el usuario no se dará cuenta de lo que sucedió y procederá a volver a ingresar la información, sin embargo su información ya fue robada en el primer intento.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="http://intechractive.com/wp-content/uploads/2017/01/phishing_1.png"><img src="media/lsolares_image2.png" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 1:</strong> Ejemplo de Phishing, solicitando datos personales a través de advertencia del Banco BBVA Bancomer, <strong>Autor: </strong> Gimer Cervera <strong>Fuente:</strong> <a href="http://intechractive.com/ataque-phishing/">inTechractive.com</a></p>
+</div>
+</div>
+<div id="vishing" class="section level4">
+<h4>Vishing</h4>
+<p>Se trata de realizar llamadas telefónicas a los usuarios de algún sistema, solicitando información personal, haciéndose pasar por personal representativo de alguna compañía en específico con el fin que parezca una situación legítima.</p>
+</div>
+<div id="baiting" class="section level4">
+<h4>Baiting</h4>
+<p>Esta técnica se basa en el uso de dispositivos de almacenamiento portátiles (USB) infectados, dejados en lugares públicos o de fácil acceso, por ejemplo: cafeterías, baños, parques, estacionamientos, etc. Cuando la víctima recoja el dispositivo y lo conecte a su ordenador, un
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a> malicioso se ejecutará y brindara al atacante un punto de acceso para obtener información personal del usuario.</p>
+</div>
+</div>
+<div id="como-evitar-ser-victima-de-la-ingenieria-social" class="section level3">
+<h3>¿Cómo evitar ser víctima de la Ingeniería Social?</h3>
+<p>No existe un método que nos proteja al 100%, cualquiera puede ser un objetivo de un ataque de Ingeniería Social. Sin embargo, se pueden seguir los siguientes consejos para no caer fácilmente:</p>
+<ul>
+<li>Antes de ingresar información personal o sensible (contraseñas, cuentas bancarias, número de tarjeta de crédito) en un
+<a href="https://dle.rae.es/?id=Y2qwiA7" title="Conjunto de páginas web agrupadas bajo un mismo dominio de internet.">sitio <em>web</em></a> primero cerciorarse que el URL de la página sea correcto y que cuente con certificado de seguridad, como se puede observar en la imagen 2.</li>
+</ul>
+<div class="imagestyle" style="text-align: center">
+<a href="https://www.welivesecurity.com/wp-content/uploads/2015/04/diferencias_falso.png"><img src="media/lsolares_image3.png" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 2:</strong> Diferencias entre un sitio <em>web</em> verdadero, con un sitio <em>web</em> falso, <strong>Autor: </strong> Luis Paus <strong>Fuente:</strong> <a href="https://www.welivesecurity.com/la-es/2015/04/13/alerta-phishing-entidad-financiera-chile/">WeLiveSecurity</a></p>
+</div>
+</div>
+<ul>
+<li><p>No anotar en ningún lugar información de acceso a un sistema, uno de los errores que se cometen en oficinas es que para no olvidar contraseñas se anotan en blocs de notas y son pegados en lugares visibles, lo cual termina siendo un gran riesgo debido a que dicha información puede ser recolectada por algún intruso y ser utilizada con fines delictivos.</p></li>
+<li><p>Mantenerse informado sobre los métodos que son utilizados en los ataques de Ingeniería Social, de este modo estar atentos y no brindar ningún tipo de información a las personas equivocadas.</p></li>
+<li><p>Evitar publicar constantemente aspectos de nuestra rutina diaria en las redes sociales, ya que puede servir como información para un ataque en nuestra contra.</p></li>
+<li><p>Usar el sentido común nos puede salvar en muchas ocasiones, y si notamos que algo anda mal en cuanto a la seguridad de nuestra información, es muy probable que se trate de un intento de robo de datos.</p></li>
+<li><p>No brindar ningún tipo de información personal que nos pidan por teléfono sin importar que sea para nuestra compañía de telefonía, energía eléctrica, bancos, etcetera. Ya que se puede tratar de un intento de robo de información. Verificar bien los números telefónicos y solo usar los números oficiales de las compañías.</p></li>
+<li><p>No dejar que la curiosidad nos gane, evitar conectar dispositivos de almacenamiento extraíble que nos podamos encontrar tirados en algún lugar público, ya que pueden contener
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a> malicioso, el cual pueden robar nuestra información personal.</p></li>
+</ul>
+</div>
+</div>
+<div id="conclusiones-3" class="section level2 unnumbered">
+<h2>Conclusiones</h2>
+<ul>
+<li><p>Los ciberataques que aplican Ingeniería Social cada vez son más complejos. Es necesario estar atentos y no dejarse engañar.</p></li>
+<li><p>La mayoría de los ciberataques que tienen éxito es debido a que los empleados no tienen la suficiente información sobre lo que es la Ingeniería Social, por lo cual tienden a ser víctimas fáciles para los ciberdelincuentes.</p></li>
+<li><p>Las redes sociales, actualmente presentan un gran riesgo ante la privacidad de nuestros datos, es nuestra responsabilidad cuidar lo que publicamos para no ser víctimas de ciberataques.</p></li>
+<li><p>Dado que los ataques de Ingeniería Social van dirigidos a los usuarios de un sistema, no existe un
+<a href="https://dle.rae.es/?w=software" title="Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora."><em>software</em></a> que sirva de barrera ante mencionados ataques. Solo queda informarse de los peligros y las técnicas que son empleadas actualmente en dichos ataques, para poder estar prevenidos y no caer en engaños.</p></li>
+</ul>
+</div>
+<div id="referencias-3" class="section level2 unnumbered">
+<h2>Referencias</h2>
+<ul>
+<li><p>[1] <a href="https://www.welivesecurity.com/author/karlthomas/">Karl Thomas</a>, <a href="https://www.welivesecurity.com/">«WeLiveSecurity»</a>, <a href="https://www.welivesecurity.com/2015/04/17/will-people-always-ignore-security-warnings/"><em>Will people always ignore security warnings?</em></a>, 17 abril 2015. [En línea]. Disponible en: <a href="http://bit.ly/2mTsL7e" class="uri">http://bit.ly/2mTsL7e</a>. [Último acceso: 30 septiembre 2019].</p></li>
+<li><p>[2] <a href="https://www.welivesecurity.com/la-es/author/editorla/">Editor - WeLiveSecurity</a>, <a href="https://www.welivesecurity.com/">«WeLiveSecurity»</a>, <a href="https://www.welivesecurity.com/la-es/2016/01/06/5-cosas-sobre-ingenieria-social/">5 cosas que debes saber sobre la Ingeniería Social</a>, 06 junio 2016. [En línea]. Disponible en: <a href="http://bit.ly/2mU3LwD" class="uri">http://bit.ly/2mU3LwD</a>. [Último acceso: 30 septiembre 2019].</p></li>
+<li><p>[3] <a href="https://www.pabloyglesias.com/quien-soy/">Pablo F. Iglesia</a>, <a href="https://www.pabloyglesias.com/">«PabloYglesias»</a>, <a href="https://www.pabloyglesias.com/mundohacker-ingenieria-social/">#MundoHacker: Los 6 principios básicos de la ingeniería social</a>, 26 febrero 2015. [En línea]. Disponible en: <a href="http://bit.ly/2mTCOcs" class="uri">http://bit.ly/2mTCOcs</a>. [Último acceso: 30 septiembre 2019].</p></li>
+<li><p>[4] <a href="https://mx.norton.com/"><em>«NORTON™ - Antivirus Software and Spyware Removal»</em></a>, <a href="https://mx.norton.com/internetsecurity-emerging-threats-what-is-social-engineering.html">Amenazas emergentes, ¿Qué es la ingeniería social?</a>, 03 abril 2018. [En línea]. Disponible en: <a href="https://nr.tn/2mTu5Hf" class="uri">https://nr.tn/2mTu5Hf</a>. [Último acceso: 30 septiembre 2019].</p></li>
+</ul>
+<div class="imagestyle" style="text-align: center">
+<p><a href="http://jardin.usac.edu.gt/" title="Jardin Infantil USAC - Universidad de San Carlos de Guatemala"><img src="media/lsolares_image4.jpeg" style="width:100.0%" /></a></p>
+</div>
+<div class="imagestyle" style="text-align: center">
+<p><a href="https://es-la.facebook.com/UsacFarmaciaUniversitaria" title="Farmacia Universitaria - Al cuidado de tu salud"><img src="media/lsolares_image5.jpeg" style="width:100.0%" /></a></p>
+</div>
+
+<!-- \setcounter{page}{13} -->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="04_cgonzales.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="06_mruano.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["DecimoQuintaEdicion-TecnologiaEnElMundoArte.pdf", "DecimoQuintaEdicion-TecnologiaEnElMundoArte.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+
+
+<script type='text/javascript'>
+	(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+
+</body>
+
+</html>
