@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Introduciendo a arquitecturas serverless | Decimo Sexta Edicion - IoT en la actualidad</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Introduciendo a arquitecturas serverless | Decimo Sexta Edicion - IoT en la actualidad" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="01-componentsHTML/coverfull.jpg" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Introduciendo a arquitecturas serverless | Decimo Sexta Edicion - IoT en la actualidad" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="01-componentsHTML/coverfull.jpg" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas - ECYS" />
+
+
+<meta name="date" content="2020-04-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="01-contenido.html">
+<link rel="next" href="03_nruiz.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-3');
+</script>
+
+
+
+<link rel="stylesheet" href="01-componentsCSS\style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Revista Digital</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Enlaces disponibles</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html"><i class="fa fa-check"></i>Editorial</a><ul>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#director-general"><i class="fa fa-check"></i>Director General</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#coordinacion-editorial"><i class="fa fa-check"></i>Coordinación Editorial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#colaboracion-especial"><i class="fa fa-check"></i>Colaboración Especial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#portada-redaccion-diseno-y-diagramacion"><i class="fa fa-check"></i>Portada, redacción, diseño y diagramación</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#contactenos"><i class="fa fa-check"></i>Contactenos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="01-contenido.html"><a href="01-contenido.html"><i class="fa fa-check"></i>Contenido</a></li>
+<li class="chapter" data-level="" data-path="02_rberduo.html"><a href="02_rberduo.html"><i class="fa fa-check"></i>Introduciendo a arquitecturas serverless</a><ul>
+<li class="chapter" data-level="" data-path="02_rberduo.html"><a href="02_rberduo.html#conclusiones"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="02_rberduo.html"><a href="02_rberduo.html#referencias"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="03_nruiz.html"><a href="03_nruiz.html"><i class="fa fa-check"></i>Inteligencia Artificial, el próximo competidor en la oferta laboral</a><ul>
+<li class="chapter" data-level="" data-path="03_nruiz.html"><a href="03_nruiz.html#conclusiones-1"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="03_nruiz.html"><a href="03_nruiz.html#referencias-1"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="04_djimenez.html"><a href="04_djimenez.html"><i class="fa fa-check"></i>IoT en la actualidad</a><ul>
+<li class="chapter" data-level="" data-path="04_djimenez.html"><a href="04_djimenez.html#conclusiones-2"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="04_djimenez.html"><a href="04_djimenez.html#referencias-2"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05_dargueta.html"><a href="05_dargueta.html"><i class="fa fa-check"></i>La importancia de la simulación y modelación en la actualidad</a><ul>
+<li class="chapter" data-level="" data-path="05_dargueta.html"><a href="05_dargueta.html#conclusiones-3"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="05_dargueta.html"><a href="05_dargueta.html#referencias-3"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06_dmomotic.html"><a href="06_dmomotic.html"><i class="fa fa-check"></i>Desarrollo Frontend con VueJS</a><ul>
+<li class="chapter" data-level="" data-path="06_dmomotic.html"><a href="06_dmomotic.html#conclusiones-4"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="06_dmomotic.html"><a href="06_dmomotic.html#referencias-4"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07_jbatz.html"><a href="07_jbatz.html"><i class="fa fa-check"></i>Adaptándose a Scrum</a><ul>
+<li class="chapter" data-level="" data-path="07_jbatz.html"><a href="07_jbatz.html#conclusiones-5"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="07_jbatz.html"><a href="07_jbatz.html#referencias-5"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="08_rcutz.html"><a href="08_rcutz.html"><i class="fa fa-check"></i>Docker y Herramientas de Orquestación</a><ul>
+<li class="chapter" data-level="" data-path="08_rcutz.html"><a href="08_rcutz.html#conclusiones-6"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="08_rcutz.html"><a href="08_rcutz.html#referencias-6"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="09_cperalta.html"><a href="09_cperalta.html"><i class="fa fa-check"></i>Ruta de aprendizaje, para ser un mejor profesional</a><ul>
+<li class="chapter" data-level="" data-path="09_cperalta.html"><a href="09_cperalta.html#conclusiones-7"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="09_cperalta.html"><a href="09_cperalta.html#referencias-7"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="10_dasencio.html"><a href="10_dasencio.html"><i class="fa fa-check"></i>Firma electrónica avanzada, el futuro de la autenticidad de documentos</a><ul>
+<li class="chapter" data-level="" data-path="10_dasencio.html"><a href="10_dasencio.html#conclusiones-8"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="10_dasencio.html"><a href="10_dasencio.html#referencias-8"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="11_fhernandez.html"><a href="11_fhernandez.html"><i class="fa fa-check"></i>Introducción a Hyperledger Composer</a><ul>
+<li class="chapter" data-level="" data-path="11_fhernandez.html"><a href="11_fhernandez.html#conclusiones-9"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="11_fhernandez.html"><a href="11_fhernandez.html#referencias-9"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="12_gcalel.html"><a href="12_gcalel.html"><i class="fa fa-check"></i>Analista de Datos</a><ul>
+<li class="chapter" data-level="" data-path="12_gcalel.html"><a href="12_gcalel.html#conclusiones-10"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="12_gcalel.html"><a href="12_gcalel.html#referencias-10"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="13_mcalderon.html"><a href="13_mcalderon.html"><i class="fa fa-check"></i>Google Search como herramienta para Hacking</a><ul>
+<li class="chapter" data-level="" data-path="13_mcalderon.html"><a href="13_mcalderon.html#conclusiones-11"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="13_mcalderon.html"><a href="13_mcalderon.html#referencias-11"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="14_fmerida.html"><a href="14_fmerida.html"><i class="fa fa-check"></i>Progressive Web Apps y el futuro del desarrollo web.</a><ul>
+<li class="chapter" data-level="" data-path="14_fmerida.html"><a href="14_fmerida.html#conclusiones-12"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="14_fmerida.html"><a href="14_fmerida.html#referencias-12"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="15_ereal.html"><a href="15_ereal.html"><i class="fa fa-check"></i>Criptografía: El arte de ocultar mensajes</a><ul>
+<li class="chapter" data-level="" data-path="15_ereal.html"><a href="15_ereal.html#conclusiones-13"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="15_ereal.html"><a href="15_ereal.html#referencias-13"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://dtt-ecys.org/magazine/public_edicionRevista" target="_blank">Ciencias, Sistemas y Tecnología</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimo Sexta Edicion - IoT en la actualidad</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article01" class="section level1">
+<h1>Introduciendo a arquitecturas serverless</h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/rberduo_image1.png" width="111" height="129" />
+</div>
+<div class="photobiography_information">
+<p>Ronald Neftali Berdúo Morales</p>
+<p><strong><a href="mailto:ronaldnef1996@gmail.com" class="email">ronaldnef1996@gmail.com</a></strong></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC</p>
+<p><strong>Palabras Clave:</strong><br />
+Servicio, función, proveedor, servidor</p>
+</div>
+
+</div>
+<p><a id="rberduo_cross01"></a>
+Aunque el término Serverless traducido al español es “sin servidor”, en realidad una arquitectura Serverless se refiere específicamente a lo que es olvidarse de la gestión de servidores al momento de desplegar aplicaciones y servicios.<a href="02_rberduo.html#rberduo_ref01" title="Ver Referencia">[1]</a></p>
+<p><strong>¿Qué es Serverless?</strong>
+<a id="rberduo_cross02"></a>
+Es un término que se refiere a otros dos términos a la vez los cuales son Backend as a Service (BaaS) y Function as a Service (FaaS).<a href="02_rberduo.html#rberduo_ref02" title="Ver Referencia">[2]</a></p>
+<p><strong>Backend as a Service</strong>
+Es un término que lleva ya bastante tiempo de existir; el primer proveedor en lanzar este tipo de servicio fue Amazon con Amazon S3 lanzado en el año 2006 el cual provee un alojamiento de archivos en la nube. BaaS es muy similar a Software as a Service (SaaS) en donde los proveedores proporcionan servidores que son conectados a nuestras aplicaciones mediante una API, en general nos ofrecen componentes genéricos como almacenamiento, autenticación de usuarios, servicios de base de datos, entre otros. Generalmente estos servicios son utilizados para construir otros servicios más específicos, esto tiene una gran ventaja ya que como desarrollador puedo decir que no se pierde lo que es tiempo en construir aplicaciones o servicios que ya existen y sin preocuparse por mantenerlas. Hay muchas empresas que nos ofrecen este tipo de servicios entre ellas tenemos a Amazon con DynamoDB y Firebase de Google.</p>
+<p><strong>Function as a Service</strong>
+<a id="rberduo_cross03"></a>
+FaaS, nació en 2014 con la llegada de Amazon Lambda <a href="02_rberduo.html#rberduo_ref03" title="Ver Referencia">[3]</a> <a id="rberduo_cross04"></a>ha sido el término que ha hecho popular a Serverless y lograr que aparezca. FaaS no es más que una nueva forma de ejecutar y diseñar aplicaciones con la cual se pueden reducir inversiones en infraestructura ya que solo se generan costes cuando se utiliza el servicio, algunos ejemplos de proveedores de FaaS son Amazon Lambda, Google Functions y Azure Functions.<a href="02_rberduo.html#rberduo_ref04" title="Ver Referencia">[4]</a></p>
+<p><strong>¿Cuándo usar Serverless?</strong>
+<a id="rberduo_cross05"></a>
+Antes de entrar a detalle de cuando es correcto usar Serverless .<a href="02_rberduo.html#rberduo_ref05" title="Ver Referencia">[5]</a>, veamos los siguientes beneficios:</p>
+<p><strong>Beneficios</strong>
+- Como sé dicho anteriormente una ventaja es no administrar los servidores.</p>
+<ul>
+<li><p>No hay administración de infraestructura, el desarrollador no tiene ningún control sobre las instancias y contenedores, ya que los proveedores FaaS o BaaS se encargan de mantenerlos.</p></li>
+<li><p>La escalabilidad automática, la capacidad aumenta y se distribuye automáticamente según se necesita esto es así para todos los servicios Serverless; los proveedores siempre tienen algún contrato donde exponen cual es la máxima capacidad que ellos proveen, aunque se puede llegar a dar el caso en donde se comunique con el proveedor para solicitar un aumento en las capacidades de nuestros servicios.</p></li>
+<li><p>Arquitectura orientada a eventos, como por ejemplo responder a peticiones Http, a cambios en una base de datos, modificación de archivos, en la creación de un nuevo usuario en el sistema, o cualquier tipo de evento valido para que se disparen nuestras funciones.</p></li>
+<li><p>No hay costos de contratación, ya que simplemente se paga por lo que se usa, si una función no se está ejecutando, esta función no llega a generar un costo.</p></li>
+</ul>
+<p>Con los beneficios que nos otorga Serverless se puede decir que es conveniente usarlo cuando se tiene los siguientes casos:</p>
+<ul>
+<li><p>Cuando necesitamos que una tarea corta se deba ejecutar con una frecuencia fija.</p></li>
+<li><p>Si necesitamos trabajar con un modelo de integración y despliegue continuo.</p></li>
+<li><p>Poder realizar microservicios ya que no necesitamos gestionar instancias.</p></li>
+<li><p>Aplicaciones web que no requieran realizar procesos rigurosos.</p></li>
+</ul>
+<p><strong>¿Cuándo no usar Serverless?</strong>
+- Cuando no queremos depender de un proveedor, ya que estamos usando servicios sin haberlos creados nosotros mismos, esto limita a empresas que no quieren migrar a un servicio a la nube, para esto es recomendable realizar un análisis de riesgos para estar completamente convencidos si vale la pena o no utilizar estos servicios.</p>
+<ul>
+<li><p>Cuando tenemos ejecuciones largas que no se pueden cortar o no se pueden paralelar, ya que servicios como Amazon Lambda solo nos provee un máximo de 5 minutos de tiempo de espera por cada función.</p></li>
+<li><p>Para operaciones complejas, existen operaciones que necesitan infraestructura dedicada, muy específica para poder resolver ciertas tareas en un tiempo razonable ya que la infraestructura que nos provee la plataforma de la nube es muy genérica y no se puede realmente modificarla.</p></li>
+</ul>
+<p><strong>Un ejemplo sencillo</strong>
+<a id="rberduo_cross06"></a>
+Supongamos que tenemos una aplicación web en cual podemos subir imágenes y poder visualizarlas, también se tiene que administrar usuarios, y por último se tiene que interactuar con un servicio RESTful para poder obtener las imágenes y poder guardarlas. Para esto se describirán los servicios a utilizar para implementar esta aplicación en Amazon Web Services (AWS). La aplicación hará uso de AWS Lambda, Amazon API Gateway, Amazon S3, Amazon DynamoDB y Amazon Cognito, como se muestra en la imagen 1.<a href="02_rberduo.html#rberduo_ref06" title="Ver Referencia">[6]</a></p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://d1.awsstatic.com/Test%20Images/Kate%20Test%20Images/Serverless_Web_App_LP_assets-12.da876b91b6451199d3582b6cc81dc17ff7e5791f.png"><img src="media/rberduo_image2.png" style="width:75.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 1:</strong> Ejemplo de una arquitectura sin servidor en AWS<a href="https://d1.awsstatic.com/Test%20Images/Kate%20Test%20Images/Serverless_Web_App_LP_assets-12.da876b91b6451199d3582b6cc81dc17ff7e5791f.png"></a></p>
+</div>
+</div>
+<p><strong>S3</strong>
+Como primer punto tenemos lo que es Amazon S3 que es un servicio de almacenamiento para internet, es decir es donde nosotros alojaremos nuestros archivos estáticos como HTML, CSS, JavaScript, imágenes o cualquier tipo de archivos que se puedan cargar en algún tipo de navegador.</p>
+<p><strong>Cognito</strong>
+Este servicio es muy útil ya que nos facilita en gran medida lo que es la autenticación, autorización y administración de usuarios para nuestras aplicaciones móviles y web.</p>
+<p><strong>DynamoDB</strong>
+Es un servicio de base de datos NoSQL en la cual para este ejemplo se guardará la información necesaria para guardar una imagen como por ejemplo el nombre del archivo y la ruta de S3 en donde se localizará la imagen.</p>
+<p><strong>Lambda</strong>
+En lambda se crean una función para almacenar una imagen en S3 y guardar la información en una tabla de DynamoDB, también se creará una función para obtener toda la información de las imágenes que se guardaron en DynamoDB.</p>
+<p><strong>API Gateway</strong>
+Y por último tenemos a quien dispare los eventos Http para poder invocar a las funciones creadas en Lambda para guardar una imagen y poder obtenerlas.</p>
+<div id="conclusiones" class="section level2 unnumbered">
+<h2>Conclusiones</h2>
+<ul>
+<li><p>Las arquitecturas Serverless han logrado evolucionar hasta ser una herramienta de gran utilidad para el despliegue de alguna funcionalidad a un ambiente de producción sin invertir en la infraestructura y pagando solamente cuando se ejecute.</p></li>
+<li><p>Al utilizar Serverless se reducen los costos, se reduce el tiempo de desarrollo, se aumenta la seguridad y se incrementa la fiabilidad.</p></li>
+<li><p>Serverless no es el enfoque correcto para cada problema, así que siempre se tiene que realizar un análisis antes de pasarse a trabajar con este tipo de arquitectura.</p></li>
+</ul>
+</div>
+<div id="referencias" class="section level2 unnumbered">
+<h2>Referencias</h2>
+<ul>
+<li><p><a id="rberduo_ref01"></a> <a href="02_rberduo.html#rberduo_cross01" title="Regresar al primer parrafo referenciado">[1]</a> <a href="https://aws.amazon.com/">Amazon</a>. (5 de noviembre 2018). <a href="https://aws.amazon.com/">Amazon</a> <a href="https://aws.amazon.com/es/lambda/serverless-architectures-learn-more/"><strong>Creación de aplicaciones con arquitecturas sin servidor</strong></a>. [En línea]. Disponible en: <a href="https://aws.amazon.com/es/lambda/serverless-architectures-learn-more/" class="uri">https://aws.amazon.com/es/lambda/serverless-architectures-learn-more/</a>. [Último acceso: 10 de octubre de 2019].</p></li>
+<li><p><a id="rberduo_ref02"></a> <a href="02_rberduo.html#rberduo_cross02" title="Regresar al primer parrafo referenciado">[2]</a> <a href="https://chernando.xyz/">C. Hernando</a>. (Abil 2017). <a href="https://chernando.xyz/">Chernando</a> <a href="https://chernando.xyz/articulos/que-es-serverless-baas-y-faas/"><strong>¿Qué es Serverless?</strong></a>. [En línea]. Disponible en: <a href="https://chernando.xyz/articulos/que-es-serverless-baas-y-faas/" class="uri">https://chernando.xyz/articulos/que-es-serverless-baas-y-faas/</a>. [Último acceso: 11 de octubre de 2019].</p></li>
+<li><p><a id="rberduo_ref03"></a> <a href="02_rberduo.html#rberduo_cross03" title="Regresar al primer parrafo referenciado">[3]</a> <a href="https://unpocodejava.com/">Luis Miguel Gracia</a>. ( 22 junio 2016). [Unpocodejava]((<a href="https://unpocodejava.com/" class="uri">https://unpocodejava.com/</a>). <a href="https://unpocodejava.com/2016/06/22/que-es-una-arquitectura-serverless-y-aws-lambda/"><strong>¿Qué es una Arquitectura Serverless (y AWS Lambda)?</strong></a>. [En línea]. Disponible en: <a href="https://unpocodejava.com/2016/06/22/que-es-una-arquitectura-serverless-y-aws-lambda/" class="uri">https://unpocodejava.com/2016/06/22/que-es-una-arquitectura-serverless-y-aws-lambda/</a>. [Último acceso: 12 de octubre de 2019].</p></li>
+<li><p><a id="rberduo_ref04"></a> <a href="02_rberduo.html#rberduo_cross04" title="Regresar al primer parrafo referenciado">[4]</a> <a href="https://medium.com/">Ricardo Borrillo</a>. (1 de Abril 2019). <a href="https://medium.com">Genbeta</a> <a href="https://medium.com/@PamRucinque/qué-es-eso-de-serverless-f4f6c8949b87"><strong>¿Qué es eso de serverless?</strong></a>, [En línea]. Disponible en: <a href="https://medium.com/@PamRucinque/qué-es-eso-de-serverless-f4f6c8949b87" class="uri">https://medium.com/@PamRucinque/qué-es-eso-de-serverless-f4f6c8949b87</a>, [Último acceso: 10 de octubre de 2019].</p></li>
+<li><p><a id="rberduo_ref05"></a> <a href="02_rberduo.html#rberduo_cross05" title="Regresar al primer parrafo referenciado">[5]</a> <a href="https://www.genbeta.com/">Pam Rucinque</a>. ( 04 de enero 2017 ). <a href="https://www.genbeta.com/">Medium</a>. <a href="https://www.genbeta.com/desarrollo/que-serverless-que-adoptarlo-desarrollo-tu-proxima-aplicacion"><strong>Qué es serverless y por qué adoptarlo en el desarrollo de tu próxima aplicación</strong></a> [En línea]. Disponible en: <a href="https://www.genbeta.com/desarrollo/que-serverless-que-adoptarlo-desarrollo-tu-proxima-aplicacion" class="uri">https://www.genbeta.com/desarrollo/que-serverless-que-adoptarlo-desarrollo-tu-proxima-aplicacion</a>. [Último acceso: 08 de octubre de 2019].</p></li>
+<li><p><a id="rberduo_ref06"></a> <a href="02_rberduo.html#rberduo_cross06" title="Regresar al primer parrafo referenciado">[6]</a>, <a href="https://aws.amazon.com/">Amazon</a>. (5 de noviembre 2018). <a href="https://aws.amazon.com/">Amazon</a>. <a href="https://aws.amazon.com/es/serverless/build-a-web-app//"><strong>Aplicación web sin servidor</strong></a>. [En línea]. Disponible en: <a href="https://aws.amazon.com/es/serverless/build-a-web-app/" class="uri">https://aws.amazon.com/es/serverless/build-a-web-app/</a>. [Último acceso: 10 de octubre de 2019].</p></li>
+</ul>
+<!--  -->
+<div class="imagestyle" style="text-align: center">
+<p><a href=""><img src="media/rberduo_image3.png" style="width:100.0%" /></a></p>
+</div>
+
+<!-- \setcounter{page}{10} -->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="01-contenido.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="03_nruiz.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["DecimoSextaEdicion-IoTenlaActualidad.pdf", "DecimoSextaEdicion-IoTenlaActualidad.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+
+
+<script type='text/javascript'>
+	(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+
+</body>
+
+</html>

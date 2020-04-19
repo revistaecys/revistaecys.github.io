@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Docker y Herramientas de Orquestación | Decimo Sexta Edicion - IoT en la actualidad</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Docker y Herramientas de Orquestación | Decimo Sexta Edicion - IoT en la actualidad" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="01-componentsHTML/coverfull.jpg" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Docker y Herramientas de Orquestación | Decimo Sexta Edicion - IoT en la actualidad" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="01-componentsHTML/coverfull.jpg" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas - ECYS" />
+
+
+<meta name="date" content="2020-04-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="07_jbatz.html">
+<link rel="next" href="09_cperalta.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-3');
+</script>
+
+
+
+<link rel="stylesheet" href="01-componentsCSS\style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Revista Digital</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Enlaces disponibles</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html"><i class="fa fa-check"></i>Editorial</a><ul>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#director-general"><i class="fa fa-check"></i>Director General</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#coordinacion-editorial"><i class="fa fa-check"></i>Coordinación Editorial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#colaboracion-especial"><i class="fa fa-check"></i>Colaboración Especial</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#portada-redaccion-diseno-y-diagramacion"><i class="fa fa-check"></i>Portada, redacción, diseño y diagramación</a></li>
+<li class="chapter" data-level="" data-path="00-editorial.html"><a href="00-editorial.html#contactenos"><i class="fa fa-check"></i>Contactenos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="01-contenido.html"><a href="01-contenido.html"><i class="fa fa-check"></i>Contenido</a></li>
+<li class="chapter" data-level="" data-path="02_rberduo.html"><a href="02_rberduo.html"><i class="fa fa-check"></i>Introduciendo a arquitecturas serverless</a><ul>
+<li class="chapter" data-level="" data-path="02_rberduo.html"><a href="02_rberduo.html#conclusiones"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="02_rberduo.html"><a href="02_rberduo.html#referencias"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="03_nruiz.html"><a href="03_nruiz.html"><i class="fa fa-check"></i>Inteligencia Artificial, el próximo competidor en la oferta laboral</a><ul>
+<li class="chapter" data-level="" data-path="03_nruiz.html"><a href="03_nruiz.html#conclusiones-1"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="03_nruiz.html"><a href="03_nruiz.html#referencias-1"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="04_djimenez.html"><a href="04_djimenez.html"><i class="fa fa-check"></i>IoT en la actualidad</a><ul>
+<li class="chapter" data-level="" data-path="04_djimenez.html"><a href="04_djimenez.html#conclusiones-2"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="04_djimenez.html"><a href="04_djimenez.html#referencias-2"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05_dargueta.html"><a href="05_dargueta.html"><i class="fa fa-check"></i>La importancia de la simulación y modelación en la actualidad</a><ul>
+<li class="chapter" data-level="" data-path="05_dargueta.html"><a href="05_dargueta.html#conclusiones-3"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="05_dargueta.html"><a href="05_dargueta.html#referencias-3"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06_dmomotic.html"><a href="06_dmomotic.html"><i class="fa fa-check"></i>Desarrollo Frontend con VueJS</a><ul>
+<li class="chapter" data-level="" data-path="06_dmomotic.html"><a href="06_dmomotic.html#conclusiones-4"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="06_dmomotic.html"><a href="06_dmomotic.html#referencias-4"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07_jbatz.html"><a href="07_jbatz.html"><i class="fa fa-check"></i>Adaptándose a Scrum</a><ul>
+<li class="chapter" data-level="" data-path="07_jbatz.html"><a href="07_jbatz.html#conclusiones-5"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="07_jbatz.html"><a href="07_jbatz.html#referencias-5"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="08_rcutz.html"><a href="08_rcutz.html"><i class="fa fa-check"></i>Docker y Herramientas de Orquestación</a><ul>
+<li class="chapter" data-level="" data-path="08_rcutz.html"><a href="08_rcutz.html#conclusiones-6"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="08_rcutz.html"><a href="08_rcutz.html#referencias-6"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="09_cperalta.html"><a href="09_cperalta.html"><i class="fa fa-check"></i>Ruta de aprendizaje, para ser un mejor profesional</a><ul>
+<li class="chapter" data-level="" data-path="09_cperalta.html"><a href="09_cperalta.html#conclusiones-7"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="09_cperalta.html"><a href="09_cperalta.html#referencias-7"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="10_dasencio.html"><a href="10_dasencio.html"><i class="fa fa-check"></i>Firma electrónica avanzada, el futuro de la autenticidad de documentos</a><ul>
+<li class="chapter" data-level="" data-path="10_dasencio.html"><a href="10_dasencio.html#conclusiones-8"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="10_dasencio.html"><a href="10_dasencio.html#referencias-8"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="11_fhernandez.html"><a href="11_fhernandez.html"><i class="fa fa-check"></i>Introducción a Hyperledger Composer</a><ul>
+<li class="chapter" data-level="" data-path="11_fhernandez.html"><a href="11_fhernandez.html#conclusiones-9"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="11_fhernandez.html"><a href="11_fhernandez.html#referencias-9"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="12_gcalel.html"><a href="12_gcalel.html"><i class="fa fa-check"></i>Analista de Datos</a><ul>
+<li class="chapter" data-level="" data-path="12_gcalel.html"><a href="12_gcalel.html#conclusiones-10"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="12_gcalel.html"><a href="12_gcalel.html#referencias-10"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="13_mcalderon.html"><a href="13_mcalderon.html"><i class="fa fa-check"></i>Google Search como herramienta para Hacking</a><ul>
+<li class="chapter" data-level="" data-path="13_mcalderon.html"><a href="13_mcalderon.html#conclusiones-11"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="13_mcalderon.html"><a href="13_mcalderon.html#referencias-11"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="14_fmerida.html"><a href="14_fmerida.html"><i class="fa fa-check"></i>Progressive Web Apps y el futuro del desarrollo web.</a><ul>
+<li class="chapter" data-level="" data-path="14_fmerida.html"><a href="14_fmerida.html#conclusiones-12"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="14_fmerida.html"><a href="14_fmerida.html#referencias-12"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="15_ereal.html"><a href="15_ereal.html"><i class="fa fa-check"></i>Criptografía: El arte de ocultar mensajes</a><ul>
+<li class="chapter" data-level="" data-path="15_ereal.html"><a href="15_ereal.html#conclusiones-13"><i class="fa fa-check"></i>Conclusiones</a></li>
+<li class="chapter" data-level="" data-path="15_ereal.html"><a href="15_ereal.html#referencias-13"><i class="fa fa-check"></i>Referencias</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://dtt-ecys.org/magazine/public_edicionRevista" target="_blank">Ciencias, Sistemas y Tecnología</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Decimo Sexta Edicion - IoT en la actualidad</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article07" class="section level1">
+<h1>Docker y Herramientas de Orquestación</h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/rcutz_image1.png" width="111" height="129" />
+</div>
+<div class="photobiography_information">
+<p>Ricardo Antonio Cutz Hernández</p>
+<p><strong><a href="mailto:ricardcutzh@gmail.com" class="email">ricardcutzh@gmail.com</a></strong></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC</p>
+<p><strong>Palabras Clave:</strong><br />
+Docker, Devops, Cloud, Microservicios, Desarrollo, Programación, Orquestadores.</p>
+</div>
+
+</div>
+<p>En la actualidad en el contexto de desarrollo de aplicaciones, Docker es una herramienta que se utiliza por las ventajas que ofrece y la variedad de herramientas que se pueden utilizar para el despliegue y orquestación de contenedores. El uso de contenedores se ha convertido en una práctica común en los equipos de trabajo porque permiten un ambiente uniforme en las diferentes etapas de desarrollo, pruebas y despliegue de servicios. Uno de los problemas frecuentes a los que un desarrollador se enfrenta son las dependencias y librerías utilizadas para el despliegue de una aplicación, esto incluyendo el sistema operativo y el ambiente de desarrollo que se ha preparado para un proyecto en curso, aquí es donde Docker entra en contexto como una solución viable. Para poder entender la importancia que Docker tiene se debe de responder a la pregunta: ¿Qué es Docker?</p>
+<p>Docker es una plataforma de contenerización que permite empaquetar una aplicación junto con sus dependencias que asegura que la aplicación funcione en cualquier ambiente. En el contexto de transporte de mercancías en barcos, un contenedor es una unidad estándar para realizar esta tarea, esta misma idea aplica para los contenedores de Docker convirtiéndose en una medida estándar para empaquetar una aplicación</p>
+<p>La utilización de Docker ha crecido durante los últimos años y el manejo de contenedores se ha popularizado, la necesidad de poder administrar estos mismos ha incrementado, por ello existen diferentes herramientas llamadas “orquestadores de contenedores” que han surgido para suplir esta necesidad. Una herramienta de orquestación de contenedores tiene como propósito el manejo del ciclo de vida de los contenedores, principalmente en ambientes de producción dinámicos, son utilizados para el manejo de diferentes tareas como, por ejemplo</p>
+<ul>
+<li><p>Monitorear la salud de los contenedores activos</p></li>
+<li><p>Provisionar redundancia</p></li>
+<li><p>Provisionar alta disponibilidad</p></li>
+<li><p>Balanceo de carga y descubrimiento de servicios</p></li>
+<li><p>Repartición de recursos y otras tareas</p></li>
+</ul>
+<div class="imagestyle" style="text-align: center">
+<a href="https://imgix.datadoghq.com/img/docker-2018-1-final.png"><img src="media/rcutz_image2.png" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 1:</strong> Estadísticas de Adopción de Docker<a href="https://imgix.datadoghq.com/img/docker-2018-1-final.png"></a></p>
+</div>
+</div>
+<p>El utilizar una herramienta de orquestación implica que la configuración del ambiente de despliegue se describe en uno o varios archivos de configuración, estas configuraciones incluyen las imágenes de los contenedores a utilizar, volúmenes de almacenamiento, conexión de red entre los diferentes servicios entre otras configuraciones. El poder utilizar este tipo de archivos (YML o JSON) permite que se pueda llevar un control de las versiones de las configuraciones y controlar el despliegue en diferentes ambientes, puede ser un ambiente de pruebas o un ambiente de producción, esto debido a que todo se maneja como código. La herramienta permite desplegar los contenedores en clústers, manejar los recursos necesarios para cada uno de los servicios y agregar o quitar contenedores de ser necesario. Actualmente existen diferentes herramientas disponibles para lograr todo lo anteriormente mencionado, a continuación, se mencionan algunas de ellas.</p>
+<p><strong>Kubernetes</strong></p>
+<p><a id="rcutz_cross01"></a>
+Es una herramienta de código abierto bastante popular para la orquestación de contenedores, permite desplegar y manejar aplicaciones que están conformadas por múltiples contenedores, ayuda a administrar la aplicación contenerizada de diferentes tipos, física, virtual y ambientes de nube <a href="08_rcutz.html#rcutz_ref01" title="Ver Referencia">[1]</a>. Kubernetes es usualmente utilizada con Docker, pero puede trabajar con cualquier sistema de contenedores que se apegue a los estándares de imágenes de contenedores. Sus beneficios son los siguientes:</p>
+<ul>
+<li><p>Correr en nubes privadas y públicas (Google Cloud, Azure, AWS, etc.)</p></li>
+<li><p>Asegurar que los contenedores corren en todo momento y ayuda a administrar los recursos.</p></li>
+<li><p>Permitir que las aplicaciones contenerizadas puedan ser liberadas y actualizadas sin tiempo de caída.</p></li>
+</ul>
+<div class="imagestyle" style="text-align: center">
+<a href="https://www.tutorialspoint.com/kubernetes/images/cluster_architecture.jpg"><img src="media/rcutz_image3.png" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 2:</strong> Arquitectura de Kubernetes<a href="https://www.tutorialspoint.com/kubernetes/images/cluster_architecture.jpg"></a></p>
+</div>
+</div>
+<p><strong>Docker Swarm</strong></p>
+<p>Es la herramienta de orquestación de contenedores en clústeres que proporciona Docker, permite desplegar y orquestar contenedores en número grande de anfitriones que corren el motor de Docker. Se hace referencia a esta herramienta que proporciona Docker como el modo Swarm. Esta herramienta es importante mencionarla por la relevancia que tiene Docker, aunque cabe mencionar que no es muy utilizada, ya que existen otros tipos de orquestadores que permiten mayor funcionalidad y compatibilidad con contenedores que no son de Docker. Docker Swarm permite:</p>
+<ul>
+<li><p>Escalar, declarando tareas que pueden correr para cada servicio a desplegar</p></li>
+<li><p>Manejar la red de los servicios que se despliegan.</p></li>
+<li><p>Descubrimiento de servicios</p></li>
+<li><p>Balanceo de carga.</p></li>
+</ul>
+<div class="imagestyle" style="text-align: center">
+<a href="https://image.slidesharecdn.com/dockerswarmv1-150401123157-conversion-gate01/95/docker-swarm-introduction-3-638.jpg?cb=1427891574"><img src="media/rcutz_image4.png" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 3:</strong> Arquitectura de Docker Swarm<a href="https://image.slidesharecdn.com/dockerswarmv1-150401123157-conversion-gate01/95/docker-swarm-introduction-3-638.jpg?cb=1427891574"></a></p>
+</div>
+</div>
+<p><strong>AWS ECS</strong></p>
+<p><a id="rcutz_cross03"></a>
+Llamada “Amazon Elastic Container Service”<a href="08_rcutz.html#rcutz_ref03" title="Ver Referencia">[3]</a>, una herramienta para el manejo de contenedores alta mente escalable y rápida, es provista por Amazon para correr contenedores en clúster de máquinas virtuales (Amazon EC2) que tienen el motor de Docker preinstalado. ECS maneja la instalación, monitoreo y el control de las instancias del clúster por medio de la API de AWS o de la consola de manejo. La idea de esta herramienta es ver el clúster de EC2 como una fuente de recursos de CPU y memoria, permite también que se interactúe con los demás servicios de AWS como Coudwatch configurando alarmas, permitiendo así escalar cuando sea necesario. Dentro de los conceptos que se manejan en el servicio de ECS podemos mencionar:</p>
+<ul>
+<li><p>Task: es una definición de las propiedades de un contenedor, como por ejemplo la imagen a utilizar, la cantidad de CPU y memoria que puede utilizar, el ambiente y los puertos.</p></li>
+<li><p>Service: Es la definición del máximo o mínimo de “tasks” que pueden correr.</p></li>
+</ul>
+<p>Es importante para mencionar es que ECS puede trabajar con EC2 (Servicio de instancias de AWS) o con Fargate, siendo esta última un motor que permite que se ejecuten contenedores sin servidores, lo cual elimina le necesidad de velar por la plataforma en donde se ejecutan los contenedores, prácticamente permite enfocarse directa y solamente en el manejo de contenedores.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://d1.awsstatic.com/diagrams/product-page-diagrams/product-page-diagram_ECS_1.86ebd8c223ec8b55aa1903c423fbe4e672f3daf7.png"><img src="media/rcutz_image5.png" style="width:86.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 4:</strong> Como trabaja ECS<a href="https://d1.awsstatic.com/diagrams/product-page-diagrams/product-page-diagram_ECS_1.86ebd8c223ec8b55aa1903c423fbe4e672f3daf7.png"></a></p>
+</div>
+</div>
+<div id="conclusiones-6" class="section level2 unnumbered">
+<h2>Conclusiones</h2>
+<ul>
+<li><p>Docker es una herramienta de contenedores que se ha vuelto tendencia en el medio de desarrollo de aplicaciones</p></li>
+<li><p>Las herramientas de orquestación permiten manejar y gestionar los contenedores y recursos en aplicaciones y servicios</p></li>
+<li><p>Dependiendo de la plataforma de contenedores que se utiliza existen herramientas de orquestación que ofrecen o no compatibilidad.</p></li>
+<li><p>Las herramientas de orquestación están enfocados a manejar escalabilidad y monitoreo de los contenedores que conforman una aplicación.</p></li>
+</ul>
+</div>
+<div id="referencias-6" class="section level2 unnumbered">
+<h2>Referencias</h2>
+<ul>
+<li><p><a id="rcutz_ref01"></a> <a href="08_rcutz.html#rcutz_cross01" title="Regresar al primer parrafo referenciado">[1]</a> <a href="https://www.infoworld.com/">Serdar Yegulalp</a>. (04 enero 2015). <a href="https://www.infoworld.com/">InfoWorld</a>. <a href="https://www.infoworld.com/article/3268073/what-is-kubernetes-your-next-application-platform.html">What is Kubernetes? Your next application platform</a>. [En línea]. Disponible en: <a href="https://www.infoworld.com/article/3268073/what-is-kubernetes-your-next-application-platform.html" class="uri">https://www.infoworld.com/article/3268073/what-is-kubernetes-your-next-application-platform.html</a>. [Último acceso: : 3 de septiembre de 2019].</p></li>
+<li><p>[2] <a href="https://www.campusmvp.es/">campusMVP</a>. <a href="https://www.campusmvp.es/">campusMVP</a>. <a href="https://www.campusmvp.es/recursos/post/las-10-herramientas-mas-importantes-para-orquestacion-de-contenedores-docker.aspx">Las 10 herramientas más importantes para la orquestación de Contenedores en Docker</a>. [En línea]. Disponible en: <a href="https://www.campusmvp.es/recursos/post/las-10-herramientas-mas-importantes-para-orquestacion-de-contenedores-docker.aspx" class="uri">https://www.campusmvp.es/recursos/post/las-10-herramientas-mas-importantes-para-orquestacion-de-contenedores-docker.aspx</a>. [Último acceso: 3 de septiembre de 2019].</p></li>
+<li><p><a id="rcutz_ref03"></a> <a href="08_rcutz.html#rcutz_cross03" title="Regresar al primer parrafo referenciado">[3]</a> <a href="https://aws.amazon.com/">Amazon Web Services</a>. <a href="https://aws.amazon.com/">AWS</a>. <a href="https://aws.amazon.com/ecs/">Amazon Elastic Container Service</a>. [En línea]. Disponible en: <a href="https://aws.amazon.com/ecs/" class="uri">https://aws.amazon.com/ecs/</a>. [Último acceso: 03 julio 2019].</p></li>
+<li><p>[4] <a href="https://docs.docker.com/">Docker</a>. <a href="https://docs.docker.com/">Docker Docs</a>. <a href="https://docs.docker.com/engine/swarm/">Docker Docs</a>. [En línea]. Disponible en: <a href="https://docs.docker.com/engine/swarm/" class="uri">https://docs.docker.com/engine/swarm/</a>. [Último acceso: 03 julio 2019].</p></li>
+<li><p>[5] <a href="https://kubernetes.io/">Kubernetes</a>. (10 de octubre 2019). <a href="https://kubernetes.io/">Kubernetes</a>. <a href="https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/">¿Qué es Kubernetes?</a>. [En línea]. Disponible en: <a href="https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/" class="uri">https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/</a>. [Último acceso: 03 julio 2019].</p></li>
+</ul>
+
+<!-- \setcounter{page}{20} -->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="07_jbatz.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="09_cperalta.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["DecimoSextaEdicion-IoTenlaActualidad.pdf", "DecimoSextaEdicion-IoTenlaActualidad.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+
+
+<script type='text/javascript'>
+	(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+
+</body>
+
+</html>
