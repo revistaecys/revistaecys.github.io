@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Seguridad en lenguajes de programación | Undécima Edición - Revista ECYS</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Seguridad en lenguajes de programación | Undécima Edición - Revista ECYS" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="01-componentsHTML/coverfull.jpg" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Seguridad en lenguajes de programación | Undécima Edición - Revista ECYS" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="01-componentsHTML/coverfull.jpg" />
+
+<meta name="author" content="Escuela de Ingeniería en Ciencias y Sistemas - ECYS" />
+
+
+<meta name="date" content="2022-04-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="06_cMonzon.html"/>
+<link rel="next" href="08_dVasquez.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145374383-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145374383-3');
+</script>
+
+
+
+<link rel="stylesheet" href="01-componentsCSS/style-drake-manual.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Revista Digital</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#enlaces-disponibles">Enlaces disponibles<span></span></a></li>
+<li><a href="00-editorial.html#editorial">Editorial<span></span></a><ul>
+<li><a href="00-editorial.html#director-general">Director General<span></span></a></li>
+<li><a href="00-editorial.html#coordinación-editorial">Coordinación Editorial<span></span></a></li>
+<li><a href="00-editorial.html#colaboración-especial">Colaboración Especial<span></span></a></li>
+<li><a href="00-editorial.html#portada-redacción-diseño-y-diagramación">Portada, redacción, diseño y diagramación<span></span></a></li>
+<li><a href="00-editorial.html#contactenos">Contactenos<span></span></a></li>
+</ul></li>
+<li><a href="01-contenido.html#contenido">Contenido<span></span></a></li>
+<li><a href="02_cFabian.html#article01">Ingeniería en Sistemas y la salud mental<span></span></a><ul>
+<li><a href="02_cFabian.html#conclusiones">Conclusiones<span></span></a></li>
+<li><a href="02_cFabian.html#referencias">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="03_lFuentes.html#article02">¿Qué promete la computación cuántica?<span></span></a><ul>
+<li><a href="03_lFuentes.html#conclusiones-1">Conclusiones<span></span></a></li>
+<li><a href="03_lFuentes.html#referencias-1">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="04_kRecinos.html#article03">Redes Sociales: un medio de desarrollo económico<span></span></a><ul>
+<li><a href="04_kRecinos.html#conclusiones-2">Conclusiones<span></span></a></li>
+<li><a href="04_kRecinos.html#referencias-2">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="05_hVasquez.html#article04">¿Cómo convertirse en un científico de datos?<span></span></a><ul>
+<li><a href="05_hVasquez.html#conclusiones-3">Conclusiones<span></span></a></li>
+<li><a href="05_hVasquez.html#referencias-3">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="06_cMonzon.html#article05">Blockchain: La revolución en las finanzas<span></span></a><ul>
+<li><a href="06_cMonzon.html#conclusiones-4">Conclusiones<span></span></a></li>
+<li><a href="06_cMonzon.html#referencias-4">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="07_nTzunun.html#article06">Seguridad en lenguajes de programación<span></span></a><ul>
+<li><a href="07_nTzunun.html#conclusiones-5">Conclusiones<span></span></a></li>
+<li><a href="07_nTzunun.html#referencias-5">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="08_dVasquez.html#article07">Design Thinking<span></span></a><ul>
+<li><a href="08_dVasquez.html#conclusiones-6">Conclusiones<span></span></a></li>
+<li><a href="08_dVasquez.html#referencias-6">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="09_mFuentes.html#article08">Neutralidad de internet ¿En qué nos afecta?<span></span></a><ul>
+<li><a href="09_mFuentes.html#referencias-7">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="10_jSandoval.html#article09">Gemelos digitales<span></span></a><ul>
+<li><a href="10_jSandoval.html#conclusiones-7">Conclusiones<span></span></a></li>
+<li><a href="10_jSandoval.html#referencias-8">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="11_kMeng.html#article10">Oen edX una plataforma MOOC Open Source<span></span></a><ul>
+<li><a href="11_kMeng.html#conclusiones-8">Conclusiones<span></span></a></li>
+<li><a href="11_kMeng.html#referencias-9">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="12_jChacon.html#article11">Software de Terceros: La temible zona de confort<span></span></a><ul>
+<li><a href="12_jChacon.html#conclusiones-9">Conclusiones<span></span></a></li>
+<li><a href="12_jChacon.html#referencias-10">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="13_wSiguantay.html#article12">Tecnología: el camino para una mejor educación<span></span></a><ul>
+<li><a href="13_wSiguantay.html#conclusiones-10">Conclusiones<span></span></a></li>
+<li><a href="13_wSiguantay.html#referencias-11">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="14_dMolina.html#article13">La integración del internet de las cosas y el desarrollo de la industria 4.0<span></span></a><ul>
+<li><a href="14_dMolina.html#conclusiones-11">Conclusiones<span></span></a></li>
+<li><a href="14_dMolina.html#referencias-12">Referencias<span></span></a></li>
+</ul></li>
+<li><a href="15_eCalderon.html#article14">Game Data Mining<span></span></a><ul>
+<li><a href="15_eCalderon.html#conclusiones-12">Conclusiones<span></span></a></li>
+<li><a href="15_eCalderon.html#referencias-13">Referencias<span></span></a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://dtt-ecys.org/magazine/public_edicionRevista" target="_blank">Ciencias, Sistemas y Tecnología</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Undécima Edición - Revista ECYS</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="article06" class="section level1 hasAnchor">
+<h1>Seguridad en lenguajes de programación<a href="07_nTzunun.html#article06" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+
+<div class="photobiography3">
+<div class="photobiography_photo">
+<img src="media/nTzunun_image1.png" width="111" height="129" />
+</div>
+<div class="photobiography_information">
+<p>Nestor Alexander Tzunún Mérida</p>
+<p><strong><a href="mailto:alexdmerida@gmail.com" class="email">alexdmerida@gmail.com</a></strong></p>
+<p>Estudiante de Ingeniería en Ciencias y Sistemas - USAC</p>
+<p><strong>Palabras Clave:</strong><br />
+Lenguajes de Programación, vulnerabilidades, seguridad, cifrados, inyección sql, código</p>
+</div>
+
+</div>
+<p>Saber desarrollar en un el lenguaje de programación puede ser no muy importante cuando se realice una nueva aplicación, esto si no se conoce el lenguaje como tal, saber si son propensos de ataques y conocer cuáles son sus vulnerabilidades es muy importante para nosotros los desarrolladores debido a que carecemos de conocimientos suficientes respecto a la seguridad en los lenguajes de programación.</p>
+<p>Muchas veces cuando vamos a empezar a realizar una aplicación siempre vemos en que lenguaje se nos facilitará el desarrollo para poder cumplir con los tiempos pero a veces no se considera que tan seguro es el lenguaje de programación elegido.</p>
+<p>Según Jeremiah Grossman, fundador de WhiteHat Security “la decisión de qué lenguaje de programación usar en algún proyecto a menudo se basa en consideraciones como qué tan familiarizado está el equipo de desarrollo con el lenguaje, con cuál se realiza el proyecto más rápido, o simplemente con cuál es posible realizar el trabajo solicitado por el cliente, consideraciones como qué tan seguro es el lenguaje a emplear surgen de último momento, cuando usualmente ya es demasiado tarde”.</p>
+<p>Por ello es necesario conocer las vulnerabilidades que puedan tener los lenguajes de programación como contrarrestarlos y así poder decidir de mejor manera que lenguaje utilizar en nuestro proyecto.</p>
+<p>A continuación cuatro vulnerabilidades más comunes en los lenguajes de programación:</p>
+<ul>
+<li><p><strong>Vulnerabilidades de Cifrado:</strong> Cifrar es transformar información con el fin de protegerla de miradas ajenas; en programación existe el cifrado RSA que se basa en un sistema criptográfico de clave pública, esto significa que cada usuario dispone de dos claves de cifrado: una pública y una privada muchas plataformas utilizan este cifrado y esta vulnerabilidad ataca y logra cifrar dichas claves.</p></li>
+<li><p><strong>Vulnerabilidades cross-site scripting o XSS:</strong> Son un tipo de inyección, en la cual los scripts maliciosos se inyectan en sitios web benignos y confiables. Los ataques XSS ocurren cuando un atacante usa una aplicación web para enviar código malicioso, generalmente en la forma de un script del lado del navegador, a un usuario final diferente. Los fallos que permiten que estos ataques tengan éxito son bastante comunes y ocurren en cualquier lugar en el que una aplicación web utiliza la información de entrada de un usuario dentro de la salida que genera sin validarla ni codificarla.</p></li>
+<li><p><strong>Vulnerabilidades de Inyección SQL:</strong> Es una de las técnicas más comunes del web hacking, es la colocación de código malicioso en las declaraciones SQL, a través de la entrada de la página web esta inyección de código podría destruir la Base de Datos generalmente ocurre cuando se solicita a un usuario que ingrese, su nombre de usuario / ID de usuario, y en lugar de un nombre / ID, el usuario te proporciona una declaración SQL que ejecutará sin saberlo la base de datos.</p></li>
+<li><p><strong>Vulnerabilidades de Inyección de Código:</strong> La inyección de código es el término general para los tipos de ataque que consisten en inyectar código que luego es interpretado / ejecutado por la aplicación. Este tipo de ataque explota el manejo deficiente de datos no confiables. Estos tipos de ataques generalmente son posibles debido a la falta de una validación adecuada de los datos de entrada / salida.</p></li>
+</ul>
+<div class="imagestyle" style="text-align: center">
+<a href="https://news.softpedia.com/news/top-programming-languages-that-generate-software-vulnerabilities-497101.shtml"><img src="media/nTzunun_image2.jpg" style="width:75.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 1:</strong> Comparación de vulnerabilidades entre lenguajes de programación. Fuente: <a href="https://news.softpedia.com/news/top-programming-languages-that-generate-software-vulnerabilities-497101.shtml">https://news.softpedia.com/news/top-programming-languages-that-generate-software-vulnerabilities-497101.shtml</a></p>
+</div>
+</div>
+<p>Conociendo estas vulnerabilidades también es importante saber que lenguajes de programación son más propensos a estos ataques.</p>
+<p>Según el estudio realizado por Veracode que es una empresa de seguridad que se dedica a analizar código fuente en busca de vulnerabilidades establece la siguiente lista atendiendo una calificación de mayor a menor.</p>
+<p>Ahora que ya sabemos cuáles son las vulnerabilidades más comunes y que lenguajes de programación son más propensos a estos lenguajes, como podemos contrarrestarlos o cómo podemos remediar esta situación y así elegir el lenguaje más adecuado.</p>
+<p>Obviamente una educación en prácticas de programación con seguridad es clave para resolverlas, muchos de los desarrolladores necesitamos educarnos adecuadamente para reducir la tasa de introducción de vulnerabilidades, además conocer el certificado PCI DSS (Payment Card lndustry Data Security Standard) que es un estándar de seguridad obligatorio para organizaciones que manipulan información acerca de tarjetas de crédito/débito, sería de mucha ayuda al elegir un lenguaje de programación.</p>
+<div class="imagestyle" style="text-align: center">
+<a href="https://keybloggers.wordpress.com/2015/06/08/cryptOI0cker-nueva-variante-del-virus-cryptolocker/"><img src="media/nTzunun_image3.jpg" style="width:75.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 2:</strong> Cifrado asimétrico. Fuente: <a href="https://keybloggers.wordpress.com/2015/06/08/cryptOI0cker-nueva-variante-del-virus-cryptolocker/">https://keybloggers.wordpress.com/2015/06/08/cryptOI0cker-nueva-variante-del-virus-cryptolocker/</a></p>
+</div>
+</div>
+<div class="imagestyle" style="text-align: center">
+<a href="https://medium.com/@marvin.soto/qu%C3%A9-es-xss-b9330eedbc07"><img src="media/nTzunun_image4.jpg" style="width:75.0%" /></a>
+<div class="caption">
+<p><strong>Imagen 3:</strong> Cross Site Scripting. Fuente: <a href="https://medium.com/@marvin.soto/qu%C3%A9-es-xss-b9330eedbc07">https://medium.com/<span class="citation">@marvin.soto/qu%C3%A9-es-xss-b9330eedbc07</span></a></p>
+</div>
+</div>
+<div id="conclusiones-5" class="section level2 hasAnchor">
+<h2>Conclusiones<a href="07_nTzunun.html#conclusiones-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Conocer las vulnerabilidades del lenguaje de programación antes de iniciar un nuevo software definen a un buen desarrollador.</p></li>
+<li><p>Cualquier lenguaje de programación pueden vulnerables si no se realiza una buena implementación de seguridad.</p></li>
+<li><p>Andriod es el lenguaje de programación más vulnerable, sobre todo al cifrado.</p></li>
+</ul>
+</div>
+<div id="referencias-5" class="section level2 hasAnchor">
+<h2>Referencias<a href="07_nTzunun.html#referencias-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p><a id="nTzunun_ref01"></a> <a href="#nTzunun_cross01" title="Regresar al primer parrafo referenciado">[1]</a> [<strong>noticias seguridad</strong>] [<strong>Lenguajes más propensos a fallos</strong>] Recuperado de: <a href="http://noticiasseguridad.com/seguridad-informatica/los-lenguajes-de-programacion-mas-propensos-fallos-de-seguridad-en-la-web/" class="uri">http://noticiasseguridad.com/seguridad-informatica/los-lenguajes-de-programacion-mas-propensos-fallos-de-seguridad-en-la-web/</a>.</p></li>
+<li><p><a id="nTzunun_ref02"></a> <a href="#nTzunun_cross02" title="Regresar al primer parrafo referenciado">[2]</a> [<strong>cert org</strong>] [<strong>Seguridad en los lenguajes de programación más populares</strong>] Recuperado de: <a href="https://www.cert.org.mx/historico/noticia/index.html-noti=1672" class="uri">https://www.cert.org.mx/historico/noticia/index.html-noti=1672</a>.</p></li>
+<li><p><a id="nTzunun_ref03"></a> <a href="#nTzunun_cross03" title="Regresar al primer parrafo referenciado">[3]</a> [<strong>seguinfo wordpress</strong>] [<strong>¿Qué es RSA?</strong>] Recuperado de: <a href="https://seguinfo.wordpress.com/2007/09/14/%C2%BFque-es-rsa/" class="uri">https://seguinfo.wordpress.com/2007/09/14/%C2%BFque-es-rsa/</a>.</p></li>
+<li><p><a id="nTzunun_ref04"></a> <a href="#nTzunun_cross04" title="Regresar al primer parrafo referenciado">[4]</a> [<strong>pressroom hostalia</strong>] [<strong>Ataques de inyección SQL: qué son y cómo protegerse</strong>] Recuperado de: <a href="https://pressroom.hostalia.com/white-papers/ataques-inyeccion-sql" class="uri">https://pressroom.hostalia.com/white-papers/ataques-inyeccion-sql</a>.</p></li>
+</ul>
+
+<!-- \setcounter{page}{22} -->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="06_cMonzon.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="08_dVasquez.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 1
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["UndecimaEdicion-RevistaECYS.pdf", "UndecimaEdicion-RevistaECYS.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+
+
+<script type='text/javascript'>
+	(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+
+</body>
+
+</html>
