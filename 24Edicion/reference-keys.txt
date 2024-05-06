@@ -19,6 +19,10 @@ fig:unnamed-chunk-69
 fig:unnamed-chunk-73
 fig:unnamed-chunk-75
 fig:unnamed-chunk-83
+fig:unnamed-chunk-93
+fig:unnamed-chunk-95
+fig:unnamed-chunk-99
+fig:unnamed-chunk-101
 Bradna
 entrevista
 pareja06
@@ -89,6 +93,13 @@ referencias-12
 más-allá-de-los-dispositivos-descifrando-el-potencial-infinito-de-la-iot-5.2
 artículo-13
 referencias-13
-más-allá-de-los-dispositivos-descifrando-el-potencial-infinito-de-la-iot-5.4
+te-han-hackeado-explorando-el-fascinante-mundo-de-la-ciberseguridad-y-sus-cambios-constantes-5.3
+introducción-9
 artículo-14
+conclusiones-10
 referencias-14
+impacto-de-la-inteligencia-artificial-en-la-vida-cotidiana-de-personas-no-videntes-un-análisis-de-tecnologías-como-seeing-ai-y-procesamiento-de-lenguaje-natural-5.4
+introducción-10
+artículo-15
+conclusiones-11
+referencias-15
