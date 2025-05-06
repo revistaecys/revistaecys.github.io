@@ -1,0 +1,2752 @@
+\documentclass[12pt,spanish,Letterpaper,openany]{book}
+\usepackage{lmodern}
+\usepackage{setspace}
+\setstretch{0.85}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+    \setmainfont[Scale=1.0, HyphenChar=None]{Corbel}
+    \setsansfont[]{Corbel}
+    \setmonofont[Mapping=tex-ansi]{Corbel}
+\fi
+
+\makeatletter
+\renewcommand\mainmatter{\clearpage\@mainmattertrue\pagenumbering{arabic}}
+\renewcommand\frontmatter{\clearpage\@mainmatterfalse\pagenumbering{arabic}}
+\renewcommand\backmatter{\clearpage\@mainmatterfalse}
+\makeatother
+
+%\usepackage{etoolbox}
+%\makeatletter
+%\patchcmd{\@smemmain}{\cleardoublepage}{\clearpage}{}{}
+%\patchcmd{\@smemmain}{\cleardoublepage}{\clearpage}{}{}
+%\patchcmd{\@smemfront}{\cleardoublepage}{\clearpage}{}{}
+%\patchcmd{\@smemfront}{\cleardoublepage}{\clearpage}{}{}
+%\makeatother
+
+\setlength{\parindent}{0em}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{doc}
+\usepackage{float}
+\usepackage{tcolorbox} 
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{nonfloat}
+
+\usepackage{pdfpages}
+
+\usepackage[
+contents={},
+opacity=1,
+scale=1.5,
+color=blue!90
+]{background}
+\usepackage{lipsum}
+\usepackage{ifthen}
+
+\usepackage{xcolor}
+\usepackage[pagestyles]{titlesec}
+
+\renewpagestyle{plain}[\normalsize\sffamily\bfseries\slshape]{
+  \setfoot{}{\color{black}{\thepage}}{}}
+
+\newpagestyle{myps}[\normalsize\sffamily\bfseries\slshape]{
+  \setfoot{}{\color{black}{\thepage}}{}}
+  
+\pagestyle{myps}
+
+
+\usepackage{framed}
+\definecolor{colorlinetitle}{HTML}{a87e00}%{a87e00}%
+\definecolor{textlinetitle}{HTML}{061769}%{061769}%{061769}%
+\definecolor{fondo}{HTML}{041d57}%
+\definecolor{newfondo}{HTML}{3d0718}%
+\colorlet{shadecolor}{fondo!81!}
+
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[inner=12.7mm,outer=12.7mm,top=23mm,bottom=18.5mm]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Revista digital de la escuela de ingeniería en Ciencias y Sistemas},
+            pdfauthor={Escuela Ingenieria en Ciencias y Sistemas},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[shorthands=off,main=spanish]{babel}
+\else
+  \usepackage{polyglossia}
+  \setmainlanguage[]{spanish}
+\fi
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\usepackage{longtable,booktabs}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+
+  \title{Revista digital de la escuela de ingeniería en Ciencias y Sistemas}
+    \author{Escuela Ingenieria en Ciencias y Sistemas}
+      \date{2025-04-28}
+
+% no title page
+\AtBeginDocument{\let\maketitle\relax}
+
+\usepackage{caption2}
+\captionsetup{%
+labelsep=colon,%
+font={footnotesize},%
+aboveskip=0.4\baselineskip,%
+belowskip=0\baselineskip,% deve essere 0 perché regolo lo spazio dal testo con \intextsep
+}%
+
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{1em}
+\usepackage{enumitem}
+\setlist[itemize]{labelindent = \parindent, leftmargin=*}
+
+%\usepackage{framed,color}
+%\definecolor{shadecolor}{RGB}{248,248,248}
+
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
+\renewcommand{\chaptername}{Artículo}
+\addto\captionsspanish{\renewcommand{\chaptername}{Artículo}}
+\addto\captionsspanish{\renewcommand{\contentsname}{Índice General}}
+
+
+\frenchspacing
+\tolerance=5000
+\multicoltolerance=3000 
+
+\raggedbottom
+\raggedcolumns
+
+\setlength{\columnsep}{1em}
+%We want a rule between columns.
+%\setlength\columnseprule{.4pt}
+
+%Tambien queremos asegurarnos de que un nuevo entorno multicols 
+%encuentre suficiente espacio en la parte inferior de la pagina.
+\setlength\premulticols{6\baselineskip}
+
+%Al equilibrar columnas, ignoramos las soluciones que son 
+%demasiado malas. Ademas, si la ultima columna es demasiado mala, 
+%la tipeamos sin estirar.
+\setcounter{columnbadness}{7000}
+\setcounter{finalcolumnbadness}{7000}
+
+\newcommand{\prefacetitlecommand}%
+{\titleformat{\chapter}[display]%
+{\bfseries\large\color{colorlinetitle}}%
+{\relax}%
+{0ex}%
+{{\titlerule[1.2pt]}\filright\color{textlinetitle}}[\color{colorlinetitle}\vspace{0.5ex}{\titlerule[1.2pt]}]%
+}
+
+
+\newcommand{\articletitlecommand}%
+{\titleformat{\chapter}[display]%
+{\bfseries\tiny\raggedright\color{white}}%
+{\relax}%
+{0ex}%
+{}[\color{white}\vspace{0ex}{\titlerule[0pt]}]%
+}
+
+
+
+\newcommand{\sectionCenter}%
+{\titleformat{\section}[block]%
+{\bfseries\large\color{textlinetitle}\filcenter}%
+{\relax}%
+{0ex}%
+{\empty}%
+}
+
+
+\newcommand{\sectionRight}%
+{\titleformat{\section}[block]%
+{\bfseries\large\color{textlinetitle}}%
+{\relax}%
+{0ex}%
+{\empty}%
+}
+
+
+\newcommand{\subsectionRight}%
+{\titleformat{\subsection}[block]%
+{\bfseries\normalsize\color{textlinetitle}}%
+{\relax}%
+{0ex}%
+{\empty}%
+}
+
+\usepackage{titletoc}
+\titlecontents{chapter}[3em]
+{\vspace{5mm}}
+{\normalsize\contentslabel[\color{textlinetitle}\thecontentslabel]{2em}\color{black}\itshape\normalsize}
+{\color{black}\itshape\normalsize}
+{\color{colorlinetitle}\titlerule*[.3pc]{.}\color{black}\contentspage}
+
+\newcommand{\tcolorboxcommand}{\begin{tcolorbox}[sharp corners=uphill, colback=newfondo, colframe=newfondo, arc=6mm, boxrule=0mm, boxsep=0mm]}
+
+\newcommand{\photocommand}[2]{%
+\fcolorbox[HTML]{DCEEA7}{DCEEA7}{%
+\begin{minipage}{95.19mm}%
+	\hspace{1mm}%
+	\begin{minipage}{22.49mm}%
+		\vspace{1mm}%
+		\includegraphics[width=22.49mm, height=31.96mm]{#1}%
+		\vspace{1mm}%
+	\end{minipage}%
+	\hspace{2.4mm}%
+	\begin{minipage}{68.80mm}%
+		#2
+	\end{minipage}%
+	\hspace{0.5mm}%
+\end{minipage}%
+}%
+}
+
+\definecolor{fondobiography}{HTML}{DCEEA7}
+
+\NewDocumentEnvironment{photobiography}{m O{}}%
+{%
+\begin{tcolorbox}[colback=fondobiography, colframe=fondobiography, width=97.19mm, boxsep=-2mm, arc=0mm]
+\begin{minipage}{95.19mm}%
+	%\hspace{1mm}%
+	\begin{minipage}{22.49mm}%
+		\vspace{2mm}%
+		\includegraphics[width=22.49mm, height=31.96mm]{#1}%
+		\vspace{2mm}%
+	\end{minipage}%
+	\hspace{2.4mm}%
+	\begin{minipage}{68.80mm}%
+	#2%
+}%
+{%
+	\end{minipage}%
+	%\hspace{0.5mm}%
+\end{minipage}%
+\end{tcolorbox}
+}
+
+
+\newcommand{\spacetext}{\vspace{8.1mm}}
+\newcommand{\minimalspacetext}{\vspace{1mm}}
+\newcommand{\spaceelevenmilis}{\vspace{11mm}}
+\newcommand{\spacetenmilis}{\vspace{10mm}}
+\newcommand{\spaceninemilis}{\vspace{9mm}}
+\newcommand{\spaceeightmilis}{\vspace{8mm}}
+\newcommand{\spacesevenmilis}{\vspace{7mm}}
+\newcommand{\spacesixmilis}{\vspace{6mm}}
+\newcommand{\spacefivemilis}{\vspace{5mm}}
+\newcommand{\spacefourmilis}{\vspace{4mm}}
+\newcommand{\spacethreemilis}{\vspace{3mm}}
+\newcommand{\spacetwomilis}{\vspace{2mm}}
+\newcommand{\spaceinitialeditorialcontenido}{\vspace{8.1mm}}
+\newcommand{\spaceoneminus}{\vspace{-1mm}}
+\newcommand{\spacetwominus}{\vspace{-2mm}}
+\newcommand{\spacefourminus}{\vspace{-4mm}}
+\newcommand{\hideFromPandoc}[1]{#1}
+\hideFromPandoc{ \let\Begin\begin \let\End\end }
+\newcommand{\minipagepartone}{\begin{minipage}[c]{3cm}}
+\newcommand{\minipagetwocolumn}{\noindent\begin{minipage}[c]{\columnwidth}}
+\newcommand{\minipageparttwo}{\end{minipage}\begin{minipage}[c]{12cm}}
+\newcommand{\minipageparttwochapter}{\end{minipage}\begin{minipage}[c]{15cm}}
+\newcommand{\minipageendpart}{\end{minipage}}
+\newcommand{\firstparteditorial}{\begin{longtable}[]{@{}ll@{}}\endhead\begin{minipage}[t]{0.47\columnwidth}\raggedright}
+\newcommand{\firstparttwoeditorial}{\begin{longtable}[l]{@{}ll@{}}\endhead\begin{minipage}[t]{0.47\columnwidth}\raggedright}
+\newcommand{\midleparteditorial}{\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright}
+\newcommand{\lastparteditorial}{\end{minipage}\end{longtable}}
+
+\newcommand{\HRule}{\begin{center}\rule{0.5\linewidth}{0.2mm}\end{center}}
+
+\begin{document}
+\maketitle
+
+% \pagestyle{plain}
+\includepdf{images/cover.pdf}
+
+\AddEverypageHook{%
+\ifthenelse{\value{page}<5}%
+{\ifthenelse{\isodd{\value{page}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberimpar.pdf}}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberpar.pdf}}}}%
+}{}%
+\BgMaterial}
+
+\hypersetup{unicode=true,
+            pdftitle={Revista digital de la escuela de ingeniería en Ciencias y Sistemas},
+            pdfauthor={Escuela Ingenieria en Ciencias y Sistemas},
+            pdfborder={0 0 0},
+            breaklinks=true,
+	  linkcolor=black,
+	  urlcolor=gray}
+
+%%%%%%{
+%%%%%%\setcounter{tocdepth}{0}
+%%%\tableofcontents
+%%%}
+%%%%%%%%%%%%\listoffigures
+%%%
+\prefacetitlecommand
+
+\titlespacing*{\chapter} {0pt}{0pt}{2pt}
+
+\titleformat{\chapter}[display]
+{\normalfont\color{black} \bfseries}
+{\empty}
+{0pt}
+{\filcenter\Huge}
+
+\spacetenmilis
+\spacetenmilis
+\spacetenmilis
+\spacetenmilis
+
+\begin{center}\includegraphics[width=1\linewidth]{images/organigrama} \end{center}
+
+\hypertarget{editorial}{%
+\chapter*{Editorial}\label{editorial}}
+\addcontentsline{toc}{chapter}{Editorial}
+
+\begin{center}\includegraphics[width=1\linewidth]{images/editorial_html} \end{center}
+
+\setcounter{tocdepth}{0}
+\tableofcontents
+
+\articletitlecommand
+
+%%%%%% SECCION 1 
+\includepdf{images/seccion1.pdf}
+
+\AddEverypageHook{%
+\ifthenelse{\value{page}<17}%
+{\ifthenelse{\isodd{\value{page}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberimpar.pdf}}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberpar.pdf}}}}%
+}{}%
+\BgMaterial}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\titlespacing*{\chapter} {0pt}{-60pt}{4pt}
+
+\hypertarget{entrevista01_SergioPablo}{%
+\chapter{Desafíos y estrategias ágiles liderando equipos y gestionando productos}\label{entrevista01_SergioPablo}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/sergiopablo_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{YouTube:}} \url{https://youtu.be/semm2KzN-So}
+
+\hypertarget{entrevista}{%
+\section{Entrevista}\label{entrevista}}
+
+\textbf{¿Quién es Sergio Pablo González?}
+
+Mi nombre es Sergio Pablo González, soy Project Manager con 9 años de experiencia en la industria, liderando proyectos de alto impacto en banca, retail y turismo.
+Comencé a los 19 años, en un momento muy difícil de mi vida, justo tres meses después del fallecimiento de mi papá. La necesidad de apoyar a mi familia me llevó a buscar trabajo, pero con el tiempo descubrí que ser Project Manager era algo que realmente me apasionaba.
+
+Lo que más disfruto de esta profesión es que cada día es diferente. Después de casi 10 años y más de 3,600 días en esta carrera, puedo decir que nunca he vivido dos días iguales.
+Me encanta crear valor, construir equipos y generar conexiones reales con personas: compañeros de equipo, clientes, socios. Eso es lo que más me motiva de trabajar en agilidad, en productos y en esta industria.
+
+\textbf{¿Cuáles consideras que son los errores más comunes que cometen las empresas al adoptar una metodología ágil?}
+
+Uno de los errores más comunes es querer adoptar una metodología ágil sin realizar un cambio de mentalidad. Al adoptar este tipo de metodología, cambian varios aspectos de cómo tradicionalmente gestionamos proyectos.
+
+Por ejemplo, estamos acostumbrados a planificacio-
+nes predictivas de dos, tres o más meses. Es entendible que la alta dirección espere fechas a mediano o largo plazo. Sin embargo, uno de los principios de la agilidad es la planificación progresiva. Mucha información se descubre en el camino y debe adaptarse conforme avanza el proyecto.
+Esto no significa que no se puedan tener planificaciones a largo plazo, pero estas deben ser refinadas constantemente. Este cambio representa una transformación cultural tanto para las empresas como para sus interesados.
+
+Adoptar prácticas ágiles requiere ese cambio de mentalidad y el patrocinio activo de la alta dirección. Si se intenta implementar desde abajo hacia arriba, los desafíos serán mayores.
+
+Además, es fundamental empoderar a los equipos, darles autonomía para tomar decisiones, y dejar atrás el enfoque de decisiones jerárquicas. También es crucial el involucramiento del negocio. Uno de los principios del manifiesto ágil establece que los representantes de negocio y el equipo de desarrollo deben trabajar juntos a diario.
+
+Si los representantes solo están al inicio del proyecto y esperan resultados al final sin acompaña-
+miento constante, será difícil alcanzar lo esperado. Por eso, lo más importante es el cambio de mentalidad para adoptar prácticas ágiles de manera efectiva y eficiente.
+
+\textbf{¿Qué características consideras esenciales en un líder ágil para gestionar productos y equipos con efectividad?}
+
+Las habilidades blandas son fundamentales, al igual que la pasión por trabajar en equipo.
+
+En mi experiencia, algo que ha sido clave ---y que aprendí durante mi preparación para la certificación PMP--- es establecer relaciones reales y cercanas con las personas con quienes trabajamos. Aunque no siempre es necesario ir más allá de lo profesional, estas relaciones fortalecen al equipo.
+
+Como líderes, debemos tener una mentalidad de servicio hacia el equipo. Eso implica apagar el ego, actuar con humildad y no buscar llevarse todo el crédito. El rol de un líder ágil es hacer que el equipo brille; su éxito es nuestra mayor satisfacción.
+
+También es importante fomentar un espacio de seguridad psicológica, donde todos se sientan libres de compartir ideas, por más arriesgadas que parezcan, sin temor a ser juzgados. Esto fomenta la colaboración genuina.
+
+Finalmente, un líder ágil debe ser capaz de inspirar y compartir una visión clara del producto o proyecto. Esa visión debe ser nuestra brújula en la toma de decisiones y en las pequeñas acciones del día a día.
+
+\textbf{¿Cómo manejas la priorización del backlog cuando hay múltiples interesados con diferentes objetivos de negocio?}
+
+La visión del producto es nuestra guía. Idealmente, debe existir un Product Owner, un líder o un champion que represente al negocio y nos ayude a tomar decisiones.
+
+Colaborar y escuchar activamente a todos los stakeholders es vital. Requiere habilidades similares a las del servicio al cliente, ya que los líderes ágiles también gestionamos relaciones.
+Un principio clave es experimentar temprano. Muchas veces invertimos semanas o meses debatiendo características o especificaciones, cuando lo mejor es empezar con un 10\% en el que todos estén de acuerdo, entregarlo al negocio y analizar el impacto. Esa retroalimentación nos permite ajustar y avanzar.
+
+No se trata de alinear a todos desde el inicio ---lo cual puede ser interminable---, sino de empezar por lo que tenemos en común. Así se respeta otro de los principios del manifiesto: la medida principal del progreso es la entrega de software funcional.
+
+\textbf{¿Cómo se deben adaptar las ceremonias de Scrum (daily, reviews, retrospectivas) para que realmente agreguen valor y no se conviertan en rutina?}
+
+No existe una fórmula mágica. Incluso Jeff Sutherland, co-creador de Scrum, no tendría una respuesta universal. Por eso creo que los equipos, si son empoderados y autónomos, deben tener libertad para definir su propio way of work.
+
+Por ejemplo, con el Daily, el equipo puede proponer la dinámica que más le funcione. Si por razones de ubicación geográfica no es posible hacerlo temprano, pueden adaptarlo al horario que les sea útil, aunque lo ideal sea hacerlo a primera hora.
+
+Estas ceremonias deben ajustarse al equipo. Si algo no funciona, se prueba otra forma en el siguiente sprint. Así se va puliendo su forma de trabajo.
+Algunos ejemplos:
+
+\begin{itemize}
+\tightlist
+\item
+  En el Daily, enfocarse más en impedimentos y próximas actividades, no en reportes de tareas.
+\item
+  En el Sprint Review, asegurarse de contar con stakeholders que puedan dar retroalimentación del avance.
+\item
+  En la Retrospectiva, garantizar seguridad psicológica. Incluso los aspectos negativos son bienvenidos, porque permiten hacer mejoras.
+\end{itemize}
+
+Además, es útil variar el formato de las retrospectivas con técnicas como Starfish o las 4Ls, para mantenerlas dinámicas y efectivas.
+
+\textbf{¿Cómo manejar la relación entre un Product Owner y los stakeholders para evitar expectativas poco realistas?}
+
+La transparencia es un valor clave en los marcos ágiles.
+A veces, el mayor obstáculo es el miedo: al regaño, a las represalias. Eso provoca que los equipos se vuelvan herméticos, trabajando en silos, lo cual es contrario a la agilidad.
+
+Ser transparentes desde el inicio permite alinear expectativas. A veces puede ser incómodo decir que algo no estará listo en dos semanas, sino en un mes, pero es mejor ser claros desde el principio.
+
+La visión del producto debe guiar tanto al equipo como a los stakeholders. Y hay artefactos que ayudan a visualizar esto:
+
+\begin{itemize}
+\tightlist
+\item
+  User Story Mapping
+\item
+  Product Roadmap
+\end{itemize}
+
+Estas herramientas permiten que todos comprendan el rumbo del producto, sin necesidad de tener conocimientos técnicos o ágiles profundos.
+
+\textbf{¿Qué certificaciones ágiles realmente aportan valor a un profesional?}
+
+He aprendido mucho con los recursos del PMI, incluso algunos cursos gratuitos disponibles en su sitio.
+
+Una certificación muy útil es la PMI-ACP, que recientemente actualizó su contenido. Ahora se divide en cuatro áreas:
+
+\begin{itemize}
+\tightlist
+\item
+  Mentalidad
+\item
+  Liderazgo
+\item
+  Producto
+\item
+  Entrega (Delivery)
+\end{itemize}
+
+Esta certificación brinda una visión amplia sobre diferentes frameworks ágiles: Scrum, Kanban, XP, WOW, entre otros. También son valiosas certificaciones como Scrum Master o Product Owner.
+
+Sin embargo, más allá de los títulos, el cambio de mentalidad es lo más importante. Puedes estar certificado, pero si no practicas los valores y principios del Manifiesto Ágil, será difícil alcanzar buenos resultados.
+
+\textbf{Con la evolución de Agile, ¿Cómo ves el futuro de marcos como Scrum o Kanban en la gestión de proyectos?}
+
+No defiendo implementar Scrum by the book. No estoy en contra de esa forma de pensar, pero creo que lo más importante es adaptar el marco a la cultura de la empresa.
+
+Seguir la guía al pie de la letra puede funcionar, pero si no añade valor, ¿para qué hacerlo? Es mejor preguntarse: ¿Qué estamos haciendo?
+¿Por qué lo estamos haciendo? He visto errores por priorizar el ``cómo'' sobre el ``qué'' y el ``por qué''. A veces, el ego nos engaña y creemos que el éxito es seguir Scrum al pie de la letra, pero lo importante es el valor entregado por los productos o proyectos.
+
+La agilidad está evolucionando hacia otras industrias: salud, educación, legal, construcción, farmacéutica, robótica\ldots{}
+Recordemos que la mentalidad ágil nació de Lean, que viene de los años 70, del sistema de producción de Toyota. Kanban también surgió allí. Hoy, llevamos esas ideas del automóvil al software, y ahora las estamos llevando a nuevas áreas.
+
+Además, la automatización y la inteligencia artificial deben ser integradas en los marcos ágiles. Nos ayudan a eliminar tareas repetitivas, generar insights, o incluso construir backlogs o Definition of Done con ayuda de IA.
+
+\textbf{Si una empresa quiere comenzar con la implemen-
+tación de una metodología ágil, ¿Qué pasos recomendarías para una implementación exitosa?}
+
+Lo más importante es contar con el patrocinio del equipo directivo y la alta dirección. Es fundamental tener su visto bueno y, más allá de eso, su apoyo para adoptar prácticas y marcos ágiles, ya que esto impactará en la forma en que se reportan los resultados y se desarrollan los productos.
+
+En segundo lugar, es necesario realizar un diagnos-
+tico; existen indicadores y herramientas que permiten medir objetivamente en qué etapa o qué tan adaptables estamos para adoptar un marco ágil. Este diagnóstico ayuda a determinar si se necesita capacitación y si los miembros del equipo están familiarizados con los términos ágiles. Generalmente, se requiere un periodo de capacitación seguido de una prueba piloto.
+
+Por ejemplo, en el retail más grande de Guatemala, donde actualmente trabajo, hemos adoptado prácticas ágiles de manera gradual, comenzando con un equipo o proyecto específico y luego extendiéndolo a otros equipos. Durante la implementación, es importante aplicar iteraciones; aunque se haya definido un plan hace dos meses, la nueva información y feedback pueden requerir rediseñar el plan. Es esencial tener flexibilidad mental para adaptarse.
+
+Finalmente, es crucial premiar este cambio cultural, lo cual puede ser lo más difícil. Existen muchas técnicas para lograrlo, como talleres y comunicación institucional, y este cambio cultural se conecta nuevamente con el apoyo de la alta dirección para una adopción ágil exitosa.
+
+\textbf{¿Qué consejo le darías a alguien que quiere especializarse en Agile y convertirse en un líder dentro de esta metodología?}
+
+Primero que nada, felicitarles. Esta es una industria hermosa, con mucho crecimiento, especialmente en Latinoamérica. Si han decidido entrar en este mundo, es una gran decisión para su carrera profesional.
+A veces no es posible comenzar con una certificación, ya sea por tiempo o por presupuesto. Y está bien. Lo importante es vivir los valores y principios del Manifiesto Ágil.
+
+Si yo fuera catedrático, preguntaría: ¿cómo saber si una empresa, equipo o persona es ágil?
+La respuesta: Ágil no es ser rápido ni desordenado. Es ser coherente con los valores del Manifiesto y poner en práctica sus principios.
+Recuerdo un caso con una empresa que decía ser ágil, pero no compartía la documentación técnica hasta que se firmara el contrato. Eso contradice el principio de ``software funcional sobre negociación contractual''.
+
+Y, finalmente, lo más importante: trabajar con personas. Los developers, testers, arquitectos\ldots{} todos son clave. También lo son las relaciones con Product Owners y stakeholders.
+
+En resumen: vivir los valores, aplicar los principios y tener pasión por colaborar con otros. Esa es la verdadera agilidad.
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja01}{%
+\chapter{El impacto de la metodología ágil: Evolución de la cultura de las empresas}\label{pareja01}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja01_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Scrum, Kanban, Planificación, Negocio, Riesgo.
+
+\hypertarget{introducciuxf3n}{%
+\section{Introducción}\label{introducciuxf3n}}
+
+El uso de metodologías ágiles ha crecido en los últimos años. La metodología tradicional era la común hasta hace un tiempo para ejecutar o poner en marcha un producto Hoy, a la larga, se le ha dado la razón al hecho de que es más efectivo usar metodología ágil en lugar del tradicional. Esto se puede notar en aprovechamiento en la empresa, en lo que es productividad, a la vez que en desarrollo y crecimiento en cuanto a entregas.
+
+Las metodologías ágiles han ido creciendo tanto a nivel empírica asimilación que hoy son parte de hogar en muchas pymes y hasta empresas multinacionales. No sería mal aplicar un cambio de paradigma y empezar a aplicar estas metodologías en el desarrollo de producto.
+
+\hypertarget{artuxedculo}{%
+\section{Artículo}\label{artuxedculo}}
+
+Las Metodologías Ágiles pueden parecer confusas al principio, pero desglosándolas, ``Metodología'' se compone de ``Método'' (procedimiento ordenado) y ``-logía'' (estudio o ciencia). ``Ágil'' implica rapidez y adaptación, como un futbolista que se mueve hábilmente con el balón. En programación, esto significa flexibilidad para cambiar tareas y ajustarse a nuevas necesidades, permitiendo un desarrollo más dinámico y eficiente.
+
+\bigskip
+
+\textbf{Del enfoque tradicional a la agilidad: La evolución de las metodologías}
+
+En la actualidad, vivimos en una cultura empresarial cambiante donde es importante conocer de dónde proviene cada metodología usada. Una de las primeras innovaciones en cuanto al uso de una metodología se realizó en la empresa Ford dentro de una de sus líneas de montaje de automóviles en 1913; a partir de este proceso nació la metodología cascada que ayudó a cambiar la forma en la que un producto o servicio se desarrolla.
+
+Con el paso del tiempo y el desarrollo de nuevas tecnologías, se ha originado una nueva forma de abordar dicha metodología, basada en estructuras rígidas que, por necesidad de mercado, deben adaptarse rápidas, y así, a largo plazo, se hacían ineficientes toda la documentario y planes fijos para cada tarea, por tanto, se planteó el cambio del trabajo hacia un proceso iterativo, colaborativo y flexible. Esto se reunificó cuando un grupo de personas desarrolló el Manifiesto Ágil en 2001, lo que desencadenó el auge de las metodologías ágiles.
+
+\bigskip
+
+\textbf{Scrum y Kanban: Los pilares de la agilidad en las empresas}
+
+Scrum se basa en trabajar en ciclos llamados \textbf{sprints}, que pueden durar entre 1 y 4 semanas, dividiendo tareas complejas en partes más manejables. Su estructura incluye:
+- \emph{Sprint Planning}: Es la planificación de tareas y objetivos del sprint, esta se realiza al inicio.
+- \emph{Daily Meetings}: Son las reuniones breves que deben de realizarse de manera diaria para actualizar el progreso y resolver bloqueos.
+- \emph{Sprint Review}: Es una evaluación de las tareas completadas que se tuvieron durante el sprint.
+- \emph{Sprint Retrospective}: Es el análisis de mejoras donde todo el grupo se reúne para el siguiente sprint y reconocer donde pueden tener mejoras.
+
+Por otro lado, \textbf{Kanban} permite visualizar el flujo de trabajo a través de un tablero con columnas como Por hacer, En progreso y Terminado. Esto facilita el seguimiento de tareas, la identificación de bloqueos y la gestión de prioridades. También existe \textbf{Scrumban}, que combina ambas metodologías, integrando la planificación de sprints de Scrum con la visualización de tareas de Kanban, logrando así un enfoque más flexible y eficiente.
+
+\bigskip
+
+\textbf{Impacto en la actualidad de la cultura ágil en el negocio}
+
+Adaptar la cultura ágil a un entorno organizacional ha permitido que el panorama empresarial actual tome un nuevo rumbo, permitiendo que las empresas se adapten de forma más natural al mercado, lo que termina por satisfacer las demandas tan importantes de los clientes; en otras palabras, a mayores expectativas, mayor rapidez en la búsqueda de respuestas que satisfagan a los usuarios. Las
+metodologías ágiles al promover la flexibilidad, colaboración y retroalimentación continua terminan por resolver problemas de eficiencia lo que se traduce en dinero ahorrado por las empresas en actividades que normalmente resultan costosas y con pocos resultados.
+
+Según un estudio de la firma de consultoría McKinsey, la implementación de la metodología ágil en las empresas genera ganancias de alrededor del 30\% en eficiencia, satisfacción del cliente, compromiso de los empleados y rendimiento operativo {[}3{]}. Es importante mencionar que no solo se maximizan las ganancias también se mejora la innovación y la capacidad que se tiene para adaptarse a cambios de mercado. A nivel organizacional la cultura ágil fomenta de gran manera un entorno y una capacidad de comunicación más comprometida con la empresa donde los equipos de trabajo se ven potenciados en la resolución de problemas y toma de decisiones críticas.
+
+\bigskip
+\bigskip
+
+\hypertarget{conclusiones}{%
+\section{Conclusiones}\label{conclusiones}}
+
+En la tecnología, la adaptabilidad es una de las habilidades que permite a las empresas mantenerse en el mercado de manera competitiva. La transición de una metodología tradicional a una ágil ha
+demostrado ser un punto de inflexión en la mejora de procesos, reducción de riesgos y optimización de ganancias. Scrum y Kanban han transformado la forma en que los equipos trabajan ya que
+promueven cualidades importantes dentro de la organización como la colaboración, flexibilidad y eficacia lo que termina por entregar más valor al producto desarrollado.
+
+Múltiples empresas adoptan estos enfoques en busca de encontrar una respuesta inmediata a los cambios inherentes al mercado. Los cambios hacia lo ágil no son fáciles ni se realizan de manera
+inmediata ya que el esfuerzo hacia un cambio debe provenir tanto de la mentalidad y valores de la organización como de los miembros de la misma que son al final los que hacen que la organización
+sea posible mediante valores como aprendizaje, comunicación y adaptabilidad. El cambio de la organización de lo tradicional a lo ágil se puede resumir en que la agilidad, a mayor rendimiento e
+innovación, genera mayor relevancia y competitividad en el mercado.
+
+Facebook, Apple y PayPal son empresas famosas que han tenido éxito por el uso de Scrum como metodología ágil, ya que, permiten iterar de manera más rápida y así facilitan la prueba de nuevas
+actualizaciones y funciones de forma periódica, además, de que se fomenta la comunicación y colaboración entre distintos equipos encargados del desarrollo de los productos que ofrecen.
+
+\hypertarget{referencias}{%
+\section{Referencias}\label{referencias}}
+
+\begin{itemize}
+\item
+  {[}1{]} Dovile Miseviciute. ``Kanban, Scrum y Scrumban -- Cómo se diferencian'' Miseviciute, July 22, 2024. Accedido el 5 de febrero de 2024 . \href{https://teamhood.com/es/kanban-4/kanban-scrum-y-scrumban-como-se-diferencian/}{https://teamhood.com}.
+\item
+  {[}2{]} Atlassian. ``Scrumban: domina dos metodologías ágiles'' Atlassian, Nov 08, 2021. Accedido el 7 de febrero de 2025. \href{https://www.atlassian.com/es/agile/project-management/scrumban\#:~:text=Scrumban\%20es\%20una\%20metodolog\%C3\%ADa\%20\%C3\%A1gil,la\%20complejidad\%20de\%20un\%20proyecto}{https://www.atlassian.com}
+\item
+  {[}3{]} Revista Economía. ``Agile: Más que una metodología, un cambio cultural empresarial.''Re-
+  vista Economía, 2022. Accedido el 9 de febrero de 2025.\href{https://www.revistaeconomia.com/agile-mas-que-una-metodologia-un-cambio-cultural-empresarial/}{https://www.revistaeconomia.com}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\hypertarget{pareja02}{%
+\chapter{Aprender rápido, fallar inteligente: La mentalidad lean en la creación de startups y el caso de éxito de airbnb}\label{pareja02}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja02_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Lean startup, Mentalidad ágil, Innovación empresarial, Aprendizaje validado, Produc-
+to mínimo viable, Iteración rápida.
+
+\hypertarget{introducciuxf3n-1}{%
+\section{Introducción}\label{introducciuxf3n-1}}
+
+El fracaso es el destino de muchas startups, no por falta de ideas, sino por aferrarse a planes rígidos en un entorno impredecible. En un mercado donde aspectos como la velocidad y la adaptación son determinantes y esenciales, la metodología Lean Startup transforma la incertidumbre en oportunidad. A través no solo de la experimentación, sino que también de la retroalimentación y el aprendizaje, las empresas pueden evolucionar rápidamente, evitando inversiones costosas en ideas que no funcionan.
+
+La clave no es evitar los errores, sino transformar cada iteración en una oportunidad de aprendizaje. Más que seguir planes rígidos, las startups exitosas validan sus hipótesis con productos mínimos viables (MVP) y ajustes basados en datos reales, permitiéndoles
+evolucionar de manera ágil y eficiente.
+
+\hypertarget{artuxedculo-1}{%
+\section{Artículo}\label{artuxedculo-1}}
+
+Cada día, nuevas startups irrumpen en el mercado con ideas audaces, pero muchas fracasan antes de despegar. Muchas operan bajo suposiciones sin validar, desperdiciando recursos en ideas que el mercado no necesita. A diferencia del desarrollo tradicional, donde todo sigue un plan rígido y secuencial, Lean Startup es un enfoque dinámico que permite iterar y adaptarse en función de los datos, a diferencia de los planes de negocio típicos donde todo avanza por medio de fases predeterminadas.
+
+Las Lean Startups sustituyen la planificación tradicional por un Business Model Canvas, donde desafían sus hipótesis desde el inicio para enfocarse en generar valor rápidamente. Con ello crean valor tanto para ellas como para sus clientes. Aquí, fallar no es un obstáculo, sino un aprendizaje acelerado. Cada error revela información valiosa que permite desarrollar soluciones con mayor rapidez y precisión.
+
+El nacimiento de Airbnb ejemplifica el aprendizaje validado. Joe Gebbia y Brian Chesky, lanzaron su idea alquilando colchones inflables en su apartamento, con la hipótesis de que viajeros buscarían alternativas más económicas y auténticas que los hoteles tradicionales. Al notar poca tracción, detectaron que la falta de clientes no se debía a su concepto, sino a la calidad de las imágenes. En lugar de realizar cambios costosos, tomaron fotografías profesionales, lo que incrementó la confianza de los usuarios y validó su hipótesis consolidando su modelo de negocio.{[}1{]}
+
+A través de entrevistas y análisis de datos, descubrieron que la calidad visual era crucial para generar confianza en los potenciales clientes. En lugar de invertir en desarrollos de alto costo, realizaron un cambio ágil: reemplazaron imágenes poco atractivas por fotografías de alta calidad, tomadas personalmente para resaltar el valor de cada alojamiento. Tal como sugiere Ries, el aprendizaje validado permite a las startups adaptarse sin desperdiciar recursos en hipótesis incorrectas.
+
+Así, el caso de Airbnb ilustra cómo un fallo inteligente, fundamentado en la retroalimentación y en cambios ágiles, puede transformar una idea naciente en un modelo de negocio escalable, aplicando la mentalidad Lean de aprender rápido y fallar con propósito en cada ciclo de retroalimentación. Como explica Eric Ries en ``The Lean Startup'', ``El aprendizaje validado es el proceso para demostrar empíricamente que una startup ha descubierto información valiosa sobre las posibilidades presentes y futuras del negocio y sus clientes''.{[}2{]}
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=0.75\linewidth]{imagenes_articulos/p02_01} \end{center}
+\figcaption{Portada del Libro “Lean Startup” de Eric Ries. Fuente: \url{https://m.media-amazon.com/images/I/814EXQRrg5L._SL1500_.jpg}}
+
+\end{minipage}
+\end {flushleft}
+
+El éxito de una startup depende de distinguir entre fallar inteligentemente y fallar sin propósito. Un fallo inteligente es aquel que permite aprender y ajustar estrategias con rapidez, basado en datos y experimentación. En cambio, fallar sin propósito implica cometer errores repetitivos sin evaluar los resultados o sin realizar cambios basados en información objetiva.{[}3{]} La diferencia principal radica en la capacidad de las startups para analizar sus fallas, extraer conocimiento valioso y mejorar su propuesta de valor.
+
+Aunque el enfoque Lean se centra en el aprendizaje rápido, su verdadero impacto radica en la mentalidad que promueve. No se trata solo de optimizar productos, sino que también de construir organizacio-
+nes ágiles, capaces de adaptarse y evolucionar frente a desafíos
+constantes, tanto a corto como a largo plazo. Esta visión redefine la forma en que las empresas operan, centrándose en aprender rápido, adaptarse mejor y evolucionar con cada ciclo de retroalimentación a las necesidades de los clientes asegurando el éxito de sus
+empresas.
+
+En lugar de buscar la perfección desde el inicio, Ries enfatiza la importancia de desarrollar un Producto Mínimo Viable (MVP). Este enfoque permite experimentar, recopilar datos reales y, si es necesario, pivotar la estrategia.
+
+\hypertarget{conclusiones-1}{%
+\section{Conclusiones}\label{conclusiones-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  El enfoque Lean convierte los errores en aprendizajes estratégicos. Empresas como Airbnb demuestran que experimentar y pivotar en el momento adecuado puede transformar una idea en un negocio global y escalable.
+\item
+  El éxito no se basa únicamente en evitar errores, sino en cometer errores y aprender de ellos de manera rápida. La capacidad de adaptación y evolución antes que la competencia es clave en mercados dinámicos. En un mundo donde la velocidad es clave, las startups que aprenden más rápido son las que terminan liderando el mercado.
+\item
+  Fallar con propósito impulsa la innovación y el crecimiento. Cada error gestionado estratégica-
+  mente se convierte en una oportunidad de mejora, permitiendo a las startups optimizar sus modelos de negocio de forma ágil y eficiente.
+\end{itemize}
+
+\hypertarget{referencias-1}{%
+\section{Referencias}\label{referencias-1}}
+
+\begin{itemize}
+\item
+  {[}1{]} Gallagher, Leigh. 2017. The Airbnb Story: How three ordinary guys disrupted an industry, made billions\ldots{} and created plenty of controversy. Houghton Mifflin Harcourt.
+\item
+  {[}2{]} Ries, Eric. 2011. The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses. New York: Crown Business.
+\item
+  {[}3{]} Sutton, Robert I. 2014. Scaling Up Excellence: Getting to More Without Settling for Less.
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja37}{%
+\chapter{Scrum sin fronteras: Estrategias para equipos ágiles globales}\label{pareja37}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja37_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Scrum, equipos remotos, trabajo ágil, colaboración virtual, productividad, metodologías ágiles.
+
+\hypertarget{introducciuxf3n-2}{%
+\section{Introducción}\label{introducciuxf3n-2}}
+
+Actualmente, el trabajo remoto se ha vuelto común en diversas áreas, incluyendo el
+desarrollo de software. Esta manera de trabajo ha cambiado la forma en la que los equipos
+funcionan, la cual permite la colaboración global sin importar la ubicación geográfica y es en
+este contexto donde Scrum ha demostrado ser una herramienta muy potente para gestionar
+equipos remotos y optimizar el proceso de desarrollo de software, aunque también presenta
+algunos desafíos.
+
+En este artículo presentaremos prácticas efectivas que podemos llegar a utilizar para
+una correcta implementación de Scrum en equipos globales, en el cual destacaremos
+herramientas, y soluciones a los obstáculos que pueden surgir. Al implementar estas
+prácticas, se pueden aprovechar al máximo los beneficios de Scrum en un entorno de trabajo
+distribuido y lograr resultados exitosos.
+
+\hypertarget{artuxedculo-2}{%
+\section{Artículo}\label{artuxedculo-2}}
+
+\textbf{Optimizar Scrum en Equipos Remotos: Estrate-
+gias para el Éxito}
+
+Scrum es un framework ágil que se ha aplicado a equipos remotos, la dinámica del
+desarrollo de software, ofreciendo tanto oportunidades como desafíos. Entre las ventajas que
+esta metodología ofrece es el acceso a talento global permitiendo una mayor diversidad y
+especialización, lo que enriquece el proceso de creación y mejora en la calidad de los
+proyectos. (Gaffin 2025)
+
+Sin embargo, como todo siempre tiene puntos débiles, entre los que podemos
+mencionar, la comunicación asíncrona, las diferencias de horarios y la falta de interacción
+física, estos pueden llegar a generar desalineaciones y obstaculizar la fluidez del trabajo.
+Buscando maximizar el potencial de los equipos Scrum distribuidos, diríamos que es crucial
+adoptar estrategias que faciliten la colaboración y optimicen la gestión del flujo de trabajo. A
+continuación, mencionaremos algunas de las prácticas que llegamos a considerar claves.
+
+\textbf{1. Comunicación efectiva}
+
+Cuando hablamos de comunicación efectiva, el primer aspecto a considerar es que los
+equipos que emplean la metodología Scrum deben mantener una comunicación constante y
+con gran claridad, dado que esto es crucial para el éxito de un equipo a distancia. La mezcla
+de reuniones diarias y la utilización de plataformas de mensajería instantánea, como Slack o
+Microsoft Teams, facilita la conservación de un flujo ininterrumpido de datos. También es importante destacar la utilización de plataformas de videoconferencias como Zoom, Google
+Meet, entre otras, dado que estas promueven la coordinación del equipo y disminuyen la
+probabilidad de confusiones. (Schuster 2022)
+
+\textbf{2. Uso de Herramientas de Gestión Ágil}
+
+Siempre que sea posible utilizar herramientas (no solo para la metodología Scrum),
+es recomendable hacerlo, ya que no solo brindan apoyo en términos de tiempo, sino que, a
+largo plazo, facilitan la metodología de trabajo. A continuación, presentamos una
+comparación de algunas herramientas populares (Tabla 1):
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=1\linewidth]{imagenes_articulos/p37_01} \end{center}
+\figcaption{Comparación de herramientas de gestión ágil para equipos Scrum.}
+
+\end{minipage}
+\end {flushleft}
+
+Estas herramientas brindan visibilidad y transparen-
+cia al trabajo del equipo. Todas
+estas plataformas brindan funcionalidades como los tableros Kanban, burndown charts y
+reportes de progresos los cuales facilitan el seguimiento de las tareas de los integrantes del
+equipo, lo cual permite a los demás adaptarse rápidamente a los cambios de prioridad.
+
+\textbf{3. Adaptación de las Reuniones de Scrum}
+
+Las reuniones de Scrum deben ajustarse al enfoque del trabajo remoto, las reuniones
+diarias (Dailys) deben ser breves y estas deben estar enfocadas a problemas clave que el
+equipo esté teniendo, para buscar una solución rápida, para que así las reuniones
+retrospectivas puedan beneficiarse del uso de herramientas colaborativas como Miro o Mural
+para fomentar la participación de los demás miembros de forma activa. La flexibilidad, la
+duración y la frecuencia de las reuniones afectan directamente la eficiencia del equipo.
+(Nebra 2022)
+
+\textbf{4. Fomento de una Cultura de Equipo}
+
+En los entornos donde el trabajo será desarrollado de manera remota, es difícil
+construir una cultura de equipo sólida, ya que para esto se requiere iniciativas deliberadas,
+actividades de team building virtual, espacios de comunicación informal y el reconocimiento
+de logros individuales, los colectivos ayudan a fortalecer las relaciones y fomentar un sentido de pertenencia. Si un equipo que emplea la metodología de Scrum está comprometido y
+motivado se ha visto que tiene un gran porcentaje de éxito. (Schuster 2022)
+
+\textbf{5. Gestión de Diferencias Horarias}
+
+Dado que con la metodología de Scrum se busca tener el acceso a talento de diferentes
+partes del mundo, estos se enfrentan a diferencias horarias significativas, lo cual se ve al
+momento de tomar decisiones. Para mitigar este desafío, se recomienda establecer ``ventanas
+de superposición'', esta técnica se utiliza para lograr sincronizar a todos los miembros
+disponibles en ventanas de tiempo cortas, logrando así los Sprint Plannings y los Daily
+Scrums. Además de esa técnica también siempre es importante tener una documentación
+clara y accesible en plataformas compartidas que garanticen que todos los miembros puedan
+visualizar los avances de los demás sin importar la zona horaria donde se encuentren. (Gaffin
+2025)
+
+\hypertarget{conclusiones-2}{%
+\section{Conclusiones}\label{conclusiones-2}}
+
+Cuando aplicamos Scrum en equipos a distancia suele presentar varios retos, pero estos los
+podemos enfrentar si empleamos las estrategias adecuadas y al mismo tiempo también
+mejoramos su eficiencia. Obtenemos una mejor coordinación y monitoreo eficiente de las
+labores cuando aplicamos adecuada-
+mente métodos ágiles y una comunicación efectiva. De
+este mismo modo, podemos fortalecer el compromiso y la cooperación ajustando las
+reuniones y promoviendo una cultura de equipo.
+
+Obtenemos buenos resultados cuando evaluamos de manera constante las estrategias
+puestas en práctica y modificadas de acuerdo con las necesidades del equipo. De este modo,
+podemos afirmar que el éxito de Scrum en entornos distribuidos se basa en una combinación
+adecuada de tecnología, procesos y cultura organizacional, lo que nos incita a seguir
+investigando nuevas prácticas que nos faciliten su implementación.
+
+\hypertarget{referencias-2}{%
+\section{Referencias}\label{referencias-2}}
+
+\begin{itemize}
+\item
+  {[}1{]} Gaffin, Kendra. s/f.~``Agile y Scrum: clave del éxito en software remoto''. Consultado el 5 de febrero de 2025. \href{https://www.insightful.io/es/blog/agile-scrum-methodologies-software-companies}{https://www.insightful.io}.
+\item
+  {[}2{]} Nebra, Jorge. 2022. ``Metodología Agile para obtener resultados de tu proyecto sin volverte loco''. Blog de hiberus. Hiberus. el 7 de mayo de 2022. \href{https://www.hiberus.com/crecemos-contigo/agile-resultados-de-tu-proyecto-sin-volverte-loco/}{https://www.hiberus.com}
+\item
+  {[}3{]} Schuster, Max. 2022. ``Aufbau agiler ,leistungs-
+  starker Teams: Ein umfassender Leitfaden''. Echometer. el 14 de octubre de 2022.
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja38}{%
+\chapter{IA el nuevo integrante del equipo Scrum}\label{pareja38}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja38_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Automatización, Integración, Inteligencia Artificial, Scrum.
+
+\hypertarget{introducciuxf3n-3}{%
+\section{Introducción}\label{introducciuxf3n-3}}
+
+La llegada de la Inteligencia Artificial ha obligado al mundo a adaptarse a un entorno
+en constante evolución. Aunque su implementación presenta desafíos, los beneficios de
+integrarla de manera efectiva en distintos sectores son innegables. La gestión de proyectos
+no es una excepción, y su incorporación en metodologías ágiles representa un avance
+significativo.
+
+Tan solo imaginar el impacto de la combinación entre sistemas capaces de aprender,
+analizar datos y tomar decisiones de manera autónoma y Scrum, un marco de trabajo
+diseñado para enfrentar el cambio, plantea tanto nuevas complicaciones como oportunidades.
+En este artículo se explora la novedosa y prometedora forma en la que la inteligencia artificial
+generativa puede ayudar a superar los desafíos en la gestión de proyectos, maximizar
+beneficios y mejorar la eficiencia y eficacia en el desarrollo de software.
+
+\hypertarget{artuxedculo-3}{%
+\section{Artículo}\label{artuxedculo-3}}
+
+Scrum es un marco de desarrollo ágil que utiliza un enfoque incremental e iterativo
+para producir software altamente funcional y adaptativo. Se fundamenta en las ideas de
+poseer equipos multidisciplinarios y autoorganizados que trabajan en torno a un objetivo
+común (Ameta 2023), la aceptación de cambios en los requerimientos incluso en las últimas
+etapas, las revisiones periódicas, sesiones de retroalimentación y en la colaboración de las
+partes interesadas haciendo énfasis en los individuos, las interacciones y la comunicación
+efectiva de todos los miembros de equipo. (Bahi 2024)
+
+La IA Generativa (GenAI) se convierte en una gran herramienta para el análisis de
+datos históricos, la automatización de tareas repetitivas, la evaluación de riesgos potenciales,
+la ejecución de pruebas y el análisis de desempeño. Su integración estratégica dentro de los
+procesos del marco Scrum incluyen:
+
+\begin{itemize}
+\tightlist
+\item
+  Historias de usuario: basándose en datos históricos, comentarios de usuarios y
+  tendencias en el mercado la GenAI puede crear historias de usuario, clarificar los
+  criterios de aceptación y estimar la complejidad de las mismas.
+\item
+  Monitoreo del progreso: mediante las actualiza-
+  ciones de las tareas, la GenAI
+  puede monitorear el progreso individual y del equipo, identificar posibles cuellos
+  de botella y las áreas que necesitan apoyo. También controlar la asignación
+  presupuestaria y plazos.
+\item
+  Optimización de recursos: la GenAI puede asistir en la división de trabajo,
+  asignación de recursos, la estimación de costos y comparar modelos de costos por
+  diversos factores y criterios.
+\item
+  Generar resúmenes de reuniones y pruebas automatizadas: GenAI puede resumir
+  las reuniones y destacar logros, resultados y puntos clave. Contribuir en la
+  automatización de las pruebas e identificar defectos en las mismas.
+\item
+  Análisis de retroalimentaciones y lluvia de ideas para mejora: la GenAI puede
+  generar análisis de las retroalimentaciones recibidas en cada sprint, identificar
+  patrones y proponer mejoras en áreas, procesos y dinámicas de equipo.
+\item
+  Priorización dinámica del Backlog: integrando la GenAI es posible asignar
+  prioridades dinámicas a los elementos del backlog para que estas reflejen los
+  cambios en los requerimientos y la retroalimentación recibida.
+\item
+  Automatización de la documentación y revisión de código: la GenAI puede
+  utilizarse para generar la documentación correspondiente a los cambios y
+  actualizaciones en el código, proporcionar sugerencias de mejora y verificar que
+  cumpla los estándares.
+\item
+  Reducción de riesgo y análisis predictivo: la GenAI puede ayudar en la planeación
+  de riesgos al anticipar tendencias, identificar posibles peligros, predecir el
+  comportamiento de las partes interesadas, reducir el error humano en la toma de
+  decisiones estratégicas y alertar sobre posibles peligros y oportunidades.
+\end{itemize}
+
+La integración de IA transforma la gestión de proyectos, desde la planificación hasta
+la ejecución, redefiniendo roles, responsabilidades y dinámicas. Los equipos deben adaptarse
+a entornos multifuncionales, donde los límites entre roles se desdibujan, requiriendo
+habilidades emergentes como análisis de datos, aprendizaje automático y manejo de herramientas impulsadas por IA. Además, la IA simplifica la toma de decisiones
+descentralizada al proporcionar datos en tiempo real, permitiendo decisiones autónomas sin
+depender de aprobaciones jerárquicas, lo que fomenta una cultura ágil y colaborativa.
+También incrementa la capacidad de adaptación a las necesidades cambiantes de los clientes,
+optimizando la eficiencia y la respuesta del equipo. (Chinta 2021)
+
+Es importante destacar que no se debe confiar completamente en la información
+proporcionada por la GenAI, siempre se debe tener en consideración las necesidades
+específicas de cada proyecto y los recursos humanos que se poseen. Tampoco se deben
+ignorar los riesgos y restricciones que conlleva, como los derechos de propiedad intelectual
+y la ciberseguridad. Esta evolución requerirá constante-
+mente ``(\ldots{}) un enfoque colaborativo,
+en el que la tecnología aumente las capacidades del equipo de Scrum en lugar de sustituir
+las interacciones humanas.'' (Bahi 2024)
+
+\hypertarget{conclusiones-3}{%
+\section{Conclusiones}\label{conclusiones-3}}
+
+La integración de la Inteligencia Artificial en Scrum marca un punto de inflexión en
+la gestión ágil de proyectos. Su capacidad para automatizar tareas repetitivas, analizar
+grandes volúmenes de datos y optimizar la toma de decisiones ha demostrado ser una ventaja
+significativa en el desarrollo de software. Sin embargo, su implementación presenta desafíos,
+como la adaptación de los equipos y la dinámica colaborativa. El éxito de Scrum con IA
+dependerá de la capacidad de las organizaciones para capacitar a sus equipos en herramientas
+impulsadas por la inteligencia artificial. No se trata de sustituir el talento humano, sino de
+potenciarlo a través de la automatización inteligente. Con un enfoque colaborativo, la IA se
+convierte en un aliado estratégico sin comprometer la esencia de Scrum.
+
+\hypertarget{referencias-3}{%
+\section{Referencias}\label{referencias-3}}
+
+\begin{itemize}
+\item
+  {[}1{]} Ameta, Upasana, Mayank Patel, y N. S. Rathore. ``Fusing Artificial Intelligence with Scrum Framework.'' SSRN, 2023. \url{https://ssrn.com/abstract=4428286}
+\item
+  {[}2{]} Bahi, A., J. Ghari, y Y. Gahi. ``Integrating Generative AI for Advancing Agile Software Development and Mitigating Project Management Challenges.'' \emph{International Journal of Advanced Computer Science \& Applications}, 15(3), 2024.
+\item
+  {[}3{]} Chinta, Swetha. ``The Impact of AI-Powered Automation on Agile Project Management: Transforming Traditional Practices.'' \emph{International Research Journal of Engineering and Technology (IRJET)}, 8(10), 2021: 2025--2036.
+\item
+  {[}4{]} Mdallal, Rana, Dania Alsawalmeh, Dania Jarad, y Ammar Odeh. ``AI-Powered Conceptual Model for Scrum Framework.'' En \emph{2023 3rd International Conference on Computing and Information Technology (ICCIT)}, 597--604. IEEE.
+\item
+  {[}5{]} Vicci, Heidrich. ``The Impact of Artificial Intelligence on Project Managers and Scrum Masters: A Review and Evaluation Study.'' SSRN, 2024. \url{https://ssrn.com/abstract=5049345}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+%%%%%% SECCION 2 
+\includepdf{images/seccion2.pdf}
+
+\AddEverypageHook{%
+\ifthenelse{\value{page}<26}%
+{\ifthenelse{\isodd{\value{page}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberimpar.pdf}}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberpar.pdf}}}}%
+}{}%
+\BgMaterial}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypertarget{pareja07}{%
+\chapter{IA en simulaciones virtuales: Transformando la ingeniería de proyectos reales.}\label{pareja07}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja07_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Simulaciones Virtuales, Inteligencia Artificial, Optimización de Proyectos, Gemelos Digitales, Modelos y Entornos.
+
+\hypertarget{introducciuxf3n-4}{%
+\section{Introducción}\label{introducciuxf3n-4}}
+
+Cada día, la complejidad del mundo aumenta. Satisfacer las necesidades humanas y hacer la vida más fácil y accesible ha llevado a la ingeniería a implementar sistemas más complejos, donde cada caso debe ser estudiado, evaluado y comprobado para minimizar el número de errores de un sistema. Aquí es donde entran en juego las simulaciones virtuales, debido a que existe una necesidad de probar diferentes casos en entornos controlados.
+
+La inteligencia artificial toma protagonismo para ser una herramienta la cual viene a maximizar los tiempos, costos y ser de gran ayuda para rear sistemas más complejos con una alta fiabilidad.
+
+\hypertarget{artuxedculo-4}{%
+\section{Artículo}\label{artuxedculo-4}}
+
+\textbf{Simulaciones virtuales}
+
+Hoy en día, se utilizan simulaciones virtuales para replicar infraestructuras, sistemas y procesos físicos, lo que permite realizar un análisis que predice los comportamientos en entornos controlados, antes de su integración en la vida diaria. Con el paso del tiempo, estas
+herramientas han avanzado, desde modelos basados en ecuaciones matemáticas hasta sistemas avanzados que incluyen algoritmos de gran velocidad.
+
+Actualmente, estas herramientas posibilitan la creación de infraestructuras críticas y procedimientos médicos en un ambiente seguro, detectando peligros, optimizando la eficiencia o simplemente para propósitos de experimentación.
+
+\textbf{Implementación de la inteligencia artificial}
+
+La inteligencia artificial ha crecido exponencialmente en los últimos años, jugando un papel muy importante en el día a día. Ha sido un catalizador clave en este campo, permitiendo que las simulaciones lleguen a ser altamente precisas. La IA no solo hace simulaciones que pueden replicar la realidad, sino que también pueden anticipar comportamientos futuros y con esto encontrar soluciones de optimización, todo esto gracias a los avances como redes neuronales, aprendizaje automático y procesamiento en tiempo real.
+
+Un ejemplo de cómo ha avanzado la IA para poder implementarse en las simulaciones son los gemelos digitales, siendo réplicas virtuales de objetos o sistemas físicos, donde se utilizan redes neuronales para poder predecir fallos o ajustar parámetros de producción {[}4{]}.
+
+\textbf{Tecnologías clave}
+
+Algunas tecnologías esenciales, como el Deep Learning, se emplean en la implementación de simulaciones virtuales, utilizando algoritmos de redes neuronales convolucionales (CNN) y redes neuronales recurrentes (RNN); permitiendo el análisis de datos históricos en tiempo real para identificar patrones y anticipar las conductas que se presentarán en la Simulación.
+
+Además, mediante la aplicación del Refuerzo de Aprendizaje (RL) es posible replicar interacciones entre humanos y robots en fábricas inteligentes, ya que se capacitan a los agentes en ambientes virtuales a través de la técnica del ensayo y el error.
+
+Con el uso de gemelos digitales en modelación 3D y 4D se pueden crear réplicas virtuales de infraestructuras con actualizaciones de datos, en tiempo real, con ayuda de sensores IoT. Además, se tiene software como ANSYS que predice tensiones en materiales o flujos de fluidos empleando IA, lo que reduce el tiempo de análisis de manera significativa.
+
+El Edge AI se refleja en simulaciones críticas, por ejemplo, al ejecutar modelos en dispositivos locales para simular entornos de conducción en tiempo real, dónde las decisiones en milisegundos son vitales.
+
+Con el uso de Federated Learning se llegan a entrenar modelos de IA descentralizados, estos preservando la privacidad de los datos para usarse en simulaciones médicas donde se analizan historiales sin compartir información sensible.
+
+Se tiene la generación de entornos virtuales interactivos a partir de imágenes 2D, utilizados en diseños arquitectónicos o en entrenamiento de robots. Y por último, también se exploran algoritmos cuánticos para poder modelar moléculas en la farmacología, esto permitiendo la reducción de tiempos en el descubrimiento de nuevos fármacos.
+
+\textbf{Sectores beneficiados}
+
+Son varios sectores los que se benefician del uso de simulaciones virtuales con la implementación de IA, por ejemplo en la construcción e infraestructura al analizar variables como la disponibilidad de recursos y el clima a partir de un modelo predictivo {[}4{]}. También se pueden llegar a detectar fallos estructurales mediante redes neuronales, tomando de referencia el análisis de vibraciones y datos históricos.
+
+El sector de salud y biomedicina se ve altamente beneficiado, gracias a modelos 3D de órganos, permitiendo hacer una simulación a los cirujanos para intervenciones complejas; el diseño de proteínas terapéuticas para neutralizar venenos se realizan a partir de simulaciones de interacciones moleculares, permitiendo el descubrimiento de varios fármacos {[}3{]}.
+
+La manufactura y automatización cuenta con simulaciones para poder entrenar robots en tareas de ensamblaje con una precisión de 0.1mm. También una visión computacional y redes generativas antagónicas (GANs), que logran identificar defectos en microsegundos inspeccionando las piezas en líneas de producción {[}3{]}.
+
+Por último, la energía y sostenibilidad se ven beneficiadas con herramientas que predicen la demanda para la optimización de distribución, usando algoritmos de clustering, donde se obtiene simulaciones generadas por IA que evalúan ángulos de incidencia y sombras, maximizando la eficiencia en granjas solares {[}3{]}.
+
+\hypertarget{conclusiones-4}{%
+\section{Conclusiones}\label{conclusiones-4}}
+
+Las simulaciones virtuales impulsadas por inteligen-
+cia artificial están transformando la ingeniería de proyectos al ser más precisas y eficientes al momento de predecir. Debido a tecnologías y técnicas como aprendizaje profundo, gemelos digitales y aprendizaje por refuerzo, es posible mejorar diferentes aspectos como la anticipación de fallos, optimización de diseños y reducción de costos.
+
+Estas tecnologías no solo mejoran la eficiencia, sino que también incitan a la innovación en la ingeniería. A medida que la IA avanza las simulaciones se ven fortalecidas y los casos a cubrir en dichas pruebas llegan a ser, en su mayoría, más complejas y alcanzables en todos los escenarios. En el futuro, esto permitirá tener sistemas más confiables y seguros.
+
+\hypertarget{referencias-4}{%
+\section{Referencias}\label{referencias-4}}
+
+\begin{itemize}
+\item
+  {[}1{]} The Black Box Lab. ``World Models: cuando la IA aprende de sí misma.'' \emph{The Black Box Lab} (blog), 2 de octubre de 2024. \href{https://theblackboxlab.com/world-models/}{theblackboxlab.com}
+\item
+  {[}2{]} Patricia Morales. ``Descubre cómo la simulación puede revolucionar tus proyectos tecnológicos.'' \emph{eduMaster+} (blog), 19 de julio de 2023.\\
+  \href{https://edumasterplus.com/descubre-como-la-simulacion-puede-revolucionar-tus-proyectos-tecnologicos/}{edumasterplus.com}
+\item
+  {[}3{]} Erik Erlandson. ``Tendencias IA, automatización y virtualización que definirán la tecnología empresarial en 2025.'' \emph{CepymeNews}, n.~2 (2025).\href{https://cepymenews.es/tendencias-ia-automatizacion-virtualizacion-definiran-tecnologia-empresarial-2025}{cepymenews.es}
+\item
+  {[}4{]} Elena. ``Simulación de Proyectos con IA: El Futuro de la Planificación Inteligente.'' \emph{Metaversos Agency} (blog), 8 de noviembre de 2024. \href{https://metaversos.agency/blog/simulacion-de-proyectos-con-ia-el-futuro-de-la-planificacion-inteligente/}{metaversos.agency}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja34}{%
+\chapter{Packet Tracer: Formación de ingenieros para redes empresariales del mundo real.}\label{pareja34}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja34_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Packet Tracer, redes, formación, modelado, simulación, empresa.
+
+\hypertarget{introducciuxf3n-5}{%
+\section{Introducción}\label{introducciuxf3n-5}}
+
+En el ámbito de redes y telecomunicaciones en el mundo actual, la simulación de entornos
+de redes juega un papel fundamental en la formación académica de ingenieros y en el
+desarrollo de su habilidad para presentar proyectos empresariales.
+
+Packet Tracer, desarrollado y distribuido por Cisco, se ha convertido en una de las
+herramientas más utilizadas en la enseñanza académica y en una pieza clave para el
+aprendizaje del diseño de redes. La capacidad del software para simular entornos, desde muy
+básicos hasta complejos, permite tanto a profesionales como estudiantes adquirir experiencia
+práctica sin necesidad de hardware costoso.
+
+\hypertarget{artuxedculo-5}{%
+\section{Artículo}\label{artuxedculo-5}}
+
+Cisco, el gigante de la industria, desarrolló el software Packet Tracer con el objetivo de
+permitir la simulación de redes en entornos controlados para sus trabajadores; sin embargo,
+alcanzó otro objetivo: democratizar y globalizar el aprendizaje de las redes. Con el segundo
+objetivo alcanzado cisco brinda el acceso a una herramienta avanzada y equipada para la
+enseñanza completa de distintas tecnologías para la conectividad disponible en cualquier
+parte del mundo {[}1{]}.
+
+Con el uso de esta herramienta, Cisco busca reducir la brecha educativa permitiendo que los
+estudiantes y profesionales de cualquier nivel puedan desarrollar habilidades prácticas en
+redes sin tener la necesidad de contar con laboratorios físicos costosos disponibles solo para
+instituciones con el capital suficiente monopolizando la educación {[}2{]}.
+
+Las empresas de todo tipo de telecomunicación requieren soluciones de redes eficientes y
+seguras y con packet tracer los profesionales pueden de forma efectiva presentar diseños de
+infraestructura. Los ingenieros pueden presentar y modelar topologías personalizadas, probar
+su funcionalidad y demostrar a las empresas como responderán sus modelos a diferentes
+condiciones a las que se sometan las propuestas {[}3{]}. De esta forma el mercado crece y la
+creatividad junto con la preparación profesional también y se extienden las oportunidades
+para cada interesado en el planeta.
+
+Probar redes directamente en un entorno de producción real puede ser riesgoso y costoso para
+las empresas que las financian. Packet Tracer permite realizar las pruebas de rendimiento,
+seguridad y compatibilidad sin afectar la operatividad de una empresa en el proceso. La
+capacidad del software para simular fallos y al mismo tiempo analizar soluciones antes de
+implementarlas en un entorno físico ayuda a minimizar errores en el proceso y reducir costos
+hasta su implementación en productividad {[}1{]}.
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=1\linewidth]{imagenes_articulos/p34_01} \end{center}
+\figcaption{Red empresarial con uso de protocolo DHCP y DNS diseñada en Cisco Packet Tracer.}
+
+\end{minipage}
+\end {flushleft}
+
+La configuración de redes en entornos empresariales reales requiere de conocimiento sólido
+de protocolos de enrutamiento, comunicación InterVLAN, seguridad con ACL's o implementación de tecnologías que permitan aprovechar de mejor manera la infraestruc-
+tura
+física de las empresas. Packet Tracer permite a los ingenieros de redes practicar la
+implementación de estos protocolos y tecnologías en un entorno virtual replicando escenarios
+reales sin riesgos ni costos adicionales {[}4{]}{[}5{]}. La posibilidad de probar distintas
+configuraciones y soluciones de red ayuda a los profesionales a desarrollar habilidades
+críticas antes de aplicarlas en las infraestructuras empresariales.
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=1\linewidth]{imagenes_articulos/p34_02} \end{center}
+\figcaption{Protocolos relevantes utilizados en la simulación de redes en el curso Redes de Computadoras 2 de la Facultad de Ingeniería}
+
+\end{minipage}
+\end {flushleft}
+
+Con el auge de nuevas tecnologías emergentes y el proceso de digitalización de las empresas,
+los ingenieros en telecomunicaciones deben adaptarse rápidamente a cualquier tipo de
+desafío que surja. Packet Tracer siempre se mantiene actualizado con estándares en la
+industria en la simulación, por ejemplo, permite la práctica de escenarios en entornos que
+incluyen IoT, redes definidas por software (SDN) y prácticas de ciber seguridad avanzadas
+{[}4{]}{[}5{]}. Esto garantiza que los profesionales estén preparados para afrontar demandas en el
+mercado laboral actual y futuro.
+
+\hypertarget{conclusiones-5}{%
+\section{Conclusiones}\label{conclusiones-5}}
+
+Packet Tracer se ha consolidado como una herramienta esencial en la formación profesional
+de ingenieros de redes y en la presentación de propuestas empresariales. Su capacidad para
+simular redes reales permite a los estudiantes y profesionales modelar, presentar y evaluar
+proyectos sin riesgos ni costos elevados. En un mundo donde la conectividad y la seguridad
+de redes son prioritarias en el avance de la tecnología y la inclusión de estándares nuevos y
+tecnologías emergentes, Packet Tracer prepara a los ingenieros para enfrentar los desafíos actuales y futuros del mercado y dominarlo es una ventaja competitiva para cualquier
+ingeniero en redes y telecomunicaciones. La democratización del aprendizaje que ofrece este
+software contribuye a la reducción de la brecha educativa y al impulso del talento en el ámbito
+de las telecomunicaciones.
+
+\hypertarget{referencias-5}{%
+\section{Referencias}\label{referencias-5}}
+
+\begin{itemize}
+\item
+  {[}1{]} Cisco Networking Academy. ``Cisco Packet Tracer.'' \emph{Cisco Networking Academy}. Última modificación 2024. \href{https://www.netacad.com/cisco-packet-tracer}{netacad.com}.
+\item
+  {[}2{]} Molina, Rubén, y Rodríguez, María. ``Emuladores y simuladores de red, herramientas fundamentales en la formación de ingenieros.'' \emph{Revista ANFEI}, no. 13 (2021): 45-60. \href{https://www.anfei.mx/revista/index.php/revista/article/view/676/1317}{anfei.mx}.
+\item
+  {[}3{]} Chicaiza Puedmag, Carlos Alexander. ``Simula-
+  ción de una red empresarial mediante la herramienta Cisco Packet Tracer.'' \emph{Revista Odigos} 2, no. 3 (2021): 99-117. \href{https://doi.org/10.35290/ro.v2n3.2021.495}{doi.org}.
+\item
+  {[}4{]} Iriarte, Leandro, Diego Encinas, y Martín Morales. ``Uso de software de simulación en el dictado de la asignatura Redes de Computadoras.'' \emph{IX Congreso de Tecnología en Educación y Educación en Tecnología}, 12 y 13 de junio de 2014. \href{https://sedici.unlp.edu.ar/bitstream/handle/10915/38686/Documento_completo.pdf?isAllowed=y\&sequence=1}{sedici.unlp.edu.ar}.
+\item
+  {[}5{]} Rodríguez, Nelson, Marcelo Moreno, y María Cecilia Gramajo. ``Estudio de la influencia del uso de simulación en la enseñanza de redes de computadoras en el nivel universitario (resultados finales).'' \emph{C.I.D.I.A. (Centro de Investigación, Desarrollo e Innovación Aplicada)}, 2021.\\
+  \href{https://www.academia.edu/81048440/Estudio_de_la_influencia_del_uso_de_simulaci\%C3\%B3n_en_la_ense\%C3\%B1anza_de_redes_de_computadoras_en_el_nivel_universitario_resultados_finales_}{academia.edu}.
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja35}{%
+\chapter{Eco-Automatización con UiPath: Cómo RPAs e IAs reducen el impacto ambiental empresarial}\label{pareja35}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja35_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} UiPath, Inteligencia Artificial, Sostenibilidad, Operaciones, Impacto Ambiental, Transformación Digital Verde.
+
+\hypertarget{introducciuxf3n-6}{%
+\section{Introducción}\label{introducciuxf3n-6}}
+
+De acuerdo con la ITU, Agencia de Tecnologías Digitales de la ONU (2024), la declaración
+Green Digital Action, respaldada por el COP29, establece que el sector digital es una fuente
+creciente de emisiones globales de GEI, con emisiones de carbono que van del 1.5\% al 4\% de las
+emisiones globales. Para alcanzar el objetivo de limitar el calentamiento global a 1.5 °C, las
+emisiones del sector digital deberán reducirse en un 45\% para 2030.
+
+Las tecnologías digitales y el sector de las TIC desempeñan un papel clave en el apoyo a la
+reducción del impacto y adaptación frente al cambio climático en distintas industrias. La
+inteligencia artificial (IA) y la automatización robótica de procesos (RPA) permiten aprovechar
+de manera correcta el consumo energético, mejorar la eficiencia en la gestión de recursos y
+reducir desperdicios mediante análisis predictivos y decisiones automatizadas, lo cual permite
+reducir las emisiones de carbono indirectas generadas por empresas, data centers y la industria.
+
+\hypertarget{artuxedculo-6}{%
+\section{Artículo}\label{artuxedculo-6}}
+
+De acuerdo a Nielsen (2015) es fundamental que las empresas lleven a cabo una integración de
+iniciativas que ayuden al medio ambiente en el mundo actual, los consumidores desean hacer
+alianzas con iniciativas sustentables y buenas para el medio ambiente. Por medio de un estudio
+de encuestas, se identificó que el 81\% de los consumidores y empresas B2B creen que es
+importante o extremadamente importante llevar a cabo iniciativas verdes.
+
+Apoyado de los conceptos explorados por Theums (2019) UiPath Process Mining es capaz de identificar procesos actuales en una empresa que pueden consumir recursos excesivos de manera física. Uso de UiPath Document Understanding para extraer información de documentos escaneados y convertirlos en datos digitales y agregación de UiPath Document Understanding para extraer información de documentos escaneados y convertirlos en datos digitales.
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=1\linewidth]{imagenes_articulos/p35_01} \end{center}
+\figcaption{Modelos para integración de estrategias ambientales con UiPath : Elaboración Propia, Theums (2019)}
+
+\end{minipage}
+\end {flushleft}
+
+La automatización con UiPath permite mejorar la eficiencia energética dentro de las empresas.
+Según UiPath (2024), el uso de RPA en centros de datos mejora la asignación de recursos
+computacionales, reduciendo el consumo eléctrico innecesario. Herra-
+mientas como UiPath AI
+Center permiten la integración de modelos de inteligencia artificial que predicen patrones de demanda, que se ajustan de forma dinámica al uso de energía en servidores y sistemas
+operativos.
+
+\hypertarget{conclusiones-6}{%
+\section{Conclusiones}\label{conclusiones-6}}
+
+El impacto ambiental empresarial no se reduce solamente a organizaciones de carácter
+manufacturero, minería o adquisición de combustibles, sino que se extiende al sector tecnológico
+teniendo un impacto en la cantidad de papel, uso de la electricidad, entre otros.
+
+UiPath, como plataforma líder en automatización robótica de procesos (RPA), permite optimizar
+operaciones empresariales, reduciendo el consumo de recursos y minimizando residuos. Al
+realizar la automatización de tareas que llegan a ser repetitivas y procesos manuales, las
+empresas pueden disminuir significativamente el uso de papel, energía y otros insumos,
+contribuyendo a un menor impacto ambiental. Además, la integración de IA en UiPath ayuda a
+elegir de forma más inteligente y eficiente, como la optimización de rutas logísticas para reducir
+emisiones de CO2 o la gestión predictiva de inventarios para evitar desperdicios.
+
+\hypertarget{referencias-6}{%
+\section{Referencias}\label{referencias-6}}
+
+\begin{itemize}
+\item
+  {[}1{]} iCert Global. ``The Environmental Impact of RPA: Sustainability and Efficiency.'' \emph{iCert Global Blog}, 18 de junio de 2024. Accedido el 9 de febrero de 2025. \href{https://www.icertglobal.com/the-environmental-impact-of-rpa-sustainability-and-efficiency-blog/detail}{icertglobal.com}
+\item
+  {[}2{]} Theuns, Jorim. ``How to Green Your Business with Process Mining and RPA.'' \emph{UiPath Blog}, 10 de noviembre de 2020. Accedido el 9 de febrero de 2025. \href{https://www.uipath.com/blog/digital-transformation/how-to-green-your-business-with-process-mining-and-rpa}{uipath.com}
+\item
+  {[}3{]} Unión Internacional de Telecomunicaciones. (s.f.). ``Green Digital Action - Impact.'' \emph{ITU}. Recuperado el 6 de febrero de 2025. \href{https://www.itu.int/initiatives/green-digital-action/impact/all}{itu.int}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja16}{%
+\chapter{De los salones a las pantallas, el nuevo rostro de la educación tradicional}\label{pareja16}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja45_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Zoom, Meet, educación, pandemia..
+
+\hypertarget{introducciuxf3n-7}{%
+\section{Introducción}\label{introducciuxf3n-7}}
+
+A través de plataformas como Zoom o Meet que evolucionaron durante la pandemia fue que
+el sector educativo pudo mantener en contacto a profesores y alumnos para que pudieran
+continuar con sus clases a distancia, a pesar de los desafíos iniciales sobre el desconocimiento
+de las herramientas por parte del profesor o la falta de una computadora e internet en casa
+del alumno.
+
+Otras como Classroom o Moodle que se especializan en la distribución del material educativo
+más que en la interacción en vivo con el profesor, tambien fueron importantes ya que
+permitían la entrega de tareas y la realización de exámenes por medios de sus plataformas
+interactivas que facilitaban la entrega y calificacion de actividades.
+
+\hypertarget{artuxedculo-7}{%
+\section{Artículo}\label{artuxedculo-7}}
+
+El ciclo escolar 2020 comenzó como siempre, pero dos meses después, la manera tradicional
+de impartir clases, donde un catedrático llegaba a un salón, era recibido por sus alumnos,
+impartía su contenido y los alumnos convivían entre ellos, dio un giro radical. La pandemia
+obligó a cerrar todas las escuelas y universidades del país para evitar contagios, así los
+profesores enfrentaron su primer gran desafío: ¿cómo continuar dando clases sin que sus
+alumnos estuvieran presentes?
+
+Cada profesor se las ingenió para establecer algún canal de comunicación con sus alumnos,
+con la intervención de los padres en el caso de las escuelas primarias. Plataformas como
+WhatsApp, Messenger y Facebook ya existían, pero se utilizaban principalmente para
+socializar. Compartir contenidos educativos era posible, pero el seguimiento personal a los
+alumnos como se hacía en los salones de clases era un nuevo problema. Hallar plataformas
+virtuales donde los profesores pudieran reunirse con sus alumnos, encender una cámara para
+verlos, hablar con ellos y resolver dudas era el nuevo desafío.
+
+Plataformas como FaceTime, WhatsApp, Google Duo y Messenger permitían realizar
+videollamadas, pero no a gran escala, otras como Skype, Zoom y Google Hangout eran más
+utilizadas en el ramo empresarial.
+
+Zoom: inicialmente fundada para reuniones corporativas, en 2019 tenía alrededor de 10
+millones de usuarios, no estaba preparada para recibir mas de 300 millones de personas para
+2020, de alli que tuvo que escalar a la nube para soportar su gran demanda y hoy en día está
+situada como la empresa líder del sector de videollamadas.
+
+Google Meet: Es la evolución de Google Hangout, una aplicación de mensajería y
+videollamadas que tambien llegó a más de 300 millones de usuarios luego de la pandemia,
+este al recibir gran demanda del ramo educativo mejoró su entorno para adaptarse a las
+necesidades educativas, permitiendo el uso de preguntas, grupos de trabajo y pizarrón, entre
+otras herramientas, lo que mejoró significativamente la interacción del profesor con los
+alumnos.
+
+En la siguiente imagen se observa como crecieron las descargas de aplicaciones como Meet,
+Teams y Zoom en marzo del 2020 respecto al primer cuatrimestre del 2019 y se observa que
+en el caso de Meet solo en Estados Unidos las descargas se multiplicaron por 30.
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=1\linewidth]{imagenes_articulos/p45_01} \end{center}
+\figcaption{Crecimiento de las descargas de aplicaciones de videoconferencia 2020 vs 2019. Foto de TechSpot, 2020.}
+
+\end{minipage}
+\end {flushleft}
+
+Los profesores ya contaban con las plataformas para impartir sus clases como Zoom y Meet,
+podían tener a un grupo de alumnos recibiendo su clase desde sus casas, pero surgían otras
+incógnitas, ¿Cómo realizar exámenes?, ¿Cómo dejar y recibir tareas? Realizar las tareas a mano y enviar una captura por WhatsApp al profesor fue una de las primeras técnicas
+utilizadas.
+
+Herramientas como Classroom, Canvas y Moodle resuelven este tipo de problemas, cada uno
+tiene la opción de enrolar a sus estudiantes, asignar una tarea, realizar foros de interacción
+para presentar dudas y demás. Classroom es una herramienta gratuita que permite tener el rol
+de estudiante y profesor. Moodle es una herramientas mas avanzada y un poco compleja ya
+que ofrece opciones de personalización que permite tener un control de alumnos avanzado,
+exámenes bien estructurados, foros, tareas, material multimedia, presentaciones de clases,
+etc.
+
+De esta forma y al disponer de una variedad de plataformas que permiten interactuar con
+otras personas y colaborar en el proceso fue que la educación no se quedó estancada en
+tiempos de pandemia y se pudo continuar con una convivencia relativamente normal, después
+de este suceso, algunos establecimientos decidieron mantener estas herramientas activas en
+sus instituciones educativas, ya que permiten una mejor colaboración y distribución de
+material educativo entre sus estudiantes .
+
+\hypertarget{conclusiones-7}{%
+\section{Conclusiones}\label{conclusiones-7}}
+
+La educación a través de plataformas que original-
+mente estaban creadas para ámbitos
+empresarias y que evolucionaron para adaptarse al ámbito educativo nos muestran que todo
+puede cambiar, asi como el modelo de educación tradicional cambió y ahora permite a
+personas en cualquier punto geográfico con acceso a internet asistir a una clase y convivir
+con sus compañeros tambien trae nuevos retos como la capacitación del profesor para que
+aprenda a utilizar las herramientas disponibles, la actualización de temas y metodologías de
+enseñanza para que las clases sean intuitivas y no perder la atención del alumno, asi como la
+inclusión del padre de familia para que pueda aprender el uso de las herramientas y poder
+supervisar a su hijo desde casa, el modelo educativo cambió y tambien trae nuevos retos.
+
+\hypertarget{referencias-7}{%
+\section{Referencias}\label{referencias-7}}
+
+\begin{itemize}
+\item
+  {[}1{]} Dávila Morán, Roberto Carlos, Henri Emmanuel López Gómez, Pierre Chipana Loayza, Tomasa Verónica Cajas Bravo, e Ilda Nadia Monica de la Asunción Pari Bedoya. 2022. ``Empleo de Google Meet y la formación universitaria en estudiantes de una universidad privada de Arequipa.'' \emph{Conrado}, 18(88): 181--190. \href{http://scielo.sld.cu/scielo.php?script=sci_arttext\&pid=S1990-86442022000500181}{scielo.sld.cu}
+\item
+  {[}2{]} Vera, Fernando. 2021. ``Impacto de las plataformas de videoconferencia en la educación superior en tiempos de COVID-19.'' \emph{Transformar}, 2(1): 41--57. \href{https://revistatransformar.cl/index.php/transformar/article/view/8}{revistatransformar.cl}
+\item
+  {[}3{]} Portillo, Rodrigo. 2020. ``¿Cómo se explica el éxito de Zoom durante la pandemia?'' \emph{Marketing Insider Review} (blog), 13 de septiembre de 2020. \href{https://marketinginsiderreview.com/exito-zoom-pandemia/}{marketinginsiderreview.com}
+\item
+  {[}4{]} TechSpot. 2020. ``Ilustración 2: crecimiento de las descargas de aplicaciones de videoconferencia 2020 vs 2019.'' 31 de marzo de 2020. \href{https://www.techspot.com/images2/news/bigimage/2020/03/2020-03-31-image-2-p.webp}{techspot.com}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+%%%%%% SECCION 3
+\includepdf{images/seccion3.pdf}
+
+\AddEverypageHook{%
+\ifthenelse{\value{page}<34}%
+{\ifthenelse{\isodd{\value{page}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberimpar.pdf}}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberpar.pdf}}}}%
+}{}%
+\BgMaterial}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypertarget{entrevista02_khristianfuentes}{%
+\chapter{Liderazgo en la era digital, ¿Cómo gestionar equipos remotos con éxito?}\label{entrevista02_khristianfuentes}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/khristianfuentes_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{YouTube:}} \url{https://youtu.be/w_cVB_-eWlQ}
+
+\hypertarget{entrevista-1}{%
+\section{Entrevista}\label{entrevista-1}}
+
+\textbf{¿Quién es Kristhian Fuentes?}
+
+Este tema me apasiona porque creo que hay mucho por explorar. Son dos aspectos que me interesan mucho: el liderazgo y esta era digital en la que ya estamos completamente inmersos. Si no te adaptas a esta era, es difícil mantenerse vigente en las industrias.
+
+Mi nombre es Kristhian Fuentes, tengo 34 años. Actualmente trabajo en Banco Agromercantil en el área de desarrollo de nuestra aplicación de banca digital.
+Tengo aproximadamente 13 o 14 años de experiencia en el sector financiero. Trabajé 11 años en Banco Industrial, también en el área de banca digital. Y ahora en BAM llevo casi 2 años, enfocado en desarrollar e innovar en este campo. Mi trabajo es remoto, aunque voy dos veces por semana a la oficina y el resto lo realizo desde casa.
+Menciono esto porque, en BI, mi trabajo era completamente presencial. El modelo híbrido empezó después de la pandemia, cuando fue necesario adaptarnos al trabajo remoto. Esa ha sido mi experiencia laboral hasta el momento.
+
+¿Mis pasatiempos? La verdad es que tengo varios. Me considero una persona equilibrada. Me gusta escuchar podcasts, sobre todo los de ciencia ficción que cuentan historias con efectos especiales. Disfruto mucho de ese tipo de contenido.
+También me gusta entrenar en el gimnasio. Siento que es un momento para mí, una especie de mini terapia donde encuentro paz. Además, me encanta viajar. Siempre que puedo, trato de visitar playas o ciudades nuevas. Siento una conexión especial con el mar: disfruto de los atardeceres, amaneceres y de todo lo relacionado con la naturaleza.
+
+Y como te decía, también me apasiona el crecimiento en temas de liderazgo. Es un tema que considero muy valioso, porque implica construir, aportar y desarrollarse constantemente.
+
+\textbf{¿Qué estrategias utilizas para mantener la motivación y el compromiso en un equipo remoto?}
+
+Fíjate que esta pregunta me gusta un montón porque habla de dos temas muy importantes: la motivación y el compromiso.
+Yo los dividiría en dos segmentos muy grandes. La motivación, creo que la podemos ir midiendo en retrospectivas. Una estrategia muy valiosa es tener estas retrospectivas para saber cómo se siente el equipo con la forma en que estamos trabajando: si les funciona, si están conformes con cómo estamos alcanzando los objetivos.
+
+Desde el enfoque del liderazgo, lo más importante ---después de los objetivos--- son los colaboradores. Sin el equipo, no llegamos a ningún lado.
+Aunque parezca trillado porque marcos como Scrum ya incluyen retrospectivas, el punto es hacerlas vivas. Vivirlas de verdad. Desde el liderazgo, hay que estar abiertos a escuchar opiniones, quejas e inconformidades, y tener la inteligencia emocional para no tomarlo personal. Hay que ser objetivos, directos, tener puntos de acción y evaluar qué tan motivados están.
+
+En cuanto al compromiso, creo que una gran estrategia son los espacios uno a uno. No es lo mismo que una retro general. En una retrospectiva puedo ver cómo está el equipo en general, pero en un uno a uno puedo saber qué tan comprometida está cada persona.
+A veces estos espacios pueden ser incómodos al inicio, porque muchos piensan: ``Uy, me va a regañar mi jefe'', pero hay que normalizarlos. Son espacios seguros, donde podemos conocer al colaborador, escucharlo, e incluso ahí nacen nuevas ideas. Se sienten cómodos compartiendo su perspectiva del proyecto o de cómo estamos trabajando.
+
+Entonces, te diría que esas dos estrategias ---retrospectivas y espacios uno a uno--- son clave cuando trabajamos con equipos.
+
+\textbf{¿Cuáles son los principales indicadores que utilizas para medir la productividad en un entorno remoto?}
+
+Nosotros trabajamos con una metodología basada en unidades de capacidad. Según el rol de cada integrante del equipo solucionador, se le asignan ciertas unidades. Por ejemplo: un analista uno puede tener 20 unidades, el dos puede tener 30, el tres puede tener 50. Y así podemos mapear el proyecto y ver cuánto puede asumir cada uno en ese Sprint.
+
+Trabajamos con marcos ágiles, y al final del Sprint evaluamos dos cosas muy importantes:
+
+\begin{itemize}
+\tightlist
+\item
+  ¿Cumplió con sus unidades de capacidad?¿Entregó el valor que se esperaba?
+\item
+  Si no lo logró, ¿hubo bloqueantes? ¿Qué pasó?
+\end{itemize}
+
+Lo que realmente importa no es si hizo o no hizo una tarea, sino si entregó valor. Si hubo un bloqueo fuera de sus manos, eso no lo hace improductivo. Más bien, nos da una oportunidad para mejorar y liberar ese bloqueo en el siguiente Sprint.
+
+\textbf{¿Cómo manejas las diferencias de husos horarios cuando hay miembros del equipo en distintos países?}
+
+Esta parte me hace sentir muy identificado. Somos parte del grupo Bancolombia, y muchos de nuestros desarrolladores están allá. Colombia está dos horas adelante. A veces necesito una reunión a las 4 p.m., y para ellos ya son las 6. O ellos quieren una sesión a las 8 a.m., y para mí son las 6\ldots{} tal vez todavía estoy en el gimnasio.
+
+Aquí es donde la comunicación entra con fuerza: poder revisar agendas, coordinar, tener esa flexibilidad y empatía. Nada de ``te adaptás porque yo soy la casa matriz''. Hay que respetar espacios.
+
+Una vez un equipo nos dijo: ``Solo respeten la hora de almuerzo, por favor''. Y eso, aunque parezca pequeño, es sagrado. En Guatemala a veces cuesta respetar esos espacios, pero hay que empezar a hacerlo.
+Con empatía, uno puede negociar. Tal vez me puedo levantar más temprano y tener la sesión a las 7 en vez de las 6. Porque si el equipo no está cómodo, no va a dar soluciones. Solo va a escuchar sin involucrarse, y eso no es lo que buscamos.
+
+\textbf{¿Qué herramientas de comunicación y colabora-
+ción consideras esenciales para un equipo remoto?}
+
+Lo primero: una plataforma de comunicación. Teams, Zoom, Google Meet\ldots{} cualquiera. Pero es fundamental tener un canal de comunicación de dos vías.
+Necesitamos poder conversar, tener sesiones, hacer uno a uno. Más que correos o memos. Porque, aunque a veces escuchamos el típico: ``Esto pudo haber sido un correo'', en el trabajo remoto no podemos asumir que el otro entendió todo.
+Prefiero apartar 10 o 15 minutos para explicarle algo a alguien, antes que un correo que se malinterprete y se vuelva un hilo eterno que no resuelve nada.
+
+Segundo: un tablero de seguimiento. Es clave. Ahorra reuniones innecesarias, da visibilidad, permite ver cómo avanzan los proyectos y qué tareas están en curso.
+
+Tercero: carpetas compartidas. Una nube, Google Drive, lo que sea. Pero que la información esté disponible, sin depender del ``se me fue a spam'' o ``escribiste mal el correo''.
+
+Y por último, algo que me funciona mucho: un grupo de WhatsApp. Sé que no a todos les gusta, pero si se gestiona con respeto y empatía, puede ser útil. El celular es lo segundo que más usamos después de la compu. Y si es para una comunicación inmediata, ¿por qué no?
+
+\textbf{¿Cómo identificas y abordas señales de burnout o desconexión emocional en un equipo remoto?}
+
+Soy licenciado en Ciencias de la Comunicación, así que esto de escuchar me apasiona.
+Un líder, más que hablar, debe saber escuchar. Si no escucha a su equipo, no va a detectar cuándo alguien está desconectado o quemado.
+Solo con escuchar el tono de voz, cómo te responden, las ganas con las que hablan\ldots{} ya podés notar si alguien está desmotivado. Las señales están ahí.
+
+La desconexión emocional se nota. En cómo responden en sesiones, en su participación, en su presencia. Y eso no lo detectás por un correo. El oído es nuestro sentido clave en el trabajo remoto. Por eso hay que desarrollarlo.
+Incluso para los que están en tecnología: escuchar es una capacidad blanda importantísima.
+
+\textbf{¿Cómo equilibras la flexibilidad laboral con la necesidad de estructura y cumplimiento de objetivos?}
+
+Creo que la flexibilidad laboral requiere mucho compromiso. Pero antes de exigirle al equipo, como líder tengo que confiar en ellos.
+La confianza no viene sola. Se construye. Se empodera al equipo. Queremos equipos autogestionados, autodisciplinados, que entreguen valor.
+Y eso se equilibra con estructura y cumplimiento de objetivos. Si yo confío en vos, espero que lo devolvás. Y si no, ahí es donde entran las retros, los uno a uno, el feedback.
+
+Como diría el Tío Ben (sí, el de Spider-Man): ``Un gran poder conlleva una gran responsabilidad.'' Y el trabajo remoto es eso. Estás en tu casa, podés ir al gimnasio en tu hora de almuerzo, y está bien. Es tu tiempo libre.
+Pero hay que cumplir objetivos. Confiar en el equipo genera compromiso. Y ese compromiso se ve reflejado en los resultados.
+La clave está en que el equipo perciba esa confianza. Eso lo cambia todo.
+
+\textbf{¿Qué rol juega la cultura organizacional en un equipo remoto y cómo la mantienes viva en el día a día?}
+
+La cultura es clave. Aunque estemos en casa, los valores de la institución tienen que estar presentes siempre.
+Si el enfoque es el ser humano, se refleja en cómo respetamos horarios. Si el enfoque es la tecnología, se refleja en crear espacios para ideas, torneos de lluvia de ideas, dinámicas.
+La cultura dicta los valores. Y estos se reflejan en el feedback, en la empatía, en cómo escuchamos cuando algo no se logra por un bloqueo.
+
+Sin cultura, no hay dirección. Y es importante mantenerla viva: recordar la misión, la visión, lo que nos mueve.
+A veces, una buena reunión te recuerda por qué estás ahí, por qué tu trabajo importa. Y eso también es cultura.
+
+\textbf{¿Cuál ha sido el mayor desafío que has enfrentado liderando equipos remotos y cómo lo superaste?}
+
+Tengo dos desafíos puntuales. El primero: la participación del equipo. En sesiones virtuales, muchos no encienden la cámara. No sabes si están atentos, si entendieron. Y eso es un reto.
+Yo lo he resuelto pidiendo cámaras encendidas. Puede parecer invasivo, pero es parte de decir: ``Estamos presentes, aunque no estemos en el mismo lugar.''
+
+El segundo: el feedback. Si un equipo presencial lo necesita, uno remoto lo necesita aún más.
+Muchos líderes piensan: ``No está rindiendo, hay que despedirlo.'' Pero quizás no está claro en lo que se espera de él. Un buen líder no busca a los mejores, los construye.
+El feedback no debe dar miedo. Es necesario. Y no solo del líder al equipo, sino también del equipo al líder. Saber si se sienten cómodos, si perciben apertura, si sienten que el líder está ahí cuando lo necesitan.
+Porque si te escriben a las 9 y respondés a las 3, ahí hay un problema. La disponibilidad del líder es esencial. Si no estás para destrabar, empujar o apoyar, algo está fallando.
+
+\textbf{Mensaje final de Kristhian Fuentes}
+
+Me gustaría cerrar con una frase:
+La clave del éxito de un equipo remoto es la cercanía.
+Construir cercanía, conocer al equipo, crear estrategias para fortalecer la relación, aunque sea a distancia. Que se sienta ese ``estoy a un clic de distancia''.
+Aunque pasen las épocas, aunque las videollamadas sean por hologramas, nada sustituye la cercanía humana.
+Somos digitales, sí. Somos remotos. Pero no tenemos que ser lejanos. Al contrario, debemos ser más cercanos que nunca.
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja10}{%
+\chapter{Más allá de la oficina: soluciones colaborativas para el trabajo remoto}\label{pareja10}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja10_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} trabajo remoto, colaboración digital, herramientas de comunicación, productividad,
+equipos virtuales.
+
+\hypertarget{introducciuxf3n-8}{%
+\section{Introducción}\label{introducciuxf3n-8}}
+
+La adopción del trabajo remoto ha tenido un crecimiento acelerado año tras año gracias a los avances
+tecnológicos y el deseo de flexibilidad laboral. Asimismo, la tendencia creciente hacia equipos
+geográficamente dispersos ha hecho necesario que empresas y personas apuesten por herramientas
+digitales que les permitan una comunicación en tiempo real y la coordinación de tareas.
+
+El desarrollo de la gestión de proyectos ha recorrido desde metodologías ``improvisadas'', implementadas
+en las primeras décadas de crisis del software, hasta el desarrollo de herramientas especializadas que
+logran optimizar los procesos y adaptarse a las demandas cambiantes de la reciente evolución digital. Por
+lo tanto, al utilizar plataformas de colaboración, no sólo se optimiza la asignación de tareas y se lleva un
+seguimiento preciso del progreso, sino que también se impulsa la competencia en el mercado a nivel
+mundial al fomentar un ambiente laboral de colaboración que trasciende la oficina.
+
+\hypertarget{artuxedculo-8}{%
+\section{Artículo}\label{artuxedculo-8}}
+
+\textbf{La importancia de las herramientas de colaboración digital}
+
+Uno de los mayores retos que enfrentan las organizaciones en el trabajo remoto es encontrar una forma
+efectiva de comunicarse y organizarse sin la presencia física que la oficina aporta. De esta manera, resulta
+fundamental contar con plataformas que permitan la sincronización en tiempo real de los equipos. Por
+ejemplo, Slack es una herramienta de mensajería interna que permite crear canales personalizados para cada proyecto o departamento, envío de archivos y opciones que facilitan la circulación de información
+empresarial. Asimismo, Jira es una herramienta dirigida a la administración de proyectos, especialmente
+en el desarrollo de software. Otras herramientas destacadas pueden ser Trello, Monday.com y ClickUp.
+
+A pesar de la amplia elección de software disponibles en el mercado, así como sus potenciales tipos.
+Houssam, en su artículo para Medium, asegura que todas ellas tienen potencial para la gestión de
+proyectos, de modo que las empresas pueden seleccionar las opciones que mejor se adapten a su
+situación.{[}1{]}
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=0.75\linewidth]{imagenes_articulos/p10_01} \end{center}
+\figcaption{Houssam, N. (2023). Imagen sobre alternativas a Asana [Imagen]. En Asana competitors: 5 alternatives for project management in 2023. Medium. https://medium.com/buzzingsaas/asana-
+competitors-5-alternatives-for-project-management-in-2023-e6fd7d21cdb2}
+
+\end{minipage}
+\end {flushleft}
+
+\textbf{Beneficios de la implementación de herramientas digitales}
+
+El uso de estas herramientas no solo impulsa la comunicación, sino que también aumenta la productividad
+y el bienestar de los empleados. Remote: Office Not Required afirma que la flexibilidad y la capacidad de
+eliminar distracciones son las ventajas clave del trabajo remoto.3 Además, se ha demostrado que la
+autonomía de tiempo de trabajo fomenta la motivación y la implicación.
+
+En la guía de Halpern y Castro, trabajo remoto, el éxito de trabajar juntos en un entorno digital se asocia
+con establecer pautas claras de comunicación, incluida la disponibilidad realista y los tiempos de
+respuesta esperados, lo que asegura reducir la incertidumbre y mejorar la coordinación de la oficina.{[}2{]}
+
+\textbf{Limitaciones y desafíos del trabajo colaborativo digital}
+
+Si bien el trabajo remoto presenta muchos beneficios, también lleva consigo varios desafíos. Uno de estos
+es la ``fatiga digital'', que ha surgido como resultado del sobreuso de reuniones virtuales y la dependencia
+de las plataformas digitales. Otra consecuencia es la posibilidad de que la falta de interacciones casuales
+disminuya tanto la creatividad como el sentido de comunidad en el equipo.
+
+Para contrarrestar estos efectos, se recomienda equilibrar la comunicación en tiempo real y asíncrona. Por
+ejemplo, fomentar reuniones breves y enfocadas, mientras se prioriza el uso de documentación escrita y
+tableros compartidos para evitar interrupciones constantes.
+
+\hypertarget{conclusiones-8}{%
+\section{Conclusiones}\label{conclusiones-8}}
+
+Los recientes acontecimientos globales han impulsado a las empresas a utilizar herramientas
+colaborativas, resultando en un cambio positivo y en un cambio positivo en el rendimiento de los
+trabajadores. Sin embargo, la mala gestión y algunas prácticas inadecuadas de muchas empresas
+resultaron en problemas de comunicación entre jefes y subordinados, así como la disminución en la
+interacción entre compañeros, haciendo que la jornada laboral sea en ocasiones aburrida y estresante.
+
+Aún así, existen muchos casos de éxito en empresas que han aprovechado y equilibrado correctamente
+estas herramientas. Han fomentado tanto la comunicación virtual, directa y presencial entre compañeros y
+jefe-subordinados, logrando de esta manera una sinergia en las actividades empresariales y dando lugar a
+la creatividad.
+
+\hypertarget{referencias-8}{%
+\section{Referencias}\label{referencias-8}}
+
+\begin{itemize}
+\item
+  {[}1{]} N, Houssam. 2023. ``Asana Competitors: 5 Alternatives for Project Management in 2023.'' \emph{Medium}, 30 de junio de 2023. Accedido el 8 de febrero de 2025. \href{https://medium.com/buzzingsaas/asana-competitors-5-alternatives-for-project-management-in-2023-e6fd7d21cdb2}{medium.com}
+\item
+  {[}2{]} Halpern, Daniel y Castro, Carolina. \emph{Manual de trabajo remoto: ¿Cómo trabajar a distancia manteniendo la cercanía?} Chile: TrenDigital, 2020. Edición en PDF.
+\item
+  {[}3{]} Fried, Jason y Heinemeier Hasson, David. \emph{Remote: Office Not Required.} Nueva York: Vermilion, 2013. 256 páginas.
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja32}{%
+\chapter{Trabajo remoto y la nueva normalidad: El dilema del teletrabajo}\label{pareja32}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja32_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Teletrabajo, productividad laboral, eficiencia, flexibilidad horaria, autonomía, estrés laboral.
+
+\hypertarget{introducciuxf3n-9}{%
+\section{Introducción}\label{introducciuxf3n-9}}
+
+El trabajo remoto se ha vuelto una alternativa efectiva y eficiente en esta nueva normalidad
+que experimentamos, especialmente estimulado por la pandemia del COVID-19. Esta
+modalidad de trabajo ha transformado radicalmente la manera en que las compañías y los
+trabajadores organizan su cotidianidad.
+
+No obstante, no ha sido un camino sencillo; también ha presentado sus propios desafíos,
+como aprender a administrar el tiempo, hallar un balance entre la vida personal y laboral, y
+modificar nuestros hogares para que actúen como lugares de trabajo. Además, la falta de
+interacción social y el riesgo de aislamiento han sido obstáculos importantes a superar.
+
+\hypertarget{artuxedculo-9}{%
+\section{Artículo}\label{artuxedculo-9}}
+
+\textbf{1. Beneficios del teletrabajo en la productividad}
+
+El teletrabajo ha cambiado la forma en que los empleados desempeñan sus funciones,
+permitiendo trabajar desde casa o cualquier lugar con acceso a internet. El teletrabajo ofrece
+múltiples ventajas para los trabajadores. La reducción del tiempo de desplazamiento al
+trabajo es un beneficio clave, diversos estudios demuestran que a los empleados el momento
+que más estrés les genera en el día laboral es el traslado al trabajo, se aproxima que de media
+en el dia una persona puede estar entre 2 a 3 horas en el tráfico, lo cual provoca un
+agotamiento físico y mentalmente, esto se refleja en una menor productividad. (Equipo de
+edición de Vorecol 2024)
+
+Tener un ambiente personalizado de trabajo, cuando cada empleado tiene un ambiente
+personali-
+zado genera un mejor control de su entorno laboral, lo que beneficia que se
+concentren exclusivamente en su trabajo, este punto es tal vez más beneficioso para los empleados con alguna discapacidad, tener un ambiente en el cual ellos se encuentren más
+cómodos provoca que mejore su productividad, porque normalmente en sus hogares poseen
+adaptaciones que en una oficina puede ser más difícil de implementar. (Bloom 2024)
+
+El estudio de Workmeter, ``Cómo afecta la productividad en teletrabajo'', con 46,295 registros
+de actividades diarias de empleados con diversas empresas, el teletrabajo mejora la
+productividad, atribuido a una mayor concentración y menos distracciones. Esto genera que
+los empleados tengan un mejor equilibrio entre su vida laboral y personal, aumentando su
+satisfacción, teniendo más motivación en su día para cuidar su empleo y teniendo un buen
+rendimiento. (WorkMeter 2023)
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=0.75\linewidth]{imagenes_articulos/p32_01} \end{center}
+\figcaption{Experiencia con el teletrabajo}
+
+\end{minipage}
+\end {flushleft}
+
+\textbf{2. Desafíos del teletrabajo para la productividad}
+
+Sin embargo, el teletrabajo presenta desafíos significativos, el informe ``El teletrabajo durante
+la pandemia de COVID-19 y después de ella'' de la Organización Internacional del Trabajo
+(OIT) señala algunos aspectos negativos que provoca el teletrabajo. La adicción y sobrecarga
+de la tecnología, demasiados estímulos constantes y no tener descansos adecuados genera
+demasiado estrés. Dificultad para poder desconectar del trabajo, si un empleado no tiene una
+buena rutina o un buen ambiente de trabajo, provoca que nunca se siente desconectado del
+trabajo al total y empeore su descanso, por lo tanto empeora su productividad en horarios
+laborales. (OIT 2020)
+
+En el estudio se resalta la sensación de aislamiento en los empleados, señala que en los
+trabajadores puede aumentar la sensación de aislamiento por la falta de interacción de otras personas, empeorando el trabajo en equipo por la falta de colaboración, lo que puede afectar
+la productividad en equipo. Estos hallazgos fomentan que implementar un buen sistema es
+necesario, para que el teletrabajo pueda aumentar la eficiencia del equipo, no todos los
+empleados están capacitados para tener un trabajo remoto todo los dias, esto no significa que
+el teletrabajo no tenga un efecto positivo en ellos, sino que necesitan un equilibrio entre
+trabajo remoto y presencial para tener un buen nivel de productividad.
+
+\hypertarget{conclusiones-9}{%
+\section{Conclusiones}\label{conclusiones-9}}
+
+\begin{itemize}
+\tightlist
+\item
+  El teletrabajo ha demostrado ser una alternativa efectiva que mejora la productividad
+  al reducir el tiempo de desplazamiento y permitir entornos laborales personalizados,
+  lo que beneficia especialmente a empleados con discapacidades. Sin embargo,
+  también presenta desafíos como la dificultad para desconectar del trabajo, la
+  sobrecarga tecnológica y el aislamiento social, lo que puede afectar negativamente el
+  bienestar y la colaboración en equipo.
+\item
+  Para maximizar sus beneficios, es esencial implementar políticas y sistemas que
+  fomenten un equilibrio entre la vida laboral y personal, así como promover un
+  enfoque híbrido que combine trabajo remoto y presencial. Esto permitiría aprovechar
+  las ventajas del teletrabajo mientras se mitigan sus desventajas.
+\end{itemize}
+
+\hypertarget{referencias-9}{%
+\section{Referencias}\label{referencias-9}}
+
+\begin{itemize}
+\item
+  {[}1{]} Equipo de edición de Vorecol. ``Impacto del teletrabajo en la productividad y el rendimiento de los trabajadores.'' \emph{Equipo de edición de Vorecol}, 28 de agosto de 2024. Accedido el 6 de febrero de 2025. \href{https://vorecol.com/es/articulos/articulo-impacto-del-teletrabajo-en-la-productividad-y-el-rendimiento-de-los-trabajadores-33172}{vorecol.com}
+\item
+  {[}2{]} WorkMeter. ``Cómo afecta la productividad en teletrabajo: Informe Anual de Trabajo en España.'' \emph{WorkMeter}, 4 de octubre de 2023. Accedido el 6 de febrero de 2025. \href{https://www.workmeter.com/blog/como-afecta-la-productividad-en-teletrabajo/}{workmeter.com}
+\item
+  {[}3{]} Bloom, Nicholas. ``El teletrabajo impulsa la productividad.'' \emph{Bloom}, septiembre de 2024. Accedido el 7 de febrero de 2025. \href{https://www.imf.org/es/Publications/fandd/issues/2024/09/working-from-home-is-powering-productivity-bloom}{imf.org}
+\item
+  {[}4{]} Organización Internacional del Trabajo. ``El teletrabajo durante la pandemia de COVID-19 y después de ella.'' \emph{Organización Internacional del Trabajo}, 2020. Accedido el 7 de febrero de 2025. \href{https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@ed_protect/@protrav/@travail/documents/publication/wcms_758007.pdf}{ilo.org}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+
+%%%%%% SECCION 4
+\includepdf{images/seccion4.pdf}
+
+\AddEverypageHook{%
+\ifthenelse{\value{page}<46}%
+{\ifthenelse{\isodd{\value{page}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberimpar.pdf}}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberpar.pdf}}}}%
+}{}%
+\BgMaterial}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypertarget{entrevista03_pablosierra}{%
+\chapter{Automatización inteligente cómo nuevo aliado del programador moderno}\label{entrevista03_pablosierra}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pablosierra_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{LinkedIn:}} \url{https://www.linkedin.com/in/tugoman}
+
+\textbf{\emph{YouTube:}} \url{https://youtu.be/IFaUqSuUZ58}
+
+\hypertarget{entrevista-2}{%
+\section{Entrevista}\label{entrevista-2}}
+
+\textbf{¿Quién es Pablo Sierra?}
+
+Mi nombre es Pablo Sierra. Llevo más de una década desarrollando productos tecnológicos. Hasta ahora he trabajado con Inteligencia Artificial, pero desde hace mucho tiempo he estado creando soluciones con Machine Learning para diferentes ámbitos.
+
+Desarrollé tecnologías para el turismo que me han llevado a participar en varios campeonatos. Algunos los gané, otros los perdí. Esta experiencia se ha fortalecido con el tiempo; he trabajado en otros países y con grandes compañías. También he colaborado con el Estado en temas de ciberseguridad y asesoramiento tecnológico.
+
+Actualmente, además de eso, soy emprendedor y empresario en otros sectores, como el aeronáutico. Hace un par de años vendimos, con mi familia, una compañía en ese sector. También soy diseñador UX/UI y desarrollador Front. Hoy en día, gracias a muchas implementaciones de la IA, ya casi que me desempeño como full stack.
+
+\textbf{¿Qué significa para ti la ``automatización inteli-
+gente'' y cómo se aplica en el ciclo de desarrollo de software?}
+
+La pregunta es muy interesante porque el tema de automatizar siempre ha existido. En más de dos décadas, la tecnología ha ido tomando más fuerza. Hemos automatizado con Machine Learning, con conexión de datos, con respuestas. Cuando surgieron los chatbots fue más comercial, pero ayudó a entender la automatización.
+
+Incluso dentro de la programación, herramientas como GitLab y GitHub nos ayudan a versionar y gestionar el código. Ese tipo de automatizaciones han evolucionado. Hoy, gracias al auge de la Inteligencia Artificial, se están volviendo más inteligentes.
+
+La IA es un sistema cognitivo que permite acceder a redes neuronales que interconectan patrones. Esto nos ayuda a resolver dudas e ideas. En este año, con la llegada de los agentes, la automatización inteligente nos permite tener un aliado, un ``cerebro secundario'', que puede codificar por nosotros y automatizar procesos, no solo a nivel interno, sino también en el producto final: automatizar el trabajo del cliente y de las personas alrededor.
+
+Para mí, ese es el verdadero significado de la automatización actual: está generando un éxito rotundo. Al ser más inteligente, no tiene límites. Como programador, es increíble. Y como emprendedor, los límites que antes existían, ya no están. Esto le va a dar un giro importante al aspecto cultural y al desarrollo en Centroamérica y Latinoamérica.
+
+\textbf{¿Qué impacto has visto en la forma de trabajar de los programadores desde que se integran procesos automatizados?}
+
+Ya en temas de proyectos de software, los beneficios reales están en el tiempo, los recursos y los límites. Por ejemplo, cuando programamos en un equipo multidisciplinario ---con DevOps, backend, base de datos, frontend y control de calidad--- desarrollábamos un software en, al menos, cuatro meses.
+
+Hoy, al tener acceso a sistemas cognitivos conectados a internet que recaban información, todo se simplifica. Las tareas se reducen a horas o minutos. Puedes crear un prototipo en 3 o 4 horas, y terminar el desarrollo al 90 \% en 2 o 3 semanas.
+
+Este es el impacto más grande: ahorro en costos, mayor velocidad y eliminación de límites. Antes, si no tenías un equipo, no podías cerrar el ciclo de desarrollo. Ahora, un solo programador puede hacerlo todo, entregar un producto o prototipo en cuestión de horas. Ese es uno de los beneficios más importantes.
+
+\textbf{¿Cuáles son los beneficios más significativos de automatizar tareas dentro de proyectos de software?}
+
+En el ámbito del desarrollo de software, los beneficios e impactos reales se reflejan en el tiempo, los recursos y los límites.
+
+Por ejemplo, al programar, se conforma un equipo de desarrollo multidisciplinario que incluye roles como DevOps, backend, base de datos, frontend y control de calidad para evaluar el producto. El impacto y los beneficios de esta estructura radican en que tareas que anteriormente requerían al menos cuatro meses de trabajo ahora, gracias a la automatización y a sistemas cognitivos conectados a internet para recopilar información, se simplifican y se reducen a horas o incluso minutos.
+
+Actualmente, es posible crear un prototipo en tres o cuatro horas y completar un desarrollo en un 90\% en dos o tres semanas. Este es el impacto más significativo: ahorro de costos y eliminación de límites.
+
+En el flujo de trabajo de desarrollo, si antes un programador necesitaba un equipo debido a los costos, hoy es una realidad que una sola persona puede completar todo el ciclo de desarrollo y entregar un producto o prototipo a un cliente en cuestión de horas. Este es uno de los beneficios más importantes en este contexto.
+
+\textbf{¿Qué herramientas o tecnologías consideras esenciales para implementar automatización en entornos de desarrollo?}
+
+Sí, hoy hay muchas herramientas nuevas de automatización, pero todo depende de qué tipo de programador seas y qué estés desarrollando. Personalmente he probado varias y veo que estamos entrando en una etapa de vibe coding, una programación impulsada más por emoción que por técnica. Aunque suene informal, creo que va a ser una revolución, sobre todo si los programadores la aplicamos bien a largo plazo.
+
+Plataformas como Bol y Tempo generan código a partir de prompts, pero los que tenemos más experiencia vamos más allá: preparamos infraestruc-
+tura, bases de datos y versiones en la nube. Herramientas como R Code, conectadas a APIs como Cloud Sonnet 3.7, permiten trabajar a un nivel más profundo, mejorando, diagnosticando y automatizando proyectos completos desde entornos como VS Code.
+
+También recomiendo Replit, que está siendo apoyada incluso por grandes figuras como Elon Musk. Hoy, si no automatizamos, simplemente nos quedamos fuera. La crítica no debería ser hacia las herramientas, sino hacia la falta de conocimiento técnico.
+
+Yo prefiero tener control de mi entorno y construir sobre mis propias estructuras, usando APIs como las de OpenAI, Anthropic o Google Gemini. Además, entender la diferencia de costos entre solicitudes simples y pensamiento profundo es clave para mantener el desarrollo eficiente y sostenible.
+
+\textbf{¿Puedes compartir un caso real donde la automatización haya marcado la diferencia en la eficiencia o calidad del proyecto?}
+
+Te hablo primero de un caso externo. Siempre digo que lo primero que debe hacer un programador es investigar, ver qué está pasando afuera antes de que algo se vuelva popular.
+Un argentino, sin saber mucho de Python, logró crear un agente para conversar con su abuelo usando hardware y una impresora 3D. Luego, con Cursor, entrenó su propio modelo de IA y lo conectó a la API de WhatsApp Business. Terminó armando un asistente que agenda actividades y eventos, y en pocos meses consiguió 573 usuarios de pago. Es un ejemplo real de cómo, con lo mínimo, puedes construir algo exitoso.
+
+En mi caso interno, llevo más de diez años trabajando en un producto turístico. Como emprende-
+dor, es complicado sostener equipos de desarrollo. Pero con herramientas como VS Code, R Code y Replit, y usando pensamiento profundo con Cloud Sonnet 3.7, logré finalizar solo toda la plataforma, integrando pagos con Stripe, reconocimiento de dispositivos y compatibilidad con Apple Pay y Google Pay.
+En una semana y media hice la integración, y después construí dos productos más de renta de vehículos, que ya están operando en otro país.
+
+En total fueron unas 120 o 130 horas de trabajo. Estos casos se están viendo en todo el mundo.
+Para mí, el futuro es claro: el desarrollo de software está migrando de SaaS a AaaS (Agents as a Service).
+Hoy, crear soluciones rápidas y a bajo costo no solo es posible: es necesario, sobre todo en Latinoamérica, donde los presupuestos son más ajustados. Estamos en un momento clave para quienes desarrollamos software.
+
+\textbf{¿Qué retos técnicos o culturales has enfrentado al introducir automatización en un equipo de desarrollo?}
+
+Hasta el año pasado tenía un equipo de desarrollo de varios países, y en nuestras reuniones me di cuenta de que, aunque usaban ChatGPT para resolver bugs, no conocían herramientas como Cursor. Les mostré cómo, con Cursor, podían resolver errores de manera más rápida y eficiente, entendiendo el contexto completo del proyecto, no solo copiando mensajes de error.
+
+Ese fue un ejemplo claro del desafío cultural que tenemos. Algunos todavía creen que usar IA disminuye la calidad del trabajo, cuando en realidad viene a potenciar nuestras habilidades. La IA no reemplaza nuestra lógica de programación, conocimiento de infraestructura o bases de datos; más bien, es como tener un programador extra, disponible 24/7.
+
+Hoy, aunque tengo equipo, muchas soluciones las construyo yo mismo, automatizando con Cloud 3.7 y Gemini 2.0 Pro. Incluso he probado instalar IA localmente, como DeepSeek, que requiere más espacio, pero te da un agente cognitivo real en tu máquina, sin depender de la nube.
+
+Más allá de generar texto o código simple, estamos hablando de sistemas de razonamiento profundo. Como decía Dario Amodei de Anthropic, en los próximos 12 meses, entre el 90 y 95\% del código será generado por IA. El desarrollo lo seguimos haciendo nosotros, pero el panorama ya cambió.
+Hoy, entender y adaptarnos a esta nueva etapa es clave si queremos ser parte de la primera generación que lleve la programación a un nuevo nivel.
+
+\textbf{¿Qué habilidades o conocimientos debería adquirir un programador que quiera trabajar con soluciones automatizadas?}
+
+En el desarrollo de software hay distintos niveles: junior, mid y senior. Para quienes están empezando, lo primero es dominar la lógica de programación antes de lanzarse a usar IA. Sin una base sólida, lo más común es terminar atrapado en errores como el ``bug infinito'', simplemente porque no se entiende bien la estructura o el flujo lógico del proyecto.
+
+Primero hay que saber construir: definir tecnologías, frameworks, lenguaje y arquitectura. Ya después, es cuando tiene sentido meterse en prompt engineering. No se trata solo de escribir prompts, sino de entender qué hace cada modelo de IA, porque no todos automatizan código: algunos solo interpretan o generan. Si quieres lograr verdadera automatización, debes entender conceptos como Deep Search, Deep Thinking y conocer bien la capacidad de los modelos.
+
+Además, es importante salir de las redes sociales y buscar tendencias globales en inteligencia artificial. La IA no es solo para buscar en internet o hacer imágenes: bien usada, amplifica nuestra capacidad mental y creativa.
+
+Desde mi experiencia, primero debes programar desde cero, entender la lógica, y luego especializarte en prompt engineering. Esa combinación, junto con formación en sistemas o ingeniería, te da el soporte necesario para construir de verdad.
+
+También es clave conocer las nuevas plataformas. Por ejemplo, ``Trae'', creada por la empresa detrás de TikTok, permite instalar un agente y un asistente: el asistente te ayuda con dudas rápidas, y el agente automatiza tareas directamente en tu editor de código. Saber usar ambos cambia por completo la forma de trabajar.
+
+En resumen, estos son los recursos que, basándome en mi experiencia real, considero esenciales para empezar en la programación asistida por inteligencia artificial.
+
+\textbf{¿Cómo visualizas el futuro del desarrollo de software con la evolución de la automatización y la IA?}
+
+Hoy hay un debate fuerte a nivel mundial sobre si el vibe coding ---esa forma de programar desde la intuición y la emoción--- es una revolución o una burbuja. Para mí, definitivamente es una revolución. El simple hecho de que haya tantas opiniones bien argumentadas muestra que algo grande está pasando.
+
+Esto no es como los televisores 3D, que fueron una moda pasajera. La inteligencia artificial es real y está marcando la siguiente era en la programación. Con buenos prompts, hoy puedes estructurar bases de datos, integrar modelos 3D, hacer reportería personalizada y mucho más, todo en unos pocos pasos.
+
+Pero ojo: somos nosotros, los programadores, quienes debemos prepararnos. El vibe coding puede ser la puerta de entrada, pero no puede ser el destino. Hay que construir conocimiento sólido detrás de todo lo que hacemos.
+
+Como mencionaba el CEO de Anthropic, en los próximos 12 meses casi todo el código será generado por IA. Y no lo dijo por marketing, sino desde una perspectiva técnica y profunda.
+La fórmula sigue siendo la misma: conocimiento + oportunidad.
+
+Ya en el mercado global se piden habilidades de prompt engineering, y quienes no se preparen se van a quedar fuera. Los próximos 10 o 20 años estarán definidos por lo que hagamos ahora. Tenemos que construir soluciones sostenibles, no dejarnos llevar por modas.
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja14}{%
+\chapter{Automatización inteligente: ¿Estás desarrollando habilidades que no son reemplazables?}\label{pareja14}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja14_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Automatización, habilidades, competencias, codificar, actividades, tareas.
+
+\hypertarget{introducciuxf3n-10}{%
+\section{Introducción}\label{introducciuxf3n-10}}
+
+Cuando se habla de automatización en la mayoría de los casos se señalan todos los aspectos
+positivos de dicha mejora, principalmente del lado económico de las entidades empresariales, ya
+que en cuanto entra en juego el poder desarrollar ``trabajo'' de manera continua sin interrupciones,
+agregado que no requiere una intervención humana, favorece a que dichas entidades puedan
+generar mucho más y pagar mucho menos.
+
+Sin embargo, ¿qué tan beneficioso es desde el punto de vista de los trabajadores y empleados que
+su único desempeño es o más bien eran dichas actividades que ahora se encuentran automatizadas?
+Esto genera el punto de inflexión de qué conocimientos y habilidades son ahora necesarias para
+poder progresar en conjunto a la automatización ya sea con inteligencia artificial o sin ella.
+
+\hypertarget{artuxedculo-10}{%
+\section{Artículo}\label{artuxedculo-10}}
+
+La automatización no es un término nuevo que se esté implementando hasta estos tiempos, desde
+mucho tiempo atrás se busca aplicar este término, específicamente desde el siglo XVIII con la
+automatización industrial, el propósito de automatizar nunca ha sido una acción con malas
+intenciones, los trabajos y actividades que hoy en día damos por hecho que en el pasado eran
+demasiado difíciles y complicados de realizar sin la ayuda de máquinas o productos que facilitaran
+ciertos procesos.
+
+Por ejemplo, la redacción y publicación del contenido de este artículo puede ser leído y accedido
+con facilidad, debido a que hay máquinas y software que facilitan muchísimo más la obtención de
+textos que en el pasado, porque en aquella época para obtener libros o escritos, en el mejor de los casos era un gasto bastante elevado o peor aún, no existía un ejemplar para obtener. Todo era muy
+limitado para la época y aquí es donde entra la automatización.
+
+Implícitamente se habla de máquinas, herramientas y productos que automatizan ciertas
+actividades, esto nos lleva a preguntarnos qué tecnología y cómo se automatizan dichos procesos,
+claramente es con el desarrollo de nuevas herramientas de software y hardware (aplicaciones y
+computadoras). Entonces al desarrollar automatización se genera la siguiente pregunta ¿Qué tanto
+afecta este fenómeno a los desarrolladores?3
+
+La revolución tecnológica ha transformado innume-
+rables industrias, y el sector del software no es
+la excepción. La automatización ha tenido un impacto profundo en la forma en que se desarrollan,
+prueban y despliegan aplicaciones y sistemas de software en todo el mundo. Este cambio ha
+permitido una mejora sustancial en la eficiencia y precisión de los procesos, reduciendo errores
+humanos y acelerando el ciclo de vida del desarrollo, lo que a su vez abre la puerta a innovaciones
+que antes parecían inalcanzables{[}1{]}
+
+Las competencias de los desarrolladores solían estar orientadas a la creación de soluciones de
+software, sin embargo, como se mencionó antes, ciertas herramientas ya automatizan este proceso,
+entonces eso crea el espacio para poder aprender y enfocar el conocimiento a otras áreas donde el
+análisis y las decisiones sean las nuevas competencias para los desarrolladores.
+
+En estas competencias pueden resaltarse como la mentalidad de crecimiento; no ser conformista,
+cambiar y optimizar situaciones que, aunque funcionen pueden mejorase, análisis y toma de
+decisiones basadas en datos; la capacidad de poder tomar decisiones basadas en análisis es algo
+que no se puede reemplazar o automatizar, esta característica es esencial para que cuando se
+desarrolle una solución no solo resuelva el problema específico, sino que su implementación sea
+efectiva, precisa y logre superar las expectativas esperadas de dicha solución.{[}2{]}
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=0.75\linewidth]{imagenes_articulos/p34_02} \end{center}
+\figcaption{https://www.comidor.com/blog/rpa/rpa-real-estate/}
+
+\end{minipage}
+\end {flushleft}
+
+\hypertarget{conclusiones-10}{%
+\section{Conclusiones}\label{conclusiones-10}}
+
+El saber codificar ya no es suficiente para poder competir contra las herramientas y procesos
+automati-
+zados, no significa que no sean necesarias y que se puedan desechar como conocimiento
+innecesario como desarrollador, más bien, se debe de acuñar y pulir con otras nuevas habilidades
+que en conjunto creen una nueva versión del desarrollador logrando que como un trabajador y
+profesional sea clave y efectivo desde varios puntos. Codificación, análisis de datos, toma de
+decisiones financieras y gestión de proyectos son las competencias esenciales que los
+desarrolladores tienen por delante y las cuales al ser obtenidas abren una cantidad significativa de
+puertas, ¿pero esto se habla en el año 2025, en una década a futuro o en veinticinco años más
+adelante estas tareas o competencias serán automatizadas? Y ¿esto generara nuevas competencias?
+No se sabe, pero lo que es cierto que, como desarrolladores se debe siempre buscar ser una persona
+competitiva.
+
+\hypertarget{referencias-10}{%
+\section{Referencias}\label{referencias-10}}
+
+\begin{itemize}
+\item
+  {[}1{]} OECD. \emph{OECD Employment Outlook 2019.} París: OECD Publishing, 2019. \href{https://www.oecd.org/content/dam/oecd/es/publications/reports/2019/04/oecd-employment-outlook-2019_0d35ae00/bb5fff5a-es.pdf}{oecd.org}
+\item
+  {[}2{]} Randstad. ``Automatización en la Industria: Qué competencias necesitan los trabajadores.'' \emph{Randstad}, 2025. \href{https://www.randstad.es/contenidos360/desarrollo-profesional/automatizacion-industria-competencias-trabajadores/}{randstad.es}
+\item
+  {[}3{]} Randstad. ``Las competencias laborales más demandadas.'' \emph{Randstad}, 2025. \href{https://www.randstad.es/contenidos360/orientacion-laboral/competencias-laborales-mas-demandadas/}{randstad.es}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja15}{%
+\chapter{El futuro de la automatización avanzada : Tecnologías en auge para desarrolladores}\label{pareja15}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja15_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Auge, automatización , desarrollo de software, optimización.
+
+\hypertarget{introducciuxf3n-11}{%
+\section{Introducción}\label{introducciuxf3n-11}}
+
+La tecnología y su transformación en el dominio y elaboración de software se ha optimizado,
+en la integración de forma continua como lo sería (CI/CD) que es plataforma de integración.
+Este artículo examinará las tecnologías emergentes que están promoviendo la automatización
+avanzada, ofrece a los desarrolladores nuevas posibilidades en perfección y mejorar su
+proceso de trabajo.
+
+El alto crecimiento de la automatización por medio de un sistema de aprendizaje estructurado
+para realizar una automatización eficaz y la incorporación de agentes autónomos en DevOps
+están transforman-
+do la manera en que los programadores desarrollan, evalúan e implementan
+sus aplicaciones.
+
+\hypertarget{artuxedculo-11}{%
+\section{Artículo}\label{artuxedculo-11}}
+
+El desarrollo de software ha tenido cambios notorios a lo largo de los últimos años donde han
+emergido diversas tecnologías que optimizan de manera significativa los procesos y reducen
+errores. Entre las tecnologías en ascenso destacan las herramientas CI/CD y las plataformas
+de Inteligencia Artificial, por lo que ambas son importantes para la mejorar la eficiencia y
+calidad de software aunque tienen un enfoque distinto.
+
+Las herramientas CI/CD han transformado el desarrollo de software al automatizar los
+procesos de entrega, integración y despliegue continuo{[}1{]}. Por consiguiente, esto permite
+cambios controlados, lo que aumenta la confiabilidad del código. Además, facilita una
+colaboración más eficiente entre equipos al ofrecer retroalimentación continua y aumentar la
+transparencia en todo el proceso de desarrollo {[}2{]}. La eliminación de retrasos en el ciclo de
+vida del software también ha permitido una entrega más rápida a producción.
+
+Por otro lado, tenemos la Inteligencia Artificial aplicada en el desarrollo, que en los últimos
+años también ha tenido una demanda creciente y apunta a una evolución en la automatización de la industria de software. Esta tecnología aporta productividad y reducción de tiempos al
+brindar asistencia a los desarrolladores. De este modo, el aumento de la IA se percibe en el
+número de patentes registradas por diversas empresas, como se muestra en la siguiente
+gráfica, lo que evidencia su impacto en la mejora y evolución de la industria.
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=0.75\linewidth]{imagenes_articulos/p15_01} \end{center}
+\figcaption{Patentes de IA por empresa. (Iplytics)}
+
+\end{minipage}
+\end {flushleft}
+
+Los datos del gráfico muestran cómo diversas empresas tienen en consideración la
+implementación de la Inteligencia Artificial al registrar números de patentes altos. Microsoft
+e IBM se encuentran liderando la vanguardia de la innovación en IA, reflejando su continuo
+compromiso con la investigación y el desarrollo de soluciones avanzadas {[}3{]}. Por
+consiguiente, este aumento en las patentes sugiere que estas compañías están posicionándose
+para dominar el mercado de la IA, logrando su integración en la automatización.
+
+Una de las herramientas en la nube con mayor popularidad en la comunidad es GitHub, que
+facilita la automatización mediante la integración de CI/CD y la inteligencia artificial en los
+procesos de desarrollo. GitHub Actions, una herramienta de CI/CD, permite automatizar
+procesos de trabajo de manera óptima, en cambio GitHub Copilot proporciona asistencia
+inteligente a los desarrolladores, sugiriendo líneas de código que optimizan tanto el trabajo
+como la calidad del código {[}4{]}.
+
+La combinación de Inteligencia Artificial y CI/CD para la automatización brinda diversos
+puntos claves que optimizan los procesos de desarrollo, ya que se obtienen despliegues más
+rápidos y eficientes en conjunto con la calidad del código. La seguridad se ve beneficiada con
+esta combinación al identificar patrones que sugieran riesgos significativos, de este modo, es
+posible una corrección a tiempo. Ambas herramientas tienen un crecimiento exponencial en
+la actualidad que se debe profundizar a detalle.
+
+El futuro del desarrollo de software está intrínseca-
+mente vinculado a la automatización. Las
+prácticas de CI/CD y la Inteligencia Artificial (IA) se han consolidado como los pilares
+esenciales para cualquier desarrollador que desee optimizar sus procesos y garantizar la
+producción de software de un nivel alto. Por lo tanto, dominar estas tecnologías no solo se ha
+vuelto indispensable, sino que también representa una ventaja estratégica clave para el
+desarrollo profesional en un entorno tecnológico que se encuentra en constante evolución.
+
+\hypertarget{conclusiones-11}{%
+\section{Conclusiones}\label{conclusiones-11}}
+
+La automatización avanzada mediante CI/CD e Inteligencia Artificial en el desarrollo de
+software se ha desarrollado, permitiendo procedimientos más eficaces, fiables y veloces, estas
+tecnologías han perfeccionado la cooperación entre equipos, incrementado la protección del
+código y disminuido los plazos de entrega, estableciéndose como instru-
+mentos esenciales
+para los programadores.
+
+El avance de la Inteligencia Artificial en DevOps muestra una tendencia de integración en
+soluciones automatizadas que promueven la innovación en la industria del software, dominar
+su implementación se convierte en una ventaja competitiva crucial para los profesionales del
+sector y en su implementación, a medida que van avanzando estas tecnologías su integración
+será esencial y garantizará innovación en la industria.
+
+\hypertarget{referencias-11}{%
+\section{Referencias}\label{referencias-11}}
+
+\begin{itemize}
+\item
+  {[}1{]} Lopez, Gabriel. ``DevOps. CI/CD implementation.'' Tesis de maestría, \emph{Universidad Politécnica de Madrid}, 2023.
+\item
+  {[}2{]} Perez, Jose. ``Integración Continua y Despliegue Continuo de una aplicación.'' Tesis de maestría, \emph{Universidad de Alicante. Departamento de Lenguajes y Sistemas Informáticos}, 2023.
+\item
+  {[}3{]} Gupta, Anurag y Singh, V. ``Inteligencia artificial y automatización en la nube: el futuro del desarrollo de software.'' \emph{International Journal of Cloud Technologies}, 18(2), 2020: 101--115.
+\item
+  {[}4{]} Castro, Marco. ``Tendencias en el desarrollo de software en la nube: innovación, desafíos y futuro tecnológico.'' \emph{Revista de Estudios Generales}, No.~2 (2022): 4--6.
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja25}{%
+\chapter{El nuevo rol del programador: de desarrollador a arquitecto de automatización inteligente}\label{pareja25}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja25_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Automatización, IA: Inteligencia artificial, Habilidades Blandas, Habilidades Duras.
+
+\hypertarget{introducciuxf3n-12}{%
+\section{Introducción}\label{introducciuxf3n-12}}
+
+La industria de desarrollo de software es un mercado altamente competitivo, donde el
+surgimiento de nuevas tecnologías y herramientas orientadas a la optimización y reducción de
+costos toma un rol cada vez más importante. Sin embargo, para los programadores, esto
+resulta en la necesidad de adaptarse y adquirir habilidades y conocimientos a fin de ser
+relevantes.
+
+En este ámbito, los desarrolladores ya no deben solo enfocarse en escribir código para
+resolver problemas, sino que también se espera asuman un rol estratégico en la identificación
+y mejora de procesos mediante soluciones automatizadas. Las capacidades de los
+programadores para adaptarse e innovar son cada vez más importantes para poder destacar en
+esta industria que exige creatividad y soluciones vanguardistas.
+
+\hypertarget{artuxedculo-12}{%
+\section{Artículo}\label{artuxedculo-12}}
+
+En un mercado en constante cambio, donde la optimización y la reducción de costos son
+prioridades para las empresas, el rol del programador ha evolucionado más allá de la simple
+escritura de código. En el panorama actual, se espera que los desarrolladores, además de
+resolver problemas técnicos, sean partícipes en la automatización de procesos, ayudando a
+mejorar la eficiencia y minimizar errores. Esto reflejado en la rápida adopción de esta
+tecnología:
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=0.75\linewidth]{imagenes_articulos/p25_01} \end{center}
+\figcaption{Imagen de Mercado mundial de la automatización de procesos (Trycore 2025).}
+
+\end{minipage}
+\end {flushleft}
+
+Aunque aún es pronto para afirmar que los programadores tradicionales pierdan su
+relevancia, es necesario estar preparados para las tendencias actuales. Por ello, adquirir
+habilidades más allá de la programación es esencial. Las habilidades en ingeniería de
+automatización agregan un gran valor a los profesionales que forman parte de la industria , no
+solo de desarrollo de software, sino también en todos los sectores con procesos
+potencialmente optimizables, que permiten reducir errores y costos.
+
+Con esto en mente, se plantea la pregunta: ¿qué tipo de habilidades destacan en este rol como
+arquitecto de automatización? En general, se necesita una combinación entre ``habilidades
+duras'' y ``habilidades blandas'' (Indeed 2025). Las habilidades blandas son aquellas
+relacionadas con las interacciones sociales, necesarias para colaborar con los involucrados en
+los procesos a automatizar; comprender estos procesos, e involucrar a los participantes, es
+clave para alcanzar los objetivos de automatización. Las habilidades duras abarcan los
+aspectos técnicos de la automatización necesarios para llevar a cabo las mejoras identificadas
+en los procesos.
+
+Los aspirantes a puestos claves en la industria han reportado mayor éxito al demostrar
+capacidades en el ámbito de la automatización. Según las palabras textuales de Chad Ferman,
+experto en soluciones de automatización: ``Se me dio mayor responsabilidad y oportunidades mostrando patrones exitosos de automatización'' (Ferman 2021). De acuerdo con el experto,
+el mercado actual, que sufre de una economía inestable, busca reducir la cantidad de personas
+asignadas a desempeñar ciertas tareas dentro de la empresa. En este contexto, se valora
+especialmente a profesionales capaces de mejorar los procesos empresariales mediante la
+automatización.
+
+\hypertarget{conclusiones-12}{%
+\section{Conclusiones}\label{conclusiones-12}}
+
+La automatización toma un papel cada vez más relevante, no solo para mejorar la
+productividad de las empresas, sino también como un área clave de estudio y preparación
+para los programadores. En un panorama donde reducir costos y optimizar procesos es
+esencial, tecnologías como la automatización, que alguna vez se consideraron emergentes,
+ahora juegan un papel central. Desarrollar habilidades que permitan especializarse, no solo a
+nivel técnico, sino también en el ámbito interpersonal, se vuelve esencial para comprender en
+profundidad los procesos empresariales. Esto da lugar a soluciones creativas e innovadoras
+que transforman la manera en que operan las empresas. En definitiva, el programador del
+futuro no será solo un desarrollador de software, sino también un arquitecto de
+automatización inteligente.
+
+\hypertarget{referencias-12}{%
+\section{Referencias}\label{referencias-12}}
+
+\begin{itemize}
+\item
+  {[}1{]} Indeed. ``Automation Engineer Skills.'' \emph{Indeed Career Guide}. Accedido el 7 de febrero de 2025. \href{https://ca.indeed.com/career-advice/resumes-cover-letters/automation-engineer-skills}{indeed.com}
+\item
+  {[}2{]} Ferman, Chad. ``8 Skills Every Automation Engineer Needs.'' \emph{Red Hat Blog}. Accedido el 7 de enero de 2025. \href{https://www.redhat.com/en/blog/8-skills-automation}{redhat.com}
+\item
+  {[}3{]} LinkedIn. ``Why Would Someone Want to Become an Automation Engineer?'' \emph{LinkedIn Advice}. Accedido el 7 de febrero de 2025. \href{https://www.linkedin.com/advice/1/why-would-someone-want-become-automation-r7ujf}{linkedin.com}
+\item
+  {[}4{]} Trycore. ``Guía para la Automatización de Procesos y Tareas.'' \emph{Trycore}. Accedido el 7 de febrero de 2025. \href{https://trycore.co/guia-automatizacion-procesos-tareas/}{trycore.co}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja28}{%
+\chapter{Automatización vs.~Trabajo tradicional}\label{pareja28}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja28_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Automatización de procesos, Trabajo clásico, Tareas repetitivas, Costos, Robot.
+
+\hypertarget{introducciuxf3n-13}{%
+\section{Introducción}\label{introducciuxf3n-13}}
+
+Es lunes por la mañana y la alarma no ha sonado. Nos levantamos tarde, tomamos lo que
+llevaremos durante el día con prisa y salimos apresurados hacia el trabajo. En el camino, nos
+encontramos con tráfico, dudas sobre si apagamos ciertos aparatos y la incertidumbre de haber
+traído todo con nosotros. Toda esta situación provoca estrés incluso antes de iniciar el día de
+trabajo.
+
+Estas situaciones cotidianas pueden afectar el ánimo de un empleado en una empresa y, en
+consecuencia, su desempeño laboral. Su ánimo ya se ha visto afectado antes incluso de iniciar
+sus labores. El estado de ánimo con el que iniciamos el día influye en la concentración, la
+productividad y las relaciones laborales. Por ello, Es fundamental examinar de qué manera
+estos factores afectan nuestro desempeño y cómo podemos mitigarlos para mejorar nuestra
+experiencia diaria.
+
+\hypertarget{artuxedculo-13}{%
+\section{Artículo}\label{artuxedculo-13}}
+
+Hoy en día, en donde todo se digitaliza, donde nuestra información es cargada a sistemas para
+su posterior análisis, nos hemos encontrado que los responsables de alimentar nuestras bases
+de datos, son los mismos colaboradores que en un día cualquiera, puede sufrir algún evento que
+haga que su trabajo no sea tan exacto, no sea tan rápido o no se encuentre disponible.
+
+Actualmente, con el auge de la tecnología, Hay aplicaciones creadas específicamente para
+ejecutar tareas de manera automatizada en entornos digitales, sin intervención humana. A
+estos programas los llamaremos bots, y tendrán la capacidad de interactuar con aplicaciones,
+ingresar datos, hacer cálculos, mover archivos, generar reportes y mucho más {[}3{]}.
+
+Todo este proceso se lleva a cabo con mayor velocidad y precisión, con un margen de error
+mucho menor en comparación con el método tradicional, realizado por un humano.
+
+Dentro del software que podemos encontrar, tendremos ejemplos como:
+
+\begin{itemize}
+\tightlist
+\item
+  UiPath
+\item
+  Automation Anywhere
+\end{itemize}
+
+Estas dos plataformas, tomadas como ejemplo, se encuentran entre las más destacadas en el
+ámbito de la Automatización Robótica de Procesos (RPA) {[}1{]}. Ambas permiten a las
+empresas automatizar tareas repetitivas mediante bots de software.
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=0.75\linewidth]{imagenes_articulos/p28_01} \end{center}
+\figcaption{Cuadrante mágico de Gartner, principales soluciones en RPA}
+
+\end{minipage}
+\end {flushleft}
+
+\textbf{Más allá de la automatización}
+
+Al momento de automatizar, pueden surgir varios temores entre los empleados, ya que se
+considera una amenaza la posibilidad de ser reemplazado por un bot pueda reemplazarlos
+dentro de la organización. Esto se debe a que los bots están diseñados para ejecutar tareas
+repetitivas de forma constante y sin errores.
+
+Hemos visto cómo los humanos pueden tener un rendimiento variable según las condiciones o
+el entorno que los afecte. En cambio, un robot no se ve afectado por factores como el tráfico,
+el cansancio o los días festivos. Pueden funcionar sin interrupciones, incluso fuera del
+horario laboral, garantizando una mayor eficiencia y disponibilidad.
+
+No obstante, hay algo que ninguna automatización puede reemplazar: el conocimiento, la
+experiencia y el criterio humano, Además, la comprensión del sector empresarial. Este
+conocimiento, hace que los empleados sean invaluables.
+
+Por ello, en lugar de temer ser reemplazados por un bot, los empleados pueden ser reubicados
+en áreas donde su experiencia brinde un mayor valor a la empresa. La automatización no
+pretende eliminar puestos de trabajo, sino mejorar los procesos para que las personas puedan
+concentrarse en tareas estratégicas y de mayor relevancia {[}2{]}.
+
+\hypertarget{conclusiones-13}{%
+\section{Conclusiones}\label{conclusiones-13}}
+
+La automatización ha cambiado la forma en que las empresas manejan sus procesos,
+mejorando la eficiencia y disminuyendo los errores. No obstante, su implementación genera
+incertidumbre entre los empleados, quienes temen ser reemplazados por bots. Aunque estas
+herramientas pueden ejecutar tareas repetitivas con precisión y eficiencia, no poseen la
+capacidad de análisis, creatividad ni el criterio humano necesario para la toma de decisiones
+estratégicas, en lugar de representar una amenaza, la automatización debe considerarse como
+una oportunidad para incrementar la productividad. y permitir que los empleados se enfoquen
+en actividades de mayor valor. La clave está en la adaptación y capacitación, asegurando que
+los trabajadores desarrollen nuevas habilidades y se integren a un entorno laboral más
+eficiente. Así, la tecnología y el talento humano pueden complementarse para alcanzar mejores
+resultados en las organizaciones.
+
+\hypertarget{referencias-13}{%
+\section{Referencias}\label{referencias-13}}
+
+\begin{itemize}
+\item
+  {[}1{]} Automation Anywhere. ``Automation for Business \& IT.'' Última modificación 2024. \href{https://www.automationanywhere.com}{automationanywhere.com}
+\item
+  {[}2{]} UiPath. ``AI-Powered Business Automation.'' Última modificación 2024. \href{https://www.uipath.com}{uipath.com}
+\item
+  {[}3{]} IBM. ``¿Qué es la automatización?'' Última modificación 2024. \href{https://www.ibm.com/es-es/topics/automation}{ibm.com}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+%%%%%% SECCION 5
+\includepdf{images/seccion5.pdf}
+
+\AddEverypageHook{%
+\ifthenelse{\value{page}<53}%
+{\ifthenelse{\isodd{\value{page}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberimpar.pdf}}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberpar.pdf}}}}%
+}{}%
+\BgMaterial}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypertarget{pareja51}{%
+\chapter{Estrategias para mantener la motivación y productividad en equipos de desarrollo remotos}\label{pareja51}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja51_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Equipos remotos, Comunicación clara, Continuidad colaborativa, Gestión emocional,
+Terapia.
+
+\hypertarget{introducciuxf3n-14}{%
+\section{Introducción}\label{introducciuxf3n-14}}
+
+La transición hacia entornos remotos ha redefinido la gestión de equipos de desarrollo,
+exigiendo la implementación de estrategias para equilibrar la motivación y productividad de
+los trabajadores, en el desarrollo de software, donde la colaboración y la creatividad son
+pilares, la desconexión física puede tener consecuencias negativas a largo plazo en la
+motivación y dificultar la coordinación de tareas complejas.
+
+Los seres humanos somos seres sociales por naturaleza, y por esta razón, la productividad
+empresarial no solo depende de la eficiencia técnica, esta realidad nos obliga a replantear las
+estrategias de liderazgo tradicionales, adaptar procesos y mitigar el aislamiento. Este artículo
+explora problemas y propone ideas para liderar equipos distribuidos eficazmente.
+
+\hypertarget{artuxedculo-14}{%
+\section{Artículo}\label{artuxedculo-14}}
+
+Cuando se trabaja remotamente, a los equipos de software se les presentan una serie de
+desafíos para llevar a cabo nuestras responsabilidades, y surgen fenómenos que antes no
+existían o que ocurrían en raras ocasiones, entonces para cada uno de estos desafíos, hay que
+plantear una estrategia que nos ayude a mitigar o eliminar los problemas que estos acarrean si
+se dejan desatendidos o se ignoran por completo, de lo contrario la productividad en los
+trabajos colaborativos se verá perjudicada y las metas planteadas no serán alcanzadas.
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=1\linewidth]{imagenes_articulos/p51_01} \end{center}
+\figcaption{La comunicación entre un equipo de trabajo a distancia puede ser desafiante.[1]}
+
+\end{minipage}
+\end {flushleft}
+
+La comunicación asíncrona en entornos remotos es un fenómeno que surge inevitablemente
+al utilizar herramientas digitales como el correo electrónico y la mensajería instantánea, ya
+que es la forma más común y de menor coste en la que dos o más trabajadores pueden
+comunicarse entre sí, el problema de estas tecnologías es la común falta de interacción
+espontánea que dificulta la resolución ágil de dudas, esto incrementa los malentendidos, los
+retrasos y consecuentemente se completan menos tareas, lo que puede llevar al trabajador a
+sentir que su tiempo invertido aporta menos valor al negocio.{[}2{]}
+
+Las videollamadas y la documentación centralizada pueden mejorar la comunicación y
+fortalecer la transparencia en el desarrollo de proyectos al permitir una colaboración más
+eficiente, reducir malentendidos y garantizar que toda la información relevante esté accesible
+para todos los integrantes de un equipo.
+
+En el caso de tener equipos con diferencias en las zonas horarias muy grandes, una posible
+solución consiste en designar un coordinador de zona horaria y organizar reuniones rotativas,
+y mantener a toda la cadena de desarrollo informada.
+
+El aislamiento emocional y el desgaste psicológico es otro problema central, la ausencia de
+interacción social presencial reduce la identificación con el equipo y la empresa, una posible
+solución es la creación de espacios virtuales no laborales, en donde los integrantes de un equipo realicen actividades recreacionales entre ellos y reducir la fatiga que conlleva ser
+productivos todo el tiempo, esta estrategia se puede complementar con acceso a terapia, a
+programas o talleres de mentoría en línea para estimular la buena salud mental.{[}3{]}
+
+\hypertarget{conclusiones-14}{%
+\section{Conclusiones}\label{conclusiones-14}}
+
+La gestión de equipos remotos exige un equilibrio entre eficiencia técnica y estrategias
+centradas en el factor humano, los seres humanos somos seres sociales por naturaleza, y
+merecemos tener una buena salud mental, que resulte de sentirnos apoyados y habilitados por
+nuestro entorno, que nuestro trabajo sea reconocido y recompensado, las empresas pueden
+llevar esto a cabo por medio de herramientas digitales y con prácticas que rescaten la
+espontaneidad colaborativa, tales como el uso de videollamadas, herramientas colaborativas
+centralizadas en tiempo real que eliminen los malentendidos, retrasos y que al mismo tiempo
+fomenten la transparencia, designar coordinadores de zonas horarias para estimular la
+continuidad colaborativa, y para estimular aún más la salud mental del empleado,
+implementar espacios virtuales recreativos y ofrecer terapias y programas de mentoría.
+
+\hypertarget{referencias-14}{%
+\section{Referencias}\label{referencias-14}}
+
+\begin{itemize}
+\item
+  {[}1{]} Iannucci, Lisa. ``Mastering Management.'' \emph{CooperatorNews New York}, 1 de enero de 2015. Consultado el 5 de febrero de 2025. \href{https://cooperatornews.com/article/mastering-management}{cooperatornews.com}
+\item
+  {[}2{]} Perry, Elizabeth, ACC. ``12 challenges of working from home \& how to overcome them?'' \emph{BetterUp}, 17 de marzo de 2021. Consultado el 8 de febrero de 2025. \href{https://www.betterup.com/blog/challenges-of-working-from-home}{betterup.com}
+\item
+  {[}3{]} Pham, Erik. ``How To Work From Home Without Sacrificing Your Mental Well-Being.'' \emph{Forbes}, 30 de diciembre de 2024. Consultado el 8 de febrero de 2025. \href{https://www.forbes.com/councils/forbesbusinesscouncil/2024/12/30/how-to-work-from-home-without-sacrificing-your-mental-well-being}{forbes.com}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+\hypertarget{pareja57}{%
+\chapter{El Futuro del trabajo, inteligente y económico}\label{pareja57}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja57_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} teletrabajo, sostenibilidad, produc-
+tividad laboral, flexibilidad laboral, impacto ambiental, transformación digital.
+
+\hypertarget{introducciuxf3n-15}{%
+\section{Introducción}\label{introducciuxf3n-15}}
+
+A lo largo del tiempo se ha producido una evolución en el ámbito digital, el cual no solo afecta el
+aspectos económicos, sociales, culturales o educativos de la sociedad, también, y en gran medida,
+resultando en cambios importantes en el campo laboral, desde implementación de herramientas
+digitales de manera presencial hasta el trabajo remoto o teletrabajo.
+
+El teletrabajo tiene orígenes desde los años setenta debido a una crisis energética y creciendo
+enormemente durante la pandemia del COVID-19, logrando transformar el campo laboral al
+ofrecer flexibilidad, reducir costos y ampliar oportunidades globales. A pesar de sus beneficios, el
+uso de dispositivos electrónicos y la gestión de residuos tecnológicos pueden presentar problemas
+de sosteni-
+bilidad a largo plazo que deben ser tomados en cuenta.
+
+\hypertarget{artuxedculo-15}{%
+\section{Artículo}\label{artuxedculo-15}}
+
+Las crisis económicas y sanitarias han sacado las alternativas laborales más flexibles y resilientes.
+En el año 2009 comenzó una crisis financiera que afectó a nivel mundial, aumentando la tasa de
+desempleos, ya que el teletrabajo no era una idea en auge y por falta de información, muchas
+empresas optaron a despidos para reducir costos. Este tema evolucionó con el tiempo, y 2020 es
+donde tuvo protagonismo. ¿Qué inició esta tendencia? En 2020 nos golpeó una pandemia mundial
+que nos encerró en nuestros hogares, pero las empresas debían seguir operando para evitar la
+quiebra.
+
+En América Latina y el Caribe solamente en 2019 el 3\% de los trabajadores practicaban la
+modalidad de teletrabajo, este aumentó a un 10\% y 35\% durante la pandemia. {[}4{]} Esto obligó a las empresas a confiar en sus colaboradores y a desarrollar estrategias de control basadas en resultados. Algunas invirtieron en mejorar servidores y la velocidad de internet, mientras que otras
+revisaron sus procesos de atención y resolución de problemas para los usuarios de sus servicios.
+
+En esa perspectiva, el teletrabajo se planteó como una solución para garantizar la operación de la
+empresa, sin exponer a los empleados a riesgos sanitarios o económicos. Sin embargo, se
+presentaron retos y desafíos, esto ocasionó que los entornos laborales cada vez fueran más flexibles
+y con una menor estructuración, lo que exigió nuevas habilidades de comunicación y aprendizaje.
+El desconocimiento de plataformas digitales limito la productividad, haciendo esencial el uso de
+tecnología para su labor.
+
+\textbf{Beneficios del trabajo remoto para el empleado y empleador}
+
+El teletrabajo permite al trabajador recibir su remuneración mientras permanece en casa con su
+familia y sin que se suspenda el contrato de trabajo. Esto es beneficioso para el empresario porque
+garantiza que se contará con los servicios del trabajador, facilitando además la conciliación de la
+vida laboral y familiar. Además, se reducen los costes operativos de las empresas dado que hay
+menor necesidad de grandes espacios de oficina y porque se reducen las facturas de los suministros,
+permitiendo a los trabajadores remotos pagar menos porque los gastos de desplazamiento y ahorro
+en suministros disminuyen.
+
+Los empleados remotos suelen mostrar niveles de productividad más altos al definir áreas cómodas
+y personalizados en sus hogares, reduciendo distraccio-
+nes y errores en comparación con una
+oficina convencional. Al implementar el trabajo remoto se observa una reserva global de talentos,
+lo que facilita contratar a los mejores candidatos sin tener en cuenta la ubicación geográfica, lo
+que permite diferentes zonas horarias y fortalece la presencia global de la empresa. Si tomamos en
+cuenta la flexibilidad de horarios y las vacaciones, hacemos hincapié en las visiones del trabajo
+ancladas a la libertad del trabajador y compromiso con la organización.
+
+Tomando en cuenta los aspectos anteriores se puede determinar que el teletrabajo impacta de
+manera indirecta a la salud. Un estudio realizado por la empresa de suplementos de Staples, indica
+que el 75 \% de los jefes/as que implementaron este sistema notaron a sus empleados más felices,
+reportaron un 37\% menos de absentismo y una mejora en el ánimo del 48\%.
+{[}3{]}
+
+\textbf{Teletrabajo como una solución verde e inteligente}
+
+El teletrabajo también tiene un impacto ambiental, el más obvio es en la necesidad de movilización,
+ya que se reduce la emisión de CO2. Un análisis realizado por la Facultad de Ingeniería de la
+Universidad de Antioquia de Colombia, la implementación de trabajo remoto puede llegar a
+disminuir entre el 30\% y 50\% de estas.{[}2{]}
+
+Esta modalidad también tiene otros aspectos positivos en su implementación, un estudio realizado
+en la Universidad Politécnica de Valencia refleja que este modelo afecta positivamente en la salud
+humana, la eutrofización del agua dulce e incluso en la creación de oxidantes fotoquímicos.
+{[}1{]}
+Empresas como Microsoft, American Express, Dell, Salesforce y Cisco son ejemplo de una
+implementación adecuada que impacta de gran manera en la sostenibilidad del plantea.
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=0.5\linewidth]{imagenes_articulos/p57_01} \end{center}
+\figcaption{Universidad Politecnica de Valenica: Análisis comparativo de impacto ambiental del teletrabajo en relación con el nivel de presencialidad en la actividad actual}
+
+\end{minipage}
+\end {flushleft}
+
+\hypertarget{conclusiones-15}{%
+\section{Conclusiones}\label{conclusiones-15}}
+
+El impacto de un modelo como el teletrabajo es alto, no solo por los beneficios que ofrece en la
+calidad de vida de los empleados o por la flexibilidad que genera dicho modelo, también porque
+se producen nuevas competencias que benefician tanto a estas personas como a la empresa donde
+trabajan, además, existe un obvio impacto ambiental positivo, tanto en la reducción de emisiones
+de CO2, como en el consumo energético tan alto que producen las oficinas de empresas
+tradicionales, y si bien su implementación no puede ser aplicada en todos los trabajos, es posible
+generar un impacto similar reduciendo el uso de vehículos particulares mediante la optimización
+o generación de alternativas en el transporte público, siendo una responsabilidad que debe exigirse
+constantemente a los gobiernos de cada país.
+
+\hypertarget{referencias-15}{%
+\section{Referencias}\label{referencias-15}}
+
+\begin{itemize}
+\item
+  {[}1{]} Miedes Serna, María. \emph{Análisis comparativo de impacto ambiental del teletrabajo en relación con el nivel de presencialidad en la actividad laboral.} Universidad Politécnica de Valencia, curso académico 2020/2021.
+\item
+  {[}2{]} Restrepo Romero, Gabriel Ricardo. \emph{Análisis de las emisiones de CO2 generadas por la empresa TCC bajo escenarios de teletrabajo.} Universidad de Antioquia, Facultad de Ingeniería, Escuela Ambiental, 2021.
+\item
+  {[}3{]} Gamarra, Greta. ``Teletrabajo para empresas: ventajas y desventajas.'' \emph{Factorial}, 15 de septiembre de 2020. \href{https://factorialhr.es/blog/teletrabajo/}{factorialhr.es}
+\item
+  {[}4{]} Silva-Porto, María Teresa. ``Teletrabajo: qué es y cómo está cambiando el mundo laboral.'' \emph{Factor Trabajo} (blog), 2 de junio de 2022. \href{https://blogs.iadb.org/trabajo/es/teletrabajo-que-es-y-como-esta-cambiando-el-mundo-laboral/}{iadb.org}
+\item
+  {[}5{]} Terzakyan, Talin. ``10 beneficios del Teletrabajo.'' \emph{Deel.com}. Accedido el 9 de febrero de 2025. \href{https://www.deel.com/es/blog/beneficios-del-teletrabajo/}{deel.com}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+
+\hypertarget{pareja59}{%
+\chapter{Reinventando el espacio de trabajo: infraestructura tecnológica para equipos híbridos}\label{pareja59}}
+
+\begin{center}\includegraphics[width=1\linewidth]{autores/pareja59_titulo} \end{center}
+
+\begin {multicols}{2}
+
+\textbf{\emph{Palabras clave:}} Trabajos Híbridos, Comunicación fluida, soluciones basadas en la nube, automatización de procesos administrativos.
+
+\hypertarget{introducciuxf3n-16}{%
+\section{Introducción}\label{introducciuxf3n-16}}
+
+En los últimos años, ha habido un cambio significativo en nuestra forma de trabajar. Todas
+las organizaciones implementaron el teletrabajo casi de manera repentina y si bien al
+principio pareció ser la solución ideal surgieron rápidamente ciertas inquietudes: ¿Es posible
+mantener la misma eficiencia laboral sin la estructura de la empresa física habitual? ¿Cómo
+se ve alterada la comunicación y el trabajo en equipo ante esta nueva realidad?.
+
+Por estas razones, numerosas empresas selecciona-
+ron el enfoque mixto, que otorga a los
+empleados la posibilidad de trabajar de modo remoto y en la oficina. Pero, para que esta
+modalidad cumpla el propósito que persigue no resulta suficiente la asignación de días para
+trabajar desde casa y de oficina. Para ello, es fundamental contar con una infraestructura que
+garantice la comunicación, el acceso a la información y las herramientas de gestión laboral.
+Sin estos elementos, el trabajo híbridose vuelve ineficaz.
+
+\hypertarget{artuxedculo-16}{%
+\section{Artículo}\label{artuxedculo-16}}
+
+\textbf{1 Conectividad y comunicación eficiente}
+
+Uno de los principales desafíos del trabajo híbrido es garantizar una comunicación fluida
+entre los equipos. Para ello, las empresas han implementado herramientas como Microsoft
+Teams, Slack y Zoom, que permiten mantener reuniones virtuales y una comunicación
+constante{[}1{]}. Sin una conexión estable y de calidad, la experiencia de trabajo híbrido puede
+verse afectada, reduciendo la productividad y generando frustración en los empleados.
+
+Además, la integración de plataformas de mensajería con otras herramientas de gestión
+ayuda a centralizar la información y evitar la dispersión de datos. Según un estudio reciente,
+el uso de plataformas colaborativas ha incrementado la eficiencia en la gestión de equipos en
+un 35\%{[}2{]}.
+
+\textbf{2 Gestión de proyectos y productividad}
+
+El trabajo híbrido requiere soluciones tecnológicas que permitan la organización y gestión
+efectiva de tareas. Herramientas como Asana, Trello y Jira han ganado popularidad entre
+empresas que buscan optimizar la asignación de tareas y el seguimiento del trabajo{[}3{]}.
+
+Un informe de Tech.co señala que ``la digitalización de la gestión de proyectos ha
+mejorado la transparencia y la asignación de responsabilidades en un 40\% en comparación
+con los métodos tradicionales''{[}1{]}. La automatización de procesos administrativos y la
+capacidad de visualizar el progreso de los proyectos en tiempo real permite una toma de
+decisiones más ágil y fundamentada.
+
+\textbf{3 Seguridad y acceso a la información}
+
+El acceso seguro a la información es un aspecto clave en entornos híbridos. La
+implementación de redes VPN, autenticación multifactor (MFA) y herramientas de gestión de
+identidad y acceso (IAM) protege los datos de la empresa frente a ciberamenazas{[}3{]}.
+
+Empresas líderes han adoptado soluciones basadas en la nube como Google Workspace y
+Microsoft 365, que garantizan acceso seguro a documentos y aplicaciones desde cualquier
+ubicación. Según Virtual Space, ``el 70\% de las empresas que han migrado a soluciones en la
+nube reportan una mayor seguridad y menor riesgo de pérdida de datos''{[}2{]}.
+
+\begin {flushleft}
+\noindent\begin{minipage}[c]{\columnwidth}
+
+\begin{center}\includegraphics[width=1\linewidth]{imagenes_articulos/p59_01} \end{center}
+\figcaption{Cuadro comparativo entre aplicaciones de Google y Microsoft. Fuente: Elaboración propia}
+
+\end{minipage}
+\end {flushleft}
+
+\textbf{4 Espacios físicos adaptados al trabajo híbrido}
+
+La tecnología desempeña un papel fundamental en los entornos laborales modernos. Los
+espacios de trabajo han avanzado para incorporar salas de reuniones que cuentan con
+servicios inteligentes de pantalla, cámaras para videollamadas y sistemas para la reserva de
+escritorio. Según un estudio de Asana, la implementación de oficinas flexibles ha
+incrementado la satisfacción de los empleados en un 25\%{[}3{]}.
+
+\hypertarget{conclusiones-16}{%
+\section{Conclusiones}\label{conclusiones-16}}
+
+El enfoque mixto de trabajo se ha consolidado como una tendencia duradera y su
+efectividad está estrechamente relacionada a la base tecnológica que lo respalda
+adecuadamente. Es crucial integrar herramientas de comunicación eficientes y seguras así
+como espacios adaptados a este modelo laboral para asegurar la productividad y una
+colaboración efectiva. Las compañías que invierten en tecnología adecuada pueden potenciar
+la satisfacción de sus trabajadores, estimular la creatividad y mantener su competitividad en
+un entorno laboral en constante cambio.
+
+\hypertarget{referencias-16}{%
+\section{Referencias}\label{referencias-16}}
+
+\begin{itemize}
+\item
+  {[}1{]} Cawley, Conor. ``6 Ways Technology Has Changed Project Management.'' \emph{Tech.co}, 10 de mayo de 2023. \href{https://tech.co}{tech.co}
+\item
+  {[}2{]} Virtual Space. ``The Importance of Project Management Tools for Your Business.'' \emph{Virtual Space}, 13 de junio de 2023. \href{https://virtualspace.ai}{virtualspace.ai}
+\item
+  {[}3{]} Raeuburn, Alicia. ``Los 12 mejores software de gestión de proyectos en 2024.'' \emph{Asana}, 16 de febrero de 2024. \href{https://asana.com}{asana.com}
+\end{itemize}
+
+\end {multicols}
+
+\medskip
+
+\HRule
+
+\medskip
+
+
+
+%%%%\printindex
+\includepdf{images/contraportada.pdf}
+
+
+\end{document}
