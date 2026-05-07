@@ -1,0 +1,90 @@
+---
+title: "De los datos al éxito: Educación impulsada por inteligencia artificial"
+author: "José Manuel Lacán Chavajay y Saúl André Cerezo Taracena"
+site: bookdown::bookdown_site
+date: "`r Sys.Date()`"
+---
+
+
+
+# De los datos al éxito: Educación impulsada por inteligencia artificial {#pareja63}
+
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("autores_seleccionados/a3.png")
+```
+
+
+```{r include= FALSE}
+b_text01 <- 'Revista'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'Re- \
+    vista'
+}
+```
+
+\Begin{multicols}{2}
+
+__*Palabras clave:*__  Inteligencia artificial, educación, análisis predictivo, desempeño académico, aprendizaje automático.
+
+
+## Introducción
+
+En los últimos años, la inteligencia artificial ha transformado múltiples sectores. La educación no es la excepción. Los modelos de análisis predictivo permiten anticipar el desempeño académico de los estudiantes. Estos modelos identifican patrones en sus hábitos de estudio, su participación y sus resultados previos.
+
+El objetivo principal es ofrecer herramientas a docentes y administradores. Estas herramientas facilitan la toma de decisiones informadas. Abarcan desde la detección temprana de dificultades hasta la personalización de estrategias pedagógicas. Actualmente, la deserción escolar y la falta de motivación son desafíos constantes. Frente a este contexto, la inteligencia artificial surge como una aliada fundamental. Su finalidad es construir entornos educativos más eficientes y personalizados.
+
+
+## Artículo 
+
+\bigskip
+
+En esta investigación se revisó cómo se está usando la inteligencia artificial en la educación, viendo cosas como la automatización de la enseñanza, la retroalimentación en tiempo real y la personalización del contenido. Los estudios muestran mejoras en el rendimiento académico, sobre todo en estudiantes con dificultades, y también una buena aceptación por parte de docentes y alumnos. Aun así, se encontraron algunos retos, como la dependencia de la tecnología, la privacidad de los datos y la desigualdad en el acceso. Todo esto deja claro que la IA puede ser una herramienta clave para anticipar el desempeño académico. [1]
+
+El análisis predictivo en la educación se basa en algoritmos de aprendizaje automático capaces de procesar volúmenes de datos académicos. Entre las variables más comunes utilizadas se encuentran: calificaciones, asistencia, participación en clases virtuales, interacción con plataformas educativas y hábitos. De acuerdo con Zambrana Copaja (2024), este enfoque también enfrenta obstáculos relacionados con la calidad de la información, la capacitación docente y los dilemas éticos vinculados a la privacidad, por lo que se requiere acompañarlo de marcos regulatorios y pedagógicos que aseguren un uso responsable.[3]
+
+Otra revisión sistemática (2019–2023) enfocada en el uso de IA en pruebas estandarizadas encontró que los algoritmos más empleados fueron redes neuronales artificiales, Árboles de Decisión, máquinas de soporte vectorial (SVM) y Random Forest. Los resultados destacan beneficios como la individualización del aprendizaje, la mejora en la toma de decisiones educativas y la optimización del rendimiento académico. No obstante, los autores advierten sobre la necesidad de contar con datos de alta calidad y de abordar los sesgos inherentes a algunos modelos de IA.[2]
+
+En este sentido, la Figura 4.1 nos muestra la variación de datos a lo largo del tiempo, en este caso, el número de descargas mensuales pueden ser interpretadas por algoritmos de IA para identificar patrones y tendencias. De manera análoga, al analizar datos académicos como calificaciones o asistencia, la IA puede anticipar el desempeño futuro de los estudiantes y apoyar la toma de decisiones pedagógicas.
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A3/p1.jpg')
+```
+\figcaption{Aplicación de la inteligencia artificial en la educación.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Aplicación de la inteligencia artificial en la educación.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A3/p1.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+
+
+\bigskip
+\bigskip
+
+
+## Conclusiones
+
+La inteligencia artificial aplicada al análisis predictivo del desempeño académico permite anticipar dificultades, personalizar estrategias pedagógicas y optimizar recursos,contribuyendo a mejorar el aprendizaje y reducir la deserción escolar. Su implementación potencia la toma de decisiones educativas basadas en datos como calificaciones, asistencia y hábitos de estudio, pero requiere garantizar la privacidad, la transparencia y la equidad en el acceso a la tecnología. La IA no sustituye al docente, sino que lo complementa, fortaleciendo entornos inclusivos y eficientes. Para maximizar sus beneficios, es imprescindible acompañarla de marcos regulatorios, capacitación docente y datos de calidad, asegurando un uso ético y responsable que construya experiencias educativas justas, confiables y centradas en el estudiante.
+
+
+
+
+
+## Referencias
+
+- [1] Villamar Vásquez, G. I., Tipán Criollo, E. E., Rugel Llongo, J. L., y Medina Avelino, J. A. “Aplicación de la inteligencia artificial en la educación: Herramientas de la IA aplicadas en la educación.” Recimundo 8, Octubre,2024 . Accedido el 26 de septiembre de 2025. [https://springeropen.com](https://recimundo.com/index.php/es/article/view/2397).
+
+- [2]  Orozco Morales, Nathalia, y Pavel Andrei Osorio García. “Aplicación de
+Modelos de Inteligencia Artificial en Pruebas Estandarizadas para la Optimización del Rendimiento Académico en Educación Superior.” European Public & Social Innovation Review 9, Octubre,2024. Accedido el 26 de septiembre de 2025.[https://epsir.net](https://doi.org/10.31637/epsir-2024-1605
+)
+
+- [3]  Zambrana Copaja, Ricardo.“La inteligencia artificial como herramienta para el análisis del rendimiento estudiantil: una revisión desde la analítica del aprendizaje”. Revista Educational Regent, Agosto,2025. Accedido el  06 de septiembre de 2025. [https://www.estrellaedcionaes.com](https://estrellaediciones.com/index.php/educational_regent/article/view/94)
+
+
+\End{multicols} 
+
+\medskip

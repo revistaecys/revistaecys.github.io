@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Del prompt al pipeline: cómo la IA generativa reescribe la ingeniería en sistemas | VigesimoQuintaEdicion-RevistaDigital.knit</title>
+  <meta name="description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Del prompt al pipeline: cómo la IA generativa reescribe la ingeniería en sistemas | VigesimoQuintaEdicion-RevistaDigital.knit" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/images/cover.png" />
+  <meta property="og:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Del prompt al pipeline: cómo la IA generativa reescribe la ingeniería en sistemas | VigesimoQuintaEdicion-RevistaDigital.knit" />
+  
+  <meta name="twitter:description" content="Edición de Revista Digital en Formatos: GitBook, EPUB, PDF" />
+  <meta name="twitter:image" content="/images/cover.png" />
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="T1_pareja64.html"/>
+<link rel="next" href="T2_E2.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-173QZVTSVK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-173QZVTSVK');
+</script>
+
+
+
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="css/stylePre.css" type="text/css" />
+<link rel="stylesheet" href="css/toc.css" type="text/css" />
+<link rel="stylesheet" href="css/style-images.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="00_preface.html"><a href="00_preface.html"><i class="fa fa-check"></i>Editorial</a></li>
+<li class="chapter" data-level="1" data-path="T1_E1.html"><a href="T1_E1.html"><i class="fa fa-check"></i><b>1</b> Gestión de proyectos tecnológicos en la era de la inteligencia artificial</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="T1_E1.html"><a href="T1_E1.html#entrevista"><i class="fa fa-check"></i><b>1.1</b> Entrevista</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="T1_pareja61.html"><a href="T1_pareja61.html"><i class="fa fa-check"></i><b>2</b> Modelos de lenguaje en nuestro bolsillo</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="T1_pareja61.html"><a href="T1_pareja61.html#introducci%C3%B3n"><i class="fa fa-check"></i><b>2.1</b> Introducción</a></li>
+<li class="chapter" data-level="2.2" data-path="T1_pareja61.html"><a href="T1_pareja61.html#desarrollo"><i class="fa fa-check"></i><b>2.2</b> Desarrollo</a></li>
+<li class="chapter" data-level="2.3" data-path="T1_pareja61.html"><a href="T1_pareja61.html#conclusi%C3%B3n"><i class="fa fa-check"></i><b>2.3</b> Conclusión</a></li>
+<li class="chapter" data-level="2.4" data-path="T1_pareja61.html"><a href="T1_pareja61.html#bibliograf%C3%ADa"><i class="fa fa-check"></i><b>2.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="T1_pareja22.html"><a href="T1_pareja22.html"><i class="fa fa-check"></i><b>3</b> Eventos que no esperan: la arquitectura que reacciona en tiempo real</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="T1_pareja22.html"><a href="T1_pareja22.html#introducci%C3%B3n-1"><i class="fa fa-check"></i><b>3.1</b> Introducción</a></li>
+<li class="chapter" data-level="3.2" data-path="T1_pareja22.html"><a href="T1_pareja22.html#art%C3%ADculo"><i class="fa fa-check"></i><b>3.2</b> Artículo</a></li>
+<li class="chapter" data-level="3.3" data-path="T1_pareja22.html"><a href="T1_pareja22.html#conclusi%C3%B3n-1"><i class="fa fa-check"></i><b>3.3</b> Conclusión</a></li>
+<li class="chapter" data-level="3.4" data-path="T1_pareja22.html"><a href="T1_pareja22.html#bibliograf%C3%ADa-1"><i class="fa fa-check"></i><b>3.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="T1_pareja23.html"><a href="T1_pareja23.html"><i class="fa fa-check"></i><b>4</b> Cuando cada milisegundo cuenta: el edge computing y la nueva era del procesamiento instantáneo</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="T1_pareja23.html"><a href="T1_pareja23.html#introducci%C3%B3n-2"><i class="fa fa-check"></i><b>4.1</b> Introducción</a></li>
+<li class="chapter" data-level="4.2" data-path="T1_pareja23.html"><a href="T1_pareja23.html#art%C3%ADculo-1"><i class="fa fa-check"></i><b>4.2</b> Artículo</a></li>
+<li class="chapter" data-level="4.3" data-path="T1_pareja23.html"><a href="T1_pareja23.html#conclusiones"><i class="fa fa-check"></i><b>4.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="4.4" data-path="T1_pareja23.html"><a href="T1_pareja23.html#bibliograf%C3%ADa-2"><i class="fa fa-check"></i><b>4.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="T1_pareja64.html"><a href="T1_pareja64.html"><i class="fa fa-check"></i><b>5</b> El hash como huella digital matemática que blinda el blockchain</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="T1_pareja64.html"><a href="T1_pareja64.html#introducci%C3%B3n-3"><i class="fa fa-check"></i><b>5.1</b> Introducción</a></li>
+<li class="chapter" data-level="5.2" data-path="T1_pareja64.html"><a href="T1_pareja64.html#desarrollo-1"><i class="fa fa-check"></i><b>5.2</b> Desarrollo</a></li>
+<li class="chapter" data-level="5.3" data-path="T1_pareja64.html"><a href="T1_pareja64.html#conclusi%C3%B3n-2"><i class="fa fa-check"></i><b>5.3</b> Conclusión</a></li>
+<li class="chapter" data-level="5.4" data-path="T1_pareja64.html"><a href="T1_pareja64.html#bibliograf%C3%ADa-3"><i class="fa fa-check"></i><b>5.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="T1_pareja25.html"><a href="T1_pareja25.html"><i class="fa fa-check"></i><b>6</b> Del prompt al pipeline: cómo la IA generativa reescribe la ingeniería en sistemas</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="T1_pareja25.html"><a href="T1_pareja25.html#introducci%C3%B3n-4"><i class="fa fa-check"></i><b>6.1</b> Introducción</a></li>
+<li class="chapter" data-level="6.2" data-path="T1_pareja25.html"><a href="T1_pareja25.html#art%C3%ADculo-2"><i class="fa fa-check"></i><b>6.2</b> Artículo</a></li>
+<li class="chapter" data-level="6.3" data-path="T1_pareja25.html"><a href="T1_pareja25.html#conclusiones-1"><i class="fa fa-check"></i><b>6.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="6.4" data-path="T1_pareja25.html"><a href="T1_pareja25.html#bibliograf%C3%ADa-4"><i class="fa fa-check"></i><b>6.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="T2_E2.html"><a href="T2_E2.html"><i class="fa fa-check"></i><b>7</b> El futuro del desarrollo de software con inteligencia artificial</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="T2_E2.html"><a href="T2_E2.html#entrevista-1"><i class="fa fa-check"></i><b>7.1</b> Entrevista</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="T1_pareja26.html"><a href="T1_pareja26.html"><i class="fa fa-check"></i><b>8</b> De Desarrollador a Supervisor: programar con IA no es cheat, es skill</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="T1_pareja26.html"><a href="T1_pareja26.html#introducci%C3%B3n-5"><i class="fa fa-check"></i><b>8.1</b> Introducción</a></li>
+<li class="chapter" data-level="8.2" data-path="T1_pareja26.html"><a href="T1_pareja26.html#art%C3%ADculo-3"><i class="fa fa-check"></i><b>8.2</b> Artículo</a></li>
+<li class="chapter" data-level="8.3" data-path="T1_pareja26.html"><a href="T1_pareja26.html#conclusi%C3%B3n-3"><i class="fa fa-check"></i><b>8.3</b> Conclusión</a></li>
+<li class="chapter" data-level="8.4" data-path="T1_pareja26.html"><a href="T1_pareja26.html#bibliograf%C3%ADa-5"><i class="fa fa-check"></i><b>8.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="T1_pareja67.html"><a href="T1_pareja67.html"><i class="fa fa-check"></i><b>9</b> Orquestando el futuro: el ingeniero en entornos automatizados</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="T1_pareja67.html"><a href="T1_pareja67.html#introducci%C3%B3n-6"><i class="fa fa-check"></i><b>9.1</b> Introducción</a></li>
+<li class="chapter" data-level="9.2" data-path="T1_pareja67.html"><a href="T1_pareja67.html#desarrollo-2"><i class="fa fa-check"></i><b>9.2</b> Desarrollo</a></li>
+<li class="chapter" data-level="9.3" data-path="T1_pareja67.html"><a href="T1_pareja67.html#conclusiones-2"><i class="fa fa-check"></i><b>9.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="9.4" data-path="T1_pareja67.html"><a href="T1_pareja67.html#bibliograf%C3%ADa-6"><i class="fa fa-check"></i><b>9.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="T1_pareja6.html"><a href="T1_pareja6.html"><i class="fa fa-check"></i><b>10</b> No te va a quitar el trabajo una IA, te lo va a quitar alguien que sabe usarla mejor que tú</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="T1_pareja6.html"><a href="T1_pareja6.html#introducci%C3%B3n-7"><i class="fa fa-check"></i><b>10.1</b> Introducción</a></li>
+<li class="chapter" data-level="10.2" data-path="T1_pareja6.html"><a href="T1_pareja6.html#art%C3%ADculo-4"><i class="fa fa-check"></i><b>10.2</b> Artículo</a></li>
+<li class="chapter" data-level="10.3" data-path="T1_pareja6.html"><a href="T1_pareja6.html#conclusi%C3%B3n-4"><i class="fa fa-check"></i><b>10.3</b> Conclusión</a></li>
+<li class="chapter" data-level="10.4" data-path="T1_pareja6.html"><a href="T1_pareja6.html#bibliograf%C3%ADa-7"><i class="fa fa-check"></i><b>10.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="T1_pareja29.html"><a href="T1_pareja29.html"><i class="fa fa-check"></i><b>11</b> De la imaginación a la realidad: automatización del desarrollo con DevOps</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="T1_pareja29.html"><a href="T1_pareja29.html#introducci%C3%B3n-8"><i class="fa fa-check"></i><b>11.1</b> Introducción</a></li>
+<li class="chapter" data-level="11.2" data-path="T1_pareja29.html"><a href="T1_pareja29.html#art%C3%ADculo-5"><i class="fa fa-check"></i><b>11.2</b> Artículo</a></li>
+<li class="chapter" data-level="11.3" data-path="T1_pareja29.html"><a href="T1_pareja29.html#conclusiones-3"><i class="fa fa-check"></i><b>11.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="11.4" data-path="T1_pareja29.html"><a href="T1_pareja29.html#bibliograf%C3%ADa-8"><i class="fa fa-check"></i><b>11.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="T1_pareja30.html"><a href="T1_pareja30.html"><i class="fa fa-check"></i><b>12</b> Menos código, más impacto: el nuevo paradigma del desarrollo</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="T1_pareja30.html"><a href="T1_pareja30.html#introducci%C3%B3n-9"><i class="fa fa-check"></i><b>12.1</b> Introducción</a></li>
+<li class="chapter" data-level="12.2" data-path="T1_pareja30.html"><a href="T1_pareja30.html#art%C3%ADculo-6"><i class="fa fa-check"></i><b>12.2</b> Artículo</a></li>
+<li class="chapter" data-level="12.3" data-path="T1_pareja30.html"><a href="T1_pareja30.html#conclusiones-4"><i class="fa fa-check"></i><b>12.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="12.4" data-path="T1_pareja30.html"><a href="T1_pareja30.html#bibliograf%C3%ADa-9"><i class="fa fa-check"></i><b>12.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="T3_E3.html"><a href="T3_E3.html"><i class="fa fa-check"></i><b>13</b> Desarrollo de software en la actualidad: retos, tecnologías y aprendizaje continuo</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="T3_E3.html"><a href="T3_E3.html#entrevista-2"><i class="fa fa-check"></i><b>13.1</b> Entrevista</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="T1_pareja31.html"><a href="T1_pareja31.html"><i class="fa fa-check"></i><b>14</b> El código del éxito: cuando los datos se convierten en el sistema</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="T1_pareja31.html"><a href="T1_pareja31.html#introducci%C3%B3n-10"><i class="fa fa-check"></i><b>14.1</b> Introducción</a></li>
+<li class="chapter" data-level="14.2" data-path="T1_pareja31.html"><a href="T1_pareja31.html#desarrollo-3"><i class="fa fa-check"></i><b>14.2</b> Desarrollo</a></li>
+<li class="chapter" data-level="14.3" data-path="T1_pareja31.html"><a href="T1_pareja31.html#conclusiones-5"><i class="fa fa-check"></i><b>14.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="14.4" data-path="T1_pareja31.html"><a href="T1_pareja31.html#bibliograf%C3%ADa-10"><i class="fa fa-check"></i><b>14.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="T1_pareja12.html"><a href="T1_pareja12.html"><i class="fa fa-check"></i><b>15</b> Machine learning en producción: cuando los algoritmos deciden por nosotros</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="T1_pareja12.html"><a href="T1_pareja12.html#introducci%C3%B3n-11"><i class="fa fa-check"></i><b>15.1</b> Introducción</a></li>
+<li class="chapter" data-level="15.2" data-path="T1_pareja12.html"><a href="T1_pareja12.html#art%C3%ADculo-7"><i class="fa fa-check"></i><b>15.2</b> Artículo</a></li>
+<li class="chapter" data-level="15.3" data-path="T1_pareja12.html"><a href="T1_pareja12.html#conclusiones-6"><i class="fa fa-check"></i><b>15.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="15.4" data-path="T1_pareja12.html"><a href="T1_pareja12.html#bibliograf%C3%ADa-11"><i class="fa fa-check"></i><b>15.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="T1_pareja19.html"><a href="T1_pareja19.html"><i class="fa fa-check"></i><b>16</b> Ingenieros del mañana: el impacto de la automatización y la IA en el futuro laboral del ingeniero en sistemas</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="T1_pareja19.html"><a href="T1_pareja19.html#introducci%C3%B3n-12"><i class="fa fa-check"></i><b>16.1</b> Introducción</a></li>
+<li class="chapter" data-level="16.2" data-path="T1_pareja19.html"><a href="T1_pareja19.html#art%C3%ADculo-8"><i class="fa fa-check"></i><b>16.2</b> Artículo</a></li>
+<li class="chapter" data-level="16.3" data-path="T1_pareja19.html"><a href="T1_pareja19.html#conclusiones-7"><i class="fa fa-check"></i><b>16.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="16.4" data-path="T1_pareja19.html"><a href="T1_pareja19.html#bibliograf%C3%ADa-12"><i class="fa fa-check"></i><b>16.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="T1_pareja52.html"><a href="T1_pareja52.html"><i class="fa fa-check"></i><b>17</b> El combustible invisible: por qué los datos son el motor de los sistemas modernos</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="T1_pareja52.html"><a href="T1_pareja52.html#introducci%C3%B3n-13"><i class="fa fa-check"></i><b>17.1</b> Introducción</a></li>
+<li class="chapter" data-level="17.2" data-path="T1_pareja52.html"><a href="T1_pareja52.html#desarrollo-4"><i class="fa fa-check"></i><b>17.2</b> Desarrollo</a></li>
+<li class="chapter" data-level="17.3" data-path="T1_pareja52.html"><a href="T1_pareja52.html#conclusiones-8"><i class="fa fa-check"></i><b>17.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="17.4" data-path="T1_pareja52.html"><a href="T1_pareja52.html#bibliograf%C3%ADa-13"><i class="fa fa-check"></i><b>17.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="T1_pareja1.html"><a href="T1_pareja1.html"><i class="fa fa-check"></i><b>18</b> Modelos de lenguaje en la transformación digital cotidiana</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="T1_pareja1.html"><a href="T1_pareja1.html#introducci%C3%B3n-14"><i class="fa fa-check"></i><b>18.1</b> Introducción</a></li>
+<li class="chapter" data-level="18.2" data-path="T1_pareja1.html"><a href="T1_pareja1.html#art%C3%ADculo-9"><i class="fa fa-check"></i><b>18.2</b> Artículo</a></li>
+<li class="chapter" data-level="18.3" data-path="T1_pareja1.html"><a href="T1_pareja1.html#conclusiones-9"><i class="fa fa-check"></i><b>18.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="18.4" data-path="T1_pareja1.html"><a href="T1_pareja1.html#bibliograf%C3%ADa-14"><i class="fa fa-check"></i><b>18.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="T1_pareja36.html"><a href="T1_pareja36.html"><i class="fa fa-check"></i><b>19</b> Cuando la nube se vuelve vulnerable: desafíos de seguridad en la infraestructura digital moderna</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="T1_pareja36.html"><a href="T1_pareja36.html#introducci%C3%B3n-15"><i class="fa fa-check"></i><b>19.1</b> Introducción</a></li>
+<li class="chapter" data-level="19.2" data-path="T1_pareja36.html"><a href="T1_pareja36.html#desarrollo-5"><i class="fa fa-check"></i><b>19.2</b> Desarrollo</a></li>
+<li class="chapter" data-level="19.3" data-path="T1_pareja36.html"><a href="T1_pareja36.html#conclusiones-10"><i class="fa fa-check"></i><b>19.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="19.4" data-path="T1_pareja36.html"><a href="T1_pareja36.html#bibliograf%C3%ADa-15"><i class="fa fa-check"></i><b>19.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="T1_pareja17.html"><a href="T1_pareja17.html"><i class="fa fa-check"></i><b>20</b> El valor de tus datos: el precio de la privacidad</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="T1_pareja17.html"><a href="T1_pareja17.html#introducci%C3%B3n-16"><i class="fa fa-check"></i><b>20.1</b> Introducción</a></li>
+<li class="chapter" data-level="20.2" data-path="T1_pareja17.html"><a href="T1_pareja17.html#art%C3%ADculo-10"><i class="fa fa-check"></i><b>20.2</b> Artículo</a></li>
+<li class="chapter" data-level="20.3" data-path="T1_pareja17.html"><a href="T1_pareja17.html#conclusi%C3%B3n-5"><i class="fa fa-check"></i><b>20.3</b> Conclusión</a></li>
+<li class="chapter" data-level="20.4" data-path="T1_pareja17.html"><a href="T1_pareja17.html#bibliograf%C3%ADa-16"><i class="fa fa-check"></i><b>20.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="T1_pareja54.html"><a href="T1_pareja54.html"><i class="fa fa-check"></i><b>21</b> Empresa composable: donde la modularidad cobra vida</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="T1_pareja54.html"><a href="T1_pareja54.html#introducci%C3%B3n-17"><i class="fa fa-check"></i><b>21.1</b> Introducción</a></li>
+<li class="chapter" data-level="21.2" data-path="T1_pareja54.html"><a href="T1_pareja54.html#desarrollo-6"><i class="fa fa-check"></i><b>21.2</b> Desarrollo</a></li>
+<li class="chapter" data-level="21.3" data-path="T1_pareja54.html"><a href="T1_pareja54.html#conclusiones-11"><i class="fa fa-check"></i><b>21.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="21.4" data-path="T1_pareja54.html"><a href="T1_pareja54.html#bibliograf%C3%ADa-17"><i class="fa fa-check"></i><b>21.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="T1_pareja59.html"><a href="T1_pareja59.html"><i class="fa fa-check"></i><b>22</b> Guatemala ante la IA: estudiantes avanzan, el país se rezaga</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="T1_pareja59.html"><a href="T1_pareja59.html#introducci%C3%B3n-18"><i class="fa fa-check"></i><b>22.1</b> Introducción</a></li>
+<li class="chapter" data-level="22.2" data-path="T1_pareja59.html"><a href="T1_pareja59.html#desarrollo-7"><i class="fa fa-check"></i><b>22.2</b> Desarrollo</a></li>
+<li class="chapter" data-level="22.3" data-path="T1_pareja59.html"><a href="T1_pareja59.html#conclusiones-12"><i class="fa fa-check"></i><b>22.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="22.4" data-path="T1_pareja59.html"><a href="T1_pareja59.html#bibliograf%C3%ADa-18"><i class="fa fa-check"></i><b>22.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="T1_pareja40.html"><a href="T1_pareja40.html"><i class="fa fa-check"></i><b>23</b> Cuando el software hiere: el deber ético del ingeniero ante la información sensible</a>
+<ul>
+<li class="chapter" data-level="23.1" data-path="T1_pareja40.html"><a href="T1_pareja40.html#introducci%C3%B3n-19"><i class="fa fa-check"></i><b>23.1</b> Introducción</a></li>
+<li class="chapter" data-level="23.2" data-path="T1_pareja40.html"><a href="T1_pareja40.html#desarrollo-8"><i class="fa fa-check"></i><b>23.2</b> Desarrollo</a></li>
+<li class="chapter" data-level="23.3" data-path="T1_pareja40.html"><a href="T1_pareja40.html#conclusiones-13"><i class="fa fa-check"></i><b>23.3</b> Conclusiones</a></li>
+<li class="chapter" data-level="23.4" data-path="T1_pareja40.html"><a href="T1_pareja40.html#bibliograf%C3%ADa-19"><i class="fa fa-check"></i><b>23.4</b> Bibliografía</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://portal.ingenieria.usac.edu.gt" target="blank">Facultad de Ingeniería - USAC</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pareja25" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> Del prompt al pipeline: cómo la IA generativa reescribe la ingeniería en sistemas<a href="T1_pareja25.html#pareja25" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div style="margin-top: 2rem;"></div>
+<p><img src="labels/pareja25.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><strong>Palabras clave</strong><br />
+IA generativa, transformación digital, sistemas inteligentes, automatización</p>
+<div id="introducción-4" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Introducción<a href="T1_pareja25.html#introducci%C3%B3n-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La transformación digital ya no es una meta futura, sino una realidad que redefine continuamente cómo los sistemas procesan y conectan información. En este escenario, la inteligencia artificial generativa (IAG) se posiciona como una de las tecnologías más disruptivas, capaz de producir texto, código e imágenes a partir de instrucciones en lenguaje natural e integrarse en plataformas digitales.</p>
+<p>Para la Ingeniería en Sistemas, su impacto es directo: transforma el análisis de requerimientos, el diseño de arquitecturas, la programación y la documentación. Este artículo examina, desde una perspectiva latinoamericana, los beneficios medibles de la IAG en el ciclo de vida del software y los riesgos que requieren una respuesta técnica responsable.</p>
+</div>
+<div id="artículo-2" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Artículo<a href="T1_pareja25.html#art%C3%ADculo-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>De la lógica determinista al componente probabilístico</strong></p>
+<p>Durante décadas, construir sistemas implicó codificar reglas para cada estado posible. La IAG introduce un bloque funcional distinto que produce salidas abiertas e interpreta datos de forma autónoma. Esta diferencia de naturaleza obliga a repensar la arquitectura incorporando capas de control, trazabilidad y validación que antes eran opcionales en el diseño tradicional.</p>
+<p>Un reencuadre valioso es considerar al modelo como un conector que facilita la comunicación y conversión entre diversos módulos. Por ejemplo, en sistemas de soporte, la IAG puede inferir intenciones y redactar respuestas, pero su confiabilidad depende totalmente de validadores y auditorías. Ese entorno técnico, la ingeniería que encierra al modelo, es donde la labor profesional vuelve a ser fundamental.</p>
+<p><strong>Impacto en el ciclo de vida del software</strong></p>
+<p>La IA generativa está transformando el SDLC, permitiendo que tareas específicas de codificación se completen hasta un 55% más rápido y mejorando la detección de fallos en requerimientos y pruebas. Sin embargo, en el panorama global de la ingeniería, la ganancia real de productividad es más moderada (entre el 10% y el 18%). Esta diferencia confirma que la IA no es un atajo mágico, sino una herramienta cuyo éxito depende de la supervisión humana y de una ingeniería deliberada dentro de procesos maduros.</p>
+<table style="width:100%; border-collapse:collapse; margin: 1em 0;">
+<thead>
+<tr style="border-top:2px solid black; border-bottom:1px solid black;">
+<th style="text-align:left; padding:6px 8px;">Dimensión</th>
+<th style="text-align:left; padding:6px 8px;">Enfoque tradicional</th>
+<th style="text-align:left; padding:6px 8px;">Con IAG integrada</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:6px 8px;">Interfaz de usuario</td><td style="padding:6px 8px;">Formularios y menús con reglas fijas</td><td style="padding:6px 8px;">Conversación en lenguaje natural con controles</td></tr>
+<tr><td style="padding:6px 8px;">Arquitectura</td><td style="padding:6px 8px;">Servicios + reglas; ML puntual y aislado</td><td style="padding:6px 8px;">Modelo como conector + guardrails + monitoreo</td></tr>
+<tr><td style="padding:6px 8px;">Gestión del conocimiento</td><td style="padding:6px 8px;">Documentación estática; búsquedas exactas</td><td style="padding:6px 8px;">RAG: recuperación interna + generación contextual</td></tr>
+<tr><td style="padding:6px 8px;">Codificación</td><td style="padding:6px 8px;">Escritura manual línea a línea</td><td style="padding:6px 8px;">Asistida; generación de bloques funcionales (~55 % más rápido)</td></tr>
+<tr><td style="padding:6px 8px;">QA y pruebas</td><td style="padding:6px 8px;">Casos manuales; scripts tradicionales</td><td style="padding:6px 8px;">Síntesis automática de pruebas; cobertura >30 %</td></tr>
+<tr style="border-bottom:2px solid black;"><td style="padding:6px 8px;">Riesgos principales</td><td style="padding:6px 8px;">Bugs, rendimiento, seguridad clásica</td><td style="padding:6px 8px;">Confabulación, fuga de datos, prompt injection, sesgos</td></tr>
+</tbody>
+</table>
+<p><em>Tabla 1: Comparativa del enfoque tradicional vs. enfoque con IA (elaboración propia).</em></p>
+<p><strong>Arquitecturas modernas: RAG, agentes y la capa de control</strong></p>
+<p>El patrón de generación aumentada por recuperación (RAG) ha ganado tracción al desplazar el foco del conocimiento del modelo hacia la arquitectura que lo rodea. Para un ingeniero, esto implica un reto de gestión de datos: desde el diseño de índices vectoriales hasta el control de permisos, pues la confiabilidad del sistema depende de la calidad de sus fuentes internas y no solo de la capacidad del modelo.</p>
+<p>A nivel de infraestructura, el futuro apunta hacia agentes autónomos y microservicios orquestados por lenguaje natural. En el contexto de Guatemala, donde la dependencia tecnológica es alta, este avance exige buscar soberanía tecnológica. La clave no es solo consumir herramientas externas, sino fomentar la investigación en modelos de código abierto y arquitecturas híbridas que permitan una auditoría local y una gobernanza real sobre los datos.</p>
+<p>Para ilustrar las capas de seguridad y gobernanza necesarias en estas arquitecturas, la Figura 1 detalla el proceso de endurecimiento de sistemas con IAG.</p>
+<p><img src="articulos_seleccionados/imagenes_articulos_seleccionados/A_pareja25/p1.jpeg" width="80%" style="display: block; margin: auto;" /></p>
+<p><em>Figura 1: Diagrama de flujo de arquitectura de sistema con IAG. Fuente: Masood (2025).</em></p>
+</div>
+<div id="conclusiones-1" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Conclusiones<a href="T1_pareja25.html#conclusiones-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La IA generativa está redefiniendo la ingeniería de sistemas al optimizar el ciclo de vida del software, aunque su implementación introduce desafíos críticos como la confabulación y la vulnerabilidad de los datos. Para que su integración sea exitosa, debe dejar de verse como un complemento superficial y adoptarse como un subsistema robusto, apoyado en patrones como RAG, trazabilidad estricta y supervisión humana constante. En el ámbito profesional y académico, particularmente frente a los retos de soberanía tecnológica en Latinoamérica, es indispensable establecer límites claros de autonomía y certificar nuevas competencias en gobernanza y auditoría. El éxito de esta transición radica en una ingeniería deliberada y el diseño de arquitecturas auditables que aseguren la calidad técnica sin desplazar el criterio analítico del ingeniero.</p>
+</div>
+<div id="bibliografía-4" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Bibliografía<a href="T1_pareja25.html#bibliograf%C3%ADa-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>National Institute of Standards and Technology (NIST). “Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)”. Gaithersburg, MD: NIST (2024).</p></li>
+<li><p>Bourdon, J., I. Ozkaya, y R. Nord. “Generative AI for Software Architecture: Applications, Challenges, and Future Directions”. <em>arXiv preprint arXiv:2503.13310v2</em> (2025).</p></li>
+<li><p>Chui, Michael, et al. “The State of AI in 2023: Generative AI’s Breakout Year.” McKinsey Global Institute, 2023.</p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="T1_pareja64.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="T2_E2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": null,
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["VigesimoQuintaEdicion-RevistaDigital.pdf", "VigesimoQuintaEdicion-RevistaDigital.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

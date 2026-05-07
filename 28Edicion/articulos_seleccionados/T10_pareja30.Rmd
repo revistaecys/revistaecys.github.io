@@ -1,0 +1,91 @@
+---
+title: "Carreras en tecnología: diferencias y aprendizajes entre startups y grandes corporaciones"
+author: "Jonatan René González Hernández y Enrique Fernando Gaitán Ibarra"
+site: bookdown::bookdown_site
+date: "`r Sys.Date()`"
+---
+
+
+
+# Carreras en tecnología: diferencias y aprendizajes entre startups y grandes corporaciones {#pareja30}
+
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("autores_seleccionados/a8.png")
+```
+
+
+```{r include= FALSE}
+b_text01 <- 'Revista'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'Re- \
+    vista'
+}
+```
+
+\Begin{multicols}{2}
+
+__*Palabras clave:*__  Startups, grandes empresas, trabajo, industria tecnológica, oportunidades.
+
+## Introducción
+
+En el ecosistema tecnológico conviven desde startups de unas pocas personas hasta corporaciones globales con decenas de miles de empleados. La experiencia laboral varía de manera notable según el tamaño de la organización: estabilidad y beneficios, cultura, ritmo de trabajo, aprendizaje, crecimiento profesional y redes de contacto se experimentan de forma distinta en cada contexto.
+
+En Guatemala y América Latina, donde predominan las PYMES, muchas trayectorias comienzan en empresas pequeñas; mientras que en Estados Unidos abundan las grandes tecnológicas con estructuras formales y paquetes de compensación más robustos. Este artículo compara, con un enfoque práctico, las diferencias más relevantes entre ambos mundos para orientar a estudiantes y profesionales en la elección de sus caminos de desarrollo profesional.
+
+## Artículo 
+
+\bigskip
+__Comparativa__
+__Estabilidad económica y beneficios__
+
+Las corporaciones grandes suelen sostener mejores salarios, seguros médicos, bonos y planes de retiro, lo que permite planificar una carrera a largo plazo. En Guatemala y la región, además, el empleo en pequeñas empresas suele venir con mayores brechas salariales y menor protección social, lo que refuerza la percepción de estabilidad cuando se accede a organizaciones de mayor tamaño.[1]
+
+En el otro extremo, muchas startups operan con presupuestos ajustados: pueden pagar menos al inicio y ofrecer participación accionaria como apuesta de alto riesgo/alto retorno si la empresa crece.[2]
+
+\bigskip
+__Cultura y modo de trabajo__
+
+En compañías grandes predominan procesos definidos, jerarquías claras y coordinación entre múltiples equipos. Esto garantiza orden, pero puede traducirse en burocracia y ciclos de decisión más lentos.[3]En empresas pequeñas la comunicación es directa, las ideas se prueban rápido y el impacto individual se percibe de inmediato; ese dinamismo y cercanía con los fundadores crea sentido de pertenencia, aunque con menos estructura formal para guiar el crecimiento.[2]
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A8/p1.jpg')
+```
+\figcaption{ Comparativa entre empresas pequeñas y grandes en estabilidad, cultura, ritmo de trabajo, aprendizaje y networking.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Comparativa entre empresas pequeñas y grandes en estabilidad, cultura, ritmo de trabajo, aprendizaje y networking.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A8/p1.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+\bigskip
+__Desarrollo Profesional__
+
+Los grandes empleadores ofrecen rutas de carrera estructuradas (junior–senior–lead–manager), evaluaciones periódicas y formación formal; el avance puede ser más lento, pero consistente y con prestigio de marca. En empresas pequeñas, la exposición es versátil: una persona puede liderar en poco tiempo, asumir decisiones técnicas y de producto y entender el negocio de punta a punta; el aprendizaje es intenso y práctico, aunque dependa menos de programas formales y más del día a día.
+
+
+\bigskip
+\bigskip
+
+
+## Conclusiones
+
+No existe una respuesta universal sobre “qué es mejor”. Las empresas grandes ofrecen estabilidad, compensación y rutas de carrera claras, aunque pueden sentirse más lentas y especializadas. Las startups brindan aprendizaje acelerado, impacto visible y rápido crecimiento en responsabilidades, aunque con mayor riesgo y presión operativa. Para un perfil en formación, una estrategia útil es combinar experiencias: iniciar en una empresa pequeña
+para ganar versatilidad y luego vivir la escala y el rigor de una organización grande. Así se capitaliza lo mejor de ambos mundos: innovación y adaptabilidad, junto con estructura y proyección internacional. Al final, lo importante no es el tamaño de la empresa, sino la forma en que cada entorno se ajusta a las metas personales y profesionales, permitiendo construir una trayectoria sólida y flexible en el cambiante ecosistema tecnológico.
+
+
+
+## Referencias
+
+- [1]  Organización Internacional del Trabajo (OIT). “, Panorama Laboral Temático. Pequeñas empresas, grandes brechas: Empleo y condiciones de trabajo en las MYPE de América Latina y el Caribe”  Lima: OIT, 2015. [https://ilo.org](https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40americas/%40ro-lima/documents/publication/wcms_398103.pdf).
+
+- [2] Orosz,Gergely. “Working at a Startup vs in Big Tech”  The Pragmatic Engineer, Septiembre,2023. [https://blog.pragmaticengineer.com](https://blog.pragmaticengineer.com/working-at-a-startup-vs-in-big-tech/)
+
+- [3] Equipo HR Connect.“¿Es mejor trabajar en una gran empresa o en una startup?”. HR Connect, s. f, Abril,2025. Accedido el 9 de abril de 2025. [https://www.hrconnect.cl/](https://www.hrconnect.cl/desarrollo/es-mejor-trabajar-en-una-gran-empresa-o-en-una-startup/)
+
+\End{multicols} 
+
+\medskip

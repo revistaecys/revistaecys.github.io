@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu+Mono');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+code{
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0 2px 3px 1px,
+    rgba(0, 0, 0, 0.1) 0 1px 3px 1px,
+    rgba(0, 0, 0, 0.2) 0 1px 1px -1px;
+}
+pre code {
+  white-space: inherit;
+}
+
+section.normal strong {
+  color: #356185;
+}
+
+section.normal h1  {
+  color: #356185;
+}
+
+section.normal h2  {
+  color: #356185;
+}
+
+section.normal h3  {
+  color: #356185;
+}
+
+section.normal h4  {
+  color: #356185;
+}
+
+section.normal h5  {
+  color: #356185;
+}
+
+section.normal h6  {
+  color: #356185;
+}
+
+.warn, .note, .tip {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  border-style: groove;
+  background: #f5f5f5 5px center/3em no-repeat;
+}
+
+.warn {
+  background-image: url("images/warn.png");
+}
+.note {
+  background-image: url("images/pin.png");
+}
+.tip {
+  background-image: url("images/bulb.png");
+}
+
+.btn-default {
+  border-style: solid;
+}
+
+.btn {
+  background-color: #356185; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.book-header.fixed a:link { 
+  background-color:#FFF;
+  color: #356185
+}
+.book-header.fixed a:visited{ 
+  background-color:#FFF;
+  color: #356185
+}
+.book-header.fixed a:hover{ 
+  background-color:#FFF;
+  color: #356185
+}
+.book-header.fixed a:active{ 
+  background-color:#FFF;
+  color: #356185
+}
+.book-header { 
+  border-color: #fff!important;
+}
+
+.page-wrapper a:link { color: #356185 !important; }
+.page-wrapper a:visited { color: #356185 !important; }
+.page-wrapper a:hover { color: #356185 !important; }
+.page-wrapper a:active { color: #356185 !important; }
+
+.dropdown-menu .buttons .button {
+    color: #356185;
+}

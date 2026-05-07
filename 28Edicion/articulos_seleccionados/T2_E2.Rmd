@@ -1,0 +1,118 @@
+---
+title: ""
+author: ""
+date: ""
+site: bookdown::bookdown_site
+---
+
+# Tendencias de la industria: IA, automatización y valor empresarial {#entrevista02_MarlonOrellana}
+
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("autores_seleccionados/e2.png")
+```
+
+```{r include= FALSE}
+
+b_text01 <- 'colaboración'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'colabora- \
+    ción'
+}
+```
+
+\begin{multicols}{2}
+
+
+__*YouTube:*__ https://youtu.be/OY4QHOD0Vag
+
+
+## Entrevista
+
+__¿Quién es Marlon Orellana?__ 
+
+Mi nombre es Marlon Orellana; soy profesor y egresado de la Escuela de Ciencias y Sistemas de la Facultad de Ingeniería de la Universidad de San Carlos de Guatemala (USAC). Como docente, acumulo 18 años de experiencia impartiendo cursos en pregrado y también desarrollo actividades en posgrado.
+
+He sido coordinador de área de la Escuela durante más de cinco años. En ese rol hemos procurado la mejora académica en distintos cursos y temáticas, fortaleciendo la didáctica docente para beneficio del estudiantado. Actualmente soy coordinador del área de Software; tengo a mi cargo cursos que van desde Programación hasta Software Avanzado. Mi objetivo ha sido impulsar una gradación y actualización de conocimientos en beneficio del estudiante.
+En el ámbito laboral, he trabajado en empresas internacionales y algunas instituciones nacionales y de gobierno, donde he podido aplicar mis conocimientos, principalmente en compañías con operaciones en Estados Unidos y Europa, con procesos altamente estandarizados. He colaborado, entre otras, con Nielsen, Bayer y ExxonMobil, experiencias que han aportado significativamente a mi formación profesional.
+
+Cuento con tres maestrías: Sistemas, Gestión de Proyectos y Analítica de Datos. Esto me permite desempeñarme en administración de proyectos, analítica de datos y administración de sistemas. Actualmente integro inteligencia artificial en estos tres frentes y exploro la automatización de procesos. En conjunto, estas áreas se entrelazan y generan valor para la empresa en la que trabajo.
+
+He notado un boom en varios temas actuales que me interesa compartir con los estudiantes y profesionales que leen la revista.
+
+__¿Cómo ve actualmente la industria tecnológica para ingenieros que inician su carrera?__
+
+La industria tecnológica evoluciona muy rápido. Los ciclos de cambio son ya de 12, 6 o incluso 3 meses. Hay gran oferta tecnológica, por lo que el egresado debe elegir ámbitos donde se sienta cómodo y que le agraden para desarrollarse.
+Conviene apoyarse en rankings y entidades que evalúan herramientas y tendencias, además de realizar un proceso investigativo propio para tomar decisiones informadas.
+
+
+__¿Qué lo motivó a elegir esta profesión?__
+
+Soy Perito Contador y egresé con uno de los mejores promedios de mi institución. Inicialmente me atraían las carreras económicas por tradición familiar, pero, tras analizar el mercado laboral y notar su saturación, opté por mi segunda gran pasión: la tecnología, el hardware y el software. Aunque no tenía bases en física, química, matemática o estadística al nivel requerido, redoblé esfuerzos y lo logré con el apoyo de excelentes catedráticos. Elegí Ingeniería en Ciencias y Sistemas y, hasta hoy, sigo aprendiendo y actualizándome continuamente.
+
+
+__¿Cómo fueron sus primeras experiencias laborales?__
+
+A finales de los 2000, la Escuela funcionaba con clases presenciales matutinas, lo que llevaba a que muchos trabajaran hasta el final de la carrera. Empecé, como muchos, en desarrollo en una institución privada; luego pasé al sector público.Observé que en Guatemala la adopción tecnológica iba rezagada por la baja penetración de Internet en aquellos años, mientras empresas internacionales avanzaban con mayor rapidez. Busqué entonces oportunidades en retail y análisis de datos con Nielsen; después pasé a Henkel, lo que me permitió viajar por Centroamérica, Estados Unidos y Alemania, con exposición a estandarización de procesos y analítica para supermercados.
+
+Más tarde llegué a ExxonMobil, una petrolera global, donde crecí mucho profesionalmente. Tras un divest y cierre de operaciones en la región, trabajé temporalmente como Project Manager en un outsourcing tecnológico local para distintos clientes. Luego ingresé a Bayer, donde implementé soluciones para Guatemala y Centroamérica.
+
+Actualmente laboro en Conduent, inicialmente apoyando proyectos del área comercial para grandes clientes —especialmente en claims del sector salud— y posteriormente en el área de gobierno (transportación y child support), donde la empresa compite por proyectos tecnológicos para diferentes estados de EE. UU. y Europa. En este entorno aplico gestión de proyectos, analítica de datos y administración de sistemas, además de profundizar en IA y automatización de procesos. Parte de estos aprendizajes los he compartido en congresos estudiantiles, como forma de retribuir al país.
+
+
+__¿Qué papel tiene hoy un ingeniero en sistemas en el crecimiento de las empresas tecnológicas?__
+
+El ingeniero en sistemas aporta ahorro de costos, ahorro de tiempo e incremento de calidad mediante tecnología, incluyendo IA. Automatizar procesos repetitivos reduce errores y libera a las personas para tareas de mayor valor. Nuestra misión —en especial en Guatemala— es eliminar la operatividad excesiva que desgasta a los equipos. Si no simplificamos procesos y elevamos la calidad, nos “ahogamos” en la operación. Automatizar no es “quitar personal”, sino reorientar talento a actividades estratégicas.
+
+
+__¿Qué dificultades tienen los estudiantes al usar tecnologías de aprendizaje vs. métodos tradicionales?__
+
+El principal reto es adaptarse rápido y usar la tecnología de forma intuitiva. Pero, sobre todo, volver a leer: hoy prevalecen hábitos de consumo rápido y superficial de información. Hace falta lectura comprensiva y profundización para consolidar el aprendizaje.
+
+
+__¿Cómo se puede preparar a los estudiantes para usar usar estas tecnologías de forma ética y responsable?__
+
+Se necesitan procesos formativos que dejen clara la responsabilidad en el manejo de datos, información y procesos. Sería valioso incluir, dentro de los cursos o al final de la carrera, módulos o charlas sobre propiedad intelectual, ética profesional y marcos legales/penales aplicables al uso tecnológico (aunque en Guatemala sean aún incipientes, en otros países sí existen). Comprender esto no solo genera buenas prácticas, también evita responsabilidades.
+
+
+__¿Qué retos enfrentan los docentes al incluir herramientas de IA en clase?__
+
+Conocer bien las herramientas: alcances, limitaciones, aplicaciones, formas de evaluación y métricas. La diversidad es grande, por lo que hay que identificar si el uso es correcto. También necesitamos apoyo institucional para acortar la curva de aprendizaje docente.
+
+
+__¿Cómo medir el verdadero aprendizaje cuando se usa IA?__
+
+ugiero una aproximación de “baby steps”: introducir IA gradualmente. En cursos de desarrollo de software, por ejemplo, puede usarse hacia el final en una práctica o componente puntual de un proyecto (p. ej., detección de rostros, huellas o colores). La IA resuelve una parte, pero el estudiante debe desarrollar el resto. Así, desde cursos básicos se incorporan pequeñas porciones de IA y se escala progresivamente hasta implementaciones más robustas y medibles en cursos avanzados.
+
+__¿Qué dificultades existen para actualizar planes de estudio e incluir IA?__
+
+La actualización curricular a nivel de carrera es compleja por los procesos de aprobación. Sin embargo, podemos actualizar temáticas dentro de cada curso. Por ejemplo, en Metodologías Ágiles, incorporar herramientas de IA para Scrum, DevOps o gestión visual.
+No se trata de “entregarle el curso a la IA”, sino de usarla como herramienta soportada por conocimiento y lógica. La máquina no debe pensar por nosotros; debemos dominar la base conceptual para enseñar y aprender con criterio.
+
+__¿Qué acciones universitarias ayudarían a que estas tecnologías mejoren la calidad educativa?__
+Desde infraestructura hasta calidad de materiales, recursos y procesos educativos. Sería valioso organizar simposios de discusión sobre IA en educación, modalidad virtual, evaluación justa (mitigando trampas o usos inadecuados de IA), buenas prácticas y políticas.
+Referentes como Harvard publican constantemente sobre IA y educación/negocios (el Ing. César Fernández comparte materiales útiles). Hay que investigar, comparar y adoptar buenas prácticas aplicables a nuestro contexto.
+
+__¿Cómo imagina la evolución del mercado laboral para ingenieros en 5–10 años?__
+Un colega asistió a una conferencia de NVIDIA en San Francisco (2025) donde se planteó que el futuro está en el entrenamiento de modelos de IA, más que solo en su uso. Muchos serán usuarios; pocos dominarán el entrenamiento y la profundidad técnica. Comparto esa visión.
+
+
+__¿Qué áreas o especializaciones tendrán mayor demanda en el futuro cercano?__
+Inteligencia Artificial, automatización de procesos y una analítica de datos potenciada por IA. También el diseño de microprocesadores (chips) —tema aún incipiente en Guatemala—, y a mediano plazo la computación cuántica.
+Transversalmente, la ciberseguridad seguirá siendo clave por la exposición de la información y la necesidad de procesos seguros. Añadiría una capa constante de calidad sobre todos estos temas. Analizar conversaciones en redes sociales y servicios de tendencias también puede orientar sobre qué se está usando.
+
+__¿Qué lección importante comparte con las nuevas generaciones?__
+Como sancarlistas, nuestro gran diferenciador es ser autodidactas: tomar un problema o tecnología desconocida, aprenderla rápido, profundizar, implementar y hacerlo en tiempos cortos.
+Aunque enfrentemos limitaciones de aulas o equipo, la actitud y la capacidad de resolver nos vuelven competitivos a nivel técnico. Tal vez falten componentes de análisis económico/financiero, pero técnicamente marcamos diferencia.
+
+__Mensaje final de Marlon Orellana__
+
+Agradezco a la Escuela, a las autoridades y a ustedes, estudiantes del Consejo Editorial, por este esfuerzo de llevar conocimiento a más personas.Vivimos tiempos donde se valora mucho la inmediatez de las redes; usemos esos canales para difundir conocimiento confiable y útil, en el momento preciso, y motivar la lectura de artículos y revistas.Gracias por el espacio y que las próximas generaciones aporten con fuerza a Guatemala.
+
+\end{multicols}
+
+\medskip
+
+\HRule
+
+\medskip

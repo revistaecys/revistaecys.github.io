@@ -1,0 +1,97 @@
+---
+title: "El juramento ético de la tecnología: la promesa pendiente que falta en la ingeniería de softwaree"
+author: "Angel Miguel García Urizar y Eddy Fernando Díaz Galindo"
+site: bookdown::bookdown_site
+date: "`r Sys.Date()`"
+---
+
+
+
+# El juramento ético de la tecnología: la promesa pendiente que falta en la ingeniería de software {#pareja13 }
+
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("autores_seleccionados/a10.png")
+```
+
+
+```{r include= FALSE}
+b_text01 <- 'Revista'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'Re- \
+    vista'
+}
+```
+
+\Begin{multicols}{2}
+
+__*Palabras clave:*__  Compromiso, Ética, Responsabilidad, Juramento, Inteligencia artificial.
+
+## Introducción
+
+En la actualidad, los ingenieros de software tienen en sus manos una responsabilidad que trasciende la escritura de código. El mal manejo de sistemas puede provocar filtraciones de datos personales, vulneración de cuentas y pérdidas millonarias, afectando la confianza y seguridad de millones de usuarios. Y además pueden tener repercusiones legales y éticas significativas.
+
+Así como los médicos realizan un juramento que compromete su labor con la vida y el bienestar humano, surge la pregunta: ¿deberían los desarrolladores de software asumir también un compromiso ético formal? No se trata solo de la parte técnica del desarrollo, sino también de la responsabilidad moral que tienen quienes crean el software que sostiene gran parte de la vida moderna.
+
+
+## Artículo 
+
+\bigskip
+
+Existen intentos formales de guiar la responsabilidad de los ingenieros de software mediante códigos éticos. Organizaciones como la Association for Computing Machinery (ACM) y el IEEE Computer Society han establecido lineamientos que destacan valores fundamentales como la privacidad, la seguridad, la honestidad y la responsabilidad social en la creación de tecnología.
+
+De hecho, en 1997 se presentó el Software Engineering Code of Ethics, concebido como un marco de principios que funciona de manera similar a un juramento profesional[3]. Sin embargo, estos códigos carecen de obligatoriedad, rara vez son exigidos por las empresas y no cuentan con mecanismos de supervisión legal, lo que los convierte en recomendaciones más que en compromisos vinculantes, dejando la ética en manos de la conciencia individual de cada ingeniero.
+
+En Guatemala y en gran parte de la región, estos códigos no se aplican de manera efectiva principalmente porque no existe una regulación específica que obligue a los ingenieros de software a cumplir con un juramento ético, lo que hace que la aplicación de principios propuestos por la ACM o el IEEE sea irregular y dependa de la madurez de cada organización. A diferencia de profesiones como la medicina o la abogacía, donde los colegios profesionales ejercen control, en la tecnología no hay una entidad que fiscalice la práctica.
+
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A10/p1.jpg')
+```
+\figcaption{Países afectados por el caso de Cambridge Analytica.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Países afectados por el caso de Cambridge Analytica.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A10/p1.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+\bigskip
+__La inteligencia artificial como una herramienta para la personalización__
+
+Un ejemplo bastante claro sobre ignorar los códigos éticos y la falta de responsabilidad en el mundo tecnológico es el caso de Cambridge Analytica, consultora de la campaña electoral del presidente Donald Trump, obtuvo datos sin el consentimiento de millones de usuarios para influir en el proceso electoral de los Estados Unidos[2]. Solo en este país 70,632,350 usuarios
+(ver fig. 12.1) fueron afectados por el escándalo de Cambridge Analytica, lo que evidenció la importancia de establecer límites sobre el uso de datos en el mundo digital.
+
+En el mundo IT la ética es un tema amplio y complejo, cada avance o cambio tecnológico introduce nuevos retos éticos, el ejemplo más reciente es la llegada de la inteligencia artificial[1]. La IA ha traído consigo una nueva serie de preocupaciones éticas, exigiendo que individuos y organizaciones se replanteen el marco de decisiones dentro de lo que se considera o no ético. Exponiendo la necesidad de atender de forma responsable las decisiones digitales de las tecnologías de la información.
+
+Hay dos puntos éticos principales que se deben considerar con la adopción y el uso de la inteligencia artificial: 
+
+- Los algoritmos no son neutrales: La inteligencia artificial se entrena con información histórica, por lo que puede presentar sesgos basados en datos históricos de épocas pasadas. También puede presentar sesgos derivados de creencias o preferencias políticas, religiosas, culturales de quién sea dueño de los algoritmos de IA.
+
+- Precisión en las decisiones basadas en IA: Con la adopción de la inteligencia artificial por individuos y organizaciones, cada vez son más quienes toman decisiones basadas en inteligencia artificial, pero es importante considerar que la IA está entrenada con información que puede llegar a ser inexacta o puede estar manipulada para responder a intereses particulares, influyendo en las recomendaciones o respuestas ofrecidas por
+la misma.
+
+
+\bigskip
+\bigskip
+
+
+## Conclusiones
+
+Aunque existen códigos de ética para la ingeniería de software, su aplicación aún sigue siendo más aspiracional que real, limitada por la falta de regulación y la influencia de intereses corporativos y gubernamentales. Esta realidad se hace evidente en numerosos países, donde además surgen nuevos desafíos vinculados a la inteligencia artificial, cuyo entrenamiento puede responder a los intereses de quienes controlan y financian sus algoritmos. A esto se suma el diseño de algoritmos de redes sociales que fomentan la adicción, priorizando la rentabilidad sobre el bienestar humano. Un juramento ético permitiría recordar que cada línea de código puede influir en millones de vidas y que la responsabilidad del ingeniero no se limita a entregar un producto funcional, sino a garantizar que la tecnología sirva al bien común y no a intereses particulares.
+
+
+
+## Referencias
+
+- [1] Dauchess, Alexandra.“"Understanding the Importance of Ethics in Information Technology”. Marymont University (blog). Accedido el 15 de agosto de 2025. [https://marymount.edu](https://marymount.edu/blog/understanding-the-importance-of-ethics-in-information-technology/).
+
+- [2] Fundación Fepropaz. “La ética en el desarrollo de tecnología: retos para las nuevas generaciones” Fundación Fepropaz,16 de diciembre de 2024. [https://fepropaz.com](https://fepropaz.com/etica-y-tech/)
+
+- [3] Gotterbarn, Don, Miller Keith, y Simon Rogerson.“"Software engineering code of ethics”. Communications of the ACM 40, no. 11 (noviembre de 1997): 110–118. [https://www.doi.org](https://www.doi.org]https://doi.org/10.1145/265684.265699)
+
+\End{multicols} 
+
+\medskip

@@ -1,0 +1,44 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+
+#abstract h1, #intro h1, #methods h1, #results h1, #discussion h1, #references h1{
+	background: firebrick;
+	width: 100%;
+	color: white;
+	padding:10px;
+	line-height: 1em;
+	font-size: 24px;
+}
+
+#header .title{
+	text-align:center;
+}
+#header .subtitle{
+	text-align:center;
+	position:relative;
+	top:-30px;
+}
+#header .author{
+	text-align:center;
+	line-height: 0px;
+	position: relative;
+	top: -10;
+}
+#header .date{
+	text-align:center;
+	postion: relative;
+	line-height: 5;
+}

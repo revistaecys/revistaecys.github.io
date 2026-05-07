@@ -1,0 +1,108 @@
+---
+title: ""
+author: ""
+date: ""
+site: bookdown::bookdown_site
+---
+
+# La revolución silenciosa: Asistentes virtuales transformando el panorama educativo {#pareja22}
+
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("autores_seleccionados/a2.png")
+```
+
+
+```{r include= FALSE}
+b_text01 <- 'Revista'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'Re- \
+    vista'
+}
+```
+
+\Begin{multicols}{2}
+
+__*Palabras clave:*__  Asistentes Virtuales Educativos, Educación, Evaluación Automática, Privacidad de Datos, Inteligencia Artificial.
+
+## Introducción
+
+La evolución de la inteligencia artificial (IA), impulsada por el auge de ChatGPT en 2022, ha transformado múltiples ámbitos, incluida la educación. Los asistentes virtuales se han vuelto aliados cotidianos en escuelas y universidades, ofreciendo apoyo personalizado a estudiantes y docentes. Facilitan nuevas formas de aprendizaje, así como guías de estudio y estrategias que potencian la enseñanza.
+
+No obstante, surge la pregunta: ¿son aliados que enriquecen la educación o un posible reemplazo del docente? Ante el avance acelerado de la tecnología educativa, urge evaluar con rigor su integración. El análisis debe ponderar oportunidades (acceso, personalización, eficiencia) y desafíos (ética, sesgos, privacidad). Este trabajo aborda ese balance en el contexto académico actual.
+
+## Artículo 
+
+\bigskip
+__Adopción y estadísticas actuales__
+
+Según la Figura 3.1, más del 56% de los estudiantes, tanto en Estados Unidos como en el resto del mundo, utilizan herramientas de inteligencia artificial (IA) como ChatGPT para sus estudios. Aunque un 40.6% todavía no las usa por dudas sobre su precisión, la IA se está volviendo más sofisticada y confiable.
+
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A2/p1.jpg')
+```
+\figcaption{Porcentaje de estudiantes universitarios que han usado IA en tareas o exámenes.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Porcentaje de estudiantes universitarios que han usado IA en tareas o exámenes.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A2/p1.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+Esto sugiere que adaptarse a este nuevo método de aprendizaje merece la pena, ya que la integración de asistentes virtuales personalizados en las escuelas podría desmentir la creencia de que la IA no es una herramienta de aprendizaje efectiva y precisa. Además, con la implementación de estos modelos en las universidades y escuelas a través de asistentes virtuales adaptados a su modelo de aprendizaje académico. Puede rebatir la opinión de que la IA no es adecuada para el autoaprendizaje.
+
+
+
+\bigskip
+__Arquitectura y tecnología de los asistentes virtuales__
+
+Los asistentes virtuales educativos integran procesamiento de lenguaje natural, aprendizaje automático y bases de conocimiento estructuradas. Su efectividad depende de algoritmos de inferencia y de bases de datos que utilizan ontologías formales para ofrecer razonamiento automático. Esta arquitectura requiere servidores de alto rendimiento y una infraestructura robusta que permita el análisis en tiempo real.
+
+\bigskip
+__Implementaciones institucionales__
+
+Diversas instituciones han adoptado estas tecnologías. La Universidad de Michigan utiliza asistentes virtuales para aprendizaje autodirigido y soporte académico. Carnegie Mellon ha desarrollado sistemas tutoriales inteligentes capaces de adaptar contenidos según el progreso del estudiante. El Instituto de Tecnología de Georgia emplea chatbots para responder preguntas frecuentes y orientar procesos administrativos. Además, la Universidad de Stanford y Harvard han explorado asistentes en cursos en línea, mientras que la UNESCO promueve su uso en proyectos globales de educación digital.
+
+
+\bigskip
+__Funcionalidades y capacidades avanzadas__
+
+Los asistentes virtuales ofrecen funciones como revisión de exámenes, tutorías personalizadas y calificación automatizada. También utilizan algoritmos de recomendación basados en el rendimiento histórico del estudiante. En la Universidad Estatal de Arizona, chatbots especializados proporcionan retroalimentación inmediata en cursos de matemáticas y ciencias. El MIT, por su parte, ha integrado asistentes en laboratorios virtuales, permitiendo experimentos guiados y simulaciones interactivas.
+
+\bigskip
+__Desafíos y perspectivas futuras__
+
+
+Aunque los beneficios son amplios, persisten desafíos como sesgos algorítmicos, privacidad de datos y la necesidad de supervisión constante. El 59.8% de los estudiantes de ingeniería utiliza IA generativa en proyectos de diseño, lo que muestra un rápido crecimiento. El futuro apunta hacia la convergencia con realidad aumentada, análisis de emociones y algoritmos basados en neurociencia cognitiva. Estas innovaciones demandarán infraestructuras distribuidas y marcos éticos sólidos.
+
+
+
+\bigskip
+\bigskip
+
+
+## Conclusiones
+
+Los asistentes virtuales educativos no reemplazan, sino que complementan la enseñanza al ofrecer soporte personalizado y ampliar las capacidades pedagógicas. A pesar de limitaciones técnicas como los sesgos algorítmicos, su impacto crecerá bajo la estricta supervisión humana. El éxito de integración requiere un enfoque equilibrado que conserve la interacción humana, la cual es esencial en la educación. Para lograrlo, las instituciones deben establecer marcos éticos claros y la formación docente en competencias digitales se vuelve crucial. El futuro de la educación dependerá de la sinergia entre la innovación tecnológica y la experiencia pedagógica. La colaboración entre desarrolladores, educadores y estudiantes es fundamental para crear soluciones beneficiosas. En última instancia, el éxito de estas tecnologías se medirá por su capacidad de democratizar el acceso a una educación de calidad y personalizada.
+
+
+
+
+## Referencias
+
+- [1] Essel, Harry Barton, Dimitrios Vlachopoulos, y Akosua Tachie-Menson. “The impact of a virtual teaching assistant (chatbot) on students' learning in Ghanaian higher education” Springer Open, Noviembre,2022 . Accedido el 04 de septiembre de 2025. [https://springeropen.com](https://educationaltechnologyjournal.springeropen.com/articles/10.1186/s41239-022-00362-6).
+
+- [2] Kelly, Rhea. “University of Michigan Launches Agentic AI Virtual Teaching Assistant” Campus Technology, Abril,2025. Accedido el 05 de septiembre de 2025.\
+[https://www.campustechnology.com](https://campustechnology.com/articles/2025/04/11/university-of-michigan-launches-agentic-ai-virtual-teaching-assistant.aspx)
+
+- [3] Li, Jun.“Google Public Sector Helps Enhance Learning at the University of Michigan with Pioneering New Agentic AI Virtual Teaching Assistant”. Michigan Ross, Abril,2025. Accedido el  06 de septiembre de 2025.\
+[https://www.michiganross.com](https://michiganross.umich.edu/news/google-public-sector-helps-enhance-learning-university-michigan-pioneering-new-agentic-ai)
+
+- [4] Rutgers University, School of Communication and information."How is Artificial Intelligence Impacting Higher Education?”.Rutgers University, Febrero,2025. Accedido el 05 de septiembre de 2025. [https://www.comminfo.rutgers.edu](https://comminfo.rutgers.edu/news/how-artificial-intelligence-impacting-higher-education)
+
+\End{multicols} 
+
+\medskip

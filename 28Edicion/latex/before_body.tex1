@@ -1,0 +1,20 @@
+% \pagestyle{plain}
+\includepdf{images/cover.pdf}
+
+\AddEverypageHook{%
+\ifthenelse{\value{page}<5}%
+{\ifthenelse{\isodd{\value{page}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberimpar.pdf}}}}%
+  	{\backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={\includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberpar.pdf}}}}%
+}{}%
+\BgMaterial}
+
+\hypersetup{
+  unicode=true,
+  pdftitle={Revista digital de la escuela de ingeniería en Ciencias y Sistemas},
+  pdfauthor={Escuela Ingenieria en Ciencias y Sistemas},
+  pdfborder={0 0 0},
+  breaklinks=true,
+  linkcolor=black, % TOC y refs
+  urlcolor=gray    % solo URLs
+}

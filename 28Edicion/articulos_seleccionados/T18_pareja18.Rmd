@@ -1,0 +1,92 @@
+---
+title: "Inteligencia artificial: al servicio de la seguridad industrial"
+author: "Juan Pedro Valle Lema y Kevin Estuardo Palacios Quiñonez"
+site: bookdown::bookdown_site
+date: "`r Sys.Date()`"
+---
+
+
+
+# Inteligencia artificial: al servicio de la seguridad industrial {#pareja18 }
+
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("autores_seleccionados/a13.png")
+```
+
+
+```{r include= FALSE}
+b_text01 <- 'Revista'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'Re- \
+    vista'
+}
+```
+
+\Begin{multicols}{2}
+
+__*Palabras clave:*__  Ciberseguridad, Automatización, Sistemas industriales, Vulnerabilidades, Proteccion, Infraestructura crítica.
+
+## Introducción
+
+Actualmente, los sistemas industriales sostienen sectores estratégicos como la energía, el transporte y la manufactura, convirtiéndose en el núcleo de la infraestructura crítica moderna. La digitalización y la conectividad extensiva han aumentado los riesgos, haciendo a estos sistemas más vulnerables frente a ciberataques que pueden impactar gravemente la economía
+y la sociedad.
+
+Frente a este panorama, el análisis continuo de vulnerabilidades resulta esencial para la seguridad y operatividad de las organizaciones. El uso de técnicas automatizadas permite detectar brechas y fallos en software y hardware, facilitando la adopción de medidas preventivas que salvaguardan la operación de sistemas críticos.
+
+
+## Artículo 
+
+\bigskip
+__Análisis de vulnerabilidades__
+
+Las vulnerabilidades dentro de las empresas y sistemas industriales incluyen cualquier punto débil en la estructura, función o implementación de alguno de sus aspectos. Es aquí donde podemos hacer mención de los sistemas SCADA. Estos son un tipo de sistema de control industrial, el cual se utiliza para “controlar sistemas de gran dispersión espacial en los que la adquisición centralizada de datos es tan importante como el control”(Grieco,2018). Este tipo de sistemas integra el proceso de adquisición de datos con transmisión de estos y también el uso de software para proveer monitorización y control de los procesos. 
+
+
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A13/p1.jpg')
+```
+\figcaption{Arquitectura Sistema SCADA}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Arquitectura Sistema SCADA", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A13/p1.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+Un sistema de control industrial básicamente está manejando el mundo físico, a comparación de un sistema de tecnologías de la información el cual maneja datos. Es importante recalcar que así como su objetivo no es exactamente el mismo, las vulnerabilidades que estos presenten también serán caracterizadas por tener diferentes riesgos y prioridades.
+
+
+\bigskip
+__VDiscover__
+
+Una herramienta que realiza específicamente este tipo de trabajo es VDiscover, la cual permite la detección rápida de casos de prueba potencialmente vulnerables por medio del aprendizaje automático. La herramienta utiliza dos fases para realizar esta labor: entrenamiento y predicción.
+
+En la fase de entrenamiento, VDiscover recopila y analiza un amplio conjunto de casos de prueba provenientes de diversos programas, los etiqueta según su nivel de vulnerabilidad utilizando un procedimiento automatizado. A partir de esta información, extrae características. Mediante algoritmos de aprendizaje supervisado, la herramienta aprende patrones y características comunes presentes en los casos de prueba vulnerables. Posteriormente, en la fase de predicción, VDiscover aplica el modelo entrenado para estimarsi nuevos casos de prueba, son una vulnerabilidad o no.
+
+\bigskip
+\bigskip
+
+
+## Conclusiones
+
+Los sistemas de análisis automatizado de vulnerabilidades, sobre todo en el contexto de sistemas industriales, son una herramienta de gran utilidad. Estas tecnologías no solo mejoran la velocidad y precisión en la identificación de vulnerabilidades, sino que también permiten una respuesta más eficiente ante amenazas emergentes. La integración de sistemas de detección basados en IA con arquitecturas de seguridad robustas, establecen múltiples capas de protección para salvaguardar la continuidad operacional. Básicamente, el futuro de la seguridad industrial dependerá de la adopción generalizada de soluciones automatizadas de análisis de vulnerabilidades, combinando la potencia del aprendizaje automático con prácticas de ciberseguridad establecidas por diferentes entidades como lo puede ser la NIST, se logrará proteger las infraestructuras críticas que sustentan nuestra sociedad digital y física.
+
+
+
+## Referencias
+
+- [1] Cossio Cisneros, Oscar Alejandro. “Vulnerabilidades de ciberseguridad en sistemas de control industrial y accesibilidad a través de redes públicas.” Tesis de maestría. Universidad Nacional del Nordeste, Facultad de Ciencias Exactas y Naturales y Agrimensura. 2020. [https://repositorio.unne.edu.ar](https://repositorio.unne.edu.ar/handle/123456789/28453).
+
+- [2] Iñigo Ulloa, Miguel Ángel, Isidro Calvo, Ismael Etxeberria-Agiriano y Pablo González-Nalda. “Principales vulnerabilidades de los sistemas de automatización industrial y posibles acciones para evitar ciberataques.” En Libro de Actas XXXVI Jornadas de Automática, 252–259. Bilbao: Universidad del País Vasco, 2015.
+
+- [3] Grieco, Gustavo. “Detección de vulnerabilidades y análisis de fallos con técnicas de aprendizaje automatizado.” Tesis doctoral. Universidad Nacional de Rosario. 2018.
+
+- [4] Cossio, Oscar. “Vulnerabilidades de ciberseguridad en sistemas de control industrial y accesibilidad a través de redes públicas.” Tesis de maestría. Universidad Nacional del Nordeste. s.f.
+
+\End{multicols} 
+
+\medskip

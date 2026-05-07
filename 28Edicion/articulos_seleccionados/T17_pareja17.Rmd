@@ -1,0 +1,104 @@
+---
+title: "Cuando la IA se convierte en guardián: detección de ciberataques en tiempo real"
+author: "Hesban Amilcar Argueta Aguilar y Hesban Amilcar Argueta Aguilar"
+site: bookdown::bookdown_site
+date: "`r Sys.Date()`"
+---
+
+
+
+# Cuando la IA se convierte en guardián: detección de ciberataques en tiempo real {#pareja17 }
+
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("autores_seleccionados/a12.png")
+```
+
+
+```{r include= FALSE}
+b_text01 <- 'Revista'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'Re- \
+    vista'
+}
+```
+
+\Begin{multicols}{2}
+
+__*Palabras clave:*__  Ciberseguridad, defensa, inteligencia artificial, detección de amenazas, tiempo real, análisis de anomalías, automatización.
+
+## Introducción
+
+En la era digital, la ciberseguridad es esencial para proteger las infraestructuras críticas y los sistemas han crecido tanto que la información que manejan es enorme y sensible. A ello se suma la proliferación de millones de dispositivos que se conectan a diario, lo que incrementa la superficie de ataque. Con enfoques tradicionales, las defensas ya no resultan suficientes ni eficaces.
+
+
+Ante este escenario, la inteligencia artificial emerge como herramienta clave para detectar, analizar y responder a amenazas en tiempo real, logrando una defensa robusta y automatizada en todo momento que, con las capacidades de aprendizaje automático, detección de anomalías y modelos predictivos ejercen de una mejor manera la defensa que una persona en un formato tradicional de ciberseguridad.
+
+## Artículo 
+
+\bigskip
+
+
+A pesar de lo elegante y tentador del uso de la inteligencia artificial en la mayoría de las situaciones y en este caso específicamente en la ciberseguridad se debe tener muchos aspectos presentes, tradicionalmente en lo modelos de defensa se habla de un gran consumo de recursos y una complejidad muy avanzada para poder interpretarlos y adecuarlos a los sistemas, sin embargo, con la inteligencia artificial esto da un cambio drástico en este aspecto.
+
+Ya que los modelos son más ligeros y tienden a ser sistemas casi en su totalidad autónomo la complejidad no es un problema, pero eso genera nuevas inquietudes y aspectos a tener en cuenta, a pesar que sea más ligero no significa que sea más eficiente, se sabe que la inteligencia artificial interactúa y resuelve en base a conocimiento previo pero los contextos son diferentes y alterables, creando casos distintos por cada eventualidad que se desarrolle, a pesar de que sea más ligero y controlar en el caso crítico de la ciberseguridad.
+
+ELAI propone que la IA debe ser ligera y explicable, interpretar y detectar amenazas en tiempo real siempre mostrando análisis y explicaciones objetivas de sus decisiones, esto es esencial para que los equipos de seguridad tengan la confianza y certeza de que se está realizando para favorecer reacciones y acciones rápidas.[1]
+
+CyberSentinel se presenta como un sistema emergente de detección de amenazas que aborda específicamente la seguridad en sistemas de IA. Este enfoque reconoce que los propios sistemas de inteligencia artificial pueden convertirse en vectores de ataque, por lo que es crucial implementar mecanismos de protección que operen tanto para defender sistemas tradicionales como para proteger la integridad de los modelos de IA utilizados en ciberseguridad. [2]
+
+La implementación práctica de estos sistemas requiere frameworks robustos que puedan procesar grandes volúmenes de datos en tiempo real. LogSHIELD propone un marco de detección de anomalías basado en grafos que utiliza análisis de frecuencias para identificar patrones sospechosos en tiempo real. Este sistema demuestra cómo la combinación de técnicas de análisis gráfico y procesamiento de frecuencias puede mejorar significativamente la precisión de la detección de amenazas, reduciendo tanto los falsos positivos como los falsos negativos.[3]
+
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A12/p1.jpg')
+```
+\figcaption{Comparativa de enfoques de detección de ciberataques con inteligencia artificial.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Comparativa de enfoques de detección de ciberataques con inteligencia artificial.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A12/p1.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+\bigskip
+
+El futuro de la ciberseguridad basada en IA apunta hacia sistemas híbridos que combinen velocidad y capacidad de procesamiento de la inteligencia artificial con la intuición y experiencia humana. La integración de técnicas de explicabilidad permitirá que los analistas de seguridad comprendan mejor las decisiones tomadas por los sistemas automatizados, facilitando la toma de decisiones informadas en situaciones críticas.
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A12/p2.jpg')
+```
+\figcaption{Colaboración humana–IA en ciberseguridad y su papel en arquitecturas híbridas.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Colaboración humana–IA en ciberseguridad y su papel en arquitecturas híbridas.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A12/p2.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+\bigskip
+\bigskip
+
+
+## Conclusiones
+
+La implementación de sistemas tradicionales de ciberseguridad ya no es suficiente frente a amenazas sofisticadas y ataques automatizados; no deben desecharse, sino integrarse con nuevas capacidades de inteligencia artificial. Sistemas como ELAI, CyberSentinel y LogSHIELD muestran que la detección en tiempo real, el análisis predictivo, la explicabilidad de decisiones y la gestión inteligente de incidentes son competencias esenciales que, al aplicarse, fortalecen defensas más adaptativas. Surge la reflexión: ¿en una década o en veinticinco años estas técnicas serán superadas por amenazas más complejas, generando nuevos paradigmas de seguridad? Lo evidente es que los profesionales deben mantenerse a la vanguardia, donde la inteligencia artificial es el guardián digital de nuestro tiempo, y su efectividad dependerá de evolucionar junto a ella, equilibrando automatización y supervisión humana experta
+
+
+
+## Referencias
+
+- [1] Arivazhagan, A., R. Kumar, y G. Manogaran. “Towards Explainable and Lightweight AI for Real-Time Cyber Threat Hunting in Edge Networks.” arXiv preprint, 2025. [https://arxiv.org](https://arxiv.org/pdf/2504.16118).
+
+- [2] Sharma, P., y V. Gupta. “CyberSentinel: An Emergent Threat Detection System for AI Security.” arXiv preprint, 2025.\
+[https://ar5iv.labs.arxiv.org](https://ar5iv.labs.arxiv.org/html/2502.14966)
+
+- [3] Zhang, Y., L. Chen, y H. Wang. “LogSHIELD: A Graph-Based Real-Time Anomaly Detection Framework Using Frequency Analysis.” arXiv preprint, 2024. [https://arxiv.org](https://arxiv.org/pdf/2410.21936)
+
+\End{multicols} 
+
+\medskip

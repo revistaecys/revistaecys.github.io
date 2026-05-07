@@ -1,0 +1,38 @@
+.book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
+    margin: 5px 5px 5px 5px;
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: #364149;
+    background: 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+p.flushright {
+  text-align: right;
+}
+blockquote > p:last-child {
+  text-align: right;
+}
+blockquote > p:first-child {
+  text-align: inherit;
+}
+

@@ -1,0 +1,75 @@
+.caption {
+  color: #777;
+  margin-top: 10px;
+}
+
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.flushright {
+  font-family: "STXingkaiSC-Bold";
+  text-align: right;
+}
+blockquote > p:last-child {
+  text-align: right;
+}
+blockquote > p:first-child {
+  text-align: inherit;
+}
+
+blockquote {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'STKaiti', 'KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
+}
+code {
+  font-family: Monaco, Menlo, "Lucida Console", 'STKaiti', 'KaiTi', 'SimKai', monospace;
+  font-size: 85%;
+}
+
+.book.font-family-0 {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'STKaiti', 'KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
+  font-weight: bold;
+}
+.book.font-family-1 {
+  font-family: 'Pacifico', sans-serif;
+}
+
+.book .book-header, .book .book-summary{
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'STKaiti', 'KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', sans-serif;
+  font-size: 11pt;
+  font-weight: bolder;
+}
+
+.note {
+  font-weight: normal;
+  font-family: "STXinwei";
+  color: darkred;
+  background: whitesmoke 3px top/2em no-repeat;
+  background-image: url("../img/note.png");
+  margin: 1em auto 2em;
+  padding: 1em 1em 1em 3em;
+}
+
+.title {
+  font-family: STXingkaiSC-Bold;
+  text-align: center;
+}
+
+.date {
+  font-family: STXingkaiSC-Bold;
+  text-align: right;
+}
+
+.author {
+  font-family: STXingkaiSC-Bold;
+  text-align: right;
+}
+
+

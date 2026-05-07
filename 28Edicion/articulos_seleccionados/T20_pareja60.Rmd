@@ -1,0 +1,91 @@
+---
+title: "Ingeniería social: el lado humano de las filtraciones de datos."
+author: "Jorge Mario Castañeda Cragua y Kevin Martin Samayoa Urizar"
+site: bookdown::bookdown_site
+date: "`r Sys.Date()`"
+---
+
+
+
+# Ingeniería social: el lado humano de las filtraciones de datos. {#pareja60 }
+
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("autores_seleccionados/a14.png")
+```
+
+
+```{r include= FALSE}
+b_text01 <- 'Revista'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'Re- \
+    vista'
+}
+```
+
+\Begin{multicols}{2}
+
+__*Palabras clave:*__  Ciberseguridad, Phishing, Ingeniería Social, Filtración, Ransomware.
+
+## Introducción
+
+La ciberseguridad debe ser una prioridad en el diseño e implementación de sistemas informáticos. Para ello, se buscan soluciones robustas y tolerantes a ataques. Sin embargo, un aspecto muchas veces ignorado es el elemento humano, un factor crucial pero impredecible en la seguridad digital.
+La educación y el aprendizaje es uno de los campos más afectados por esta nueva tecnología y si bien presenta grandes beneficios, es necesario contextualizar su implementación de una manera adecuada, de tal manera que se facilite el acceso a soluciones tanto a estudiantes como docentes sin impactar de manera negativa en su pensamiento crítico y cognitivo.
+
+Últimamente, los ataques por ingeniería social han aumentado. Comprender esta disciplina es clave para proteger el ecosistema tecnológico. No basta con implementar controles estrictos; cualquier acceso al sistema, sin importar su naturaleza, debe manejarse con extremo cuidado para mantener la seguridad informática.
+
+## Artículo 
+
+\bigskip
+__La penetración de la inteligencia artificial en la educación__
+
+La ingeniería social consiste en la manipulación psicológica del factor humano, considerado el eslabón más débil de un sistema. Los atacantes intentan ganarse la confianza de las personas para que revelen información confidencial o concedan accesos privilegiados, sin necesidad de usar métodos informáticos complejos.[1]
+
+El riesgo de ataques por ingeniería social sigue en aumento debido a nuevas tecnologías que facilitan al atacante herramientas como generación de voces, contenido y textos profesionales, muchas de ellas mediante aplicaciones de inteligencia artificial que se encuentran al alcance de todo público. Estas herramientas incrementan la vulnerabilidad del recurso humano.
+
+Los ataques de ingeniería social se desarrollan en cuatro fases, la primera es la investigación, donde el atacante analiza a la víctima buscando características, hábitos o miedos que permitan iniciar la segunda fase, el “gancho”, que consiste en generar contacto inicial y generar falsa confianza o inducir temor. Durante la tercera fase, mediante técnicas de manipulación, la víctima revela información sensible como contraseñas, números de tarjetas
+o accesos privilegiados, lo que permite al atacante cumplir su objetivo sin usar herramientas tecnológicas avanzadas. La cuarta fase consiste en cortar contacto con la víctima una vez completado el ataque.[2]
+
+Es importante señalar que, desde el primer contacto hasta la culminación del ataque, la víctima suele no percatarse de lo que ocurre. La manipulación psicológica hace que interprete la situación como normal, poniendo en riesgo su sistema de manera inconsiente.
+
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A14/p1.jpg')
+```
+\figcaption{El impacto del error humano en la ciberseguridad.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="El impacto del error humano en la ciberseguridad.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A14/p1.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+Al diseñar un sistema informático, en el apartado de la ciberseguridad, implica realizar un análisis holístico, en donde se incluyan todas las aristas necesarias para garantizar la robustez de este, esto quiere decir, utilizar software actualizado, aplicar parches con periodicidad, implementar buenas prácticas de seguridad y la capacitación del personal humano al cual será
+dirigido este sistema. Por más que se construya un sistema robusto, en términos tecnológicos, si no se considera al recurso humano como parte fundamental en el ámbito de seguridad, este seguirá siendo vulnerable como cualquier otro sistema mal diseñado. Es esencial que las organizaciones reconozcan estas deficiencias y aprendan a fortalecer tanto los recursos
+tecnológicos como humanos para garantizar la seguridad informática y asegurar la calidad del software, ya que la tecnología por sí sola no basta.
+
+
+
+## Conclusiones
+
+La inteligencia artificial está moldeando el futuro de la educación al ofrecernos herramientas poderosas que mejoran el aprendizaje, simplifican las tareas y apoyan tanto a los educadores como a los estudiantes. La IA es un valioso asistente en la educación, en el trabajo, en los negocios, impulsando innovaciones y preservando esa esencia humana que hace que el aprendizaje sea verdaderamente empírico y significativo. Sin embargo, es necesario abordar cuestiones como la integridad académica, la seguridad y la igualdad, y la clave del éxito reside en una integración responsable.
+
+
+
+## Referencias
+
+- [1] Data Protection Commission (Ireland). “Guidance for Organisations on Phishing and Social Engineering Attacks.” Data Protection Commission. Consultado el 21 de agosto de 2025. [https://www.dataprotection.ie](https://www.dataprotection.ie/en/dpc-guidance/guidance-organisations-phishing-and-social-engineering-attacks).
+
+- [2] Fortinet. “¿Qué son los ataques de ingeniería social? Consejos de prevención.” Fortinet. Consultado el 21 de agosto de 2025. [https://www.fortinet.com](https://www.fortinet.com/lat/resources/cyberglossary/social-engineering)
+
+- [3] I.S. Partners, LLC. “Human Error Cybersecurity Statistics.” I.S. Partners Blog, 6 de noviembre de 2024. [https://www.ispartnersllc.com](https://www.ispartnersllc.com/blog/human-error-cybersecurity-statistics/)
+
+- [4] I.S. Partners, LLC. “The Role of Human Error in Cybersecurity.” I.S. Partners Blog, 2024. [https://www.ispartnersllc.com](https://www.ispartnersllc.com/blog/human-error-cybersecurity-statistics/)
+
+- [5] Bonnie, Emily. “60+ Social Engineering Statistics [Updated 2025].” Secureframe Blog, 31 de diciembre de 2024. [https://secureframe.com](https://secureframe.com/blog/social-engineering-statistics)
+
+\End{multicols} 
+
+\medskip

@@ -1,0 +1,193 @@
+% no title page
+\AtBeginDocument{\let\maketitle\relax}
+
+
+% === Secciones automáticas ===
+\usepackage{pdfpages}    % ya lo usas
+\usepackage{ifthen}      % ya lo usas
+\usepackage{background}  % ya lo usas
+
+% Macro: \SectionPDF{<path/pdf>}{<pagina_limite>}
+% Muestra el PDF de la sección e impone el fondo hasta "pagina_limite-1"
+\newcommand{\SectionPDF}[2]{%
+  % Incrusta el PDF completo de la sección
+  \includepdf[pages=-]{#1}%
+  % Aplica fondo en cada página hasta el límite indicado
+  \AddEverypageHook{%
+    \ifthenelse{\value{page}<#2}{%
+      \ifthenelse{\isodd{\value{page}}}{%
+        \backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={%
+          \includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberimpar.pdf}}}%
+      }{%
+        \backgroundsetup{scale=1, color=white, opacity=1, angle=0, contents={%
+          \includegraphics[width=\paperwidth,height=\paperheight]{latex/background_numberpar.pdf}}}%
+      }%
+    }{}%
+    \BgMaterial
+  }%
+}
+
+
+\usepackage{caption2}
+\captionsetup{%
+labelsep=colon,%
+font={footnotesize},%
+aboveskip=0.4\baselineskip,%
+belowskip=0\baselineskip,% deve essere 0 perché regolo lo spazio dal testo con \intextsep
+}%
+
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{1em}
+\usepackage{enumitem}
+\setlist[itemize]{labelindent = \parindent, leftmargin=*}
+
+%\usepackage{framed,color}
+%\definecolor{shadecolor}{RGB}{248,248,248}
+
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
+\renewcommand{\chaptername}{Artículo}
+\addto\captionsspanish{\renewcommand{\chaptername}{Artículo}}
+\addto\captionsspanish{\renewcommand{\contentsname}{Índice General}}
+
+
+\frenchspacing
+\tolerance=5000
+\multicoltolerance=3000 
+
+\raggedbottom
+\raggedcolumns
+
+\setlength{\columnsep}{1em}
+%We want a rule between columns.
+%\setlength\columnseprule{.4pt}
+
+%Tambien queremos asegurarnos de que un nuevo entorno multicols 
+%encuentre suficiente espacio en la parte inferior de la pagina.
+\setlength\premulticols{6\baselineskip}
+
+%Al equilibrar columnas, ignoramos las soluciones que son 
+%demasiado malas. Ademas, si la ultima columna es demasiado mala, 
+%la tipeamos sin estirar.
+\setcounter{columnbadness}{7000}
+\setcounter{finalcolumnbadness}{7000}
+
+\newcommand{\prefacetitlecommand}%
+{\titleformat{\chapter}[display]%
+{\bfseries\large\color{colorlinetitle}}%
+{\relax}%
+{0ex}%
+{{\titlerule[1.2pt]}\filright\color{textlinetitle}}[\color{colorlinetitle}\vspace{0.5ex}{\titlerule[1.2pt]}]%
+}
+
+
+\newcommand{\articletitlecommand}%
+{\titleformat{\chapter}[display]%
+{\bfseries\tiny\raggedright\color{white}}%
+{\relax}%
+{0ex}%
+{}[\color{white}\vspace{0ex}{\titlerule[0pt]}]%
+}
+
+
+
+\newcommand{\sectionCenter}%
+{\titleformat{\section}[block]%
+{\bfseries\large\color{textlinetitle}\filcenter}%
+{\relax}%
+{0ex}%
+{\empty}%
+}
+
+
+\newcommand{\sectionRight}%
+{\titleformat{\section}[block]%
+{\bfseries\large\color{textlinetitle}}%
+{\relax}%
+{0ex}%
+{\empty}%
+}
+
+
+\newcommand{\subsectionRight}%
+{\titleformat{\subsection}[block]%
+{\bfseries\normalsize\color{textlinetitle}}%
+{\relax}%
+{0ex}%
+{\empty}%
+}
+
+
+\usepackage{titletoc}
+\titlecontents{chapter}[3em]
+{\vspace{5mm}}
+{\normalsize\contentslabel[\color{textlinetitle}\thecontentslabel]{2em}\color{black}\itshape\normalsize}
+{\color{black}\itshape\normalsize}
+{\color{colorlinetitle}\titlerule*[.3pc]{.}\color{black}\contentspage}
+
+\newcommand{\tcolorboxcommand}{\begin{tcolorbox}[sharp corners=uphill, colback=newfondo, colframe=newfondo, arc=6mm, boxrule=0mm, boxsep=0mm]}
+
+\newcommand{\photocommand}[2]{%
+\fcolorbox[HTML]{DCEEA7}{DCEEA7}{%
+\begin{minipage}{95.19mm}%
+	\hspace{1mm}%
+	\begin{minipage}{22.49mm}%
+		\vspace{1mm}%
+		\includegraphics[width=22.49mm, height=31.96mm]{#1}%
+		\vspace{1mm}%
+	\end{minipage}%
+	\hspace{2.4mm}%
+	\begin{minipage}{68.80mm}%
+		#2
+	\end{minipage}%
+	\hspace{0.5mm}%
+\end{minipage}%
+}%
+}
+
+\definecolor{fondobiography}{HTML}{DCEEA7}
+
+\NewDocumentEnvironment{photobiography}{m O{}}%
+{%
+\begin{tcolorbox}[colback=fondobiography, colframe=fondobiography, width=97.19mm, boxsep=-2mm, arc=0mm]
+\begin{minipage}{95.19mm}%
+	%\hspace{1mm}%
+	\begin{minipage}{22.49mm}%
+		\vspace{2mm}%
+		\includegraphics[width=22.49mm, height=31.96mm]{#1}%
+		\vspace{2mm}%
+	\end{minipage}%
+	\hspace{2.4mm}%
+	\begin{minipage}{68.80mm}%
+	#2%
+}%
+{%
+	\end{minipage}%
+	%\hspace{0.5mm}%
+\end{minipage}%
+\end{tcolorbox}
+}
+
+
+\newcommand{\spacetext}{\vspace{8.1mm}}
+\newcommand{\minimalspacetext}{\vspace{1mm}}
+\newcommand{\spaceelevenmilis}{\vspace{11mm}}
+\newcommand{\spacetenmilis}{\vspace{10mm}}
+\newcommand{\spaceninemilis}{\vspace{9mm}}
+\newcommand{\spaceeightmilis}{\vspace{8mm}}
+\newcommand{\spacesevenmilis}{\vspace{7mm}}
+\newcommand{\spacesixmilis}{\vspace{6mm}}
+\newcommand{\spacefivemilis}{\vspace{5mm}}
+\newcommand{\spacefourmilis}{\vspace{4mm}}
+\newcommand{\spacethreemilis}{\vspace{3mm}}
+\newcommand{\spacetwomilis}{\vspace{2mm}}
+\newcommand{\spaceinitialeditorialcontenido}{\vspace{8.1mm}}
+\newcommand{\spaceoneminus}{\vspace{-1mm}}
+\newcommand{\spacetwominus}{\vspace{-2mm}}
+\newcommand{\spacefourminus}{\vspace{-4mm}}

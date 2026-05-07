@@ -1,0 +1,62 @@
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  text-align: center;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+blockquote p {
+	display: inline;
+}
+
+.question {
+	background: url(art/question.png) no-repeat;
+	color: #a5a4a4;
+	font-style: italic;
+	margin: 30px;
+	padding: 20px 20px 20px 40px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .rules .info {
+	background-color: #666666;
+	border: 0;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a:link {
+    color: #CC0033;
+}
+.book .book-body .page-wrapper .page-inner section.normal a:visited {
+    color: #CC0033;
+}
+.book .book-body .page-wrapper .page-inner section.normal a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #CC0033;
+}
+.book .book-body .page-wrapper .page-inner section.normal a:active {
+    color: #CC0033;
+}
+
+.book .book-summary nav ul.summary li.chapter.active a:link {
+    color: #CC0033;
+    font-weight: bold;
+}
+.book .book-summary nav ul.summary li a:hover {
+    color: #CC0033;
+    font-weight: bold;
+}
+.book .book-summary nav ul.summary li a:visited {
+    color: #CC0033;
+}
+.book .book-summary nav ul.summary li a:active {
+    color: #CC0033;
+}

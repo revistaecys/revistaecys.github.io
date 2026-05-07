@@ -1,0 +1,12 @@
+
+.editorial_imagen {
+  background: url(..\media\editorial.jpeg);  
+}
+
+.header_imagen {
+  background: url(..\media\header.png);  
+}
+
+.footer_imagen {
+  background: url(..\media\footer.png);  
+}

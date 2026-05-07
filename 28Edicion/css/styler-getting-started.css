@@ -1,0 +1,51 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+
+
+
+pre code {
+  white-space: inherit;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-weight: 300;
+}
+
+h1 {
+  border-bottom: 1px solid black;
+}
+
+.author {
+  font-weight: 300;
+}
+
+.date {
+  font-weight: 300;
+}
+
+.title {
+  font-weight: 300;
+  border-bottom: 0;
+}
+
+.header-section-number {
+  
+}
+
+.foo {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  
+}

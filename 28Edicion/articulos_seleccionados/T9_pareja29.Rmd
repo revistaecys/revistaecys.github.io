@@ -1,0 +1,109 @@
+---
+title: "¿Desarrollador junior y sin experiencia? La batalla del primer empleo"
+author: "Fredy Samuel Quijada Ceballos y José Manuel López Lemus"
+site: bookdown::bookdown_site
+date: "`r Sys.Date()`"
+---
+
+
+
+# ¿Desarrollador junior y sin experiencia? La batalla del primer empleo {#pareja29 }
+
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("autores_seleccionados/a7.png")
+```
+
+
+```{r include= FALSE}
+b_text01 <- 'Revista'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'Re- \
+    vista'
+}
+```
+
+\Begin{multicols}{2}
+
+__*Palabras clave:*__ Junior, desarrollador, empleo, tecnología, experiencia.
+
+## Introducción
+
+Quien se enfrenta al primer empleo como desarrollador descubre muy pronto que “junior” no siempre significa “principiante”. Los portales están llenos de vacantes que piden varios años de experiencia, las entrevistas técnicas recuerdan más a competencias de programación que a lo que generalmente se aprende en los cursos universitarios.
+
+Detrás de esta pared inicial de requisitos contradictorios, existe un camino: perseverancia,autodidactismo y, a veces, un golpe de suerte, pueden abrir esa primera puerta. Pero el desafío no termina al recibir la oferta, es ahí donde comienza la verdadera prueba de fuego: demostrar la capacidad voraz de aprender y adaptarse al ritmo abrumador del mundo laboral real.
+
+## Artículo 
+
+\bigskip
+__La paradoja de la experiencia necesaria__
+
+Alex apagó su computadora con un suspiro. Su bandeja de entrada era un monumento al rechazo en la mayoría de sus solicitudes laborales.Su actual crimen, ser un recién graduado en la licenciatura en Ingeniería en Ciencias y
+Sistemas en un mundo que pide guerreros veteranos para puestos de novato.
+
+Su caso no es aislado, es la norma. Un análisis de vacantes revela la paradoja: una gran parte de las ofertas para desarrolladores junior exigen entre 1 y 3 años de experiencia laboral previa[1], algo paradójico para quienes buscan su primera oportunidad.
+
+\bigskip
+__El muro de la entrevista técnica__
+
+En las entrevistas, el choque era palpable. En la universidad había aprendido a resolver problemas abstractos, y algoritmos complejos. Y lo hacía bien. Pero en su primera entrevista técnica, el interrogatorio era distinto: “¿Has
+trabajado con algún framework de persistencia como Hibernate o JPA?”, “¿Has participado en algún proyecto usando metodologías ágiles como Scrum?”.
+
+Alex balbuceó respuestas teóricas, y solo pensaba que en la universidad se habían centrado en desarrollar los cimientos, no en las herramientas del día a día. La siguiente tabla muestra una comparación entre las habilidades y conocimientos que se enseñan en la universidad versus lo que exige el mercado laboral.
+
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A7/p1.jpg')
+```
+\figcaption{Comparativa vs Mercado Laboral.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Comparativa vs Mercado Laboral.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A7/p1.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+\bigskip
+__Un mercado laboral implacable__
+
+El contexto no ayudaba. Con oleadas de despidos en tech,
+la competencia se había multiplicado[2]. Alex ya no solo rivalizaba con recién graduados, sino con desarrolladores con 2 o 3 años de experiencia dispuestos a aceptar puestos junior con tal de reinsertarse. Cada "No" golpeaba su moral. "¿Y si no estoy hecho para esto?", pensaba. Estaba a punto de rendirse cuando llegó un email diferente: “Invitación a entrevista final”.
+
+\bigskip
+__La oportunidad: una filosofía diferente.__
+
+La entrevista fue diferente desde el inicio. En lugar de un interrogatorio técnico agresivo, fue una conversación honesta sobre su proyecto de grado, su lógica para resolver problemas y su voluntad de aprender. El CTO del startup le explicó: "Aquí no buscamos bibliotecas andantes, buscamos mentes curiosas. Las tecnologías las puedes aprender; las ganas, no". Esa filosofía fue el boleto de entrada que Alex necesitaba. Firmó su contrato con una mezcla de euforia y alivio, creyendo que la parte más difícil había terminado.
+
+Lo que parecía el final del camino era apenas el inicio de una nueva batalla. Alex pasó de un “Hola mundo” universitario a enfrentarse con repositorios gigantes, microservicios y despliegues que parecían otro idioma. El síndrome del impostor apareció rápido: “¿Y si fue un error contratarme?”. Ahí entendió que programar es solo la mitad del reto; la otra mitad es trabajar en equipo, pedir ayuda y aprender a moverse en un mundo donde las tecnologías cambian todo el tiempo.
+
+Al inicio fue agotador: noches de tutoriales, errores y dudas. Pero con cada paso, Alex descubrió algo clave: no importa saberlo todo, importa la actitud. Cada fallo se volvió una lección y cada pequeño logro, un triunfo. Lo que antes parecía imposible como usar Git o Docker terminó siendo parte de su caja de herramientas. El primer empleo no es el final del camino, es el inicio del verdadero aprendizaje. Y aunque la lucha es dura, también es la etapa donde más se crece.
+
+
+
+
+
+\bigskip
+\bigskip
+
+
+## Conclusiones
+
+El caso de Alex refleja la dualidad del primer empleo como desarrollador: la batalla por conseguirlo y la lucha aún más dura por mantenerlo. Lo que inicia como frustración ante los rechazos se transforma en incertidumbre frente al desconocimiento, y poco después, en una carrera de aprendizaje acelerado. El verdadero valor de un junior no está en dominar todas las tecnologías desde el primer día, sino en su capacidad de adaptarse, preguntar y crecer en medio de la presión. Cada error se convierte en un peldaño, cada corrección en un paso hacia la madurez profesional. El camino del primer empleo está lleno de dudas, pero también de descubrimientos que ningún libro enseña. Para quienes apenas comienzan, la lección es clara: no se trata de evitar la batalla, sino de aprender a pelearla con paciencia, disciplina y resiliencia. Porque el primer empleo no es la meta, es apenas el inicio del viaje. 
+
+
+## Referencias
+
+- [1] Codica. “Qué exigen los empleadores a los junior: análisis de vacantes para programadores junior.” Academia de programadores en línea. Accedido el  18 de agosto de 2025. [https://codica.la](https://codica.la/blog/que-exigen-los-empleadores-a-los-junior-analisis-de-vacantes).
+
+- [2] United Code,  “When Will the Tech Job Market Recover? 2025 Hiring Outlook, Layoffs,and Policy Shifts.”  United Code, 2025.  Accedido el 19 de agosto de 2025. [https://unitedcode.net](https://unitedcode.net/when-will-the-tech-job-market-recover-2025-hiring-outlook-layoffsand-policy-shifts/?_x_tr_sl&_x_tr_tl&_x_tr_hl)
+
+- [3] 4GeeksAcademy.“Síndrome del Impostor: El peor enemigo de todo programador junior” 4GeeksAcademy. Accedido el 20 de agosto de 2025. [https://www.4geeksacademy.com](https://4geeksacademy.com/es/tendencias-y-tecnologia/sindrome-del-impostor)
+
+- [4] Stack Overflow.“2024 Developer Survey: Key Insights.” Stack Overflow Research, 2024. Accedido el 20 de agosto de 2025.\
+[https://www.survey.stackoverflow.co](https://survey.stackoverflow.co/2024)
+
+\End{multicols} 
+
+\medskip

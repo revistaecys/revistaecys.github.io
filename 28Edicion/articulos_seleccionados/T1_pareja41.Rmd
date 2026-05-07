@@ -1,0 +1,109 @@
+---
+title: ""
+author: ""
+date: ""
+site: bookdown::bookdown_site
+---
+
+# Más allá de los libros: la inteligencia artificial como el nuevo compañero en el aprendizaje {#pareja41 }
+
+```{r, echo = FALSE, out.width = "100%", fig.align = "center"}
+knitr::include_graphics("../autores_seleccionados/a1.png")
+```
+
+```{r include= FALSE}
+b_text01 <- 'Revista'
+if(identical(knitr:::pandoc_to(),'latex')){
+    b_text01 <- 'Re- \
+    vista'
+}
+```
+
+\begin{multicols}{2}
+
+__*Palabras clave:*__  Educación adaptativa, personalización, sesgo algorítmico, automatización.
+
+## Introducción
+
+La inteligencia artificial se ha convertido en un aspecto importante dentro de varios campos de la sociedad moderna, que va desde el entretenimiento hasta la vida académica de las personas, y si bien existen temas éticos en relación a su uso en cada uno de estos entornos, es innegable la necesidad de aprender a utilizarlo y aprovecharlo como una herramienta más de nuestro día a día.
+
+La educación y el aprendizaje es uno de los campos más afectados por esta nueva tecnología y si bien presenta grandes beneficios, es necesario contextualizar su implementación de una manera adecuada, de tal manera que se facilite el acceso a soluciones tanto a estudiantes como docentes sin impactar de manera negativa en su pensamiento crítico y cognitivo.
+
+## Artículo 
+
+\bigskip
+__La penetración de la inteligencia artificial en la educación__
+
+La inteligencia artificial (IA) ha estado presente en la educación en donde se ha ido
+integrando profundamente en el aprendizaje y la enseñanza en todo el mundo. Esta herramienta mejora la experiencia de aprendizaje, aumenta la eficiencia académica, automatiza tareas administrativas y hace que la educación sea más accesible.[1]
+
+Recientemente estadísticas publicadas por Statista : el portal de estadísticas en línea demostró que un 86% de los estudiantes ya utilizan herramientas de IA en su aprendizaje. Las cifras por sí solas demuestran que el 24% utilizan IA a diario, el 54% la utiliza a diario o semanalmente y por último el 54% la utiliza al menos semanalmente.[2]
+
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A1/p1.jpg')
+```
+\figcaption{Porcentaje de estudiantes que usan IA para la escuela a nivel global.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Porcentaje de estudiantes que usan IA para la escuela a nivel global.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A1/p1.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+\bigskip
+__La inteligencia artificial como una herramienta para la personalización__
+
+Al hacer uso de la inteligencia artificial se busca proporcionar diseños de clases
+personalizadas, dinámicas y enfocadas en una participación estudiantil más activa. El docente actúa como un arquitecto de experiencias, mientras que la tecnología le aporta ideas esteactúa como un soporte para realizar un acercamiento de contenidos a distintos estilos de
+aprendizaje.[3]
+
+
+El objetivo es no perder la vinculación humana, la IA nos ofrece una gran información valiosa sobre el rendimiento o el nivel de actividad de cada estudiante, pero ese lazo afectivo lo construye el docente quien pregunta, se acerca y fomenta esa confianza con los estudiantes.
+
+
+\bigskip
+__Las responsabilidades éticas de los docentes y estudiantes__
+
+Las aplicaciones de IA deben ser monitoreadas de una manera muy crítica, de forma que se eviten sesgos o usos indebidos de los datos. El docente aumentado enseña a mirar la tecnología con precaución y a reflexionar sobre sus implicaciones sociales, no solo únicamente se trabaja la asignatura de turno, también la información de un alumnado que sepa cuestionarse sobre los avances tecnológicos con responsabilidad. Esto implica reconocer desafíos como la equidad, la privacidad y los sesgos, abordándolos con prácticas como auditorías de datos, transparencia y acompañamiento docente.
+
+\Begin{flushleft}
+\minipagetwocolumn
+```{r echo=FALSE, include=identical(knitr:::pandoc_to(), 'latex'), out.width="100%",  fig.align = "center" }
+knitr::include_graphics('imagenes_articulos_seleccionados/A1/p2.jpg')
+```
+\figcaption{Riesgos del uso excesivo de la IA.}
+
+```{r echo=FALSE, include=(knitr:::pandoc_to()!='latex'), fig.cap="Riesgos del uso excesivo de la IA.", fig.align='center'}
+knitr::include_graphics('imagenes_articulos_seleccionados/A1/p2.jpg')
+```
+\minipageendpart
+\End{flushleft}
+
+El estudio, titulado “Uso de IA generativa y resultados de exámenes”, encontró que los estudiantes que utilizaron herramientas de este tipo llegaron a obtener un promedio de 6.71 puntos menos (de 100 posibles) que aquellos que no lo realizaron. Esto nos sugiere que las herramientas IA pueden interferir en el crecimiento de aprendizaje y afectar negativamente los resultados de los exámenes.[1]
+
+
+
+\bigskip
+\bigskip
+
+
+## Conclusiones
+
+La inteligencia artificial está moldeando el futuro de la educación al ofrecernos herramientas poderosas que mejoran el aprendizaje, simplifican las tareas y apoyan tanto a los educadores como a los estudiantes. La IA es un valioso asistente en la educación, en el trabajo, en los negocios, impulsando innovaciones y preservando esa esencia humana que hace que el aprendizaje sea verdaderamente empírico y significativo. Sin embargo, es necesario abordar cuestiones como la integridad académica, la seguridad y la igualdad, y la clave del éxito reside en una integración responsable.
+
+
+
+## Referencias
+
+- [1] Cherneha, Sofia. “AI in Education : Transforming Learning and Teaching in 2025” ScrumLaunch Blog, Febrero,2025. Accedido el 28 de marzo de 2025. [https://scrumlaunch.com](https://www.scrumlaunch.com/blog/ai-in-education-transforming-learning-and-teaching-in-2025).
+
+- [2] Korhonen, Veera. “Share of Students Using IA for Schoolwork Worldwide as of July 2024” Statista, Junio,2025. Accedido el 23 de junio de 2025. [https://www.statista.com](https://www.statista.com/statistics/1498309/usage-of-ai-by-students-worldwide/)
+
+- [3] Equipo Observatorio ProFuturo.“El docente aumentado: la alianza entre docentes e inteligencia artificial”. Observatorio Profuturo, Abril,2025. Accedido el 9 de abril de 2025. [https://www.profuturo.education.com](https://profuturo.education/observatorio/tendencias/el-docente-aumentado-la-alianza-entre-docentes-e-inteligencia-artificial/)
+
+\end{multicols} 
+
+\medskip
