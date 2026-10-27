@@ -1,0 +1,10 @@
+---
+title: "Arquitecto de la torre de marfil"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 25 de la Revista ECYS XXIX](../paginas/imagenes/pagina_25.webp)
+
+![Página 26 de la Revista ECYS XXIX](../paginas/imagenes/pagina_26.webp)

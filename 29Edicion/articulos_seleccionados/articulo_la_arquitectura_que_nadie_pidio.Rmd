@@ -1,0 +1,10 @@
+---
+title: "La arquitectura que nadie pidió"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 21 de la Revista ECYS XXIX](../paginas/imagenes/pagina_21.webp)
+
+![Página 22 de la Revista ECYS XXIX](../paginas/imagenes/pagina_22.webp)

@@ -1,0 +1,10 @@
+---
+title: "El fin del desarrollo de software tradicional"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 45 de la Revista ECYS XXIX](../paginas/imagenes/pagina_45.webp)
+
+![Página 46 de la Revista ECYS XXIX](../paginas/imagenes/pagina_46.webp)

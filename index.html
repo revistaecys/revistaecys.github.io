@@ -1,8 +1,13 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#073e59">
+  <meta name="description" content="Revista de Ciencias, Sistemas y Tecnología de la Escuela de Ingeniería en Ciencias y Sistemas, Universidad de San Carlos de Guatemala. Consulta las ediciones de la revista.">
+  <title>Revista ECYS | Ciencias, Sistemas y Tecnología</title>
+  <!-- Se conserva el identificador de Google Analytics de la página principal. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6HS3KRG7S"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -10,299 +15,510 @@
     gtag('js', new Date());
     gtag('config', 'G-V6HS3KRG7S');
   </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      font-family: Arial;
-    }
-
-    /* Style the tab */
-    .tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
-    }
-
-    /* Style the buttons inside the tab */
-    .tab button {
-      background-color: inherit;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-      font-size: 17px;
-    }
-
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-      background-color: #ddd;
-    }
-
-    /* Create an active/current tablink class */
-    .tab button.active {
-      background-color: #ccc;
-    }
-
-    /* Style the tab content */
-    .tabcontent {
-      display: none;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-top: none;
-    }
+    :root{--navy:#073e59;--navy-deep:#052c42;--navy-black:#052635;--gold:#c89b32;--gold-light:#f8e6b8;--cream:#f8f6f1;--paper:#fff;--ink:#213541;--muted:#60717b;--line:#e0e7e9;--shadow:0 22px 58px rgba(12,43,58,.08);}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased}
+    a{color:inherit} button,input{font:inherit}
+    :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .skip{position:absolute;left:-9999px;top:8px;padding:10px 16px;background:white;z-index:99}.skip:focus{left:8px}
+    .masthead{background:#fff;border-bottom:1px solid var(--line)}
+    .masthead:before{content:"";display:block;height:5px;background:linear-gradient(90deg,var(--navy) 0%,var(--navy) 72%,var(--gold) 72%,var(--gold) 100%)}
+    .masthead-inner{max-width:1512px;margin:auto;padding:20px clamp(20px,3.5vw,54px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .identity{display:flex;gap:16px;align-items:center;text-decoration:none;min-width:0}
+    .brand-mark{display:grid;place-items:center;width:56px;height:56px;border-radius:12px;border:1px solid rgba(7,62,89,.13);background:var(--navy);color:#fff;font-family:Georgia,'Times New Roman',serif;font-weight:bold;font-size:19px;letter-spacing:.02em;flex:none;position:relative}
+    .brand-mark:after{content:"";position:absolute;inset:5px;border:1px solid rgba(200,155,50,.55);border-radius:7px;pointer-events:none}
+    .brand-text{display:flex;flex-direction:column;gap:4px;min-width:0}
+    .brand-text strong{color:var(--navy);font-size:15px;letter-spacing:.035em;font-weight:800}
+    .brand-text small{font-size:11px;color:var(--muted);letter-spacing:.055em;text-transform:uppercase;line-height:1.45}
+    .masthead-note{font-size:12px;font-weight:750;letter-spacing:.13em;text-transform:uppercase;color:var(--navy);display:flex;gap:10px;align-items:center;white-space:nowrap}
+    .masthead-note:before{content:"";width:21px;height:1px;background:var(--gold)}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 90% 27%,rgba(101,153,173,.19),transparent 31%),linear-gradient(124deg,var(--navy-black),var(--navy) 70%,#104e69);color:white}
+    .hero:after{content:"";position:absolute;right:-180px;bottom:-250px;width:610px;height:610px;border:1px solid rgba(255,255,255,.12);border-radius:50%;box-shadow:0 0 0 92px rgba(255,255,255,.018),0 0 0 184px rgba(255,255,255,.017);pointer-events:none}
+    .hero-inner{max-width:1512px;margin:auto;padding:clamp(44px,5vw,76px) clamp(20px,3.5vw,54px) 67px;position:relative;z-index:1}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:#e5bc61;text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:.18em}
+    .eyebrow:before{content:"";width:35px;height:2px;background:var(--gold)}
+    h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(34px,4.2vw,64px);line-height:1.09;font-weight:500;letter-spacing:-.025em;margin:24px 0 18px;max-width:950px}
+    .hero-sub{color:#d2e3e9;max-width:660px;font-size:clamp(14px,1.23vw,17px);line-height:1.8;margin:0}
+    .hero-foot{display:flex;gap:14px;align-items:center;margin-top:29px;flex-wrap:wrap}
+    .feature-chip{border:1px solid rgba(255,255,255,.25);padding:9px 13px;border-radius:100px;font-size:12px;font-weight:650;color:#f4f8fa;background:rgba(255,255,255,.045)}
+    .feature-chip b{color:#efc46c}
+    .layout{max-width:1512px;margin:-27px auto 0;position:relative;z-index:2;padding:0 clamp(20px,3.5vw,54px) 68px;display:grid;grid-template-columns:minmax(244px,306px) minmax(0,1fr);gap:22px;align-items:start}
+    .archive,.reader{background:var(--paper);border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);min-width:0}
+    .archive{overflow:hidden}
+    .archive-heading{padding:23px 22px 19px;border-bottom:1px solid var(--line)}
+    .kicker{color:#a27825;font-size:10px;font-weight:850;letter-spacing:.2em;text-transform:uppercase}
+    .archive-heading h2{font-size:19px;color:var(--navy);margin:7px 0 7px;letter-spacing:-.02em}
+    .archive-heading p{font-size:12px;color:var(--muted);margin:0;line-height:1.55}
+    .archive-search{position:relative;margin:16px 17px 11px}
+    .archive-search:before{content:"";position:absolute;left:14px;top:50%;width:12px;height:12px;border:2px solid #8597a0;border-radius:50%;transform:translateY(-60%);pointer-events:none}
+    .archive-search:after{content:"";position:absolute;left:27px;top:calc(50% + 4px);width:7px;height:2px;background:#8597a0;transform:rotate(48deg);pointer-events:none}
+    .archive-search input{width:100%;background:#f7f9f9;border:1px solid #dee6e8;border-radius:8px;padding:12px 12px 12px 43px;outline:none;font-size:13px;color:var(--navy)}
+    .archive-search input:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(7,62,89,.11)}
+    .archive-list{padding:5px 12px 13px;max-height:750px;overflow:auto;scrollbar-width:thin;scrollbar-color:#bed0d6 transparent}
+    .edition-btn{width:100%;display:flex;align-items:center;gap:12px;padding:11px 10px;border:0;background:transparent;border-radius:8px;text-align:left;cursor:pointer;color:#516873;transition:background .16s ease,color .16s ease;margin:3px 0}
+    .edition-btn:hover{background:#f1f5f5;color:var(--navy)}
+    .edition-btn[aria-current="true"]{background:#eaf2f4;color:var(--navy);font-weight:750}
+    .number{display:grid;place-items:center;width:41px;height:39px;border-radius:7px;border:1px solid #dce7e9;background:#f9fbfb;font-family:Georgia,serif;font-size:17px;color:var(--navy);flex:none}
+    .edition-btn[aria-current="true"] .number{background:var(--navy);color:#fff;border-color:var(--navy)}
+    .edition-name{min-width:0;flex:1;line-height:1.35;font-size:12.5px;font-weight:650}
+    .edition-name small{display:block;font-weight:500;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:#8799a2;margin-top:4px}
+    .arr{font-size:18px;color:#90a8b1;flex:none}
+    .edition-btn[aria-current="true"] .arr{color:var(--navy)}
+    .no-results{color:var(--muted);font-size:13px;text-align:center;padding:25px 12px}
+    .archive-bottom{border-top:1px solid var(--line);padding:15px 22px;color:var(--muted);font-size:11px;line-height:1.65}
+    .refresh-editions{width:100%;background:transparent;border:1px solid #b9cbd1;color:var(--navy);border-radius:7px;padding:9px 12px;margin:0 0 9px;font-weight:750;font-size:12px;cursor:pointer;text-align:center}
+    .refresh-editions:hover{background:#edf4f6}
+    .refresh-editions:disabled{cursor:wait;opacity:.65}
+    .reader{overflow:hidden}
+    .reader-header{padding:24px clamp(18px,2.1vw,32px);display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+    .reader-heading{min-width:0}
+    .reader-heading h2{font-family:Georgia,serif;color:var(--navy);font-size:clamp(23px,2vw,32px);font-weight:500;margin:6px 0;line-height:1.2}
+    .reader-heading p{font-size:12px;color:var(--muted);margin:0;line-height:1.5}
+    .reader-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .link-btn[hidden]{display:none!important}
+    .link-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-align:center;text-decoration:none;border:1px solid var(--navy);padding:11px 14px;border-radius:7px;font-size:12px;font-weight:750;white-space:nowrap;transition:background .16s ease,transform .16s ease}
+    .link-btn:hover{transform:translateY(-1px)}
+    .link-btn.main{background:var(--navy);color:white}
+    .link-btn.main:hover{background:#15536c}
+    .link-btn.secondary{background:white;color:var(--navy);border-color:#b9cbd1}
+    .link-btn.secondary:hover{background:#f4f7f7}
+    .reader-bar{display:flex;align-items:center;gap:11px;padding:10px 19px;background:#f5f8f8;color:#697c84;border-bottom:1px solid var(--line);font-size:11px}
+    .reader-bar .light{width:7px;height:7px;border-radius:50%;background:#64a998;box-shadow:0 0 0 3px rgba(100,169,152,.14)}
+    .reader-bar strong{color:#425b65;font-weight:650}
+    .reader-bar .separator{height:13px;width:1px;background:#d7e3e6}
+    .frame-wrap{position:relative;background:#f5f7f7;min-height:700px}
+    #editionFrame{display:block;border:0;width:100%;height:clamp(700px,83vh,1200px);background:white}
+    .frame-loading{pointer-events:none;position:absolute;inset:0;z-index:2;background:linear-gradient(125deg,#f8faf9,#ebf2f3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;color:#53717e;transition:opacity .18s}
+    .frame-loading.hidden{opacity:0;visibility:hidden}
+    .spinner{width:35px;height:35px;border-radius:50%;border:3px solid #cddde1;border-top-color:var(--gold);animation:spin 1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .frame-loading p{margin:0;font-size:13px}
+    .reader-foot{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;padding:15px 22px;background:white;color:#6b808a;font-size:11px;border-top:1px solid var(--line)}
+    .reader-foot a{color:var(--navy);font-weight:750;text-decoration:none}
+    .reader-foot a:hover{text-decoration:underline}
+    .site-footer{padding:27px clamp(20px,3.5vw,54px) 35px;border-top:1px solid var(--line);background:#fff;color:#667b84;font-size:12px}
+    .site-footer-inner{max-width:1404px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .site-footer strong{color:var(--navy)}
+    @media(max-width:1010px){.layout{grid-template-columns:minmax(215px,260px) minmax(0,1fr);gap:13px}.reader-header{align-items:flex-start}.reader-actions{width:100%}.reader-actions .link-btn{flex:1}.reader-heading h2{font-size:26px}}
+    @media(max-width:760px){.masthead-inner{padding:15px 19px}.brand-mark{width:47px;height:47px;font-size:16px}.brand-text strong{font-size:13px}.brand-text small{font-size:9px}.masthead-note{display:none}.hero-inner{padding:43px 21px 54px}.hero h1{font-size:clamp(32px,8.5vw,46px)}.hero-sub{font-size:14px}.layout{display:block;margin-top:-22px;padding:0 14px 35px}.archive{margin-bottom:15px}.archive-heading{padding:18px}.archive-list{max-height:248px;display:grid;grid-template-columns:1fr 1fr;gap:0 5px}.edition-btn{padding:8px 6px}.edition-name{font-size:11px}.number{width:35px;height:35px;font-size:14px}.arr{display:none}.archive-bottom{display:block;padding:12px 16px}.reader-header{padding:19px}.reader-heading h2{font-size:24px}.reader-actions{width:100%}.reader-actions a{flex:1}.frame-wrap{min-height:520px}#editionFrame{height:75vh;min-height:520px}.reader-bar{flex-wrap:wrap}.reader-foot{padding:13px}.site-footer{padding:22px 18px}}
+    @media(max-width:410px){.archive-list{grid-template-columns:1fr}.archive-list{max-height:225px}.edition-name{font-size:12px}.hero-foot{gap:8px}.feature-chip{font-size:10px}.reader-actions .link-btn{width:100%;flex-basis:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
   </style>
-  <!-- <style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 550px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 550px;
-}
-</style> -->
 </head>
-
 <body>
-
-  <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'ed_vigesimaoctava')" id="defaultOpen">Vigésima Octava
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_vigesimaseptima')" id="defaultOpen">Vigésima Séptima
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_vigesimasexta')" id="defaultOpen">Vigésima Sexta
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_vigesimaquinta')" id="defaultOpen">Vigésima Quinta
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_vigesimacuarta')" id="defaultOpen">Vigésima Cuarta
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_vigesimatercera')" id="defaultOpen">Vigésima Tercera
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_vigesimasegunda')" id="defaultOpen">Vigésima Segunda
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_vigesimaprimera')" id="defaultOpen">Vigésima Primera
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_vigesima')" id="defaultOpen">Vigésima Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_decimonovena')" id="defaultOpen">Décimo Novena
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_decimoctava')" id="defaultOpen">Décimo Octava Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_decimoseptima')" id="defaultOpen">Décimo Séptima
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_decimosexta')" id="defaultOpen">Décimo Sexta Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_decimoquinta')" id="defaultOpen">Décimo Quinta
-      Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_decimocuarta')">Décimo Cuarta Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_decimotercera')">Décimo Tercera Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_decimosegunda')">Décimo Segunda Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_undecima')">Undécima Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_decima')">Décima Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_novena')">Novena Edición</button>
-    <button class="tablinks" onclick="openCity(event, 'ed_segunda')">Segunda Edición</button>
-  </div>
-
-  <div id="ed_vigesimaoctava" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/28Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-  <div id="ed_vigesimaseptima" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/27Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-  <div id="ed_vigesimasexta" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/26edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-  <div id="ed_vigesimaquinta" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/25Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-  <div id="ed_vigesimacuarta" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/24Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_vigesimatercera" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/23Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-    <div id="ed_vigesimasegunda" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/22Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-
-  <div id="ed_vigesimaprimera" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/21Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-
-  <div id="ed_vigesima" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/20Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_decimonovena" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/19Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_decimoctava" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/18Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_decimoseptima" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/17Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_decimosexta" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/16Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_decimoquinta" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/15Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_decimocuarta" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/14Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_decimotercera" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/13Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_decimosegunda" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/12Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_undecima" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/11Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_decima" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/10Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_novena" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/09Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
-  <div id="ed_segunda" class="tabcontent">
-    <center>
-      <iframe style="width:100%; height:550px;" src="https://revistaecys.github.io/02Edicion/" frameborder="0"
-        allowfullscreen=""></iframe>
-    </center>
-  </div>
-
+  <a class="skip" href="#lector">Saltar al lector de ediciones</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="identity" href="#inicio" aria-label="Revista ECYS — inicio">
+        <span class="brand-mark" aria-hidden="true">ECYS</span>
+        <span class="brand-text"><strong>CIENCIAS, SISTEMAS Y TECNOLOGÍA</strong><small>Escuela de Ingeniería en Ciencias y Sistemas<br>Universidad de San Carlos de Guatemala</small></span>
+      </a>
+      <span class="masthead-note">Publicación académica</span>
+    </div>
+  </header>
+  <section class="hero" id="inicio" aria-labelledby="titulo">
+    <div class="hero-inner">
+      <div class="eyebrow">Revista ECYS · Archivo editorial</div>
+      <h1 id="titulo">Conocimiento que inspira.<br>Ideas que transforman.</h1>
+      <p class="hero-sub">Explora las ediciones de la Revista de Ciencias, Sistemas y Tecnología. Un espacio para compartir investigación, experiencias e ideas de nuestra comunidad académica.</p>
+      <div class="hero-foot">
+        <span class="feature-chip"><b id="featuredEdition">Edición XXIX</b> · <span id="featuredSubtitle">Del diseño al código</span></span>
+        <span class="feature-chip">Consulta en línea</span>
+      </div>
+    </div>
+  </section>
+  <main id="lector" class="layout">
+    <aside class="archive" aria-labelledby="archive-title">
+      <div class="archive-heading">
+        <div class="kicker">Colección digital</div>
+        <h2 id="archive-title">Archivo de ediciones</h2>
+        <p>Selecciona una edición para visualizarla en el lector.</p>
+      </div>
+      <div class="archive-search"><label for="searchEdition" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Buscar edición</label><input id="searchEdition" type="search" autocomplete="off" placeholder="Buscar edición..." aria-label="Buscar ediciones"></div>
+      <nav class="archive-list" id="editionList" aria-label="Ediciones disponibles"></nav>
+      <div class="archive-bottom">
+        <button type="button" id="refreshEditions" class="refresh-editions">↻ Buscar nuevas ediciones</button>
+        <div id="archiveStatus" role="status" aria-live="polite">Comprobando nuevas ediciones publicadas…</div>
+      </div>
+    </aside>
+    <article class="reader" aria-labelledby="editionTitle">
+      <div class="reader-header">
+        <div class="reader-heading"><div class="kicker" id="readerKicker">Número más reciente</div><h2 id="editionTitle">Vigésima Novena Edición</h2><p id="readerDescription">Revista ECYS · Explora esta edición sin salir del sitio.</p></div>
+        <div class="reader-actions">
+          <a id="downloadPdf" class="link-btn secondary" href="29Edicion/Revista_ECYS_XXIX.pdf" target="_blank" rel="noopener noreferrer" title="Abrir PDF de la Edición XXIX">Ver PDF</a>
+          <a id="openEdition" class="link-btn main" href="29Edicion/index.html" target="_blank" rel="noopener noreferrer">Abrir edición <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="reader-bar"><span class="light" aria-hidden="true"></span><strong>Visor de la revista</strong><span class="separator" aria-hidden="true"></span><span id="currentPath">29Edicion/index.html</span></div>
+      <div class="frame-wrap">
+        <div class="frame-loading" id="frameLoading" role="status" aria-live="polite"><div class="spinner" aria-hidden="true"></div><p>Cargando la edición seleccionada…</p></div>
+        <iframe id="editionFrame" title="Vista de la Revista ECYS — Vigésima Novena Edición" src="29Edicion/index.html" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reader-foot"><span>¿No se visualiza correctamente el contenido incrustado?</span><a id="openFallback" href="29Edicion/index.html" target="_blank" rel="noopener noreferrer">Abrir en una pestaña nueva ↗</a></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="site-footer-inner"><span><strong>Revista ECYS</strong> · Ciencias, Sistemas y Tecnología</span><span>Universidad de San Carlos de Guatemala</span></div></footer>
   <script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    'use strict';
+    const editions = [
+  {
+    "id": "ed_vigesimanovena",
+    "edition": 29,
+    "name": "Vigésima Novena Edición",
+    "url": "29Edicion/index.html"
+  },
+  {
+    "id": "ed_vigesimaoctava",
+    "edition": 28,
+    "name": "Vigésima Octava\n      Edición",
+    "url": "https://revistaecys.github.io/28Edicion/"
+  },
+  {
+    "id": "ed_vigesimaseptima",
+    "edition": 27,
+    "name": "Vigésima Séptima\n      Edición",
+    "url": "https://revistaecys.github.io/27Edicion/"
+  },
+  {
+    "id": "ed_vigesimasexta",
+    "edition": 26,
+    "name": "Vigésima Sexta\n      Edición",
+    "url": "https://revistaecys.github.io/26edicion/"
+  },
+  {
+    "id": "ed_vigesimaquinta",
+    "edition": 25,
+    "name": "Vigésima Quinta\n      Edición",
+    "url": "https://revistaecys.github.io/25Edicion/"
+  },
+  {
+    "id": "ed_vigesimacuarta",
+    "edition": 24,
+    "name": "Vigésima Cuarta\n      Edición",
+    "url": "https://revistaecys.github.io/24Edicion/"
+  },
+  {
+    "id": "ed_vigesimatercera",
+    "edition": 23,
+    "name": "Vigésima Tercera\n      Edición",
+    "url": "https://revistaecys.github.io/23Edicion/"
+  },
+  {
+    "id": "ed_vigesimasegunda",
+    "edition": 22,
+    "name": "Vigésima Segunda\n      Edición",
+    "url": "https://revistaecys.github.io/22Edicion/"
+  },
+  {
+    "id": "ed_vigesimaprimera",
+    "edition": 21,
+    "name": "Vigésima Primera\n      Edición",
+    "url": "https://revistaecys.github.io/21Edicion/"
+  },
+  {
+    "id": "ed_vigesima",
+    "edition": 20,
+    "name": "Vigésima Edición",
+    "url": "https://revistaecys.github.io/20Edicion/"
+  },
+  {
+    "id": "ed_decimonovena",
+    "edition": 19,
+    "name": "Décimo Novena\n      Edición",
+    "url": "https://revistaecys.github.io/19Edicion/"
+  },
+  {
+    "id": "ed_decimoctava",
+    "edition": 18,
+    "name": "Décimo Octava Edición",
+    "url": "https://revistaecys.github.io/18Edicion/"
+  },
+  {
+    "id": "ed_decimoseptima",
+    "edition": 17,
+    "name": "Décimo Séptima\n      Edición",
+    "url": "https://revistaecys.github.io/17Edicion/"
+  },
+  {
+    "id": "ed_decimosexta",
+    "edition": 16,
+    "name": "Décimo Sexta Edición",
+    "url": "https://revistaecys.github.io/16Edicion/"
+  },
+  {
+    "id": "ed_decimoquinta",
+    "edition": 15,
+    "name": "Décimo Quinta\n      Edición",
+    "url": "https://revistaecys.github.io/15Edicion/"
+  },
+  {
+    "id": "ed_decimocuarta",
+    "edition": 14,
+    "name": "Décimo Cuarta Edición",
+    "url": "https://revistaecys.github.io/14Edicion/"
+  },
+  {
+    "id": "ed_decimotercera",
+    "edition": 13,
+    "name": "Décimo Tercera Edición",
+    "url": "https://revistaecys.github.io/13Edicion/"
+  },
+  {
+    "id": "ed_decimosegunda",
+    "edition": 12,
+    "name": "Décimo Segunda Edición",
+    "url": "https://revistaecys.github.io/12Edicion/"
+  },
+  {
+    "id": "ed_undecima",
+    "edition": 11,
+    "name": "Undécima Edición",
+    "url": "https://revistaecys.github.io/11Edicion/"
+  },
+  {
+    "id": "ed_decima",
+    "edition": 10,
+    "name": "Décima Edición",
+    "url": "https://revistaecys.github.io/10Edicion/"
+  },
+  {
+    "id": "ed_novena",
+    "edition": 9,
+    "name": "Novena Edición",
+    "url": "https://revistaecys.github.io/09Edicion/"
+  },
+  {
+    "id": "ed_segunda",
+    "edition": 2,
+    "name": "Segunda Edición",
+    "url": "https://revistaecys.github.io/02Edicion/"
+  }
+];
+    const list = document.getElementById('editionList');
+    const search = document.getElementById('searchEdition');
+    const frame = document.getElementById('editionFrame');
+    const loading = document.getElementById('frameLoading');
+    const editionTitle = document.getElementById('editionTitle');
+    const readerKicker = document.getElementById('readerKicker');
+    const readerDescription = document.getElementById('readerDescription');
+    const currentPath = document.getElementById('currentPath');
+    const openEdition = document.getElementById('openEdition');
+    const openFallback = document.getElementById('openFallback');
+    const downloadPdf = document.getElementById('downloadPdf');
+    let currentEdition = 29;
+    let userHasChosenEdition = /^#edicion=\d+$/.test(location.hash);
+    const roman = n => { const vals=[[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']]; let s=''; for (const [v,c] of vals){while(n>=v){s+=c;n-=v}} return s; };
+    const latestEditionNumber = () => Math.max(...editions.map(e=>e.edition));
+    function futureEditionName(n) {
+      const tens={30:'Trigésima',40:'Cuadragésima',50:'Quincuagésima',60:'Sexagésima',70:'Septuagésima',80:'Octogésima',90:'Nonagésima'};
+      const units=['','Primera','Segunda','Tercera','Cuarta','Quinta','Sexta','Séptima','Octava','Novena'];
+      if(n>=30 && n<100) {
+        const t=Math.floor(n/10)*10, u=n%10;
+        return `${tens[t]}${u?' '+units[u]:''} Edición`;
       }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      return `Edición ${roman(n)}`;
+    }
+    function normalized(value){return value.toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();}
+    function renderList(query=''){
+      const value=normalized(query);
+      list.replaceChildren();
+      let shown=0;
+      for(const edition of editions){
+        if(value && !normalized(edition.name + ' '+edition.edition+' '+roman(edition.edition)).includes(value))continue;
+        shown++;
+        const b=document.createElement('button');
+        b.type='button'; b.className='edition-btn';
+        b.dataset.edition=String(edition.edition);
+        b.setAttribute('aria-current', String(edition.edition===currentEdition));
+        const number=document.createElement('span');number.className='number'; number.textContent=roman(edition.edition);if(number.textContent.length>4)number.style.fontSize=number.textContent.length>=7?'9px':number.textContent.length===6?'10px':'11.5px';
+        const name=document.createElement('span');name.className='edition-name';name.textContent=edition.name;
+        if(edition.edition===latestEditionNumber()){const small=document.createElement('small');small.textContent='Edición más reciente';name.appendChild(small);}
+        const arrow=document.createElement('span');arrow.className='arr';arrow.textContent='›';arrow.setAttribute('aria-hidden','true');
+        b.append(number,name,arrow);b.addEventListener('click',()=>{userHasChosenEdition=true;selectEdition(edition.edition,true);});
+        list.appendChild(b);
       }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
+      if(!shown){const p=document.createElement('p');p.className='no-results';p.textContent='No se encontraron ediciones.';list.appendChild(p);}
+    }
+    function selectEdition(number,updateHash=false){
+      const item=editions.find(x=>x.edition===number);
+      if(!item)return;
+      const changed=currentEdition!==number || frame.getAttribute('src')!==item.url;
+      currentEdition=number;
+      editionTitle.textContent=item.name;
+      const latest = latestEditionNumber();
+      readerKicker.textContent=number===latest?'Número más reciente':'Archivo histórico';
+      readerDescription.textContent=number===29?'Edición XXIX · Del diseño al código':(number===latest?'Revista ECYS · Publicación más reciente':'Revista ECYS · Edición del archivo histórico');
+      currentPath.textContent=item.url;
+      openEdition.href=item.url;
+      openFallback.href=item.url;
+      downloadPdf.hidden=number!==29;
+      frame.title='Vista de la Revista ECYS — '+item.name;
+      renderList(search.value);
+      if(changed){loading.classList.remove('hidden');frame.src=item.url;}
+      if(updateHash){history.replaceState(null,'','#edicion='+number);}
+    }
+    frame.addEventListener('load',()=>loading.classList.add('hidden'));
+    function readHash(){const m=location.hash.match(/^#edicion=(\d+)$/);return m?Number(m[1]):latestEditionNumber();}
+    window.addEventListener('hashchange',()=>{
+      userHasChosenEdition=/^#edicion=\d+$/.test(location.hash);
+      selectEdition(readHash());
+    });
+    search.addEventListener('input',()=>renderList(search.value));
+
+    // Detección híbrida. El servidor estático no ofrece un índice de carpetas:
+    // 1) Verificamos directamente rutas del propio sitio (funciona también en localhost).
+    // 2) Complementamos con la API pública de GitHub para encontrar números no consecutivos.
+    // Nunca se requiere un token ni se depende exclusivamente de GitHub API.
+    const REPOSITORY_DIRECTORIES='https://api.github.com/repos/revistaecys/revistaecys.github.io/contents/?ref=master';
+    const CACHE_KEY='ecys-ediciones-publicadas-v2';
+    const archiveStatus=document.getElementById('archiveStatus');
+    const refreshButton=document.getElementById('refreshEditions');
+    const featuredEdition=document.getElementById('featuredEdition');
+    const featuredSubtitle=document.getElementById('featuredSubtitle');
+    let detectInProgress=false;
+    let discoveredFolders=new Set();
+
+    function editionFromFolder(folder) {
+      if(typeof folder!=='string')return null;
+      const plain=folder.normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+      const match=/^(\d{1,4})Ed(?:ic|is)ion$/i.exec(plain);
+      if(!match)return null;
+      const number=Number(match[1]);
+      if(number<30 || number>3999)return null;
+      return {edition:number,folder,url:`${folder}/index.html`};
     }
 
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+    function addFutureEditions(folders) {
+      for(const folder of folders){
+        const candidate=editionFromFolder(folder);
+        if(!candidate)continue;
+        const existing=editions.find(e=>e.edition===candidate.edition);
+        if(existing){
+          // Prioridad a Edicion (correcto) respecto de Edision (variante).
+          if(!/Edicion\/index\.html$/i.test(existing.url) && /Edicion$/i.test(candidate.folder)){
+            existing.url=candidate.url;
+          }
+          continue;
+        }
+        editions.push({id:`ed_${candidate.edition}`,edition:candidate.edition,
+          name:futureEditionName(candidate.edition),url:candidate.url});
+      }
+      editions.sort((a,b)=>b.edition-a.edition);
+      const newest=latestEditionNumber();
+      featuredEdition.textContent=`Edición ${roman(newest)}`;
+      featuredSubtitle.textContent=newest===29?'Del diseño al código':'Última edición publicada';
+      selectEdition(userHasChosenEdition?readHash():newest);
+    }
+
+    function readCache(){
+      try {
+        const v=JSON.parse(localStorage.getItem(CACHE_KEY)||'null');
+        return v && Array.isArray(v.folders)?v.folders:[];
+      }catch{return [];}
+    }
+    function saveCache(){
+      try{localStorage.setItem(CACHE_KEY,JSON.stringify({at:Date.now(),folders:[...discoveredFolders]}));}
+      catch{/* El navegador puede bloquear almacenamiento. */}
+    }
+    function incorporate(folders) {
+      let changed=false;
+      for(const folder of folders){
+        if(editionFromFolder(folder) && !discoveredFolders.has(folder)){
+          discoveredFolders.add(folder);changed=true;
+        }
+      }
+      if(changed){
+        addFutureEditions(discoveredFolders);
+        saveCache();
+        archiveStatus.textContent=`Detectadas ${editions.length} ediciones · Más reciente: ${roman(latestEditionNumber())}.`;
+      }
+    }
+
+    async function accessible(relativePath, timeoutMs=4500) {
+      // HEAD consulta estado sin descargar el HTML completo (importante para el lector).
+      const controller=new AbortController();
+      const timeout=setTimeout(()=>controller.abort(),timeoutMs);
+      try {
+        const response=await fetch(relativePath,{method:'HEAD',cache:'no-store',signal:controller.signal});
+        return response.ok;
+      }catch{return false;}
+      finally{clearTimeout(timeout);}
+    }
+    async function probeNumber(number){
+      // Nombres realmente existentes: se distingue entre Edicion y Edision.
+      const variants=[`${number}Edicion`,`${number}Edision`,`${number}edicion`,`${number}edision`];
+      for(const folder of variants){
+        if(await accessible(`${folder}/index.html`))return folder;
+      }
+      return null;
+    }
+    async function probeOwnSite() {
+      // El recorrido cubre la XXX y siguientes, extendiendo el rango cuando descubre más.
+      // La API complementaria encuentra numeraciones con saltos grandes.
+      let number=30;
+      let maxNumber=43;
+      const absoluteLimit=180;
+      while(number<=maxNumber && number<=absoluteLimit){
+        const batch=Array.from({length:Math.min(6,maxNumber-number+1)},(_,i)=>number+i);
+        const found=await Promise.all(batch.map(probeNumber));
+        const named=found.filter(Boolean);
+        if(named.length)incorporate(named); // Mostrar 30 tan pronto sea detectada.
+        const last=latestEditionNumber();
+        maxNumber=Math.min(absoluteLimit,Math.max(43,last+12));
+        number+=batch.length;
+      }
+    }
+    async function probeGitHubApi(){
+      const controller=new AbortController();
+      const timeout=setTimeout(()=>controller.abort(),9000);
+      try {
+        const response=await fetch(REPOSITORY_DIRECTORIES,{
+          headers:{Accept:'application/vnd.github+json'},cache:'no-store',signal:controller.signal
+        });
+        if(!response.ok)throw new Error(`API HTTP ${response.status}`);
+        const entries=await response.json();
+        if(!Array.isArray(entries))throw new Error('Respuesta inesperada');
+        const candidates=entries.filter(x=>x && x.type==='dir')
+          .map(x=>editionFromFolder(x.name)).filter(Boolean);
+        const checked=await Promise.all(candidates.map(async x=>
+          await accessible(x.url) ? x.folder : null));
+        incorporate(checked.filter(Boolean));
+        return true;
+      }catch(error){
+        console.info('ECYS: API de GitHub no disponible; se mantiene la comprobación local.',error.message);
+        return false;
+      }finally{clearTimeout(timeout);}
+    }
+    async function detectPublishedEditions(force=false){
+      if(detectInProgress)return;
+      if(!/^https?:$/.test(location.protocol)){
+        archiveStatus.textContent='Para detectar carpetas locales, abre el sitio con un servidor HTTP (no con file://).';
+        return;
+      }
+      detectInProgress=true;
+      refreshButton.disabled=true;
+      refreshButton.textContent='Comprobando ediciones…';
+      archiveStatus.textContent='Buscando carpetas nuevas en este sitio…';
+      if(!force)incorporate(readCache());
+      try {
+        // Ambas búsquedas se ejecutan independientemente. Si GitHub API devuelve 403,
+        // la comprobación de /30Edicion/index.html sigue funcionando.
+        const [_,apiOk]=await Promise.all([probeOwnSite(),probeGitHubApi()]);
+        saveCache();
+        archiveStatus.textContent=`${editions.length} ediciones disponibles. Última: ${roman(latestEditionNumber())}.`
+          +(apiOk?'':' (Comprobación directa; API no disponible).');
+      }finally {
+        detectInProgress=false;
+        refreshButton.disabled=false;
+        refreshButton.textContent='↻ Buscar nuevas ediciones';
+      }
+    }
+    refreshButton.addEventListener('click',()=>detectPublishedEditions(true));
+
+    selectEdition(editions.some(e=>e.edition===readHash())?readHash():29);
+    detectPublishedEditions();
   </script>
-
 </body>
-
 </html>

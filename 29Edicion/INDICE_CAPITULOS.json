@@ -1,0 +1,226 @@
+[
+  {
+    "level": 1,
+    "title": "Homenaje · Álvaro Giovanni Longo Morales",
+    "page": 2,
+    "end": 3,
+    "file": "00_homenaje.html",
+    "section": 0
+  },
+  {
+    "level": 1,
+    "title": "Autoridades y equipo editorial",
+    "page": 4,
+    "end": 4,
+    "file": "00_organigrama.html",
+    "section": 0
+  },
+  {
+    "level": 1,
+    "title": "Editorial - Después del asombro viene la responsabilidad",
+    "page": 5,
+    "end": 5,
+    "file": "00_preface.html",
+    "section": 0
+  },
+  {
+    "level": 1,
+    "title": "SECCIÓN 1 · Gobernanza de datos y responsabilidad humana",
+    "page": 7,
+    "end": 7,
+    "file": "00_seccion1.html",
+    "section": 1
+  },
+  {
+    "level": 2,
+    "title": "Entrevista · Kevin Aragón",
+    "page": 8,
+    "end": 9,
+    "file": "entrevista_kevin_aragon.html",
+    "section": 1
+  },
+  {
+    "level": 2,
+    "title": "Cuando la IA se equivoca: ¿quién responde?",
+    "page": 10,
+    "end": 11,
+    "file": "articulo_cuando_la_ia_se_equivoca_quien_responde.html",
+    "section": 1
+  },
+  {
+    "level": 2,
+    "title": "El dilema de los privilegios",
+    "page": 12,
+    "end": 13,
+    "file": "articulo_el_dilema_de_los_privilegios.html",
+    "section": 1
+  },
+  {
+    "level": 1,
+    "title": "SECCIÓN 2 · Análisis y arquitectura",
+    "page": 14,
+    "end": 14,
+    "file": "00_seccion2.html",
+    "section": 2
+  },
+  {
+    "level": 2,
+    "title": "Entrevista · Julio Marroquín",
+    "page": 15,
+    "end": 16,
+    "file": "entrevista_julio_marroquin.html",
+    "section": 2
+  },
+  {
+    "level": 2,
+    "title": "Programar no es suficiente",
+    "page": 17,
+    "end": 18,
+    "file": "articulo_programar_no_es_suficiente.html",
+    "section": 2
+  },
+  {
+    "level": 2,
+    "title": "De la visión al código",
+    "page": 19,
+    "end": 20,
+    "file": "articulo_de_la_vision_al_codigo.html",
+    "section": 2
+  },
+  {
+    "level": 2,
+    "title": "La arquitectura que nadie pidió",
+    "page": 21,
+    "end": 22,
+    "file": "articulo_la_arquitectura_que_nadie_pidio.html",
+    "section": 2
+  },
+  {
+    "level": 2,
+    "title": "Reaccionar a tiempo",
+    "page": 23,
+    "end": 24,
+    "file": "articulo_reaccionar_a_tiempo.html",
+    "section": 2
+  },
+  {
+    "level": 2,
+    "title": "Arquitecto de la torre de marfil",
+    "page": 25,
+    "end": 26,
+    "file": "articulo_arquitecto_de_la_torre_de_marfil.html",
+    "section": 2
+  },
+  {
+    "level": 2,
+    "title": "Comunicación efectiva entre analistas, arquitectos y programadores",
+    "page": 27,
+    "end": 28,
+    "file": "articulo_comunicacion_efectiva_entre_analistas_arquitectos_y_programa.html",
+    "section": 2
+  },
+  {
+    "level": 1,
+    "title": "SECCIÓN 3 · Seguridad, despliegue y operación",
+    "page": 29,
+    "end": 29,
+    "file": "00_seccion3.html",
+    "section": 3
+  },
+  {
+    "level": 2,
+    "title": "Entrevista · Marlon Francisco Orellana López",
+    "page": 30,
+    "end": 31,
+    "file": "entrevista_marlon_orellana.html",
+    "section": 3
+  },
+  {
+    "level": 2,
+    "title": "La seguridad no se agrega al final",
+    "page": 32,
+    "end": 33,
+    "file": "articulo_la_seguridad_no_se_agrega_al_final.html",
+    "section": 3
+  },
+  {
+    "level": 2,
+    "title": "Cómo evitar que la responsabilidad compartida se diluya",
+    "page": 34,
+    "end": 35,
+    "file": "articulo_como_evitar_que_la_responsabilidad_compartida_se_diluya.html",
+    "section": 3
+  },
+  {
+    "level": 2,
+    "title": "Compila hoy, rompe mañana",
+    "page": 36,
+    "end": 37,
+    "file": "articulo_compila_hoy_rompe_manana.html",
+    "section": 3
+  },
+  {
+    "level": 1,
+    "title": "SECCIÓN 4 · Programación e inteligencia computacional",
+    "page": 38,
+    "end": 38,
+    "file": "00_seccion4.html",
+    "section": 4
+  },
+  {
+    "level": 2,
+    "title": "Entrevista · Luis Fernando Cajas",
+    "page": 39,
+    "end": 40,
+    "file": "entrevista_luis_cajas.html",
+    "section": 4
+  },
+  {
+    "level": 2,
+    "title": "¿Reemplazo o transformación? El impacto de la IA en la programación",
+    "page": 41,
+    "end": 42,
+    "file": "articulo_reemplazo_o_transformacion_el_impacto_de_la_ia_en_la_program.html",
+    "section": 4
+  },
+  {
+    "level": 2,
+    "title": "Generado por IA, aprobado por ti",
+    "page": 43,
+    "end": 44,
+    "file": "articulo_generado_por_ia_aprobado_por_ti.html",
+    "section": 4
+  },
+  {
+    "level": 2,
+    "title": "El fin del desarrollo de software tradicional",
+    "page": 45,
+    "end": 46,
+    "file": "articulo_el_fin_del_desarrollo_de_software_tradicional.html",
+    "section": 4
+  },
+  {
+    "level": 1,
+    "title": "SECCIÓN 5 · Personas, documentación y continuidad",
+    "page": 47,
+    "end": 47,
+    "file": "00_seccion5.html",
+    "section": 5
+  },
+  {
+    "level": 2,
+    "title": "Entrevista · Víctor Castellanos",
+    "page": 48,
+    "end": 49,
+    "file": "entrevista_victor_castellanos.html",
+    "section": 5
+  },
+  {
+    "level": 2,
+    "title": "Del desarrollador al equipo: conocimiento para un software que perdure",
+    "page": 50,
+    "end": 51,
+    "file": "articulo_del_desarrollador_al_equipo_conocimiento_para_un_software_qu.html",
+    "section": 5
+  }
+]

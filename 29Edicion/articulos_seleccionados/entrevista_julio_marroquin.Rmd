@@ -1,0 +1,10 @@
+---
+title: "Entrevista · Julio Marroquín"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 15 de la Revista ECYS XXIX](../paginas/imagenes/pagina_15.webp)
+
+![Página 16 de la Revista ECYS XXIX](../paginas/imagenes/pagina_16.webp)

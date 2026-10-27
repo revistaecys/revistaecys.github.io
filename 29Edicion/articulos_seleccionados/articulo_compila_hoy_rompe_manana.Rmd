@@ -1,0 +1,10 @@
+---
+title: "Compila hoy, rompe mañana"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 36 de la Revista ECYS XXIX](../paginas/imagenes/pagina_36.webp)
+
+![Página 37 de la Revista ECYS XXIX](../paginas/imagenes/pagina_37.webp)

@@ -1,0 +1,10 @@
+---
+title: "Entrevista · Kevin Aragón"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 8 de la Revista ECYS XXIX](../paginas/imagenes/pagina_08.webp)
+
+![Página 9 de la Revista ECYS XXIX](../paginas/imagenes/pagina_09.webp)

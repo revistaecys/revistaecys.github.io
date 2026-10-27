@@ -1,0 +1,10 @@
+---
+title: "Generado por IA, aprobado por ti"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 43 de la Revista ECYS XXIX](../paginas/imagenes/pagina_43.webp)
+
+![Página 44 de la Revista ECYS XXIX](../paginas/imagenes/pagina_44.webp)

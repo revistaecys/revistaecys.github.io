@@ -1,0 +1,10 @@
+---
+title: "Comunicación efectiva entre analistas, arquitectos y programadores"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 27 de la Revista ECYS XXIX](../paginas/imagenes/pagina_27.webp)
+
+![Página 28 de la Revista ECYS XXIX](../paginas/imagenes/pagina_28.webp)

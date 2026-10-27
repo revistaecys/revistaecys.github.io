@@ -1,0 +1,10 @@
+---
+title: "La seguridad no se agrega al final"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 32 de la Revista ECYS XXIX](../paginas/imagenes/pagina_32.webp)
+
+![Página 33 de la Revista ECYS XXIX](../paginas/imagenes/pagina_33.webp)

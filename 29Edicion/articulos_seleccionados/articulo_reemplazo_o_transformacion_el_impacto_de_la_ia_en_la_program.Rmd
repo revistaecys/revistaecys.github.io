@@ -1,0 +1,10 @@
+---
+title: "¿Reemplazo o transformación? El impacto de la IA en la programación"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 41 de la Revista ECYS XXIX](../paginas/imagenes/pagina_41.webp)
+
+![Página 42 de la Revista ECYS XXIX](../paginas/imagenes/pagina_42.webp)

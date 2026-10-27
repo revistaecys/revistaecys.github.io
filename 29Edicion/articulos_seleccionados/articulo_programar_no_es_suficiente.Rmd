@@ -1,0 +1,10 @@
+---
+title: "Programar no es suficiente"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 17 de la Revista ECYS XXIX](../paginas/imagenes/pagina_17.webp)
+
+![Página 18 de la Revista ECYS XXIX](../paginas/imagenes/pagina_18.webp)

@@ -1,0 +1,10 @@
+---
+title: "Entrevista · Luis Fernando Cajas"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 39 de la Revista ECYS XXIX](../paginas/imagenes/pagina_39.webp)
+
+![Página 40 de la Revista ECYS XXIX](../paginas/imagenes/pagina_40.webp)

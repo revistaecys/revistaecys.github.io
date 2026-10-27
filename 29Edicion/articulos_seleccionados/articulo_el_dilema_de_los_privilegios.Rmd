@@ -1,0 +1,10 @@
+---
+title: "El dilema de los privilegios"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 12 de la Revista ECYS XXIX](../paginas/imagenes/pagina_12.webp)
+
+![Página 13 de la Revista ECYS XXIX](../paginas/imagenes/pagina_13.webp)

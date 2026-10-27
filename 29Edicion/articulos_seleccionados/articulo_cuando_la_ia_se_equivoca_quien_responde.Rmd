@@ -1,0 +1,10 @@
+---
+title: "Cuando la IA se equivoca: ¿quién responde?"
+output: html_document
+---
+
+<!-- Reconstrucción desde el PDF V61. Conserva la página original como imagen; no es la fuente textual original del artículo. -->
+
+![Página 10 de la Revista ECYS XXIX](../paginas/imagenes/pagina_10.webp)
+
+![Página 11 de la Revista ECYS XXIX](../paginas/imagenes/pagina_11.webp)
