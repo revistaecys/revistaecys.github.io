@@ -1,0 +1,135 @@
+[
+  {
+    "id": "ed_vigesimanovena",
+    "edition": 29,
+    "name": "Vigésima Novena Edición",
+    "url": "29Edicion/index.html",
+    "pdf": "29Edicion/Revista_ECYS_XXIX.pdf"
+  },
+  {
+    "id": "ed_vigesimaoctava",
+    "edition": 28,
+    "name": "Vigésima Octava\n      Edición",
+    "url": "https://revistaecys.github.io/28Edicion/"
+  },
+  {
+    "id": "ed_vigesimaseptima",
+    "edition": 27,
+    "name": "Vigésima Séptima\n      Edición",
+    "url": "https://revistaecys.github.io/27Edicion/"
+  },
+  {
+    "id": "ed_vigesimasexta",
+    "edition": 26,
+    "name": "Vigésima Sexta\n      Edición",
+    "url": "https://revistaecys.github.io/26edicion/"
+  },
+  {
+    "id": "ed_vigesimaquinta",
+    "edition": 25,
+    "name": "Vigésima Quinta\n      Edición",
+    "url": "https://revistaecys.github.io/25Edicion/"
+  },
+  {
+    "id": "ed_vigesimacuarta",
+    "edition": 24,
+    "name": "Vigésima Cuarta\n      Edición",
+    "url": "https://revistaecys.github.io/24Edicion/"
+  },
+  {
+    "id": "ed_vigesimatercera",
+    "edition": 23,
+    "name": "Vigésima Tercera\n      Edición",
+    "url": "https://revistaecys.github.io/23Edicion/"
+  },
+  {
+    "id": "ed_vigesimasegunda",
+    "edition": 22,
+    "name": "Vigésima Segunda\n      Edición",
+    "url": "https://revistaecys.github.io/22Edicion/"
+  },
+  {
+    "id": "ed_vigesimaprimera",
+    "edition": 21,
+    "name": "Vigésima Primera\n      Edición",
+    "url": "https://revistaecys.github.io/21Edicion/"
+  },
+  {
+    "id": "ed_vigesima",
+    "edition": 20,
+    "name": "Vigésima Edición",
+    "url": "https://revistaecys.github.io/20Edicion/"
+  },
+  {
+    "id": "ed_decimonovena",
+    "edition": 19,
+    "name": "Décimo Novena\n      Edición",
+    "url": "https://revistaecys.github.io/19Edicion/"
+  },
+  {
+    "id": "ed_decimoctava",
+    "edition": 18,
+    "name": "Décimo Octava Edición",
+    "url": "https://revistaecys.github.io/18Edicion/"
+  },
+  {
+    "id": "ed_decimoseptima",
+    "edition": 17,
+    "name": "Décimo Séptima\n      Edición",
+    "url": "https://revistaecys.github.io/17Edicion/"
+  },
+  {
+    "id": "ed_decimosexta",
+    "edition": 16,
+    "name": "Décimo Sexta Edición",
+    "url": "https://revistaecys.github.io/16Edicion/"
+  },
+  {
+    "id": "ed_decimoquinta",
+    "edition": 15,
+    "name": "Décimo Quinta\n      Edición",
+    "url": "https://revistaecys.github.io/15Edicion/"
+  },
+  {
+    "id": "ed_decimocuarta",
+    "edition": 14,
+    "name": "Décimo Cuarta Edición",
+    "url": "https://revistaecys.github.io/14Edicion/"
+  },
+  {
+    "id": "ed_decimotercera",
+    "edition": 13,
+    "name": "Décimo Tercera Edición",
+    "url": "https://revistaecys.github.io/13Edicion/"
+  },
+  {
+    "id": "ed_decimosegunda",
+    "edition": 12,
+    "name": "Décimo Segunda Edición",
+    "url": "https://revistaecys.github.io/12Edicion/"
+  },
+  {
+    "id": "ed_undecima",
+    "edition": 11,
+    "name": "Undécima Edición",
+    "url": "https://revistaecys.github.io/11Edicion/"
+  },
+  {
+    "id": "ed_decima",
+    "edition": 10,
+    "name": "Décima Edición",
+    "url": "https://revistaecys.github.io/10Edicion/"
+  },
+  {
+    "id": "ed_novena",
+    "edition": 9,
+    "name": "Novena Edición",
+    "url": "https://revistaecys.github.io/09Edicion/"
+  },
+  {
+    "id": "ed_segunda",
+    "edition": 2,
+    "name": "Segunda Edición",
+    "url": "https://revistaecys.github.io/02Edicion/"
+  }
+]

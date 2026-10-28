@@ -16,29 +16,39 @@ concurrency:
 
 jobs:
   publicar:
-    name: Generar índice de ediciones y publicar
+    name: Actualizar index.html y publicar
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Descargar repositorio
+      - name: Descargar el repositorio
         uses: actions/checkout@v4
 
-      - name: Detectar carpetas de nuevas ediciones
-        run: python3 scripts/generar_catalogo.py --root . --output ediciones.json
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-      - name: Preparar publicación estática
+      - name: Probar generador de catálogo
+        run: python3 -m unittest discover -s pruebas -p 'test_*.py' -v
+
+      - name: Detectar carpetas y actualizar index.html y ediciones.json
+        run: |
+          python3 scripts/generar_catalogo.py --root .
+          python3 scripts/generar_catalogo.py --root . --check
+
+      - name: Preparar GitHub Pages sin Jekyll
         run: touch .nojekyll
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Empaquetar sitio web
+      - name: Empaquetar HTML, ediciones y recursos
         uses: actions/upload-pages-artifact@v4
         with:
           path: '.'
 
-      - name: Publicar en GitHub Pages
+      - name: Desplegar GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

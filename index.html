@@ -68,9 +68,6 @@
     .edition-btn[aria-current="true"] .arr{color:var(--navy)}
     .no-results{color:var(--muted);font-size:13px;text-align:center;padding:25px 12px}
     .archive-bottom{border-top:1px solid var(--line);padding:15px 22px;color:var(--muted);font-size:11px;line-height:1.65}
-    .refresh-editions{width:100%;background:transparent;border:1px solid #b9cbd1;color:var(--navy);border-radius:7px;padding:9px 12px;margin:0 0 9px;font-weight:750;font-size:12px;cursor:pointer;text-align:center}
-    .refresh-editions:hover{background:#edf4f6}
-    .refresh-editions:disabled{cursor:wait;opacity:.65}
     .reader{overflow:hidden}
     .reader-header{padding:24px clamp(18px,2.1vw,32px);display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid var(--line)}
     .reader-heading{min-width:0}
@@ -139,8 +136,7 @@
       <div class="archive-search"><label for="searchEdition" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Buscar edición</label><input id="searchEdition" type="search" autocomplete="off" placeholder="Buscar edición..." aria-label="Buscar ediciones"></div>
       <nav class="archive-list" id="editionList" aria-label="Ediciones disponibles"></nav>
       <div class="archive-bottom">
-        <button type="button" id="refreshEditions" class="refresh-editions">↻ Buscar nuevas ediciones</button>
-        <div id="archiveStatus" role="status" aria-live="polite">Comprobando nuevas ediciones publicadas…</div>
+        <div id="archiveStatus" role="status" aria-live="polite">Catálogo de ediciones cargado.</div>
       </div>
     </aside>
     <article class="reader" aria-labelledby="editionTitle">
@@ -162,12 +158,14 @@
   <footer class="site-footer"><div class="site-footer-inner"><span><strong>Revista ECYS</strong> · Ciencias, Sistemas y Tecnología</span><span>Universidad de San Carlos de Guatemala</span></div></footer>
   <script>
     'use strict';
+    // ECYS:CATALOGO_GENERADO:INICIO
     const editions = [
   {
     "id": "ed_vigesimanovena",
     "edition": 29,
     "name": "Vigésima Novena Edición",
-    "url": "29Edicion/index.html"
+    "url": "29Edicion/index.html",
+    "pdf": "29Edicion/Revista_ECYS_XXIX.pdf"
   },
   {
     "id": "ed_vigesimaoctava",
@@ -296,6 +294,7 @@
     "url": "https://revistaecys.github.io/02Edicion/"
   }
 ];
+    // ECYS:CATALOGO_GENERADO:FIN
     const list = document.getElementById('editionList');
     const search = document.getElementById('searchEdition');
     const frame = document.getElementById('editionFrame');
@@ -308,18 +307,8 @@
     const openFallback = document.getElementById('openFallback');
     const downloadPdf = document.getElementById('downloadPdf');
     let currentEdition = 29;
-    let userHasChosenEdition = /^#edicion=\d+$/.test(location.hash);
     const roman = n => { const vals=[[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']]; let s=''; for (const [v,c] of vals){while(n>=v){s+=c;n-=v}} return s; };
     const latestEditionNumber = () => Math.max(...editions.map(e=>e.edition));
-    function futureEditionName(n) {
-      const tens={30:'Trigésima',40:'Cuadragésima',50:'Quincuagésima',60:'Sexagésima',70:'Septuagésima',80:'Octogésima',90:'Nonagésima'};
-      const units=['','Primera','Segunda','Tercera','Cuarta','Quinta','Sexta','Séptima','Octava','Novena'];
-      if(n>=30 && n<100) {
-        const t=Math.floor(n/10)*10, u=n%10;
-        return `${tens[t]}${u?' '+units[u]:''} Edición`;
-      }
-      return `Edición ${roman(n)}`;
-    }
     function normalized(value){return value.toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();}
     function renderList(query=''){
       const value=normalized(query);
@@ -336,7 +325,7 @@
         const name=document.createElement('span');name.className='edition-name';name.textContent=edition.name;
         if(edition.edition===latestEditionNumber()){const small=document.createElement('small');small.textContent='Edición más reciente';name.appendChild(small);}
         const arrow=document.createElement('span');arrow.className='arr';arrow.textContent='›';arrow.setAttribute('aria-hidden','true');
-        b.append(number,name,arrow);b.addEventListener('click',()=>{userHasChosenEdition=true;selectEdition(edition.edition,true);});
+        b.append(number,name,arrow);b.addEventListener('click',()=>selectEdition(edition.edition,true));
         list.appendChild(b);
       }
       if(!shown){const p=document.createElement('p');p.className='no-results';p.textContent='No se encontraron ediciones.';list.appendChild(p);}
@@ -353,7 +342,11 @@
       currentPath.textContent=item.url;
       openEdition.href=item.url;
       openFallback.href=item.url;
-      downloadPdf.hidden=number!==29;
+      downloadPdf.hidden=!item.pdf;
+      if(item.pdf){
+        downloadPdf.href=item.pdf;
+        downloadPdf.title='Abrir PDF de '+item.name;
+      }
       frame.title='Vista de la Revista ECYS — '+item.name;
       renderList(search.value);
       if(changed){loading.classList.remove('hidden');frame.src=item.url;}
@@ -362,163 +355,20 @@
     frame.addEventListener('load',()=>loading.classList.add('hidden'));
     function readHash(){const m=location.hash.match(/^#edicion=(\d+)$/);return m?Number(m[1]):latestEditionNumber();}
     window.addEventListener('hashchange',()=>{
-      userHasChosenEdition=/^#edicion=\d+$/.test(location.hash);
       selectEdition(readHash());
     });
     search.addEventListener('input',()=>renderList(search.value));
 
-    // Detección híbrida. El servidor estático no ofrece un índice de carpetas:
-    // 1) Verificamos directamente rutas del propio sitio (funciona también en localhost).
-    // 2) Complementamos con la API pública de GitHub para encontrar números no consecutivos.
-    // Nunca se requiere un token ni se depende exclusivamente de GitHub API.
-    const REPOSITORY_DIRECTORIES='https://api.github.com/repos/revistaecys/revistaecys.github.io/contents/?ref=master';
-    const CACHE_KEY='ecys-ediciones-publicadas-v2';
-    const archiveStatus=document.getElementById('archiveStatus');
-    const refreshButton=document.getElementById('refreshEditions');
-    const featuredEdition=document.getElementById('featuredEdition');
-    const featuredSubtitle=document.getElementById('featuredSubtitle');
-    let detectInProgress=false;
-    let discoveredFolders=new Set();
-
-    function editionFromFolder(folder) {
-      if(typeof folder!=='string')return null;
-      const plain=folder.normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-      const match=/^(\d{1,4})Ed(?:ic|is)ion$/i.exec(plain);
-      if(!match)return null;
-      const number=Number(match[1]);
-      if(number<30 || number>3999)return null;
-      return {edition:number,folder,url:`${folder}/index.html`};
-    }
-
-    function addFutureEditions(folders) {
-      for(const folder of folders){
-        const candidate=editionFromFolder(folder);
-        if(!candidate)continue;
-        const existing=editions.find(e=>e.edition===candidate.edition);
-        if(existing){
-          // Prioridad a Edicion (correcto) respecto de Edision (variante).
-          if(!/Edicion\/index\.html$/i.test(existing.url) && /Edicion$/i.test(candidate.folder)){
-            existing.url=candidate.url;
-          }
-          continue;
-        }
-        editions.push({id:`ed_${candidate.edition}`,edition:candidate.edition,
-          name:futureEditionName(candidate.edition),url:candidate.url});
-      }
-      editions.sort((a,b)=>b.edition-a.edition);
-      const newest=latestEditionNumber();
-      featuredEdition.textContent=`Edición ${roman(newest)}`;
-      featuredSubtitle.textContent=newest===29?'Del diseño al código':'Última edición publicada';
-      selectEdition(userHasChosenEdition?readHash():newest);
-    }
-
-    function readCache(){
-      try {
-        const v=JSON.parse(localStorage.getItem(CACHE_KEY)||'null');
-        return v && Array.isArray(v.folders)?v.folders:[];
-      }catch{return [];}
-    }
-    function saveCache(){
-      try{localStorage.setItem(CACHE_KEY,JSON.stringify({at:Date.now(),folders:[...discoveredFolders]}));}
-      catch{/* El navegador puede bloquear almacenamiento. */}
-    }
-    function incorporate(folders) {
-      let changed=false;
-      for(const folder of folders){
-        if(editionFromFolder(folder) && !discoveredFolders.has(folder)){
-          discoveredFolders.add(folder);changed=true;
-        }
-      }
-      if(changed){
-        addFutureEditions(discoveredFolders);
-        saveCache();
-        archiveStatus.textContent=`Detectadas ${editions.length} ediciones · Más reciente: ${roman(latestEditionNumber())}.`;
-      }
-    }
-
-    async function accessible(relativePath, timeoutMs=4500) {
-      // HEAD consulta estado sin descargar el HTML completo (importante para el lector).
-      const controller=new AbortController();
-      const timeout=setTimeout(()=>controller.abort(),timeoutMs);
-      try {
-        const response=await fetch(relativePath,{method:'HEAD',cache:'no-store',signal:controller.signal});
-        return response.ok;
-      }catch{return false;}
-      finally{clearTimeout(timeout);}
-    }
-    async function probeNumber(number){
-      // Nombres realmente existentes: se distingue entre Edicion y Edision.
-      const variants=[`${number}Edicion`,`${number}Edision`,`${number}edicion`,`${number}edision`];
-      for(const folder of variants){
-        if(await accessible(`${folder}/index.html`))return folder;
-      }
-      return null;
-    }
-    async function probeOwnSite() {
-      // El recorrido cubre la XXX y siguientes, extendiendo el rango cuando descubre más.
-      // La API complementaria encuentra numeraciones con saltos grandes.
-      let number=30;
-      let maxNumber=43;
-      const absoluteLimit=180;
-      while(number<=maxNumber && number<=absoluteLimit){
-        const batch=Array.from({length:Math.min(6,maxNumber-number+1)},(_,i)=>number+i);
-        const found=await Promise.all(batch.map(probeNumber));
-        const named=found.filter(Boolean);
-        if(named.length)incorporate(named); // Mostrar 30 tan pronto sea detectada.
-        const last=latestEditionNumber();
-        maxNumber=Math.min(absoluteLimit,Math.max(43,last+12));
-        number+=batch.length;
-      }
-    }
-    async function probeGitHubApi(){
-      const controller=new AbortController();
-      const timeout=setTimeout(()=>controller.abort(),9000);
-      try {
-        const response=await fetch(REPOSITORY_DIRECTORIES,{
-          headers:{Accept:'application/vnd.github+json'},cache:'no-store',signal:controller.signal
-        });
-        if(!response.ok)throw new Error(`API HTTP ${response.status}`);
-        const entries=await response.json();
-        if(!Array.isArray(entries))throw new Error('Respuesta inesperada');
-        const candidates=entries.filter(x=>x && x.type==='dir')
-          .map(x=>editionFromFolder(x.name)).filter(Boolean);
-        const checked=await Promise.all(candidates.map(async x=>
-          await accessible(x.url) ? x.folder : null));
-        incorporate(checked.filter(Boolean));
-        return true;
-      }catch(error){
-        console.info('ECYS: API de GitHub no disponible; se mantiene la comprobación local.',error.message);
-        return false;
-      }finally{clearTimeout(timeout);}
-    }
-    async function detectPublishedEditions(force=false){
-      if(detectInProgress)return;
-      if(!/^https?:$/.test(location.protocol)){
-        archiveStatus.textContent='Para detectar carpetas locales, abre el sitio con un servidor HTTP (no con file://).';
-        return;
-      }
-      detectInProgress=true;
-      refreshButton.disabled=true;
-      refreshButton.textContent='Comprobando ediciones…';
-      archiveStatus.textContent='Buscando carpetas nuevas en este sitio…';
-      if(!force)incorporate(readCache());
-      try {
-        // Ambas búsquedas se ejecutan independientemente. Si GitHub API devuelve 403,
-        // la comprobación de /30Edicion/index.html sigue funcionando.
-        const [_,apiOk]=await Promise.all([probeOwnSite(),probeGitHubApi()]);
-        saveCache();
-        archiveStatus.textContent=`${editions.length} ediciones disponibles. Última: ${roman(latestEditionNumber())}.`
-          +(apiOk?'':' (Comprobación directa; API no disponible).');
-      }finally {
-        detectInProgress=false;
-        refreshButton.disabled=false;
-        refreshButton.textContent='↻ Buscar nuevas ediciones';
-      }
-    }
-    refreshButton.addEventListener('click',()=>detectPublishedEditions(true));
-
-    selectEdition(editions.some(e=>e.edition===readHash())?readHash():29);
-    detectPublishedEditions();
+    // Catálogo incorporado a este HTML durante la generación local o el CI/CD.
+    // El navegador no necesita HTTP, servidor local ni API de GitHub.
+    const newest=latestEditionNumber();
+    document.getElementById('featuredEdition').textContent='Edición '+roman(newest);
+    document.getElementById('featuredSubtitle').textContent=
+      newest===29?'Del diseño al código':'Última edición publicada';
+    document.getElementById('archiveStatus').textContent=
+      `${editions.length} ediciones en el catálogo. Última: ${roman(newest)}.`;
+    const requested=readHash();
+    selectEdition(editions.some(e=>e.edition===requested)?requested:newest);
   </script>
 </body>
 </html>
