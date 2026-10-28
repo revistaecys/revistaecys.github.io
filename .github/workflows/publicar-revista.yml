@@ -1,0 +1,44 @@
+name: Publicar Revista ECYS y detectar ediciones
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: revista-ecys-pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    name: Generar índice de ediciones y publicar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Detectar carpetas de nuevas ediciones
+        run: python3 scripts/generar_catalogo.py --root . --output ediciones.json
+
+      - name: Preparar publicación estática
+        run: touch .nojekyll
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Empaquetar sitio web
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
